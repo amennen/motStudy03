@@ -1326,11 +1326,11 @@ switch SESSION
 %             promptTRs = 3:2:9;
 %         else
             stim.trialDur = 30*SPEED; %chaning length from 20 to 30 s or 15 TRs
-            promptTRs = 3:3:13; %which TR's to make the prompt active
+            promptTRs = 3:2:13; %which TR's to make the prompt active
   %      end
         stim.inter_prompt_interval = 4*SPEED;
         stim.maxspeed = 30;
-        stim.minspeed = -30; %0.3; %changed to -30 to go into function--now will allow negative speeds and result in them being faded to black
+        stim.minspeed = 0.3; %changed 8/8
         stim.targ_dur = 2*SPEED;
         stim.fixBlock = 20; %time in the beginnning they're staring
         %stim.betweenPrompt = 2;
@@ -1472,8 +1472,8 @@ switch SESSION
         if stair
             questStruct = QuestCreate(tGuess,tGuessSd,pThreshold,beta,delta,gamma,grain,range); %Quest function for face blocks
         end
-        keymap_image = imread(KEY_MAPPING);
-        keymap_prompt = Screen('MakeTexture', mainWindow, keymap_image);
+       % keymap_image = imread(KEY_MAPPING);
+      %  keymap_prompt = Screen('MakeTexture', mainWindow, keymap_image);
         
         % allocate stimuli
         if ~day_2
@@ -1528,7 +1528,7 @@ switch SESSION
             
             if ~day_2 && ~stair
                 %stim.speed(i) = stim.maxspeed - tGuess; %setting practice speed to initial tGuess
-                stim.speed(i) = -3*i;
+                stim.speed(i) = -1*i;
                 %stim.repulse(i) = 5/3;
             else
                 if SESSION > 5 && SESSION < MOT{1} %change dot speeds for practice and localizer, but then we want to change dot speed!
@@ -1565,11 +1565,7 @@ switch SESSION
             waitForKeyboard(kbTrig_keycode,DEVICE);
             displayText(mainWindow,stim.instruct2,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
             waitForKeyboard(kbTrig_keycode,DEVICE);
-            keymap_image = imread(KEY_MAPPING);
-            keymap_prompt = Screen('MakeTexture', mainWindow, keymap_image);
-            Screen('DrawTexture',mainWindow,keymap_prompt,[],[],[]); %[0 0 keymap_dims],[topLeft topLeft+keymap_dims]);
-            Screen('Flip',mainWindow);
-            waitForKeyboard(kbTrig_keycode,DEVICE);
+            
         elseif SESSION == MOT_PREP
             displayText(mainWindow,stim.stairInstruct,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
             waitForKeyboard(kbTrig_keycode,DEVICE);
@@ -1581,11 +1577,7 @@ switch SESSION
             waitForKeyboard(kbTrig_keycode,DEVICE);
             displayText(mainWindow,stim.instruct2,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
             waitForKeyboard(kbTrig_keycode,DEVICE);
-            keymap_image = imread(KEY_MAPPING);
-            keymap_prompt = Screen('MakeTexture', mainWindow, keymap_image);
-            Screen('DrawTexture',mainWindow,keymap_prompt,[],[],[]); %[0 0 keymap_dims],[topLeft topLeft+keymap_dims]);
-            Screen('Flip',mainWindow);
-            waitForKeyboard(kbTrig_keycode,DEVICE);
+           
         elseif SESSION == MOT_LOCALIZER 
             displayText(mainWindow,stim.fMRI_instruct,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
             waitForKeyboard(kbTrig_keycode,DEVICE);
@@ -1623,15 +1615,7 @@ switch SESSION
             'exp_onset', stim.subjStartTime, ...
             'trigger_next', false, ...
             'device', DEVICE);
-        subjectiveEK = initEasyKeys([exp_string_long '_SUB'], SUBJ_NAME,ppt_dir, ...
-            'default_respmap', subj_scale, ...
-            'stimmap', stimmap, ...
-            'condmap', condmap, ...
-            'prompt_dur', 0.001, ...
-            'exp_onset', stim.subjStartTime, ...
-            'trigger_next', false, ...
-            'device', DEVICE);
-        [dotEK,subjectiveEK] = startSession(dotEK,subjectiveEK);
+        [dotEK] = startSession(dotEK);
         
         digits_scale = makeMap({'even','odd'},[0 1],keyCell([1 5]));
         condmap = makeMap({'even','odd'});
@@ -1741,8 +1725,7 @@ switch SESSION
                 blend = max(blend, 0.5); %29.5 is as fast as we're willing to go
                 stim.speed(stim.trial) = stim.maxspeed - blend;
             end
-            actualspeed = max([stim.speed(stim.trial) 0.3]);
-            repulsor_force(stim.trial) = repulsor_force_small * actualspeed;
+            repulsor_force(stim.trial) = repulsor_force_small * stim.speed(stim.trial);
             %fprintf('For trial %i: speed = %.2d\n', stim.trial,stim.speed(stim.trial));
             dotTarg = []; dotPos = []; dotTargPos = [];
             
@@ -1754,15 +1737,6 @@ switch SESSION
 %                 lureCounter = lureCounter + 1;
 %             end
             cue = stim.stim{stim.trial};
-%             embedded_keys = keyCell;
-%             embedded_scale = subj_scale;
-%             if stim.cond > 3 % lure condition
-%                 subj_cresp_map = keys.map(1,:);
-%                 embedded_cresp = keyCell(1);
-%             else
-%                 subj_cresp_map = sum(keys.map(2:5,:));
-%                 embedded_cresp = keyCell(2:5);
-%             end
             
             % initialize dots
             [dots phantom_dots] = initialize_dots(num_dots,stim.num_targets,stim.square_dims,stim.dot_diameter);
@@ -1782,11 +1756,7 @@ switch SESSION
             timespec = timing.plannedOnsets.target(n) - SLACK;
             show_targs = true; show_probe = false; prompt_active = false;
             targetBin = [];
-            shade = 0;
-            if stim.speed(n) < 0
-                shade = abs(stim.speed(n));
-            end
-            [~,timing.actualOnsets.target(n)] = dot_refresh(mainWindow,targetBin,dots,shade,square_bounds,stim.dot_diameter,COLORS,cue,show_targs,show_probe,prompt_active,timespec); %flips but not moving yet
+            [~,timing.actualOnsets.target(n)] = dot_refresh(mainWindow,targetBin,dots,square_bounds,stim.dot_diameter,COLORS,cue,show_targs,show_probe,prompt_active,timespec); %flips but not moving yet
             fprintf('Flip time error = %.4f\n', timing.actualOnsets.target(n) - timing.plannedOnsets.target(n));
             
             % initialize dot following
@@ -1934,7 +1904,7 @@ switch SESSION
                 end
                 
                 if TRcounter %only do this once the motion should begin
-                    [dots fs,shade] = dot_compute(dots,current_speed,shade,stim.square_dims,stim.dot_diameter,phantom_dots,WINDOWSIZE,repulse,fs,repulsor_force(n));
+                    [dots fs,shade] = dot_compute(dots,current_speed,stim.square_dims,stim.dot_diameter,phantom_dots,WINDOWSIZE,repulse,fs,repulsor_force(n));
                     if waitForPulse
                         if CURRENTLY_ONLINE && SESSION >TOCRITERION3 %localizer and up
                             [timing.trig.motion(TRcounter,n), timing.trig.motion_Success(TRcounter,n)] = WaitTRPulse(TRIGGER_keycode,DEVICE, timing.plannedOnsets.motion(TRcounter,n)); %minus 1 because first TR is motionStart
@@ -1967,7 +1937,7 @@ switch SESSION
             end
             show_probe = true; prompt_active = false;
             timespec = timing.plannedOnsets.probe(n) - SLACK;
-            [~,timing.actualOnsets.probe(n)] = dot_refresh(mainWindow,[],dots,shade,square_bounds,stim.dot_diameter,COLORS,cue,show_targs,show_probe,prompt_active,timespec);
+            [~,timing.actualOnsets.probe(n)] = dot_refresh(mainWindow,[],dots,square_bounds,stim.dot_diameter,COLORS,cue,show_targs,show_probe,prompt_active,timespec);
             fprintf('Flip time error = %.4f\n', timing.actualOnsets.probe(n) - timing.plannedOnsets.probe(n));
             dotEK = easyKeys(dotEK, ...
                 'nesting', [SESSION stim.trial], ...
@@ -2402,8 +2372,6 @@ return
 
 function [targetBin,timeon] = dot_refresh(window,targetBin,dots,shade,square_bounds,dot_dia,COLORS,cue,show_targs,show_probe,prompt_active,timespec)
 
-shade = min([30 shade]); % make it so max is 30 (or completely black)
-
 % prepare time-gating
 target_frame_rate = 30;
 time_bins = 0:1000/target_frame_rate:1000;
@@ -2467,21 +2435,13 @@ if ~isempty(drawProbe)
     Screen('FillOval',window,probe_col,[drawProbe(:,1:2)-(dot_dia/2) drawProbe(:,1:2) + dot_dia/2]',dot_dia)
 end
 if ~isempty(drawNormal)
-    if size(drawNormal,1) == length(dots) %search through all dots
-        for i = 1:length(dots)
-            if ~dots(i).is_target
-                col = normal_col;
-                col(2) = normal_col(2) - (shade/30)*200;
-                Screen('FillOval',window,col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
-            else
-                Screen('FillOval',window,normal_col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
-            end
+    for i = 1:length(dots)
+        if ~dots(i).is_target
+            col = normal_col - (shade/30)*200;
+            Screen('FillOval',window,col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
+        else
+            Screen('FillOval',window,normal_col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
         end
-    else
-        %less than that many anyway--fade them
-        col = normal_col;
-        col(2) = normal_col(2) - (shade/30)*200;
-        Screen('FillOval',window,col,[drawNormal(:,1:2)-(dot_dia/2) drawNormal(:,1:2) + dot_dia/2]',dot_dia)
     end
 end
 
@@ -2531,9 +2491,10 @@ function [dots,framestart,shade] = dot_compute(dots,speed,shade,square_dims,dot_
 fps = 30;
 %speed = 25;
 %speed = mean(windowSize.pixels)*2;
-%repfulse = 7/3;
-if speed < 0
-    shade = abs(speed);
+%repulse = 7/3;
+shade = 0;
+if speed < 0.3
+    shade = -1*speed;
     speed = 0.3; %make it so the dots never actually stop moving
     %take gray amount as distance from 3;
 end
