@@ -1325,8 +1325,8 @@ switch SESSION
 %             stim.trialDur = 20*SPEED;
 %             promptTRs = 3:2:9;
 %         else
-            stim.trialDur = 30*SPEED; %chaning length from 20 to 30 s or 15 TRs
-            promptTRs = 3:3:13; %which TR's to make the prompt active
+        stim.trialDur = 30*SPEED; %chaning length from 20 to 30 s or 15 TRs
+        promptTRs = 3:3:13; %which TR's to make the prompt active
   %      end
         stim.inter_prompt_interval = 4*SPEED;
         stim.maxspeed = 30;
@@ -1335,7 +1335,7 @@ switch SESSION
         stim.fixBlock = 20; %time in the beginnning they're staring
         %stim.betweenPrompt = 2;
         %stim.beforePrompt = 4;
-        %vis_promptDur = 2*SPEED;
+        vis_promptDur = 2*SPEED;
         digits_promptDur = 1.9*SPEED;
         digits_isi = 0.1*SPEED;
         PROGRESS_TEXT = 'INDEX finger';
@@ -1722,6 +1722,7 @@ switch SESSION
         
         for n=1:length(stim.cond)
             stim.trial = n;
+            train = [];
             if CURRENTLY_ONLINE && SESSION > TOCRITERION3
                 [timing.trig.preITI(n), timing.trig.preITI_Success(n)] = WaitTRPulse(TRIGGER_keycode,DEVICE, timing.plannedOnsets.preITI(n));
             end
@@ -1754,16 +1755,18 @@ switch SESSION
 %                 lureCounter = lureCounter + 1;
 %             end
             cue = stim.stim{stim.trial};
-%             embedded_keys = keyCell;
-%             embedded_scale = subj_scale;
-%             if stim.cond > 3 % lure condition
-%                 subj_cresp_map = keys.map(1,:);
-%                 embedded_cresp = keyCell(1);
-%             else
-%                 subj_cresp_map = sum(keys.map(2:5,:));
-%                 embedded_cresp = keyCell(2:5);
-%             end
+            embedded_keys = keyCell;
+            embedded_scale = subj_scale;
+            if stim.cond > 3 % lure condition
+                embedded_cresp = keyCell(1);
+            else
+                embedded_cresp = keyCell(3:5);
+            end
             
+            % initialize KbQueue
+            [embedded_keys, valid_keycode, embedded_cresp] = keyCheck(embedded_keys,embedded_cresp);
+            KbQueueCreate(DEVICE,valid_keycode);
+            KbQueueStart;
             % initialize dots
             [dots phantom_dots] = initialize_dots(num_dots,stim.num_targets,stim.square_dims,stim.dot_diameter);
             
@@ -1904,7 +1907,9 @@ switch SESSION
                         waitForPulse = true;
                         if ismember(TRcounter,promptTRs)
                             prompt_active = 1;
+                            KbQueueFlush;
                             prompt_counter = prompt_counter + 1;
+                            train.onset(prompt_counter) = GetSecs;
                         elseif ismember(TRcounter-1,promptTRs)
                             prompt_active = false;
                         end
@@ -1957,6 +1962,37 @@ switch SESSION
                     printlog(LOG_NAME,'%d\t%d\t%d\t\t%5.3f\t%5.3f\t%5.4f\t\t%i\t\t%d\t\t%5.3f\t\t%s\n',n,TRcounter,prompt_active,current_speed,stim.changeSpeed(TRcounter,n),timing.actualOnsets.motion(TRcounter,stim.trial) - timing.plannedOnsets.motion(TRcounter,stim.trial),rtData.classOutputFileLoad(allMotionTRs(TRcounter,n)),fileTR,rtData.rtDecoding(fileTR),rtData.newestFile{allMotionTRs(TRcounter,n)});
                     printTR(TRcounter) = 0;
                 end
+                
+                % act on a visualization prompt
+                if prompt_active 
+                    % peek to see if any keys are pressed right now (for CPU reasons, do this only every third frame)
+                    if ~mod(stim.frame_counter(stim.trial),3)
+                        [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
+                            multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
+
+                        % if we have a response or the window is over, stop listening
+                        elapsed = (GetSecs-train.onset(prompt_counter));
+                        check(prompt_counter) = true;
+                        if check(prompt_counter) && (elapsed > vis_promptDur) || ~isnan(train.resp{prompt_counter})
+                            %prompt_active = false;
+                            if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
+                            if isnan(train.resp{prompt_counter}),
+                                train.resp_str{prompt_counter} = nan;
+                            else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
+                            end
+                            subjectiveEK = easyKeys(subjectiveEK, ...
+                                'stim', stim.stim{stim.trial}, ...
+                                'onset', train.onset(prompt_counter), ...
+                                'cond', stim.cond(stim.trial), ...
+                                'nesting', [SESSION stim.trial prompt_counter], ...
+                                'cresp', embedded_cresp, ...
+                                'simulated_key', train.resp_str{prompt_counter}, ...
+                                'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
+                            check(prompt_counter) = false;
+                        end
+                    end
+                end
+                
                 
             end  %20 s trial ends here THEN probe
             
