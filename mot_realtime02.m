@@ -1,4 +1,4 @@
-% syntax: mot_realtime01(SUBJECT,SESSION,SET_SPEED,scanNum,scanNow)
+% syntax: mot_realtime02(SUBJECT,SESSION,SET_SPEED,scanNum,scanNow)
 %
 % This is an implementation of a MOT memory experiment designed to
 % reactivate memory, adapted from a study by Ken Norman and J. Poppenk. I
@@ -12,7 +12,7 @@
 
 %%
 
-function mot_realtime01(SUBJECT,SESSION,SET_SPEED,scanNum,scanNow)
+function mot_realtime02(SUBJECT,SESSION,SET_SPEED,scanNum,scanNow)
 
 %SUBJECT: Subject number
 %SESSION: task that they're going to do (listed below)
@@ -151,7 +151,7 @@ end
 if ~exist(data_dir,'dir'), mkdir(data_dir); end
 ppt_dir = [data_dir filesep SUBJ_NAME filesep];
 if ~exist(ppt_dir,'dir'), mkdir(ppt_dir); end
-base_path = [fileparts(which('mot_realtime01.m')) filesep];
+base_path = [fileparts(which('mot_realtime02.m')) filesep];
 MATLAB_SAVE_FILE = [ppt_dir MATLAB_SAVE_FILE];
 LOG_NAME = [ppt_dir LOG_NAME];
 
@@ -287,7 +287,7 @@ LEARN = 6;
 LOC = 7;
 
 % stimulus filepaths
-MATLAB_STIM_FILE = [ppt_dir 'mot_realtime01_subj_' num2str(SUBJECT) '_stimAssignment.mat'];
+MATLAB_STIM_FILE = [ppt_dir 'mot_realtime02_subj_' num2str(SUBJECT) '_stimAssignment.mat'];
 CUELISTFILE = [base_path 'stimuli/text/wordpool.txt'];
 CUELISTFILE_TARGETS = [base_path 'stimuli/text/wordpool_targets_woTrain.txt']; %changed for subject 15 just to be sure that the words for practice aren't going to be assigned to more people!
 %      CALIBRATION_TARGET = [base_path 'stimuli/NTB_5cal-10left-5up_1600x1200_black.jpg'];
@@ -431,13 +431,13 @@ switch SESSION
         stimmap = makeMap(preparedCues);
         
         % clean up
-        system(['cp ' base_path 'mot_realtime01.m ' ppt_dir 'mot_realtime01_executed.m']);
+        system(['cp ' base_path 'mot_realtime02.m ' ppt_dir 'mot_realtime02_executed.m']);
         save(MATLAB_STIM_FILE, 'cues','preparedCues','pics','pairIndex','lureWords','recogLures','stimmap');
         
         if previousYC
-            mot_realtime01(SUBJECT,FAMILIARIZE2,SET_SPEED,scanNum,scanNow);
+            mot_realtime02(SUBJECT,FAMILIARIZE2,SET_SPEED,scanNum,scanNow);
         else
-            mot_realtime01(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
+            mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
         end
         
         
@@ -559,7 +559,7 @@ switch SESSION
         printlog(LOG_NAME,'\n\n\n******************************************************************************\n');
         % return
         sca
-        mot_realtime01(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
+        mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
         
         %% 2. LEARN TO CRITERION
     case {TOCRITERION1, TOCRITERION2, TOCRITERION2_REP, TOCRITERION3}
@@ -866,7 +866,7 @@ switch SESSION
         %return
         %normally would go to session 4 but instead we want to go to
         if SESSION ~= TOCRITERION3
-            mot_realtime01(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
+            mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
         end
         
         %% 3. PRE/POST MEMORY TEST
@@ -1453,7 +1453,7 @@ switch SESSION
             %             while timeout
             try
                 %will need to add this file to the folder to get it to work
-                fileCandidates = dir([ppt_dir 'mot_realtime01_' num2str(SUBJECT) '_' num2str(MOT_PREP)  '*.mat']);
+                fileCandidates = dir([ppt_dir 'mot_realtime02_' num2str(SUBJECT) '_' num2str(MOT_PREP)  '*.mat']);
                 dates = [fileCandidates.datenum];
                 names = {fileCandidates.name};
                 [~,newest] = max(dates);
@@ -1588,7 +1588,7 @@ switch SESSION
             stim.instruct_nextMOT = ['You will now continue with the same multitasking task.' final_instruct_continue];
             displayText(mainWindow,stim.instruct_nextMOT,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
             %also load in last session information here
-            allLast = findNewestFile(ppt_dir,[ppt_dir 'mot_realtime01_' num2str(SUBJECT) '_' num2str(SESSION-1) '*']);
+            allLast = findNewestFile(ppt_dir,[ppt_dir 'mot_realtime02_' num2str(SUBJECT) '_' num2str(SESSION-1) '*']);
             last = load(allLast);
             lastSpeed = last.stim.lastSpeed; %matrix of motRun (1-3), stimID
             lastDecoding = last.stim.lastRTDecoding;
@@ -2095,7 +2095,7 @@ switch SESSION
             %displayText(mainWindow,CONGRATS,CONGRATSDURATION,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
             endSession(dotEK, CONGRATS);
             if SESSION < MOT_LOCALIZER
-                mot_realtime01(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
+                mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
             end
         end
         sca;
@@ -2286,7 +2286,7 @@ switch SESSION
             sca
         else
             endSession(fruitHarvestEK, CONGRATS);
-            mot_realtime01(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
+            mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
         end
         
         %% SCAN PREP
@@ -2343,7 +2343,7 @@ switch SESSION
         save(MATLAB_SAVE_FILE,'timing');
         WaitSecs(2) %wait a little before closing
         sca
-        %mot_realtime01(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
+        %mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
         
         % session switch
 end
@@ -2433,7 +2433,14 @@ if ~isempty(drawProbe)
     Screen('FillOval',window,probe_col,[drawProbe(:,1:2)-(dot_dia/2) drawProbe(:,1:2) + dot_dia/2]',dot_dia)
 end
 if ~isempty(drawNormal)
-    Screen('FillOval',window,normal_col,[drawNormal(:,1:2)-(dot_dia/2) drawNormal(:,1:2) + dot_dia/2]',dot_dia)
+    for i = 1:length(dots)
+        if ~dots(i).is_target
+            col = normal_col/shaded;
+            Screen('FillOval',window,col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
+        else
+            Screen('FillOval',window,normal_col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
+        end
+    end
 end
 
 % cue or fixation
@@ -2483,6 +2490,11 @@ fps = 30;
 %speed = 25;
 %speed = mean(windowSize.pixels)*2;
 %repulse = 7/3;
+if speed < 0.3
+    lightshade = -1*speed;
+    speed = 0.3; %make it so the dots never actually stop moving
+    %take gray amount as distance from 3;
+end
 rate = speed * (1 / fps) / mean(windowSize.degrees_per_pixel);
 %rate = mean(windowSize.pixels)*2/fps; this is the eqn to get 1 Hz
 %motion****
