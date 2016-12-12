@@ -1,0 +1,5 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	38.1  	21  	PLANK     	target  	1.953	NR  	0   	NR      	non-target
+2   	85.2  	22  	MORNING   	target  	1.951	NR  	0   	NR      	non-target
+3   	129   	27  	RULER     	target  	1.951	NR  	0   	NR      	target  
+4   	173   	23  	DISC      	target  	1.951	NR  	0   	NR      	target  

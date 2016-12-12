@@ -2437,8 +2437,8 @@ return
 
 
 function [targetBin,timeon] = dot_refresh(window,targetBin,dots,shade,square_bounds,dot_dia,COLORS,cue,show_targs,show_probe,prompt_active,timespec)
-
-shade = min([30 shade]); % make it so max is 30 (or completely black)
+maxdim = 15;
+shade = min([maxdim shade]); % make it so max is 30 (or completely black)
 
 % prepare time-gating
 target_frame_rate = 30;
@@ -2507,7 +2507,7 @@ if ~isempty(drawNormal)
         for i = 1:length(dots)
             if ~dots(i).is_target
                 col = normal_col;
-                col(2) = normal_col(2) - (shade/30)*200;
+                col(2) = normal_col(2) - (shade/maxdim)*200;
                 Screen('FillOval',window,col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
             else
                 Screen('FillOval',window,normal_col,[drawNormal(i,1:2)-(dot_dia/2) drawNormal(i,1:2) + dot_dia/2]',dot_dia)
@@ -2516,7 +2516,7 @@ if ~isempty(drawNormal)
     else
         %less than that many anyway--fade them
         col = normal_col;
-        col(2) = normal_col(2) - (shade/30)*200;
+        col(2) = normal_col(2) - (shade/maxdim)*200;
         Screen('FillOval',window,col,[drawNormal(:,1:2)-(dot_dia/2) drawNormal(:,1:2) + dot_dia/2]',dot_dia)
     end
 end
