@@ -47,7 +47,8 @@ TOCRITERION2_REP = TOCRITERION2 + 1;
 RSVP = TOCRITERION2_REP + 1; % rsvp train to critereon
 
 % day 2
-SCAN_PREP = RSVP + 2;
+STIM_REFRESH = RSVP + 2;
+SCAN_PREP = STIM_REFRESH + 1;
 MOT_PRACTICE2 = SCAN_PREP + 1; %12
 RECALL_PRACTICE = MOT_PRACTICE2 + 1;
 %SCAN_PREP = RECALL_PRACTICE + 1;
@@ -442,7 +443,7 @@ switch SESSION
         
         
         %% 1. FAMILIARIZATION
-    case {FAMILIARIZE, FAMILIARIZE2, FAMILIARIZE3}
+    case {FAMILIARIZE, FAMILIARIZE2, FAMILIARIZE3,STIM_REFRESH}
         % print headers to file and command window - don't need to wait for
         % trigger pulses here
         header = ['\n\n\n*******************' exp_string_long '*******************\n'];
@@ -468,7 +469,7 @@ switch SESSION
 
         if SESSION == FAMILIARIZE
             [stim.cond stim.condString stimList] = counterbalance_items({cues{STIMULI}{LEARN}{1}},{CONDSTRINGS{LEARN}}); %this just gets the cue words
-        elseif SESSION == FAMILIARIZE2
+        elseif SESSION == FAMILIARIZE2 || SESSION == STIM_REFRESH
             [stim.cond stim.condString stimList] = counterbalance_items({cues{STIMULI}{REALTIME}{1}, cues{STIMULI}{OMIT}{1}},CONDSTRINGS);
         elseif SESSION == FAMILIARIZE3
             [stim.cond stim.condString stimList] = counterbalance_items({cues{STIMULI}{LOC}{1}},{CONDSTRINGS{LOC}});
@@ -1348,11 +1349,13 @@ switch SESSION
         dot_map = keys.map([1 5],:);
         
         %rt parameters 
-        Scale = 100; %parameter for function
         OptimalForget = 0.1;
         maxIncrement = 1.25;
-        config.initFeedback = 0.1; %make it so there's change in speed for the first 4 TR's
-        config.initFunction = tancubed(config.initFeedback,Scale,OptimalForget,maxIncrement);
+        Kp = 5;
+        Ki = 1;
+        Kd = .1;
+        config.initFeedback = OptimalForget; %make it so there's change in speed for the first 4 TR's
+        config.initFunction = PID(config.initFeedback,Kp,Ki,Kd,OptimalForget,maxIncrement);
         
         switch SESSION
             case {MOT_PREP,MOT_PRACTICE}
@@ -1700,9 +1703,8 @@ switch SESSION
         rtData.classOutputFileLoad = nan(1,config.nTRs.perBlock + addTR);
         rtData.classOutputFile = cell(1,config.nTRs.perBlock + addTR);
         rtData.rtDecoding = nan(1,config.nTRs.perBlock+ addTR);
-        rtData.smoothRTDecoding = nan(1,config.nTRs.perBlock+ addTR);
+        %rtData.smoothRTDecoding = nan(1,config.nTRs.perBlock+ addTR);
         rtData.rtDecodingFunction = nan(1,config.nTRs.perBlock+ addTR);
-        rtData.smoothRTDecodingFunction = nan(1,config.nTRs.perBlock+ addTR);
         rtData.fileList = cell(1,config.nTRs.perBlock + addTR);
         rtData.newestFile = cell(1,config.nTRs.perBlock + addTR);
         % repeat
@@ -1829,6 +1831,7 @@ switch SESSION
                     if TRcounter >= 4 %the first time we're looking is during TR 4
                         thisTR = allMotionTRs(TRcounter,n); %this is the TR we're actually on KEEP THIS WAY--starts on 4, ends on 10
                         fileTR = thisTR - 1; %this is what should be shown in the long arrays--for ex TR 3 found in TR 4 corresponding to TR 1 will be indexed at 3
+                        initFile = allMotionTRs(4,n) - 1; % this is the first file we are going to process (tr 3 in each trial)
                         %thisTR = thisTR; %look forward 2 TR's
                         if scanNum %if we should be looking for a file 
                             if ~mod(stim.frame_counter(n),3) && (rtData.classOutputFileLoad(fileTR) ~= 1) % look every 3 frames
@@ -1847,43 +1850,48 @@ switch SESSION
                                     if rtData.classOutputFileLoad(fileTR)
                                         tempStruct = load(fullfile(classOutputDir, rtData.classOutputFile{fileTR}));
                                         rtData.rtDecoding(fileTR) = tempStruct.classOutput;
-                                        rtData.rtDecodingFunction(fileTR) = tancubed(rtData.rtDecoding(fileTR),Scale,OptimalForget,maxIncrement);
+                                        rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(initFile:fileTR),Kp,Ki,Kd,OptimalForget,maxIncrement);
                                         %put something exclamatory to
                                         %celebrate finding the file
                                         %fprintf(['FOUND TR ' num2str(dicomTR) ' in motion TR ' num2str(TRcounter) '\n'])
 %                                         if TRcounter > 5 %this is the third file collected
 %                                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(fileTR-1:fileTR)); %changed from 2 to 1 8/8
 %                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(fileTR-1:fileTR)); %changed from 2 to 1 8/8
-                                        if TRcounter > 4  %this is the second file collected
-                                            rtData.smoothRTDecoding(fileTR) = nanmean([rtData.rtDecoding(fileTR-1:fileTR)]);
-                                            rtData.smoothRTDecodingFunction(fileTR) = nanmean([rtData.rtDecodingFunction(fileTR-1:fileTR)]);
-                                        elseif TRcounter == 4 %this is the first file collected
-                                            rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(fileTR)]);
-                                            rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(fileTR)]);
-                                        end
+%                                         if TRcounter > 4  %this is the second file collected
+%                                             rtData.smoothRTDecoding(fileTR) = nanmean([rtData.rtDecoding(fileTR-1:fileTR)]);
+%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([rtData.rtDecodingFunction(fileTR-1:fileTR)]);
+%                                         elseif TRcounter == 4 %this is the first file collected
+%                                             rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(fileTR)]);
+%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(fileTR)]);
+%                                         end
                                     end
                                 else %if timeout, put same conditions of smoothing, this TR is nan
-                                    goodPrevious = find(~isnan(rtData.rtDecoding(1:fileTR-1))); %will have max TR - 1 values
+                                    goodPrevious = find(~isnan(rtData.rtDecoding(initFile:fileTR-1))); %hopefully there will be a string of okay values here
+                                    if ~isempty(goodPrevious)
+                                        rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(goodPrevious),Kp,Ki,Kd,OptimalForget,maxIncrement);
+                                    else
+                                        rtData.rtDecodingFunction(fileTR) = 0; %don't change at all if timed out AND there's no other good info from this trial
+                                    end
 %                                     if length(goodPrevious) > 2
 %                                         rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end-2):goodPrevious(end)));
 %                                         rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end-2):goodPrevious(end)));
-                                    if length(goodPrevious) > 1 %just average over those 2 TR's then
-                                        if TRcounter > 4 %now we can average over 2 TR's like normal
-                                            rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end-1):goodPrevious(end)));
-                                            rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end-1):goodPrevious(end)));
-                                        else %if at TRcounter == 4, include initFeedback/function--this wouldn't happen because it's the first case--oh well
-                                            rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(goodPrevious(end))]);
-                                            rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(goodPrevious(end))]);
-                                        end
-                                    elseif length(goodPrevious) ==1 %&& TRcounter > 4 %only use that TR
-                                        if TRcounter > 4
-                                            rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end)));
-                                            rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end)));
-                                        else
-                                            rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(goodPrevious(end))]);
-                                            rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(goodPrevious(end))]);
-                                        end
-                                    end
+%                                     if length(goodPrevious) > 1 %just average over those 2 TR's then
+%                                         if TRcounter > 4 %now we can average over 2 TR's like normal
+%                                             %rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end-1):goodPrevious(end)));
+%                                             %rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end-1):goodPrevious(end)));
+%                                         else %if at TRcounter == 4, include initFeedback/function--this wouldn't happen because it's the first case--oh well
+%                                             rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(goodPrevious(end))]);
+%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(goodPrevious(end))]);
+%                                         end
+%                                     elseif length(goodPrevious) ==1 %&& TRcounter > 4 %only use that TR
+%                                         if TRcounter > 4
+%                                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end)));
+%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end)));
+%                                         else
+%                                             rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(goodPrevious(end))]);
+%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(goodPrevious(end))]);
+%                                         end
+%                                     end
                                 end
                             end
                         else %if we're using random data instead of neural data
@@ -1891,8 +1899,8 @@ switch SESSION
                             %smoothed mean at first
                             rtData.rtDecoding(fileTR) = rand(1)*2-1;
                             rtData.rtDecodingFunction(fileTR) = tancubed(rtData.rtDecoding(fileTR),Scale,OptimalForget,maxIncrement);
-                            rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(fileTR-1:fileTR));
-                            rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(fileTR-1:fileTR));
+%                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(fileTR-1:fileTR));
+%                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(fileTR-1:fileTR));
                         end
                     end
                 end
@@ -1914,9 +1922,9 @@ switch SESSION
                             prompt_active = false;
                         end
                         if realtime %only change speeds with MOT
-                            if TRcounter > 4 && ~isnan(rtData.smoothRTDecodingFunction(allMotionTRs(TRcounter-2,n))) %we look starting in 4, but we update starting at TR 5 AND make sure that it's not nan--if it is don't change speed
-                                current_speed = current_speed + rtData.smoothRTDecodingFunction(allMotionTRs(TRcounter-2,n)); % apply in THIS TR what was from 2 TR's ago (indexed by what file it is) so file 3 will be applied at TR5!
-                                stim.changeSpeed(TRcounter,n) = rtData.smoothRTDecodingFunction(allMotionTRs(TRcounter-2,n)); %speed changed ON that TR
+                            if TRcounter > 4 && ~isnan(rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n))) %we look starting in 4, but we update starting at TR 5 AND make sure that it's not nan--if it is don't change speed
+                                current_speed = current_speed + rtData.rtTDecodingFunction(allMotionTRs(TRcounter-2,n)); % apply in THIS TR what was from 2 TR's ago (indexed by what file it is) so file 3 will be applied at TR5!
+                                stim.changeSpeed(TRcounter,n) = rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n)); %speed changed ON that TR
                             else
                                 stim.changeSpeed(TRcounter,n) = 0;
                             end
