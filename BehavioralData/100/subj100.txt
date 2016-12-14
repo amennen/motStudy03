@@ -494,3 +494,8 @@ trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
 8	13	0		-24.000	  NaN	0.0064		NaN		1		  NaN		
 8	14	0		-24.000	  NaN	0.0066		NaN		1		  NaN		
 8	15	0		-24.000	  NaN	0.0070		NaN		1		  NaN		
+
+SESSION 12 initiated 13-Dec-2016 13:36:47 for SUBJECT number 100
+
+session	trial	pair	onset	dur	cue         	associate   
+12	1	15	2004  	2002  	TARGET      	pico43.jpg  

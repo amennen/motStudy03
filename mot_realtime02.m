@@ -47,9 +47,9 @@ TOCRITERION2_REP = TOCRITERION2 + 1;
 RSVP = TOCRITERION2_REP + 1; % rsvp train to critereon
 
 % day 2
-STIM_REFRESH = RSVP + 2;
-SCAN_PREP = STIM_REFRESH + 1;
-MOT_PRACTICE2 = SCAN_PREP + 1; %12
+STIM_REFRESH = RSVP + 2; %12
+SCAN_PREP = STIM_REFRESH + 1; %13
+MOT_PRACTICE2 = SCAN_PREP + 1; %14
 RECALL_PRACTICE = MOT_PRACTICE2 + 1;
 %SCAN_PREP = RECALL_PRACTICE + 1;
 RSVP2 = RECALL_PRACTICE + 1; % rsvp train to critereon
@@ -63,7 +63,7 @@ for i=1:NUM_TASK_RUNS
     counter = counter + 1;
 end
 RECALL2 = MOT{end} + 1; % post-scan rsvp memory test
-ASSOCIATES = RECALL2 + 1;
+ASSOCIATES = RECALL2 + 1; %25
 %ANATOMICAL_PREP = ASSOCIATES + 1;
 % name strings
 SESSIONSTRINGS{SETUP} = 'GENERATE PAIRINGS'; % set up rsvp study learn associates
@@ -476,6 +476,7 @@ switch SESSION
         end
         picList = lutSort(stimList, preparedCues, pics);
         IDlist = lutSort(stimList, preparedCues, pairIndex);
+        
         if SESSION == FAMILIARIZE2
             halfway = ['Great job, youre''re halfway there! You can take a stretching or bathroom break if you need to now. \n\n-- press ' PROGRESS_TEXT ' to continue when you''re ready. --'];
             displayText(mainWindow,halfway,INSTANT,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
@@ -489,6 +490,13 @@ switch SESSION
             'each scene got its name - the more vivid and unique, the better your memory will be. However, you will see each scene for only four seconds, ' ...
             'so you will need to work quickly.\n\n-- press ' PROGRESS_TEXT ' to begin --'];
         instruct2 = ['Now we will repeat the NAMED SCENE task from before, but this time we will be using different scenes'];
+        if SESSION == STIM_REFRESH
+             instruct = ['NAMED SCENES\n\nToday, we''ll start with a quick refresher of the ' num2str(length(stimList)) ' different scenes you learned yesterday. ' ...
+            'It is important that you focus, as you will need to be able to picture each scene based on its name throughout our study.\n\n' ...
+            'In this section, you will get a chance to study each name-scene pair, one pair at a time. To help you remember each pair, try to imagine how ' ...
+            'each scene got its name - the more vivid and unique, the better your memory will be. However, you will see each scene for only four seconds, ' ...
+            'so you will need to work quickly.\n\n-- press ' PROGRESS_TEXT ' to begin --'];
+        end
         displayText(mainWindow,instruct,INSTANT,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
         
         
