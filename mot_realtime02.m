@@ -1757,13 +1757,6 @@ switch SESSION
             %fprintf('For trial %i: speed = %.2d\n', stim.trial,stim.speed(stim.trial));
             dotTarg = []; dotPos = []; dotTargPos = [];
             
-%             pos = find(strcmp(preparedCues,stim.stim{stim.trial}));
-%             if ~isempty(pos)
-%                 stim.id(stim.trial) = pos;
-%             else
-%                 stim.id(stim.trial) = lureCounter; %so this should never go during MOT
-%                 lureCounter = lureCounter + 1;
-%             end
             cue = stim.stim{stim.trial};
             embedded_keys = keyCell;
             embedded_scale = subj_scale;
@@ -1796,8 +1789,21 @@ switch SESSION
             show_targs = true; show_probe = false; prompt_active = false;
             targetBin = [];
             shade = 0;
-            if stim.speed(n) < 0
-                shade = abs(stim.speed(n));
+            initFeedback = config.initFeedback;
+            initFunction = config.initFunction;
+            current_speed = stim.speed(stim.trial);
+
+            if SESSION > MOT{1}
+                %load the previous last speed for this stimulus and set
+                %this as the speed
+                initSpeed = lastSpeed(stim.id(stim.trial)); %check the indexing is right!!
+                current_speed = initSpeed;
+                initFeedback = lastDecoding(stim.id(stim.trial));
+                initFunction = lastDecodingFunction(stim.id(stim.trial));
+            end
+            
+            if current_speed < 0
+                shade = abs(current_speed);
             end
             [~,timing.actualOnsets.target(n)] = dot_refresh(mainWindow,targetBin,dots,shade,square_bounds,stim.dot_diameter,COLORS,cue,show_targs,show_probe,prompt_active,timespec); %flips but not moving yet
             fprintf('Flip time error = %.4f\n', timing.actualOnsets.target(n) - timing.plannedOnsets.target(n));
@@ -1809,7 +1815,6 @@ switch SESSION
             TRcounter = 0;
             prompt_counter = 0;
             fps = 30;
-            current_speed = stim.speed(stim.trial);
             repulse = stim.repulse;
             remainingTR = ones(mTr,1);
             
@@ -1817,16 +1822,7 @@ switch SESSION
             fs = [];
             
             printTR = ones(1,mTr);
-            initFeedback = config.initFeedback;
-            initFunction = config.initFunction;
-            if SESSION > MOT{1}
-                %load the previous last speed for this stimulus and set
-                %this as the speed
-                initSpeed = lastSpeed(stim.id(stim.trial)); %check the indexing is right!!
-                current_speed = initSpeed;
-                initFeedback = lastDecoding(stim.id(stim.trial));
-                initFunction = lastDecodingFunction(stim.id(stim.trial));
-            end
+            
             fileTR = 1;
             waitForPulse = false;
             printlog(LOG_NAME,'trial\tTR\tprompt active\tspeed\tds\tflip error\tfound file\tFileTR\tCategSep\tLastFile\n');
@@ -1906,7 +1902,7 @@ switch SESSION
                             %this won't give errors but it won't be a
                             %smoothed mean at first
                             rtData.rtDecoding(fileTR) = rand(1)*2-1;
-                            rtData.rtDecodingFunction(fileTR) = tancubed(rtData.rtDecoding(fileTR),Scale,OptimalForget,maxIncrement);
+                            rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(goodPrevious),Kp,Ki,Kd,OptimalForget,maxIncrement);
 %                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(fileTR-1:fileTR));
 %                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(fileTR-1:fileTR));
                         end
@@ -1956,7 +1952,7 @@ switch SESSION
                 end
                 
                 if TRcounter %only do this once the motion should begin
-                    [dots fs,shade] = dot_compute(dots,current_speed,shade,stim.square_dims,stim.dot_diameter,phantom_dots,WINDOWSIZE,repulse,fs,repulsor_force(n));
+                    [dots, fs,shade] = dot_compute(dots,current_speed,shade,stim.square_dims,stim.dot_diameter,phantom_dots,WINDOWSIZE,repulse,fs,repulsor_force(n));
                     if waitForPulse
                         if CURRENTLY_ONLINE && SESSION >TOCRITERION3 %localizer and up
                             [timing.trig.motion(TRcounter,n), timing.trig.motion_Success(TRcounter,n)] = WaitTRPulse(TRIGGER_keycode,DEVICE, timing.plannedOnsets.motion(TRcounter,n)); %minus 1 because first TR is motionStart
