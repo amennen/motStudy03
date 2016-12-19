@@ -1,0 +1,9 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	34.8  	27  	RULER     	target  	1.951	1.268	0   	non-target	target  
+2   	78.4  	25  	PATCH     	target  	1.953	1.159	0   	non-target	target  
+3   	122.2 	26  	PICK      	target  	1.951	NR  	0   	NR      	non-target
+4   	166.2 	23  	DISC      	target  	1.951	NR  	0   	NR      	target  
+5   	208.2 	24  	BATON     	target  	1.951	NR  	0   	NR      	non-target
+6   	250.2 	21  	PLANK     	target  	1.952	NR  	0   	NR      	non-target
+7   	292.2 	22  	MORNING   	target  	1.952	NR  	0   	NR      	target  
+8   	334.2 	28  	CANDLE    	target  	1.951	NR  	0   	NR      	target  

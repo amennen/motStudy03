@@ -1926,6 +1926,7 @@ switch SESSION
                             KbQueueFlush;
                             prompt_counter = prompt_counter + 1;
                             train.onset(prompt_counter) = GetSecs;
+                            check(prompt_counter) = 1;
                         elseif ismember(TRcounter-1,promptTRs)
                             prompt_active = false;
                         end
@@ -1978,17 +1979,17 @@ switch SESSION
                     printlog(LOG_NAME,'%d\t%d\t%d\t\t%5.3f\t%5.3f\t%5.4f\t\t%i\t\t%d\t\t%5.3f\t\t%s\n',n,TRcounter,prompt_active,current_speed,stim.changeSpeed(TRcounter,n),timing.actualOnsets.motion(TRcounter,stim.trial) - timing.plannedOnsets.motion(TRcounter,stim.trial),rtData.classOutputFileLoad(allMotionTRs(TRcounter,n)),fileTR,rtData.rtDecoding(fileTR),rtData.newestFile{allMotionTRs(TRcounter,n)});
                     printTR(TRcounter) = 0;
                 end
-                
+               
                 % act on a visualization prompt
                 if prompt_active 
                     % peek to see if any keys are pressed right now (for CPU reasons, do this only every third frame)
-                    if ~mod(stim.frame_counter(stim.trial),3)
+                    if ~mod(stim.frame_counter(stim.trial),3) && check(prompt_counter) 
                         [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
                             multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
 
                         % if we have a response or the window is over, stop listening
                         elapsed = (GetSecs-train.onset(prompt_counter));
-                        check(prompt_counter) = true;
+                        
                         if check(prompt_counter) && (elapsed > vis_promptDur) || ~isnan(train.resp{prompt_counter})
                             %prompt_active = false;
                             if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
@@ -2166,7 +2167,7 @@ switch SESSION
         if SESSION == MOT_PREP
             
             %displayText(mainWindow,CONGRATS,CONGRATSDURATION,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-            endSession(dotEK, CONGRATS);
+            endSession(dotEK, subjectiveEK, CONGRATS);
             load(MATLAB_SAVE_FILE);
             %subplot(1,2,1)
             figure;
@@ -2176,7 +2177,7 @@ switch SESSION
             sca
         else
             %displayText(mainWindow,CONGRATS,CONGRATSDURATION,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-            endSession(dotEK, CONGRATS);
+            endSession(dotEK, subjectiveEK,CONGRATS);
             if SESSION < MOT_LOCALIZER
                 mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
             end

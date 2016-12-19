@@ -1,0 +1,13 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.8   	28  	CANDLE    	target  	0.494	0.493	0   	no image	1 detail, 2+ details, full
+2   	14.8  	28  	CANDLE (repeat 1)	target  	0.244	0.243	1   	2+ details	1 detail, 2+ details, full
+3   	20.8  	28  	CANDLE (repeat 2)	target  	0.541	0.54	1   	2+ details	1 detail, 2+ details, full
+4   	26.8  	28  	CANDLE (repeat 3)	target  	0.36	0.359	0   	no image	1 detail, 2+ details, full
+5   	52.1  	22  	MORNING   		target  	0.444	0.443	0   	generic 	1 detail, 2+ details, full
+6   	58.1  	22  	MORNING (repeat 1)	target  	0.512	0.51	0   	generic 	1 detail, 2+ details, full
+7   	64.1  	22  	MORNING (repeat 2)	target  	0.509	0.508	0   	generic 	1 detail, 2+ details, full
+8   	70.1  	22  	MORNING (repeat 3)	target  	0.411	0.409	0   	generic 	1 detail, 2+ details, full
+9   	95.4  	25  	PATCH     	target  	0.544	0.543	1   	1 detail	1 detail, 2+ details, full
+10  	101.4 	25  	PATCH (repeat 1)	target  	0.446	0.445	1   	1 detail	1 detail, 2+ details, full
+11  	107.4 	25  	PATCH (repeat 2)	target  	0.059	0.058	1   	1 detail	1 detail, 2+ details, full
+12  	113.4 	25  	PATCH (repeat 3)	target  	0.272	0.271	1   	1 detail	1 detail, 2+ details, full

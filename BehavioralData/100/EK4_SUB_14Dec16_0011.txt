@@ -1,0 +1,16 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.7   	27  	RULER     		target  	0.144	0.142	0   	generic 	1 detail, 2+ details, full
+2   	14.7  	27  	RULER (repeat 1)	target  	0.444	0.443	1   	1 detail	1 detail, 2+ details, full
+3   	20.7  	27  	RULER (repeat 2)	target  	0.612	0.611	1   	2+ details	1 detail, 2+ details, full
+4   	26.7  	27  	RULER (repeat 3)	target  	0.311	0.31	1   	full    	1 detail, 2+ details, full
+5   	52.4  	25  	PATCH     		target  	0.106	0.105	0   	generic 	1 detail, 2+ details, full
+6   	58.4  	25  	PATCH (repeat 1)	target  	0.306	0.305	1   	1 detail	1 detail, 2+ details, full
+7   	64.4  	25  	PATCH (repeat 2)	target  	0.206	0.205	1   	2+ details	1 detail, 2+ details, full
+8   	70.4  	25  	PATCH (repeat 3)	target  	0.111	0.11	1   	full    	1 detail, 2+ details, full
+9   	96.2  	26  	PICK      		target  	0.177	0.176	0   	no image	1 detail, 2+ details, full
+10  	102.2 	26  	PICK (repeat 1)		target  	0.177	0.176	1   	full    	1 detail, 2+ details, full
+11  	108.2 	26  	PICK (repeat 2)		target  	0.377	0.376	1   	1 detail	1 detail, 2+ details, full
+12  	114.2 	26  	PICK (repeat 3)		target  	0.473	0.472	1   	2+ details	1 detail, 2+ details, full
+13  	152.2 	23  	DISC      		target  	2.04	NR  	0   	NR      	1 detail, 2+ details, full
+14  	188.2 	24  	BATON     		target  	2.021	NR  	0   	NR      	1 detail, 2+ details, full
+15  	272.2 	22  	MORNING   		target  	2.008	NR  	0   	NR      	1 detail, 2+ details, full

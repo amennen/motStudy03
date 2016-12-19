@@ -9,16 +9,19 @@ function [patterns trials stimOrder ] = GetSessionInfoRT(subjNum,SESSION,behav_d
 %real time analysis 
 %so we need conditions, stim IDs, and TR information
 
-if SESSION == 18
+
+LOC = 19;
+MOT = [19 21:23]; %(can change the way the files are named in the future)
+RECALL = [20 24];
+MOT_PREP = 5;
+
+
+if SESSION == LOC
     crossval = 1;
 else
     crossval = 0;
 end
 
-LOC = 18;
-MOT = [18 20:22]; %(can change the way the files are named in the future)
-RECALL = [19 23];
-MOT_PREP = 5;
 MAX_SPEED = 30;
 hardSpeed = nan;
 acc = nan;
@@ -37,11 +40,9 @@ else
 end
 NCOND = 4;
 nTRs = config.nTRs.perBlock + 5; %includes 5 seconds at the end
-if SESSION == 18 && subjNum == 16
-    nTRs = nTRs + 10;
-end
+
 % get hard dot speed
-fileSpeed = dir(fullfile(behav_dir, ['mot_realtime01_' num2str(subjNum) '_' num2str(MOT_PREP)  '*.mat']));
+fileSpeed = dir(fullfile(behav_dir, ['mot_realtime02_' num2str(subjNum) '_' num2str(MOT_PREP)  '*.mat']));
 if ~isempty(fileSpeed)
     matlabOpenFile = [behav_dir '/' fileSpeed(end).name];
     lastRun = load(matlabOpenFile);
@@ -67,15 +68,8 @@ trials.lure = [LH LE];
 % now we have to match these to TRs to get the actual regressors
 if ismember(SESSION,MOT)
     iTR.start = convertTR(timing.trig.wait,timing.plannedOnsets.motion(1,:),config.TR); %coming from the waiting point so already 10 are taken out
-    if SESSION  == 18 && subjNum == 16
-        iTR.start = iTR.start + 10;
-    end
-    if SESSION == 18
-    iTR.start = iTR.start - 2;% go 2 TR's behind if plotting AFTERWARDS
-    %(put back in later)--IF WANT TO GO 2 IN FRONT (if not comment out and
-    %change +8 back to + 2
-    end
-    trialDur = timing.plannedOnsets.probe(1) - timing.plannedOnsets.motion(1,1) +8; %this was because I wanted to shift forward by 2 and see afterwards 2 TRs but
+
+    trialDur = timing.plannedOnsets.probe(1) - timing.plannedOnsets.motion(1,1) +4; %this was because I wanted to shift forward by 2 and see afterwards 2 TRs but
     % take out now
 else
     iTR.start = convertTR(timing.trig.wait,timing.plannedOnsets.prompt,config.TR);
