@@ -3,7 +3,6 @@ function ProcessMask(subjNum, processNew,prev,funcScan,runNum)
 startProcess = GetSecs;
 img_mat = 64; %image matrix size
 ROI = -1;
-%runNum = 1; %assume only 1 subject per day
 
 makeMprageNifti = processNew;
 extractBrain = processNew;
@@ -26,18 +25,11 @@ if ~exist('readmr','file')
     addpath([biac_dir '/mr/']);
     addpath([biac_dir '/general/'])
 end
-%subjNum = 1;
-%scanIndex = 1; %which scan they were that day
-% if prev
-%     projectName = 'motStudy01';
-% else
-projectName = 'motStudy02';
-%end
-%setenv('FSLDIR',fslpath); %hopefully it will still work now
+
+projectName = 'motStudy03';
 setenv('FSLOUTPUTTYPE','NIFTI_GZ');
 save_dir = ['/Data1/code/' projectName '/data/' num2str(subjNum) '/']; %this is where she sets the save directory!
 process_dir = [save_dir 'reg' '/'];
-%mask_dir = ['/Data1/code/' projectName '/data/' num2str(subjNum) '/'];
 roi_dir = ['/Data1/code/' projectName '/data/'];
 code_dir = ['/Data1/code/' projectName '/' 'code' '/']; %change to wherever code is stored
 addpath(genpath(code_dir));
@@ -111,18 +103,7 @@ exfunc_reorient_fn = 'example_func_new_orientation';
 highres_reorient_fn = 'highres_new_orientation';
 exfunc2highres_mat='example_func2highres';
 highres2exfunc_mat='highres2example_func';
-% testingpool = parcluster('local');
-% poolobj = parpool(testingpool, 'AttachedFiles', {'Reg_standard2highres.m', 'Reg_fun2highres.m'});
-% delete(poolobj)
-% parfor i = 1:2
-%        if i ==1
-%            Reg_standard2highres;
-%        else
-%            Reg_func2highres;
-%        end
-% end
-%parpool close
-%j = batch('Reg_standard2highres', 'Profile', 'local');
+
 StartReg= GetSecs;
 if registerToStandard
     %register high resolution mprage (bet-extracted) to standard

@@ -1369,7 +1369,7 @@ switch SESSION
         OptimalForget = 0.1;
         maxIncrement = 1.25;
         Kp = 5;
-        Ki = .001;
+        Ki = .01;
         Kd = .5;
         config.initFeedback = OptimalForget; %make it so there's change in speed for the first 4 TR's
         config.initFunction = PID(config.initFeedback,Kp,Ki,Kd,OptimalForget,maxIncrement);
@@ -1420,7 +1420,7 @@ switch SESSION
             'You should "squeeze in" visualizing when it''s possible. \n\n---- Press ' PROGRESS_TEXT ' once you understand these instructions \nthen PRESS IT AGAIN when you are done viewing the rating scale ---'];
         stim.instruct_summary = [stim.header '\n\nTo summarize this task: you will keep track of target dots moving around the screen while keeping your ' ...
             'eyes fixed on the central dot. The dot-tracking task is your top priority, but you should also try to visualize ' ...
-            'the named scene, and rate your mental picture whenever the center dot turns red (with the same keys THUMB-PINKY). The speed of the dots may change in '...
+            'the named scene, and rate your mental picture whenever the center dot turns red (with the same keys THUMB-PINKY). \n\nThe speed of the dots may change in '...
             'different trials and also within a trial. Just try to do your best and keep doing the task no matter the dot speed. '...
             'At the end of the trial, when a dot ' ...
             'turns white, you will first move your eyes to the white dot, then press PINKY (if it''s a target) or THUMB (if it''s ' ...
@@ -1778,7 +1778,7 @@ switch SESSION
             % initialize KbQueue
             [embedded_keys, valid_keycode, embedded_cresp] = keyCheck(embedded_keys,embedded_cresp);
             KbQueueCreate(DEVICE,valid_keycode);
-            KbQueueStart;
+            KbQueueStart(DEVICE);
             % initialize dots
             [dots phantom_dots] = initialize_dots(num_dots,stim.num_targets,stim.square_dims,stim.dot_diameter);
             
@@ -1889,16 +1889,34 @@ switch SESSION
                     nextTRTime = timing.plannedOnsets.motion(nextTRPos,stim.trial);
                     if abs(GetSecs - nextTRTime) <= 0.050
                         %look for speed update here
-                      
+                        
                         TRcounter = TRcounter + 1; %update TR count (initialized at 0): so it's the TR that we're currently ON
                         waitForPulse = true;
                         if ismember(TRcounter,promptTRs)
                             prompt_active = 1;
-                            KbQueueFlush;
+                            KbQueueFlush(DEVICE);
                             prompt_counter = prompt_counter + 1;
                             train.onset(prompt_counter) = GetSecs;
                             check(prompt_counter) = 1;
-                        elseif ismember(TRcounter-1,promptTRs)
+                        elseif ismember(TRcounter-1,promptTRs) && check(prompt_counter)
+                             [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
+                            multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
+                        
+                            if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
+                            if isnan(train.resp{prompt_counter}),
+                                train.resp_str{prompt_counter} = nan;
+                            else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
+                            end
+                            subjectiveEK = easyKeys(subjectiveEK, ...
+                                'stim', stim.stim{stim.trial}, ...
+                                'onset', train.onset(prompt_counter), ...
+                                'cond', stim.cond(stim.trial), ...
+                                'nesting', [SESSION stim.trial prompt_counter], ...
+                                'cresp', embedded_cresp, ...
+                                'simulated_key', train.resp_str{prompt_counter}, ...
+                                'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
+                            check(prompt_counter) = false;
+                            fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
                             prompt_active = false;
                         end
                         if realtime %only change speeds with MOT
@@ -1952,37 +1970,37 @@ switch SESSION
                 end
                
                 % act on a visualization prompt
-                if prompt_active 
-                    %instead of constantly checking let's just check at the
-                    %end once
-                    % peek to see if any keys are pressed right now (for CPU reasons, do this only every third frame)
-                    %if ~mod(stim.frame_counter(stim.trial),3) && check(prompt_counter) 
-                    elapsed = (GetSecs-train.onset(prompt_counter));
-
-                    if check(prompt_counter) && (abs(elapsed- vis_promptDur)<=TIMEOUT) %so it's saying if we're supposed to check, and we're almost at the end
-                        [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
-                            multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
-                        
-                        %if check(prompt_counter) && (abs(elapsed- vis_promptDur)<=TIMEOUT) || ~isnan(train.resp{prompt_counter})
-                            %prompt_active = false;
-                            if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
-                            if isnan(train.resp{prompt_counter}),
-                                train.resp_str{prompt_counter} = nan;
-                            else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
-                            end
-                            subjectiveEK = easyKeys(subjectiveEK, ...
-                                'stim', stim.stim{stim.trial}, ...
-                                'onset', train.onset(prompt_counter), ...
-                                'cond', stim.cond(stim.trial), ...
-                                'nesting', [SESSION stim.trial prompt_counter], ...
-                                'cresp', embedded_cresp, ...
-                                'simulated_key', train.resp_str{prompt_counter}, ...
-                                'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
-                            check(prompt_counter) = false;
-                            fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
-                        %end
-                    end
-                end
+%                 if prompt_active 
+%                     %instead of constantly checking let's just check at the
+%                     %end once
+%                     % peek to see if any keys are pressed right now (for CPU reasons, do this only every third frame)
+%                     %if ~mod(stim.frame_counter(stim.trial),3) && check(prompt_counter) 
+%                     elapsed = (GetSecs-train.onset(prompt_counter));
+% 
+%                     if check(prompt_counter) && (abs(elapsed- vis_promptDur)<=TIMEOUT) %so it's saying if we're supposed to check, and we're almost at the end
+%                         [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
+%                             multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
+%                         
+%                         %if check(prompt_counter) && (abs(elapsed- vis_promptDur)<=TIMEOUT) || ~isnan(train.resp{prompt_counter})
+%                             %prompt_active = false;
+%                             if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
+%                             if isnan(train.resp{prompt_counter}),
+%                                 train.resp_str{prompt_counter} = nan;
+%                             else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
+%                             end
+%                             subjectiveEK = easyKeys(subjectiveEK, ...
+%                                 'stim', stim.stim{stim.trial}, ...
+%                                 'onset', train.onset(prompt_counter), ...
+%                                 'cond', stim.cond(stim.trial), ...
+%                                 'nesting', [SESSION stim.trial prompt_counter], ...
+%                                 'cresp', embedded_cresp, ...
+%                                 'simulated_key', train.resp_str{prompt_counter}, ...
+%                                 'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
+%                             check(prompt_counter) = false;
+%                             fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
+%                         %end
+%                     end
+%                 end
                 
                 
             end  %20 s trial ends here THEN probe
@@ -2365,29 +2383,6 @@ switch SESSION
         
     case SCAN_PREP
         % instructions
-%         displayText(mainWindow,['Welcome to your fMRI scanning session!\n\nOnce you''re all the way inside the scanner and can read this text, please reach up to your eyes and ' ...
-%             'fine-tune the position of your mirror. You want to set it so you can see as much of the screen as comfortably as possible. This will be your last chance to adjust ' ...
-%             'your mirror, so be sure to set it just right.\n\nOnce you''ve adjusted the mirror to your satisfaction, please press the index finger button to test your button pad.'] ...
-%             ,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(kbTrig_keycode,DEVICE);
-%         displayText(mainWindow,'Great. I detected that button press, which means at least one button works. Now let''s try the rest of them. Please press the middle finger button.' ...
-%             ,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(3,:),DEVICE);
-%         displayText(mainWindow,'And now the ring finger button...',minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(4,:),DEVICE);
-%         displayText(mainWindow,'And now the pinky finger button...',minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(5,:),DEVICE);
-%         displayText(mainWindow,'And now the thumb button...',minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(1,:),DEVICE);
-%         displayText(mainWindow,['Good news! It looks like the button pad is working just fine.\n\nJust a reminder that we can hear your voice when the scanner is at rest, so ' ...
-%             'just speak up to ask or tell us something. During a scan, we will abort right away if you use the squeeze ball, but please do so only if there''s something urgent ' ...
-%             'we need to address immediately.\n\n-- please press the index finger button to continue --'],minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(kbTrig_keycode,DEVICE);
-%         displayText(mainWindow,['During the scan today, it is crucial that you keep your head still. Even a tiny head movement, e.g., caused by stretching your legs, will blur ' ...
-%             'your brain scan. This is for the same reason that moving objects appear blurry in a photograph.\n\nAs it can be uncomfortable to stay still for a long time, please ' ...
-%             'go ahead and take the opportunity to stretch or scratch whenever the scanner is silent. Just try your best to keep your head in the same place when you do so.\n\n' ...
-%             '-- please press the index finger button to continue --'],minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(kbTrig_keycode,DEVICE);
         displayText(mainWindow,['Great job! Now, we''re now going to have a short functional run before you complete various tasks. Please work through these and we''ll get in ' ...
              'touch with you when you finish.\n\n-- please press the index finger button to continue --'],INSTANT,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
         waitForKeyboard(kbTrig_keycode,DEVICE);

@@ -18,7 +18,7 @@ end
 % if prev
 %     projectName = 'motStudy01';
 % else
-projectName = 'motStudy02';
+projectName = 'motStudy03';
 % end
 setenv('FSLOUTPUTTYPE','NIFTI_GZ');
 save_dir = ['/Data1/code/' projectName '/data/' num2str(subjectNum) '/']; 

@@ -77,21 +77,7 @@ function [mainWindow windowSize colors device trigger workingDir logName matlabS
                         %z = strfind(productNames, 'Dell Dell');
                         deviceIND = find(~cellfun(@isempty,z));
                         device = keyboardIndices(deviceIND);
-%                         % initialize eyetracker
-%                         if ~any(strfind(path,'iViewXToolbox')); addpath(genpath('../iViewXToolbox')); end
-%                         try load('ivx.mat')
-%                         catch
-%                             pnet('closeall'); %Force all current pnet connections/sockets (in the present matlab session) to close
-%                             ivx = iViewXInitDefaults; %creates the necessary ivx data structure
-%                             ivx.host = '192.168.1.24'; %eye tracker IP
-%                             ivx.port = 4444; %eye tracker port
-%                             ivx.localport = 4445; %port on stim PC
-%                             [result, ivx]=iViewX('openconnection', ivx);
-%                             [result ivx] = iViewX('loadbitmap', ivx, 'NTB_5cal-10left-5up_1280x720_black.jpg');
-%                             if result < 0
-%                                 warning('Could not establish connection to eye tracker');
-%                             end
-%                         end
+
                         windowSize.degrees = [51 30];
                     catch
                         error('Can''t find working directory');
@@ -100,11 +86,7 @@ function [mainWindow windowSize colors device trigger workingDir logName matlabS
             end
         end
     end
-    %cd(workingDir);
-%     if exist('ivx','var') && ~isempty(ivx)
-%         ivx.nCalPoints = 5;
-%         ivx.absCalPos = [640 360; 370 215; 910 215; 370 495; 910 495];
-%     end
+
         %% initiate graphics
     sca            
     pause on
@@ -142,22 +124,9 @@ function [mainWindow windowSize colors device trigger workingDir logName matlabS
    
     windowSize.degrees_per_pixel = windowSize.degrees ./ windowSize.pixels;
 
-    %% add needed code libraries
-    %if ~any(strfind(path,'trigger')); addpath([workingDir 'trigger']); end
 
     %% initiate file handling
-    % directory
-%     addpath(workingDir)
-%     if ~exist('data')
-%         mkdir data
-%     end
-%     cd([workingDir '/data'])
-%     if ~exist(int2str(subject))
-%         mkdir(int2str(subject));
-%     end
-%     cd(int2str(subject))
-%     subjectDir = pwd;
-    
+
     % log file
     logName = ['subj' int2str(subject) '.txt'];
 
