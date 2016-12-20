@@ -1,2 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	11.8  	27  	RULER     	target  	0.445	0.444	0   	no image	generic, 1 detail, 2+ details, full

@@ -1,4 +1,4 @@
-base_path = [fileparts(which('mot_realtime01.m')) filesep];
+base_path = [fileparts(which('mot_realtime02.m')) filesep];
 cd(base_path);
 
 SUBJECT = 31;
@@ -19,7 +19,8 @@ TOCRITERION2_REP = TOCRITERION2 + 1;
 RSVP = TOCRITERION2_REP + 1; % rsvp train to critereon
 
 % day 2
-SCAN_PREP = RSVP + 2;
+STIM_REFRESH = RSVP + 2; %12
+SCAN_PREP = STIM_REFRESH + 1; %13
 MOT_PRACTICE2 = SCAN_PREP + 1; %12
 RECALL_PRACTICE = MOT_PRACTICE2 + 1;
 %SCAN_PREP = RECALL_PRACTICE + 1;
@@ -37,14 +38,14 @@ RECALL2 = MOT{end} + 1; % post-scan rsvp memory test
 ASSOCIATES = RECALL2 + 1;
 
 %% first practice set
-mot_realtime01(SUBJECT, SETUP, [], 0, 0);
+mot_realtime02(SUBJECT, SETUP, [], 0, 0);
 
 % this will continue to train test and practice MOT, then move on to
 % MOT_Practice, MOT_PREP
-mot_realtime01(SUBJECT, FAMILIARIZE2, [], 0, 0); %continue because want to not go through the break
+mot_realtime02(SUBJECT, FAMILIARIZE2, [], 0, 0); %continue because want to not go through the break
 
 %% now train on actual stimulus pairs
-mot_realtime01(SUBJECT, FAMILIARIZE2, [], 0, 0);
+mot_realtime02(SUBJECT, FAMILIARIZE2, [], 0, 0);
 
 %% after scanner, test associates
-mot_realtime01(SUBJECT,ASSOCIATES, [], 0, 0); 
+mot_realtime02(SUBJECT,ASSOCIATES, [], 0, 0); 
