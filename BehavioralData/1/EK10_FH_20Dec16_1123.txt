@@ -1,0 +1,113 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	43    	1   	WALLET    	lure    	0.464	NR  	1   	NR      	NR      
+2   	43.5  	2   	ANCHOR    	lure    	0.614	NR  	1   	NR      	NR      
+3   	44.2  	1   	WALLET (repeat 1)	lure    	0.671	NR  	1   	NR      	NR      
+4   	44.9  	3   	MIRROR    	lure    	0.409	NR  	1   	NR      	NR      
+5   	45.4  	2   	ANCHOR (repeat 1)	lure    	0.601	NR  	1   	NR      	NR      
+6   	46    	1   	WALLET (repeat 2)	lure    	0.273	NR  	1   	NR      	NR      
+7   	46.4  	4   	POWDER    	lure    	0.58	NR  	1   	NR      	NR      
+8   	47    	5   	SPONGE    	lure    	0.467	NR  	1   	NR      	NR      
+9   	47.5  	6   	STAPLE    	lure    	0.62	NR  	1   	NR      	NR      
+10  	48.2  	4   	POWDER (repeat 1)	lure    	0.307	NR  	1   	NR      	NR      
+11  	48.6  	5   	SPONGE (repeat 1)	lure    	0.262	NR  	1   	NR      	NR      
+12  	48.9  	6   	STAPLE (repeat 1)	lure    	0.344	NR  	1   	NR      	NR      
+13  	49.3  	4   	POWDER (repeat 2)	lure    	0.617	NR  	1   	NR      	NR      
+14  	50    	6   	STAPLE (repeat 2)	lure    	0.451	NR  	1   	NR      	NR      
+15  	50.5  	7   	PEACH     	fruit   	0.955	0.695	1   	target  	target  
+16  	51.5  	2   	ANCHOR (repeat 2)	lure    	0.514	NR  	1   	NR      	NR      
+17  	52    	3   	MIRROR (repeat 1)	lure    	0.446	NR  	1   	NR      	NR      
+18  	52.5  	6   	STAPLE (repeat 3)	lure    	0.345	NR  	1   	NR      	NR      
+19  	52.9  	2   	ANCHOR (repeat 3)	lure    	0.299	NR  	1   	NR      	NR      
+20  	53.3  	1   	WALLET (repeat 3)	lure    	0.482	NR  	1   	NR      	NR      
+21  	53.8  	4   	POWDER (repeat 3)	lure    	0.327	NR  	1   	NR      	NR      
+22  	54.2  	8   	CHALK     	lure    	0.526	NR  	1   	NR      	NR      
+23  	54.8  	1   	WALLET (repeat 4)	lure    	0.486	NR  	1   	NR      	NR      
+24  	55.3  	5   	SPONGE (repeat 2)	lure    	0.312	NR  	1   	NR      	NR      
+25  	55.7  	8   	CHALK (repeat 1)	lure    	0.27	NR  	1   	NR      	NR      
+26  	56    	5   	SPONGE (repeat 3)	lure    	0.265	NR  	1   	NR      	NR      
+27  	56.3  	4   	POWDER (repeat 4)	lure    	0.425	NR  	1   	NR      	NR      
+28  	56.8  	1   	WALLET (repeat 5)	lure    	0.396	NR  	1   	NR      	NR      
+29  	57.3  	5   	SPONGE (repeat 4)	lure    	0.252	NR  	1   	NR      	NR      
+30  	57.6  	2   	ANCHOR (repeat 4)	lure    	0.699	NR  	1   	NR      	NR      
+31  	58.3  	4   	POWDER (repeat 5)	lure    	0.458	NR  	1   	NR      	NR      
+32  	58.8  	6   	STAPLE (repeat 4)	lure    	0.532	NR  	1   	NR      	NR      
+33  	59.4  	4   	POWDER (repeat 6)	lure    	0.432	NR  	1   	NR      	NR      
+34  	59.9  	5   	SPONGE (repeat 5)	lure    	0.545	NR  	1   	NR      	NR      
+35  	60.5  	1   	WALLET (repeat 6)	lure    	0.663	NR  	1   	NR      	NR      
+36  	61.2  	5   	SPONGE (repeat 6)	lure    	0.62	NR  	1   	NR      	NR      
+37  	61.9  	8   	CHALK (repeat 2)	lure    	0.451	NR  	1   	NR      	NR      
+38  	62.4  	3   	MIRROR (repeat 2)	lure    	0.464	NR  	1   	NR      	NR      
+39  	62.9  	2   	ANCHOR (repeat 5)	lure    	0.451	NR  	1   	NR      	NR      
+40  	63.4  	6   	STAPLE (repeat 5)	lure    	0.424	NR  	1   	NR      	NR      
+41  	63.9  	1   	WALLET (repeat 7)	lure    	0.451	NR  	1   	NR      	NR      
+42  	64.4  	2   	ANCHOR (repeat 6)	lure    	0.285	NR  	1   	NR      	NR      
+43  	64.8  	5   	SPONGE (repeat 7)	lure    	0.451	NR  	1   	NR      	NR      
+44  	65.3  	8   	CHALK (repeat 3)	lure    	0.458	NR  	1   	NR      	NR      
+45  	65.8  	1   	WALLET (repeat 8)	lure    	0.451	NR  	1   	NR      	NR      
+46  	66.3  	5   	SPONGE (repeat 8)	lure    	0.506	NR  	1   	NR      	NR      
+47  	66.9  	4   	POWDER (repeat 7)	lure    	0.451	NR  	1   	NR      	NR      
+48  	67.4  	2   	ANCHOR (repeat 7)	lure    	0.55	NR  	1   	NR      	NR      
+49  	68    	8   	CHALK (repeat 4)	lure    	0.451	NR  	1   	NR      	NR      
+50  	68.5  	9   	PLUM      	fruit   	0.955	0.752	1   	target  	target  
+51  	69.5  	8   	CHALK (repeat 5)	lure    	0.315	NR  	1   	NR      	NR      
+52  	69.8  	5   	SPONGE (repeat 9)	lure    	0.274	NR  	1   	NR      	NR      
+53  	70.2  	3   	MIRROR (repeat 3)	lure    	0.534	NR  	1   	NR      	NR      
+54  	70.7  	2   	ANCHOR (repeat 8)	lure    	0.494	NR  	1   	NR      	NR      
+55  	71.3  	3   	MIRROR (repeat 4)	lure    	0.428	NR  	1   	NR      	NR      
+56  	71.8  	1   	WALLET (repeat 9)	lure    	0.521	NR  	1   	NR      	NR      
+57  	72.4  	2   	ANCHOR (repeat 9)	lure    	0.256	NR  	1   	NR      	NR      
+58  	72.7  	6   	STAPLE (repeat 6)	lure    	0.526	NR  	1   	NR      	NR      
+59  	73.3  	3   	MIRROR (repeat 5)	lure    	0.45	NR  	1   	NR      	NR      
+60  	73.8  	4   	POWDER (repeat 8)	lure    	0.343	NR  	1   	NR      	NR      
+61  	74.2  	2   	ANCHOR (repeat 10)	lure    	0.462	NR  	1   	NR      	NR      
+62  	74.7  	8   	CHALK (repeat 6)	lure    	0.579	NR  	1   	NR      	NR      
+63  	75.3  	3   	MIRROR (repeat 6)	lure    	0.693	NR  	1   	NR      	NR      
+64  	76.1  	1   	WALLET (repeat 10)	lure    	0.672	NR  	1   	NR      	NR      
+65  	76.8  	6   	STAPLE (repeat 7)	lure    	0.616	NR  	1   	NR      	NR      
+66  	77.5  	3   	MIRROR (repeat 7)	lure    	0.579	NR  	1   	NR      	NR      
+67  	78.1  	2   	ANCHOR (repeat 11)	lure    	0.495	NR  	1   	NR      	NR      
+68  	78.6  	1   	WALLET (repeat 11)	lure    	0.529	NR  	1   	NR      	NR      
+69  	79.2  	8   	CHALK (repeat 7)	lure    	0.665	NR  	1   	NR      	NR      
+70  	79.9  	4   	POWDER (repeat 9)	lure    	0.301	NR  	1   	NR      	NR      
+71  	80.3  	5   	SPONGE (repeat 10)	lure    	0.451	NR  	1   	NR      	NR      
+72  	80.8  	1   	WALLET (repeat 12)	lure    	0.559	NR  	1   	NR      	NR      
+73  	81.4  	5   	SPONGE (repeat 11)	lure    	0.451	NR  	1   	NR      	NR      
+74  	81.9  	10  	RASPBERRY 	fruit   	0.953	0.683	1   	target  	target  
+75  	82.9  	4   	POWDER (repeat 10)	lure    	0.288	NR  	1   	NR      	NR      
+76  	83.3  	2   	ANCHOR (repeat 12)	lure    	0.638	NR  	1   	NR      	NR      
+77  	84    	5   	SPONGE (repeat 12)	lure    	0.288	NR  	1   	NR      	NR      
+78  	84.3  	3   	MIRROR (repeat 8)	lure    	0.626	NR  	1   	NR      	NR      
+79  	85    	6   	STAPLE (repeat 8)	lure    	0.439	NR  	1   	NR      	NR      
+80  	85.5  	1   	WALLET (repeat 13)	lure    	0.487	NR  	1   	NR      	NR      
+81  	86    	2   	ANCHOR (repeat 13)	lure    	0.405	NR  	1   	NR      	NR      
+82  	86.5  	3   	MIRROR (repeat 9)	lure    	0.391	NR  	1   	NR      	NR      
+83  	87    	5   	SPONGE (repeat 13)	lure    	0.652	NR  	1   	NR      	NR      
+84  	87.7  	2   	ANCHOR (repeat 14)	lure    	0.649	NR  	1   	NR      	NR      
+85  	88.4  	5   	SPONGE (repeat 14)	lure    	0.567	NR  	1   	NR      	NR      
+86  	89    	3   	MIRROR (repeat 10)	lure    	0.485	NR  	1   	NR      	NR      
+87  	89.5  	6   	STAPLE (repeat 9)	lure    	0.444	NR  	1   	NR      	NR      
+88  	90    	1   	WALLET (repeat 14)	lure    	0.468	NR  	1   	NR      	NR      
+89  	90.5  	3   	MIRROR (repeat 11)	lure    	0.51	NR  	1   	NR      	NR      
+90  	91.1  	1   	WALLET (repeat 15)	lure    	0.517	NR  	1   	NR      	NR      
+91  	91.7  	6   	STAPLE (repeat 10)	lure    	0.611	NR  	1   	NR      	NR      
+92  	92.3  	2   	ANCHOR (repeat 15)	lure    	0.368	NR  	1   	NR      	NR      
+93  	92.7  	1   	WALLET (repeat 16)	lure    	0.257	NR  	1   	NR      	NR      
+94  	93.1  	5   	SPONGE (repeat 15)	lure    	0.692	NR  	1   	NR      	NR      
+95  	93.8  	2   	ANCHOR (repeat 16)	lure    	0.451	NR  	1   	NR      	NR      
+96  	94.3  	4   	POWDER (repeat 11)	lure    	0.436	NR  	1   	NR      	NR      
+97  	94.8  	6   	STAPLE (repeat 11)	lure    	0.451	NR  	1   	NR      	NR      
+98  	95.3  	3   	MIRROR (repeat 12)	lure    	0.366	NR  	1   	NR      	NR      
+99  	95.7  	8   	CHALK (repeat 8)	lure    	0.451	NR  	1   	NR      	NR      
+100 	96.2  	2   	ANCHOR (repeat 17)	lure    	0.467	NR  	1   	NR      	NR      
+101 	96.7  	5   	SPONGE (repeat 16)	lure    	0.451	NR  	1   	NR      	NR      
+102 	97.2  	8   	CHALK (repeat 9)	lure    	0.304	NR  	1   	NR      	NR      
+103 	97.6  	3   	MIRROR (repeat 13)	lure    	0.451	NR  	1   	NR      	NR      
+104 	98.1  	5   	SPONGE (repeat 17)	lure    	0.654	NR  	1   	NR      	NR      
+105 	98.8  	6   	STAPLE (repeat 12)	lure    	0.451	NR  	1   	NR      	NR      
+106 	99.3  	5   	SPONGE (repeat 18)	lure    	0.313	NR  	1   	NR      	NR      
+107 	99.7  	8   	CHALK (repeat 10)	lure    	0.451	NR  	1   	NR      	NR      
+108 	100.2 	3   	MIRROR (repeat 14)	lure    	0.692	NR  	1   	NR      	NR      
+109 	100.9 	5   	SPONGE (repeat 19)	lure    	0.451	NR  	1   	NR      	NR      
+110 	101.4 	4   	POWDER (repeat 12)	lure    	0.651	NR  	1   	NR      	NR      
+111 	102.1 	5   	SPONGE (repeat 20)	lure    	0.451	NR  	1   	NR      	NR      
+112 	102.6 	2   	ANCHOR (repeat 18)	lure    	0.521	NR  	1   	NR      	NR      
