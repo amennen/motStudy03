@@ -291,14 +291,15 @@ LOC = 7;
 MATLAB_STIM_FILE = [ppt_dir 'mot_realtime02_subj_' num2str(SUBJECT) '_stimAssignment.mat'];
 CUELISTFILE = [base_path 'stimuli/text/wordpool.txt'];
 CUELISTFILE_TARGETS = [base_path 'stimuli/text/wordpool_targets_woTrain.txt']; %changed for subject 15 just to be sure that the words for practice aren't going to be assigned to more people!
+TRAININGCUELIST = [base_path 'stimuli/text/wordpool_targets_training.txt'];
 %      CALIBRATION_TARGET = [base_path 'stimuli/NTB_5cal-10left-5up_1600x1200_black.jpg'];
-CALIBRATION_TARGET = [base_path 'stimuli/NTB_5cal-10left-5up_1280x720_black.jpg'];
 CUETARGETFILE = [base_path 'stimuli/text/ed_plants.txt'];
-DESIGNFILE = [base_path 'khenderson_localizer_design_' int2str(mod(SUBJECT,3)+1) '.csv'];
 %CATFILES = {[base_path 'stimuli/bw_words.txt'],[base_path 'stimuli/bw_cars.txt'],[base_path 'stimuli/bw_faces.txt'],[base_path 'stimuli/bw_bedrooms.txt']};
 %PICLISTFILE = {[base_path 'stimuli/bw_bedrooms.txt'],CATFILES{2}, CATFILES{3}, CATFILES{4}};
 PICLISTFILE = [base_path 'stimuli/SCREENNAMES.txt'];
 PICFOLDER = [base_path 'stimuli/STIM/ALLIMAGES' filesep];
+TRAININGPICFOLDER = [base_path 'stimuli/STIM/training' filesep];
+TRAININGLISTFILE = [base_path 'stimuli/TRAININGSCREEN.txt'];
 % present mapping without keylabels if ppt. is in the scanner
 if CURRENTLY_ONLINE && SESSION > TOCRITERION3
     KEY_MAPPING = [base_path 'stimuli/bwvividness.jpg'];
@@ -390,6 +391,11 @@ switch SESSION
                 case LOC
                     numInCondition = stim.num_localizer;
             end
+            if cond == LEARN
+                trainWords = readStimulusFile(TRAININGCUELIST,stim.num_learn);
+                cues{STIMULI}{LEARN}{1} = trainWords;
+                trainPics = readStimulusFile_evenIO(TRAININGLISTFILE,stim.num_learn);
+            else
             for item = 1:numInCondition
                 
                 currCues{condIndex} = preparedCues{exposIndex};
@@ -412,6 +418,7 @@ switch SESSION
                 cues{ACT_READOUT}{cond}{exposureNum} = null_init;
                 cues{EXPOS_DELTA}{cond}{exposureNum} = null_init;
                 %cues{LAT_MVT}{cond}{exposureNum} = cues{LAT_MVT}{cond}{1};
+            end
             end
             clear currCues currPics currPairs null_init
         end
@@ -568,8 +575,9 @@ switch SESSION
         printlog(LOG_NAME,'\n\n\n******************************************************************************\n');
         % return
         sca
-        mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow);
-        
+        if SESSION ~= STIM_REFRESH
+            mot_realtime02(SUBJECT,SESSION+1,SET_SPEED,scanNum,scanNow); %don't continue if just refreshing on laptop
+        end
         %% 2. LEARN TO CRITERION
     case {TOCRITERION1, TOCRITERION2, TOCRITERION2_REP, TOCRITERION3}
         
@@ -1161,7 +1169,7 @@ switch SESSION
         condmap = makeMap({'realtime','omit','lure'});
         stim.instruct1 = ['NAME MEMORY\n\nYou''re almost done! This is the final task.\n\nWe will show you pictures of various scenes and ask you ' ...
             'whether they are new in this experiment ("' recog_scale.inputs{1} '" key) or ones you have seen earlier ("' recog_scale.inputs{2} '" key). Try to respond ' ...
-            'as quickly and accurately as possible.\n\n-- Press ' PROGRESS_TEXT ' once you understand these instructions --'];
+            'as quickly and accurately as possible.\n So press ' recog_scale.inputs{1} ' = NEW IMAGE and ' recog_scale.inputs{2} ' = OLD IMAGE.\n\n-- Press ' PROGRESS_TEXT ' once you understand these instructions --'];
         
         % stimulus data fields
         stim.triggerCounter = 1;
@@ -1360,8 +1368,8 @@ switch SESSION
         OptimalForget = 0.1;
         maxIncrement = 1.25;
         Kp = 5;
-        Ki = 1;
-        Kd = .1;
+        Ki = .001;
+        Kd = .5;
         config.initFeedback = OptimalForget; %make it so there's change in speed for the first 4 TR's
         config.initFunction = PID(config.initFeedback,Kp,Ki,Kd,OptimalForget,maxIncrement);
         
@@ -1403,13 +1411,13 @@ switch SESSION
             instruct_continue];
         stim.instruct2 = ['While all this happens, we want you to "multi-task" by visualizing the scene ' ...
             'named by the word in the middle. Every few seconds, the central dot will turn red: when it does '...
-            'you should indicate your CURRENT visualization detail using the usual keys. It''s possible that the clarity of your ' ...
+            'you should indicate your CURRENT visualization detail using the usual keys (THUMB,INDEX,MIDDLE,RING,PINKY). It''s possible that the clarity of your ' ...
             'mental image will change throughout the trial and/or be fuzzier than if you were not tracking dots. As your rating should reflect your CURRENT ' ...
             'rather than best possibel image, this would be reflected in your responses. \n\nRemember that mental visualizing is only your second priority: if you lose track ' ...
             'of the dots for even a second, you will get the trial wrong, and we will have to throw out the trial; ' ...
             'and we need as many trials as possible. Getting the target dot correct is your most important task (but make sure '...
             'this is not at the expense of moving your eyes away from the center fixation dot; that would be cheating)! ' ...
-            'You should "squeeze in" visualizing when it''s possible. \n\n---- Press ' PROGRESS_TEXT ' once you understand these instructions ----'];
+            'You should "squeeze in" visualizing when it''s possible. \n\n---- Press ' PROGRESS_TEXT ' once you understand these instructions \nthen press it again when you are done viewing the rating scale ---'];
         stim.instruct_summary = [stim.header '\n\nTo summarize this task: you will keep track of target dots moving around the screen while keeping your ' ...
             'eyes fixed on the central dot. The dot-tracking task is your top priority, but you should also try to visualize ' ...
             'the named scene, keeping your eyes fixed on the central blinking dot. The speed of the dots may change in '...
@@ -1540,8 +1548,9 @@ switch SESSION
         for i=1:length(stim.cond)
             
             if ~day_2 && ~stair
-                %stim.speed(i) = stim.maxspeed - tGuess; %setting practice speed to initial tGuess
-                stim.speed(i) = -3*i;
+                stim.speed(i) = stim.maxspeed - tGuess; %setting practice speed to initial tGuess
+                %stim.speed(i) = -3*i; this was to check about the dots
+                %being dark
                 %stim.repulse(i) = 5/3;
             else
                 if SESSION > 5 && SESSION < MOT{1} %change dot speeds for practice and localizer, but then we want to change dot speed!
@@ -1849,27 +1858,12 @@ switch SESSION
                                     names = {allFn.name};
                                     [~,newestIndex] = max(dates);
                                     rtData.newestFile{thisTR} = names{newestIndex};
-%                                     if showFiles
-%                                         ls(classOutputDir) %saved for at the TR we're literally on, what are the available files
-%                                     end
+
                                     [rtData.classOutputFileLoad(fileTR), rtData.classOutputFile{fileTR}] = GetSpecificClassOutputFile(classOutputDir,fileTR);
                                     if rtData.classOutputFileLoad(fileTR)
                                         tempStruct = load(fullfile(classOutputDir, rtData.classOutputFile{fileTR}));
                                         rtData.rtDecoding(fileTR) = tempStruct.classOutput;
-                                        rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(initFile:fileTR),Kp,Ki,Kd,OptimalForget,maxIncrement);
-                                        %put something exclamatory to
-                                        %celebrate finding the file
-                                        %fprintf(['FOUND TR ' num2str(dicomTR) ' in motion TR ' num2str(TRcounter) '\n'])
-%                                         if TRcounter > 5 %this is the third file collected
-%                                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(fileTR-1:fileTR)); %changed from 2 to 1 8/8
-%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(fileTR-1:fileTR)); %changed from 2 to 1 8/8
-%                                         if TRcounter > 4  %this is the second file collected
-%                                             rtData.smoothRTDecoding(fileTR) = nanmean([rtData.rtDecoding(fileTR-1:fileTR)]);
-%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([rtData.rtDecodingFunction(fileTR-1:fileTR)]);
-%                                         elseif TRcounter == 4 %this is the first file collected
-%                                             rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(fileTR)]);
-%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(fileTR)]);
-%                                         end
+                                        rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(initFile:fileTR),Kp,Ki,Kd,OptimalForget,maxIncrement);                                    
                                     end
                                 else %if timeout, put same conditions of smoothing, this TR is nan
                                     goodPrevious = find(~isnan(rtData.rtDecoding(initFile:fileTR-1))); %hopefully there will be a string of okay values here
@@ -1878,35 +1872,15 @@ switch SESSION
                                     else
                                         rtData.rtDecodingFunction(fileTR) = 0; %don't change at all if timed out AND there's no other good info from this trial
                                     end
-%                                     if length(goodPrevious) > 2
-%                                         rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end-2):goodPrevious(end)));
-%                                         rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end-2):goodPrevious(end)));
-%                                     if length(goodPrevious) > 1 %just average over those 2 TR's then
-%                                         if TRcounter > 4 %now we can average over 2 TR's like normal
-%                                             %rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end-1):goodPrevious(end)));
-%                                             %rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end-1):goodPrevious(end)));
-%                                         else %if at TRcounter == 4, include initFeedback/function--this wouldn't happen because it's the first case--oh well
-%                                             rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(goodPrevious(end))]);
-%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(goodPrevious(end))]);
-%                                         end
-%                                     elseif length(goodPrevious) ==1 %&& TRcounter > 4 %only use that TR
-%                                         if TRcounter > 4
-%                                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(goodPrevious(end)));
-%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(goodPrevious(end)));
-%                                         else
-%                                             rtData.smoothRTDecoding(fileTR) = nanmean([initFeedback rtData.rtDecoding(goodPrevious(end))]);
-%                                             rtData.smoothRTDecodingFunction(fileTR) = nanmean([initFunction rtData.rtDecodingFunction(goodPrevious(end))]);
-%                                         end
-%                                     end
+%                                    
                                 end
                             end
                         else %if we're using random data instead of neural data
                             %this won't give errors but it won't be a
                             %smoothed mean at first
                             rtData.rtDecoding(fileTR) = rand(1)*2-1;
-                            rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(goodPrevious),Kp,Ki,Kd,OptimalForget,maxIncrement);
-%                             rtData.smoothRTDecoding(fileTR) = nanmean(rtData.rtDecoding(fileTR-1:fileTR));
-%                             rtData.smoothRTDecodingFunction(fileTR) = nanmean(rtData.rtDecodingFunction(fileTR-1:fileTR));
+                            rtData.rtDecodingFunction(fileTR) = PID(rtData.rtDecoding(fileTR),Kp,Ki,Kd,OptimalForget,maxIncrement);
+                           
                         end
                     end
                 end
@@ -2004,6 +1978,7 @@ switch SESSION
                                 'simulated_key', train.resp_str{prompt_counter}, ...
                                 'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
                             check(prompt_counter) = false;
+                            %fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
                         end
                     end
                 end
@@ -2076,6 +2051,20 @@ switch SESSION
                         'most important thing you have to do.\n\n' ...
                         '-- Press ' PROGRESS_TEXT ' to continue --'],minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
                 end
+                waitForKeyboard(kbTrig_keycode,DEVICE);
+                
+                
+                % subjective responding
+                displayText(mainWindow,['Also, you responded to ' num2str(round(100*(length(train.resp) - sum(cellfun(@isnan,train.resp)))/100)) ' out of ' ...
+                    num2str(length(train.resp)) ' "rate detail" prompts (i.e., when the fixation circle turns red). Even when you ' ...
+                    'have no free mental resources for mental imagery, you should still always try to respond to these ' ...
+                    'prompts. Also, remember that your rating should reflect your CURRENT clarity, even if ' ...
+                    'that is not as good as it CAN be.\n\n Just to be sure you remember the scale, we''ll give you another ' ...
+                    'look at the hand map.\n\n' ...
+                    '-- Press ' PROGRESS_TEXT ' to continue, then press it again to clear the hand map --'],minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
+                waitForKeyboard(kbTrig_keycode,DEVICE);
+                Screen('DrawTexture',mainWindow,keymap_prompt,[],[],[]); %[0 0 keymap_dims],[topLeft topLeft+keymap_dims]);
+                Screen('Flip',mainWindow);
                 waitForKeyboard(kbTrig_keycode,DEVICE);
                 
                 

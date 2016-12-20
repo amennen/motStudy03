@@ -1,0 +1,3 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	11.8  	26  	PICK      	target  	0.434	0.432	0   	no image	1 detail, 2+ details, full
+2   	17.9  	26  	PICK (repeat 1)	target  	0.406	0.405	1   	1 detail	1 detail, 2+ details, full
