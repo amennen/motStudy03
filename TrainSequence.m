@@ -44,8 +44,8 @@ mot_realtime02(SUBJECT, SETUP, [], 0, 0);
 % MOT_Practice, MOT_PREP
 mot_realtime02(SUBJECT, FAMILIARIZE2, [], 0, 0); %continue because want to not go through the break
 
-%% now train on actual stimulus pairs
-mot_realtime02(SUBJECT, FAMILIARIZE2, [], 0, 0);
+%% refresh on day 2
+mot_realtime02(SUBJECT, STIM_REFRESH, [], 0, 0);
 
 %% after scanner, test associates
 mot_realtime02(SUBJECT,ASSOCIATES, [], 0, 0); 
