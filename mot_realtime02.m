@@ -1366,7 +1366,7 @@ switch SESSION
         dot_map = keys.map([1 5],:);
         
         %rt parameters 
-        OptimalForget = 0.1;
+        OptimalForget = 0.15;
         maxIncrement = 1.25;
         Kp = 5;
         Ki = .01;
@@ -1968,40 +1968,7 @@ switch SESSION
                     printlog(LOG_NAME,'%d\t%d\t%d\t\t%5.3f\t%5.3f\t%5.4f\t\t%i\t\t%d\t\t%5.3f\t\t%s\n',n,TRcounter,prompt_active,current_speed,stim.changeSpeed(TRcounter,n),timing.actualOnsets.motion(TRcounter,stim.trial) - timing.plannedOnsets.motion(TRcounter,stim.trial),rtData.classOutputFileLoad(allMotionTRs(TRcounter,n)),fileTR,rtData.rtDecoding(fileTR),rtData.newestFile{allMotionTRs(TRcounter,n)});
                     printTR(TRcounter) = 0;
                 end
-               
-                % act on a visualization prompt
-%                 if prompt_active 
-%                     %instead of constantly checking let's just check at the
-%                     %end once
-%                     % peek to see if any keys are pressed right now (for CPU reasons, do this only every third frame)
-%                     %if ~mod(stim.frame_counter(stim.trial),3) && check(prompt_counter) 
-%                     elapsed = (GetSecs-train.onset(prompt_counter));
-% 
-%                     if check(prompt_counter) && (abs(elapsed- vis_promptDur)<=TIMEOUT) %so it's saying if we're supposed to check, and we're almost at the end
-%                         [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
-%                             multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
-%                         
-%                         %if check(prompt_counter) && (abs(elapsed- vis_promptDur)<=TIMEOUT) || ~isnan(train.resp{prompt_counter})
-%                             %prompt_active = false;
-%                             if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
-%                             if isnan(train.resp{prompt_counter}),
-%                                 train.resp_str{prompt_counter} = nan;
-%                             else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
-%                             end
-%                             subjectiveEK = easyKeys(subjectiveEK, ...
-%                                 'stim', stim.stim{stim.trial}, ...
-%                                 'onset', train.onset(prompt_counter), ...
-%                                 'cond', stim.cond(stim.trial), ...
-%                                 'nesting', [SESSION stim.trial prompt_counter], ...
-%                                 'cresp', embedded_cresp, ...
-%                                 'simulated_key', train.resp_str{prompt_counter}, ...
-%                                 'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
-%                             check(prompt_counter) = false;
-%                             fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
-%                         %end
-%                     end
-%                 end
-                
+
                 
             end  %20 s trial ends here THEN probe
             
