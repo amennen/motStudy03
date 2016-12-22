@@ -127,7 +127,7 @@ fprintf(['* Loaded ' allfn(end).name '\n']);
 %load localizer run's standard deviation and voxelInfo
 allLast = dir([locPatterns_dir 'locpatternsdata_' '*']);
 loc = load(fullfile(locPatterns_dir, allLast(end).name));
-if SESSION == 20
+if SESSION == 21 %changed! this should be MOT_RUN1!!
    patterns.lastStd = loc.patterns.runStd;
    %patterns.lastStd = .1; %for testing
 else
