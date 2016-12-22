@@ -45,7 +45,7 @@ function [patterns, t] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,dat
 
 %% initialize path prefix for different replyDrive
 
-projectName = 'motStudy02';
+projectName = 'motStudy03';
 setenv('FSLOUTPUTTYPE','NIFTI_GZ');
 
 save_dir = ['/Data1/code/' projectName '/data/' num2str(subjectNum) '/']; %this is where she sets the save directory!

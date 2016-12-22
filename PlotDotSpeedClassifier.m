@@ -3,20 +3,14 @@
 % category separation (can also pull from behavioral file)
 close all;
 clear all;
-projectName = 'motStudy02';
+projectName = 'motStudy03';
 allspeeds = [];
 allsep = [];
 nstim = 10;
 nTRs = 15;
 nblock = 3;
-svec = [8 12 14 15 16 18 20:22 26 27 28 29 30];
-RT = [8 12 14 15 18 21 22];
-YC = [16 20 26 27 28 29 30];
-RT_m = [8 12 14 15 18 21 22];
-YC_m = [16 28 20 26 27 29 30];
-iRT = find(ismember(svec,RT));
-iYC = find(ismember(svec,YC));
-%svec = 8:13;
+svec = [1];
+
 nsub = length(svec);
 sepbystim = zeros(nstim,nTRs*3);
 speedbystim = zeros(nstim,nTRs*3);
@@ -36,16 +30,15 @@ for s = 1:nsub
     for iblock = 1:nblock
         
         blockNum = iblock;
-        SESSION = 19 + blockNum;
+        SESSION = 20 + blockNum;
         %blockNum = SESSION - 20 + 1;
-        behavioral_dir = ['/Data1/code/' projectName '/' 'code' '/BehavioralData/' num2str(subjectNum) '/'];
-        behavioral_dir = [fileparts(which('mot_realtime01.m')) '/BehavioralData/' num2str(subjectNum) '/'];
+        behavioral_dir = [fileparts(which('mot_realtime02.m')) '/BehavioralData/' num2str(subjectNum) '/'];
         save_dir = ['/Data1/code/' projectName '/data/' num2str(subjectNum) '/']; %this is where she sets the save directory!
         classOutputDir = fullfile(save_dir,['motRun' num2str(blockNum)], 'classOutput/');
         runHeader = fullfile(save_dir,[ 'motRun' num2str(blockNum) '/']);
-        fileSpeed = dir(fullfile(behavioral_dir, ['mot_realtime01_' num2str(subjectNum) '_' num2str(SESSION)  '*.mat']));
+        fileSpeed = dir(fullfile(behavioral_dir, ['mot_realtime02_' num2str(subjectNum) '_' num2str(SESSION)  '*.mat']));
         %get hard speed
-        prep = dir([behavioral_dir 'mot_realtime01_' num2str(subjectNum) '_' num2str(MOT_PREP)  '*.mat']);
+        prep = dir([behavioral_dir 'mot_realtime02_' num2str(subjectNum) '_' num2str(MOT_PREP)  '*.mat']);
         prepfile = [behavioral_dir prep(end).name];
         lastRun = load(prepfile);
         hardSpeed(s) = 30 - lastRun.stim.tGuess(end);
@@ -232,41 +225,8 @@ for s = 1:nsub
     idealInd = find(xvals >0.05 & xvals <0.15);
     ratioIdeal(s) = nCounts(idealInd);
     allcm(s) = maxLoc;
-%     figure;
-%     scatter(allspeeds,allsep);
-%     %lsline;
-%     p = polyfit(allspeeds,allsep,1);
-%     yfit = polyval(p,allspeeds);
-%     xlim([0 nTRs])
-%     [rho,pval] = corrcoef(allspeeds,allsep);
-%     hold on;
-%     plot(allspeeds,yfit, '--k', 'LineWidth', 3);
-%     text(10,.85,['corr = ' num2str(pval(1,2))]);
-%     text(10,.75, ['p = ' num2str(p(1))])
-%     text(10,.65, ['slope = ' num2str(p(1))])
-%     title(['Category Separation vs. Dot Speed, Subject ' num2str(subjectNum) ' All Trials'])
-%     set(findall(gcf,'-property','FontSize'),'FontSize',16)
-if s < 8 %average over 3 TR's
-    vec2avg = [0.1*ones(10,2) sepbystim];
-    vec2mix = [0.1*ones(10,2) sepmixed];
-    for i = 1:size(sepbystim,2)
-        smoothedsep(:,i) = mean(vec2avg(:,i:i+2),2);
-        smoothedmixedsep(:,i) = mean(vec2mix(:,i:i+2),2);
-    end
-else %average over 2 TR's
-    vec2avg = [0.1*ones(10,1) sepbystim];
-    vec2mix = [0.1*ones(10,1) sepmixed];
-    for i = 1:size(sepbystim,2)
-        smoothedsep(:,i) = mean(vec2avg(:,i:i+1),2);
-        smoothedmixedsep(:,i) = mean(vec2mix(:,i:i+1),2);
-    end
-end
-    if max(max(smoothedsep < -0.6)) || max(max(smoothedsep)) > 0.8
-        sprintf('BAD STIMULI for subject %i', subjectNum)
-    else
-        sprintf('OKAY for subject %i', subjectNum)
-    end  
-%     
+
+    
     figure;
     for rep = 1:(length(allsep)/15)-1
             line([rep*nTRs+.5 rep*nTRs + .5], [-1 1], 'color', 'c', 'LineWidth', 2);
@@ -302,7 +262,7 @@ end
         xlabel('TR Number (2s)')
         ylabel(hAx(2), 'Dot Speed', 'Color', 'k')
         ylabel(hAx(1), 'Category Evidence', 'Color', 'k')
-        ylim(hAx(2),[-0.5 10])
+        ylim(hAx(2),[-20 5])
         ylim(hAx(1), [-1 1])
         xlim([0.5 45.5])
         set(hLine2, 'LineStyle', '-', 'Color', colors(2,:), 'LineWidth', 5)
@@ -316,7 +276,6 @@ end
         set(hAx(2), 'YColor', colors(2,:), 'FontSize', 16, 'YTick', [0:10]); %'YTickLabel', {'0', '1', '2', '3', '4', '5})
         set(hAx(1), 'YColor', colors(1,:), 'FontSize', 16, 'YTick', [-1:.5:1], 'YTickLabel', {'-1', '-0.5', '0', '0.5', '1'});
         hold on;
-        plot(x,smoothedsep(stim,:), 'LineStyle', '-', 'Color', colors(3,:), 'LineWidth', 4, 'Marker', 'o', 'MarkerSize', 3)
         legend('Ev', 'Smoothed Ev', 'Dot Speed')
         for rep = 1:2
             line([rep*nTRs+.5 rep*nTRs + .5], [-10 15], 'color', 'k', 'LineWidth', 2);
@@ -326,123 +285,8 @@ end
          print(thisfig, sprintf('%sstim%i.pdf', plotDir,stim), '-dpdf')
     end
     end
-    if plotmixedstim
-     for stim = 1:nstim
-        thisfig = figure(stim*71);
-        clf;
-        x = 1:nTRs*nblock;
-        [hAx,hLine1, hLine2] = plotyy(x,sepmixed(stim,:),x,speedmixed(stim,:));
-        xlabel('TR Number (2s)')
-        ylabel(hAx(2), 'Dot Speed', 'Color', 'k')
-        ylabel(hAx(1), 'Category Evidence', 'Color', 'k')
-        ylim(hAx(2),[-0.5 10])
-        ylim(hAx(1), [-1 1])
-        xlim([0.5 45.5])
-        set(hLine2, 'LineStyle', '-', 'Color', colors(2,:), 'LineWidth', 5)
-        set(hLine1, 'LineStyle', '-', 'Color', colors(1,:), 'LineWidth', 4, 'Marker', 'o', 'MarkerSize', 7)
-        %set(hLine1, 'LineStyle', '-', 'Color', colors(1,:), 'LineWidth', 4, 'Marker', 'o', 'MarkerSize', 7)
-        linkaxes([hAx(1) hAx(2)], 'x');
-        title(sprintf('MIXED Subject: %i Stimulus ID: %i',subjectNum,stim));
-        set(findall(gcf,'-property','FontSize'),'FontSize',20)
-        set(findall(gcf,'-property','FontColor'),'FontColor','k')
-        set(hAx(1), 'FontSize', 12)
-        set(hAx(2), 'YColor', colors(2,:), 'FontSize', 16, 'YTick', [0:10]); %'YTickLabel', {'0', '1', '2', '3', '4', '5})
-        set(hAx(1), 'YColor', colors(1,:), 'FontSize', 16, 'YTick', [-1:.5:1], 'YTickLabel', {'-1', '-0.5', '0', '0.5', '1'});
-        hold on;
-        plot(x,smoothedmixedsep(stim,:), 'LineStyle', '-', 'Color', colors(3,:), 'LineWidth', 4, 'Marker', 'o', 'MarkerSize', 7)
-        legend('Ev', 'Smoothed Ev', 'Dot Speed')
-        for rep = 1:2
-            line([rep*nTRs+.5 rep*nTRs + .5], [-10 15], 'color', 'k', 'LineWidth', 2);
-        end
-        line([0 46], [0.1 0.1], 'color', [140 136 141]/255, 'LineWidth', 2.5,'LineStyle', '--');
-%         savefig(sprintf('%sstim%i.fig', plotDir,stim));
-         print(thisfig, sprintf('%sMIXEDstim%i.pdf', plotDir,stim), '-dpdf')
-    end
-    end    
-%     [nelements, xval ] = hist(sepbystim', [-.3:.05:.3]);
-%     freq = nelements/45;
-%     figure;
-%     bar(freq*100);
-%     set(gca, 'XTickLabel', num2str(xval))
-%     xlabel('Target-Lure Evidence')
-%     ylabel('Frequency (%)')
-%     ylim([0 30])
-%     legend('s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10')
-%     title(sprintf('Subject %i Classifier Evidence Distribution',subjectNum));
-%     set(findall(gcf,'-property','FontSize'),'FontSize',17)
-%     savefig(sprintf('%sdist.fig', plotDir));
-%     fileSpeed = dir(fullfile(behavioral_dir, ['mot_realtime01_' num2str(subjectNum) '_' num2str(SESSION)  '*.mat']));
-%         plotDir = ['/Data1/code/' projectName '/' 'Plots' '/' num2str(subjectNum) '/'];
-%         if ~exist(plotDir, 'dir')
-%             mkdir(plotDir);
-%         end
-% 
-%     recallFile = dir(fullfile(behavioral_dir, ['EK19_SUB' '*mat']));
-%     r1 = load([behavioral_dir '/' recallFile(end).name]);
-%     z = table2cell(r1.datastruct.trials(:,16));
-%     z(cellfun(@(x) any(isnan(x)),z)) = {'00'};
-% 
-%     resp1 = cell2mat(z);
-%     resp1 = resp1(:,1);
-%     
-%     stimOrder = table2array(r1.datastruct.trials(:,8));
-%     RTorder = stimOrder(stimOrder<11);
-%     RTonly = resp1(stimOrder<11);
-%     [~,sortedID] = sort(RTorder);
-%     r1Sort = RTonly(sortedID);
-%     
-%      %now all recall changes
-%     [~,allsort] = sort(stimOrder);
-%     R1recall = resp1(allsort);
-%     
-%     recallFile = dir(fullfile(behavioral_dir, ['EK23_SUB' '*mat']));
-%     r2 = load([behavioral_dir '/' recallFile(end).name]);
-%     z = table2cell(r2.datastruct.trials(:,16));
-%     z(cellfun(@(x) any(isnan(x)),z)) = {'00'}; %for nan's!
-%     resp2 = cell2mat(z);
-%     resp2 = resp2(:,1);
-%     
-%     stimOrder = table2array(r2.datastruct.trials(:,8));
-%     RTorder = stimOrder(stimOrder<11);
-%     RTonly = resp2(stimOrder<11);
-%     [~,sortedID] = sort(RTorder);
-%     r2Sort = RTonly(sortedID);
-%     
-%      %now all recall changes
-%     [~,allsort] = sort(stimOrder);
-%     R2recall = resp2(allsort);
-%     
-%     recalldiff = R2recall - R1recall;
-%    rtdiff(s) = mean(recalldiff(1:10)); 
-%    omitdiff(s) = mean(recalldiff(11:end));
-%     
-%     medsep1 = median(sepbystim(:,1:15),2);
-%     medsep2 = median(sepbystim(:,31:end),2);
-%     s = 100;
-%     figure;
-%     subplot(1,2,1)
-%     scatter(str2num(r1Sort),medsep1, s,'fill','MarkerEdgeColor','b',...
-%               'MarkerFaceColor','c',...
-%               'LineWidth',2.5);
-%     xlabel('Pre MOT Subj Rating')
-%     xlim([0 5])
-%     ylim([-.15 .15])
-%     ylabel('Median Evidence')
-%     title(sprintf('Subject %i Evidence vs. Pre Rating',subjectNum));
-% 
-%     subplot(1,2,2)
-%     scatter(medsep2,str2num(r2Sort), s,'fill','MarkerEdgeColor','b',...
-%               'MarkerFaceColor','c',...
-%               'LineWidth',2.5);
-%     ylabel('Post MOT Subj Rating')
-%     xlabel('Median Evidence')
-%     ylim([0 5])
-%     xlim([-.15 .15])
-%     title(sprintf('Subject %i Post Rating vs. Evidence',subjectNum));
-%     set(findall(gcf,'-property','FontSize'),'FontSize',20)
-%     savefig(sprintf('%srating_separated.fig', plotDir));
-%     
-%    
+    
+    
 
 end
 
