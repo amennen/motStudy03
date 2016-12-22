@@ -1,0 +1,41 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	42.9  	10  	HOOK      	rt-targ 	2.03	2.027	1   	full    	1 detail, 2+ details, full
+2   	48.9  	10  	HOOK (repeat 1)	rt-targ 	2.019	2.017	1   	full    	1 detail, 2+ details, full
+3   	54.9  	10  	HOOK (repeat 2)	rt-targ 	2.013	2.011	1   	full    	1 detail, 2+ details, full
+4   	60.9  	10  	HOOK (repeat 3)	rt-targ 	2.01	2.009	1   	full    	1 detail, 2+ details, full
+5   	84.9  	4   	BASKET    	rt-targ 	2.015	2.013	1   	full    	1 detail, 2+ details, full
+6   	90.9  	4   	BASKET (repeat 1)	rt-targ 	1.992	1.991	1   	full    	1 detail, 2+ details, full
+7   	96.9  	4   	BASKET (repeat 2)	rt-targ 	2.013	2.012	1   	full    	1 detail, 2+ details, full
+8   	102.9 	4   	BASKET (repeat 3)	rt-targ 	2.007	2.006	1   	full    	1 detail, 2+ details, full
+9   	126.9 	6   	PUDDLE    	rt-targ 	2.008	2.007	0   	generic 	1 detail, 2+ details, full
+10  	132.9 	6   	PUDDLE (repeat 1)	rt-targ 	2.011	2.01	0   	generic 	1 detail, 2+ details, full
+11  	138.9 	6   	PUDDLE (repeat 2)	rt-targ 	2.011	2.009	0   	generic 	1 detail, 2+ details, full
+12  	144.9 	6   	PUDDLE (repeat 3)	rt-targ 	1.991	1.99	0   	generic 	1 detail, 2+ details, full
+13  	168.9 	3   	COLLAR    	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+14  	174.9 	3   	COLLAR (repeat 1)	rt-targ 	2.013	2.011	1   	full    	1 detail, 2+ details, full
+15  	180.9 	3   	COLLAR (repeat 2)	rt-targ 	2.014	2.012	1   	full    	1 detail, 2+ details, full
+16  	186.9 	3   	COLLAR (repeat 3)	rt-targ 	2.012	2.01	1   	full    	1 detail, 2+ details, full
+17  	210.9 	9   	MARBLE    	rt-targ 	2.007	2.007	1   	full    	1 detail, 2+ details, full
+18  	216.9 	9   	MARBLE (repeat 1)	rt-targ 	2.011	2.011	1   	full    	1 detail, 2+ details, full
+19  	222.9 	9   	MARBLE (repeat 2)	rt-targ 	2.008	2.008	1   	full    	1 detail, 2+ details, full
+20  	228.9 	9   	MARBLE (repeat 3)	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+21  	252.9 	1   	PAINT     	rt-targ 	2.015	2.013	1   	full    	1 detail, 2+ details, full
+22  	258.9 	1   	PAINT (repeat 1)	rt-targ 	2.015	2.013	1   	full    	1 detail, 2+ details, full
+23  	264.9 	1   	PAINT (repeat 2)	rt-targ 	2.01	2.009	1   	full    	1 detail, 2+ details, full
+24  	270.9 	1   	PAINT (repeat 3)	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+25  	294.9 	7   	PARADE    	rt-targ 	2.013	2.011	1   	full    	1 detail, 2+ details, full
+26  	300.9 	7   	PARADE (repeat 1)	rt-targ 	2.015	2.013	1   	full    	1 detail, 2+ details, full
+27  	306.9 	7   	PARADE (repeat 2)	rt-targ 	2.017	2.015	1   	full    	1 detail, 2+ details, full
+28  	312.9 	7   	PARADE (repeat 3)	rt-targ 	2.013	2.012	1   	full    	1 detail, 2+ details, full
+29  	336.9 	8   	NOTE      	rt-targ 	2.008	2.007	1   	full    	1 detail, 2+ details, full
+30  	342.9 	8   	NOTE (repeat 1)	rt-targ 	2.012	2.011	1   	full    	1 detail, 2+ details, full
+31  	348.9 	8   	NOTE (repeat 2)	rt-targ 	2.013	2.011	1   	full    	1 detail, 2+ details, full
+32  	354.9 	8   	NOTE (repeat 3)	rt-targ 	2.013	2.011	1   	full    	1 detail, 2+ details, full
+33  	378.9 	5   	WIRE      	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+34  	384.9 	5   	WIRE (repeat 1)	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+35  	390.9 	5   	WIRE (repeat 2)	rt-targ 	2.008	2.007	1   	full    	1 detail, 2+ details, full
+36  	396.9 	5   	WIRE (repeat 3)	rt-targ 	2.015	2.014	1   	full    	1 detail, 2+ details, full
+37  	420.9 	2   	APRON     	rt-targ 	2.015	2.013	1   	full    	1 detail, 2+ details, full
+38  	426.9 	2   	APRON (repeat 1)	rt-targ 	2.014	2.013	1   	full    	1 detail, 2+ details, full
+39  	432.9 	2   	APRON (repeat 2)	rt-targ 	2.018	2.016	1   	full    	1 detail, 2+ details, full
+40  	438.9 	2   	APRON (repeat 3)	rt-targ 	2.012	2.011	1   	full    	1 detail, 2+ details, full

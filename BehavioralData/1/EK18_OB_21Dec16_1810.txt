@@ -1,0 +1,20 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.6   	23  	POLE      	localizer	3.451	3.086	1   	2+ details	2+ details
+2   	20.6  	27  	JAIL      	localizer	3.45	1.182	1   	1 detail	1 detail
+3   	32.6  	36  	TRIPOD    	localizer	3.451	1.478	1   	2+ details	2+ details
+4   	44.6  	30  	LENS      	localizer	3.451	1.07	1   	2+ details	2+ details
+5   	56.6  	34  	SHOVEL    	localizer	3.451	NR  	0   	NR      	generic 
+6   	72.6  	33  	BROOM     	localizer	3.45	2.686	0   	full    	1 detail
+7   	88.6  	28  	SHIRT     	localizer	3.45	2.342	1   	2+ details	2+ details
+8   	100.6 	25  	PYRAMID   	localizer	3.45	1.39	0   	generic 	1 detail
+9   	116.6 	32  	CANDLE    	localizer	3.45	3.191	1   	1 detail	1 detail
+10  	128.6 	26  	RAKE      	localizer	3.45	2.119	1   	2+ details	2+ details
+11  	140.6 	22  	PHONE     	localizer	3.45	1.574	1   	generic 	generic 
+12  	152.6 	21  	PLUG      	localizer	3.451	0.815	1   	full    	full    
+13  	164.6 	35  	PADDLE    	localizer	3.45	2.191	1   	1 detail	1 detail
+14  	176.6 	31  	ROPE      	localizer	3.45	2.719	1   	2+ details	2+ details
+15  	188.6 	29  	MAGNET    	localizer	3.45	1.735	1   	1 detail	1 detail
+16  	200.6 	24  	GLASS     	localizer	3.45	2.287	1   	full    	full    
+17  	212.6 	33  	BROOM (repeat 1)	localizer	3.45	0.791	1   	generic 	generic 
+18  	224.6 	34  	SHOVEL (repeat 1)	localizer	3.451	2.432	1   	generic 	generic 
+19  	236.6 	25  	PYRAMID (repeat 1)	localizer	3.451	1.424	1   	generic 	generic 

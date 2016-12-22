@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	42.5  	9   	MARBLE    	realtime	3.95	1.092	1   	full    	1 detail, 2+ details, full
+2   	82.5  	18  	COAL      	omit    	3.95	0.917	1   	full    	1 detail, 2+ details, full
+3   	122.5 	7   	PARADE    	realtime	3.951	0.733	1   	full    	1 detail, 2+ details, full
+4   	162.5 	16  	DRILL     	omit    	3.953	0.885	1   	full    	1 detail, 2+ details, full
+5   	202.5 	6   	PUDDLE    	realtime	3.95	1.51	0   	generic 	1 detail, 2+ details, full
+6   	242.5 	12  	FOAM      	omit    	3.951	0.958	1   	full    	1 detail, 2+ details, full
+7   	282.5 	20  	HOSE      	omit    	3.95	0.886	1   	full    	1 detail, 2+ details, full
+8   	322.5 	1   	PAINT     	realtime	3.954	1.007	1   	full    	1 detail, 2+ details, full
+9   	362.5 	19  	BELT      	omit    	3.95	0.775	1   	full    	1 detail, 2+ details, full
+10  	402.5 	2   	APRON     	realtime	3.953	0.719	1   	full    	1 detail, 2+ details, full
+11  	442.5 	3   	COLLAR    	realtime	3.951	0.743	1   	full    	1 detail, 2+ details, full
+12  	482.5 	13  	TICKET    	omit    	3.95	0.68	1   	full    	1 detail, 2+ details, full
+13  	522.5 	15  	MATCH     	omit    	3.951	0.728	1   	full    	1 detail, 2+ details, full
+14  	562.5 	5   	WIRE      	realtime	3.952	0.816	1   	full    	1 detail, 2+ details, full
+15  	602.5 	14  	PIPE      	omit    	3.951	1.401	0   	generic 	1 detail, 2+ details, full
+16  	642.5 	10  	HOOK      	realtime	3.951	0.945	1   	full    	1 detail, 2+ details, full
+17  	682.5 	11  	BUBBLE    	omit    	3.95	1.033	1   	1 detail	1 detail, 2+ details, full
+18  	722.5 	4   	BASKET    	realtime	3.95	1.186	1   	full    	1 detail, 2+ details, full
+19  	762.5 	8   	NOTE      	realtime	3.951	0.89	1   	full    	1 detail, 2+ details, full
+20  	802.5 	17  	NAIL      	omit    	3.95	0.754	1   	full    	1 detail, 2+ details, full

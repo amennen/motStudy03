@@ -144,7 +144,7 @@ documents_path = WORKING_DIR;
 %     documents_path = ['/Data1/code/motStudy01/'];
 % end
 data_dir = fullfile(documents_path, 'BehavioralData');
-dicom_dir = fullfile('/Data1/code/motStudy02/', 'data', SUBJ_NAME); %where all the dicom information is FOR THAT SUBJECT
+dicom_dir = fullfile('/Data1/code/motStudy03/', 'data', SUBJ_NAME); %where all the dicom information is FOR THAT SUBJECT
 if SESSION >= MOT{1}
     runNum = SESSION - MOT{1} + 1;
     classOutputDir = fullfile(dicom_dir,['motRun' num2str(runNum)], 'classOutput/');
@@ -1921,7 +1921,7 @@ switch SESSION
                         end
                         if realtime %only change speeds with MOT
                             if TRcounter > 4 && ~isnan(rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n))) %we look starting in 4, but we update starting at TR 5 AND make sure that it's not nan--if it is don't change speed
-                                current_speed = current_speed + rtData.rtTDecodingFunction(allMotionTRs(TRcounter-2,n)); % apply in THIS TR what was from 2 TR's ago (indexed by what file it is) so file 3 will be applied at TR5!
+                                current_speed = current_speed + rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n)); % apply in THIS TR what was from 2 TR's ago (indexed by what file it is) so file 3 will be applied at TR5!
                                 stim.changeSpeed(TRcounter,n) = rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n)); %speed changed ON that TR
                             else
                                 stim.changeSpeed(TRcounter,n) = 0;
