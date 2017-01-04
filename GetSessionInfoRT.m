@@ -69,7 +69,7 @@ trials.lure = [LH LE];
 if ismember(SESSION,MOT)
     iTR.start = convertTR(timing.trig.wait,timing.plannedOnsets.motion(1,:),config.TR); %coming from the waiting point so already 10 are taken out
 
-    trialDur = timing.plannedOnsets.probe(1) - timing.plannedOnsets.motion(1,1) +4; %this was because I wanted to shift forward by 2 and see afterwards 2 TRs but
+    trialDur = timing.plannedOnsets.probe(1) - timing.plannedOnsets.motion(1,1); %+4; %this was because I wanted to shift forward by 2 and see afterwards 2 TRs but
     % take out now
 else
     iTR.start = convertTR(timing.trig.wait,timing.plannedOnsets.prompt,config.TR);
@@ -77,7 +77,7 @@ else
     trialDur = timing.plannedOnsets.math(1) - timing.plannedOnsets.prompt(1) + 4; %for entire recall period = 15 TR's total, then go two past
 end
 trialDurTR = (trialDur/config.TR) - 1; %20s/2 = 10 - 1 = 9 TRs
-if SESSION == 18 && N_TRS_LOC > 0 && N_TRS_LOC < 15 %shift over a little bit more
+if SESSION == LOC && N_TRS_LOC > 0 && N_TRS_LOC < 15 %shift over a little bit more
     trialDurTR = N_TRS_LOC - 1;
 end
 
