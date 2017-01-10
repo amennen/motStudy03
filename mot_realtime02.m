@@ -1558,7 +1558,7 @@ switch SESSION
                             stim.speed(i) = finalSpeed; %will have to load last speed and find the speed here
                             % repulsor_force(i) = repulsor_force_small * finalSpeed/0.5;
                         case {2,4} %for either of the easy cases
-                            stim.speed(i) = -5;%5;%finalSpeed*.5; %again load last speed found here, change to accept max speed-see what first person has for this to decide
+                            stim.speed(i) = -7.5;%5;%finalSpeed*.5; %again load last speed found here, change to accept max speed-see what first person has for this to decide
                             %repulsor_force(i) = repulsor_force_small;
                     end
                     if stim.cond(i) > 2

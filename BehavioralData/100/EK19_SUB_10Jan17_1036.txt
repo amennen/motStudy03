@@ -1,0 +1,13 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.5   	37  	PAGE      	lure_easy	2.019	NR  	0   	NR      	1 detail, 2+ details, full
+2   	14.5  	37  	PAGE (repeat 1)	lure_easy	1.974	NR  	0   	NR      	1 detail, 2+ details, full
+3   	20.5  	37  	PAGE (repeat 2)	lure_easy	2.041	NR  	0   	NR      	1 detail, 2+ details, full
+4   	26.5  	37  	PAGE (repeat 3)	lure_easy	2.007	NR  	0   	NR      	1 detail, 2+ details, full
+5   	50.5  	23  	BELT      	targ_easy	2.008	NR  	0   	NR      	1 detail, 2+ details, full
+6   	56.5  	23  	BELT (repeat 1)	targ_easy	1.99	NR  	0   	NR      	1 detail, 2+ details, full
+7   	62.5  	23  	BELT (repeat 2)	targ_easy	2.023	NR  	0   	NR      	1 detail, 2+ details, full
+8   	68.5  	23  	BELT (repeat 3)	targ_easy	2.008	NR  	0   	NR      	1 detail, 2+ details, full
+9   	92.5  	22  	BROOM     	targ_hard	2.007	NR  	0   	NR      	1 detail, 2+ details, full
+10  	98.5  	22  	BROOM (repeat 1)	targ_hard	2.008	NR  	0   	NR      	1 detail, 2+ details, full
+11  	104.5 	22  	BROOM (repeat 2)	targ_hard	2.007	NR  	0   	NR      	1 detail, 2+ details, full
+12  	110.5 	22  	BROOM (repeat 3)	targ_hard	2.006	NR  	0   	NR      	1 detail, 2+ details, full
