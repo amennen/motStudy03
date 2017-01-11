@@ -1,0 +1,5 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	36.2  	37  	HAMMER    	targ_hard	1.95	1.054	0   	target  	non-target
+2   	78.2  	38  	RAINBOW   	targ_easy	1.95	0.766	1   	target  	target  
+3   	120.2 	39  	PIPE      	lure_hard	1.95	0.958	1   	non-target	non-target
+4   	162.2 	40  	BRACELET  	lure_easy	1.95	0.855	1   	non-target	non-target

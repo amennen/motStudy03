@@ -1,0 +1,41 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	42.7  	8   	DRUM      	rt-targ 	2.044	2.041	1   	full    	1 detail, 2+ details, full
+2   	48.7  	8   	DRUM (repeat 1)	rt-targ 	2.018	2.016	1   	full    	1 detail, 2+ details, full
+3   	54.7  	8   	DRUM (repeat 2)	rt-targ 	2.007	2.006	1   	full    	1 detail, 2+ details, full
+4   	60.7  	8   	DRUM (repeat 3)	rt-targ 	2.011	2.009	1   	full    	1 detail, 2+ details, full
+5   	84.7  	6   	TRIPOD    	rt-targ 	2.007	2.006	1   	full    	1 detail, 2+ details, full
+6   	90.7  	6   	TRIPOD (repeat 1)	rt-targ 	2.011	2.01	1   	full    	1 detail, 2+ details, full
+7   	96.7  	6   	TRIPOD (repeat 2)	rt-targ 	2.014	2.013	1   	full    	1 detail, 2+ details, full
+8   	102.7 	6   	TRIPOD (repeat 3)	rt-targ 	2.014	2.013	1   	full    	1 detail, 2+ details, full
+9   	126.7 	4   	DUST      	rt-targ 	2.007	2.007	1   	full    	1 detail, 2+ details, full
+10  	132.7 	4   	DUST (repeat 1)	rt-targ 	2.007	2.006	1   	full    	1 detail, 2+ details, full
+11  	138.7 	4   	DUST (repeat 2)	rt-targ 	2.015	2.014	1   	full    	1 detail, 2+ details, full
+12  	144.7 	4   	DUST (repeat 3)	rt-targ 	2.013	2.012	1   	full    	1 detail, 2+ details, full
+13  	168.7 	3   	FRAME     	rt-targ 	2.014	2.012	1   	full    	1 detail, 2+ details, full
+14  	174.7 	3   	FRAME (repeat 1)	rt-targ 	2.013	2.012	1   	full    	1 detail, 2+ details, full
+15  	180.7 	3   	FRAME (repeat 2)	rt-targ 	2.013	2.012	1   	full    	1 detail, 2+ details, full
+16  	186.7 	3   	FRAME (repeat 3)	rt-targ 	2.031	NR  	0   	NR      	1 detail, 2+ details, full
+17  	210.7 	5   	PARADE    	rt-targ 	2.008	2.007	1   	full    	1 detail, 2+ details, full
+18  	216.7 	5   	PARADE (repeat 1)	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+19  	222.7 	5   	PARADE (repeat 2)	rt-targ 	2.017	2.015	1   	full    	1 detail, 2+ details, full
+20  	228.7 	5   	PARADE (repeat 3)	rt-targ 	2.014	2.013	1   	full    	1 detail, 2+ details, full
+21  	252.7 	9   	RULER     	rt-targ 	2.016	2.014	1   	full    	1 detail, 2+ details, full
+22  	258.7 	9   	RULER (repeat 1)	rt-targ 	2.016	2.014	1   	full    	1 detail, 2+ details, full
+23  	264.7 	9   	RULER (repeat 2)	rt-targ 	2.015	2.014	1   	full    	1 detail, 2+ details, full
+24  	270.7 	9   	RULER (repeat 3)	rt-targ 	2.012	2.011	1   	full    	1 detail, 2+ details, full
+25  	294.7 	7   	MOON      	rt-targ 	2.011	NR  	0   	NR      	1 detail, 2+ details, full
+26  	300.7 	7   	MOON (repeat 1)	rt-targ 	2.013	2.011	1   	full    	1 detail, 2+ details, full
+27  	306.7 	7   	MOON (repeat 2)	rt-targ 	2.016	2.014	1   	full    	1 detail, 2+ details, full
+28  	312.7 	7   	MOON (repeat 3)	rt-targ 	2.011	2.01	1   	full    	1 detail, 2+ details, full
+29  	336.7 	1   	CANDLE    	rt-targ 	2.019	2.017	1   	full    	1 detail, 2+ details, full
+30  	342.7 	1   	CANDLE (repeat 1)	rt-targ 	2.015	2.014	1   	full    	1 detail, 2+ details, full
+31  	348.7 	1   	CANDLE (repeat 2)	rt-targ 	2.009	2.008	1   	full    	1 detail, 2+ details, full
+32  	354.7 	1   	CANDLE (repeat 3)	rt-targ 	2.015	2.013	1   	full    	1 detail, 2+ details, full
+33  	378.7 	10  	NOTE      	rt-targ 	2.008	2.007	1   	full    	1 detail, 2+ details, full
+34  	384.7 	10  	NOTE (repeat 1)	rt-targ 	2.013	2.012	1   	full    	1 detail, 2+ details, full
+35  	390.7 	10  	NOTE (repeat 2)	rt-targ 	2.014	2.013	1   	full    	1 detail, 2+ details, full
+36  	396.7 	10  	NOTE (repeat 3)	rt-targ 	2.007	2.006	1   	full    	1 detail, 2+ details, full
+37  	420.7 	2   	PADDLE    	rt-targ 	2.009	NR  	0   	NR      	1 detail, 2+ details, full
+38  	426.7 	2   	PADDLE (repeat 1)	rt-targ 	2.016	2.014	1   	full    	1 detail, 2+ details, full
+39  	432.7 	2   	PADDLE (repeat 2)	rt-targ 	2.012	2.011	1   	full    	1 detail, 2+ details, full
+40  	438.7 	2   	PADDLE (repeat 3)	rt-targ 	2.01	2.009	1   	full    	1 detail, 2+ details, full

@@ -1,0 +1,11 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	65.8  	6   	TRIPOD    	rt-targ 	1.951	0.796	1   	non-target	non-target
+2   	107.8 	5   	PARADE    	rt-targ 	1.952	0.748	1   	non-target	non-target
+3   	149.8 	8   	DRUM      	rt-targ 	1.951	0.949	1   	target  	target  
+4   	191.8 	9   	RULER     	rt-targ 	1.95	0.693	1   	target  	target  
+5   	233.8 	7   	MOON      	rt-targ 	1.953	0.677	1   	target  	target  
+6   	275.8 	4   	DUST      	rt-targ 	1.951	0.709	1   	target  	target  
+7   	317.8 	2   	PADDLE    	rt-targ 	1.951	0.774	1   	non-target	non-target
+8   	359.8 	3   	FRAME     	rt-targ 	1.951	0.694	1   	non-target	non-target
+9   	401.8 	1   	CANDLE    	rt-targ 	1.952	1.223	1   	target  	target  
+10  	443.8 	10  	NOTE      	rt-targ 	1.951	0.655	1   	target  	target  
