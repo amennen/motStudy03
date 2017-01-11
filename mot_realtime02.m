@@ -447,7 +447,7 @@ switch SESSION
         stim.cueDuration = 2*SPEED;    % cue word alone for 0ms
         stim.picDuration = 4*SPEED;    % cue with associate for 4000ms
         stim.isiDuration = 2*SPEED;
-        stim.textRow = WINDOWSIZE.pixels(2) / 5; %changed from 5, then 3
+        stim.textRow = WINDOWSIZE.pixels(2)* 3.5/ 9; %changed from 5, then 3
         stim.picRow = WINDOWSIZE.pixels(2) *5/9;
         NUMRUNS = 1;
         PROGRESS = INDEXFINGER;
@@ -580,7 +580,7 @@ switch SESSION
         stim.gapWidth = 10;
         stim.goodFeedback = '!!!';
         stim.badFeedback = 'X';
-        stim.textRow = WINDOWSIZE.pixels(2) *(2.5/9); %changed from 5, then 3
+        stim.textRow = WINDOWSIZE.pixels(2) *(3.5/9); %changed from 5, then 3
         stim.picRow = WINDOWSIZE.pixels(2) *(5/9);
         
         % other constants
