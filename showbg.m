@@ -1,5 +1,5 @@
 SET_SPEED = 0;
-
+SUBJECT = 100;
 SESSION = 1;
 exp_string_short = ['textlog_sess' int2str(SESSION)];
 exp_string_long = ['EK' int2str(SESSION)];

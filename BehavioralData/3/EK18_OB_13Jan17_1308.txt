@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.7   	32  	PIPE      	localizer	3.451	3.071	1   	full    	full    
+2   	20.7  	30  	SHIRT     	localizer	3.451	1.807	0   	generic 	1 detail
+3   	36.7  	36  	SHOVEL    	localizer	3.45	2.871	1   	2+ details	2+ details
+4   	48.7  	26  	DRILL     	localizer	3.451	1.168	1   	full    	full    
+5   	60.7  	25  	EASEL     	localizer	3.451	2   	1   	1 detail	1 detail
+6   	72.7  	27  	TRIPOD    	localizer	3.45	1.792	1   	1 detail	1 detail
+7   	84.7  	34  	MAGNET    	localizer	3.45	2.152	1   	full    	full    
+8   	96.7  	22  	PUDDLE    	localizer	3.45	3.256	1   	full    	full    
+9   	108.7 	23  	CANDLE    	localizer	3.452	1.496	1   	1 detail	1 detail
+10  	120.7 	33  	RAKE      	localizer	3.45	1.992	1   	2+ details	2+ details
+11  	132.7 	28  	WALLET    	localizer	3.451	NR  	0   	NR      	full    
+12  	148.7 	24  	CHALK     	localizer	3.451	1.4 	0   	generic 	1 detail
+13  	164.7 	21  	POWDER    	localizer	3.451	1.777	1   	generic 	generic 
+14  	176.7 	35  	BASKET    	localizer	3.45	1.513	1   	2+ details	2+ details
+15  	188.7 	29  	PADDLE    	localizer	3.451	1.736	1   	2+ details	2+ details
+16  	200.7 	31  	FOAM      	localizer	3.452	NR  	0   	NR      	generic 
+17  	216.7 	28  	WALLET (repeat 1)	localizer	3.45	1.369	1   	1 detail	1 detail
+18  	228.7 	31  	FOAM (repeat 1)	localizer	3.45	1.145	1   	2+ details	2+ details
+19  	240.7 	30  	SHIRT (repeat 1)	localizer	3.45	1.313	1   	generic 	generic 
+20  	252.7 	24  	CHALK (repeat 1)	localizer	3.451	1.177	1   	full    	full    

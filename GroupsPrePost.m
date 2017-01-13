@@ -16,20 +16,21 @@
 %variables
 %subjectNum = 3;
 %runNum = 1;
-projectName = 'motStudy02';
+projectName = 'motStudy03';
 onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ]; %should be all
 %plot dir?
-svec = [8:16];
+svec = [1 2];
 runvec = ones(1,length(svec));
 nTRsperTrial = 19;
 if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
-datevec = {'8-10-16', '8-11-16', '8-16-16', '8-18-16', '8-27-16', '8-30-16', '9-7-16', '9-14-16', '9-16-16'};
-RT = [8:15];
-YC = [16];
+datevec = {'12-21-16', '1-11-17'};
+RT = [1 2];
+YC= [];
+RTonly = 1;
 NSUB = length(svec);
 for s = 1:NSUB
     subjectNum = svec(s);
@@ -43,12 +44,10 @@ for s = 1:NSUB
     featureSelect = 1;
     %normally, scan num for recall 1 is 13 and recall 2 is 21
     recallScan = [13 21];
-    if subjectNum == 8
-        recallScan = [13 23];
-    elseif subjectNum == 14
-        recallScan = [17 27];
+    if subjectNum == 1
+        recallScan = [13 25];
     end
-    recallSession = [19 23];
+    recallSession = [20 24];
     %date = '7-12-16';
     
     shiftTR = 2;
@@ -69,26 +68,27 @@ for s = 1:NSUB
     for i = 1:2
         
         % only take the stimuli that they remember
-        if i == 1 %if recall one check
-           r = dir(fullfile(behavioral_dir, ['EK' num2str(recallSession(i)) '_' 'SUB'  '*.mat'])); 
-           r = load(fullfile(behavioral_dir,r(end).name)); 
-           trials = table2cell(r.datastruct.trials);
-           stimID = cell2mat(trials(:,8));
-           cond = cell2mat(trials(:,9));
-           rating = cell2mat(trials(:,12));
-           sub.hard = rating(find(cond==1));
-           sub.easy = rating(find(cond==2));
-           
-            sub.Orderhard = sub.hard(stimOrder.hard);
-            sub.Ordereasy = sub.easy(stimOrder.easy);
-        
-            keep.hard = find(sub.Orderhard>1); %in the order of the stimuli-which indices to keep
-            keep.easy = find(sub.Ordereasy>1);
-        end
+%         if i == 1 %if recall one check
+%            r = dir(fullfile(behavioral_dir, ['EK' num2str(recallSession(i)) '_' 'SUB'  '*.mat'])); 
+%            r = load(fullfile(behavioral_dir,r(end).name)); 
+%            trials = table2cell(r.datastruct.trials);
+%            stimID = cell2mat(trials(:,8));
+%            cond = cell2mat(trials(:,9));
+%            rating = cell2mat(trials(:,12));
+%            sub.hard = rating(find(cond==1));
+%            sub.easy = rating(find(cond==2));
+%            
+%             sub.Orderhard = sub.hard(stimOrder.hard);
+%             sub.Ordereasy = sub.easy(stimOrder.easy);
+%         
+%             keep.hard = find(sub.Orderhard>1); %in the order of the stimuli-which indices to keep
+%             keep.easy = find(sub.Ordereasy>1);
+%         end
         
         scanNum = recallScan(i);
         SESSION = recallSession(i);
-        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect); %this will give the category sep for every TR but now we have to pull out the TR's we
+        save =0;
+        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save); %this will give the category sep for every TR but now we have to pull out the TR's we
         %want and their conditions
         [~,trials,stimOrder] = GetSessionInfoRT(subjectNum,SESSION,behavioral_dir);        
         testTrials = find(any(patterns.regressor.allCond));
@@ -111,18 +111,18 @@ for s = 1:NSUB
     end
     
     % now find post - pre difference
-    if onlyRem 
-        PrePostRT = RTevidence(keep.hard,:,2) - RTevidence(keep.hard,:,1);
-        PrePostOMIT = OMITevidence(keep.easy,:,2) - OMITevidence(keep.easy,:,1);
-    elseif onlyRem == 0 && onlyForg == 0
+%     if onlyRem 
+%         PrePostRT = RTevidence(keep.hard,:,2) - RTevidence(keep.hard,:,1);
+%         PrePostOMIT = OMITevidence(keep.easy,:,2) - OMITevidence(keep.easy,:,1);
+    %elseif onlyRem == 0 && onlyForg == 0
         PrePostRT = RTevidence(:,:,2) - RTevidence(:,:,1);
         PrePostOMIT = OMITevidence(:,:,2) - OMITevidence(:,:,1);
-    elseif onlyForg
-        forg_hard = setdiff(1:size(RTevidence,1),keep.hard);
-        forg_easy = setdiff(1:size(RTevidence,1),keep.easy);
-        PrePostRT = RTevidence(forg_hard,:,2) - RTevidence(forg_hard,:,1);
-        PrePostOMIT = OMITevidence(forg_easy,:,2) - OMITevidence(forg_easy,:,1);
-    end
+%     elseif onlyForg
+%         forg_hard = setdiff(1:size(RTevidence,1),keep.hard);
+%         forg_easy = setdiff(1:size(RTevidence,1),keep.easy);
+%         PrePostRT = RTevidence(forg_hard,:,2) - RTevidence(forg_hard,:,1);
+%         PrePostOMIT = OMITevidence(forg_easy,:,2) - OMITevidence(forg_easy,:,1);
+%     end
     RTavg(s,:) = mean(PrePostRT,1);
     
     OMITavg(s,:) = mean(PrePostOMIT,1);
