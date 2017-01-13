@@ -2,7 +2,7 @@
 %cross-validate only--just for checking how the classifier is doing on
 %subject data after the fact! ahhh
 projectName = 'motStudy03';
-subvec = [1];
+subvec = [1 2];
 nsub = length(subvec);
 featureSelect = 1;
 allplotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ];
@@ -134,9 +134,9 @@ for s = 1:nsub
     %print cross-validation results
     fprintf('\n*********************************************\n');
     fprintf('finished cross-validation...\n');
-    fprintf(['* Average AUC over Iterations: ' num2str(average_AUC) ' +- ' num2str(std_AUC) '\n']);
-    fprintf(['* Average Hard vs. Lure AUC over Iterations: ' num2str(average_hardAUC) ' +- ' num2str(std_hardAUC) '\n']);
-    fprintf(['* Average Easy vs. Lure AUC over Iterations: ' num2str(average_easyAUC) ' +- ' num2str(std_easyAUC) '\n']);
+    fprintf(['* Average AUC over Iterations: ' num2str(average_AUC(s,ktr)) ' +- ' num2str(std_AUC(s,ktr)) '\n']);
+    fprintf(['* Average Hard vs. Lure AUC over Iterations: ' num2str(average_hardAUC(s,ktr)) ' +- ' num2str(std_hardAUC) '\n']);
+    fprintf(['* Average Easy vs. Lure AUC over Iterations: ' num2str(average_easyAUC(s,ktr)) ' +- ' num2str(std_easyAUC) '\n']);
     fprintf('Cross-validation model training time: \t%.3f\n',xvaltime); 
     end
     end
