@@ -1366,7 +1366,7 @@ switch SESSION
         dot_map = keys.map([1 5],:);
         
         %rt parameters 
-        OptimalForget = 0.15;
+        OptimalForget = 0.1;
         maxIncrement = 1.25;
         Kp = 5;
         Ki = .01;

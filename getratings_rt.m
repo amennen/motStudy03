@@ -10,7 +10,7 @@ projectName = 'motStudy03';
 base_path = [fileparts(which('mot_realtime02.m')) filesep];
 
 % don't put in 22 until have subject
-svec = [1];
+svec = [2];
 
 NSUB = length(svec);
 recallSession = [20 24];
@@ -51,7 +51,7 @@ for s = 1:NSUB
     
     diff_easy(s) = nanmean(easy_ordered(2,:) - easy_ordered(1,:));
     diff_hard(s) = nanmean(hard_ordered(2,:) - hard_ordered(1,:));
-    clear easy_ordered hard_ordered
+    %clear easy_ordered hard_ordered
     %[allRem] = findRememberedStim(svec(s));
     r = dir(fullfile(behavioral_dir, ['_' 'RECOG'  '*.mat']));
     r = load(fullfile(behavioral_dir,r(end).name));
