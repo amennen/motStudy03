@@ -2,7 +2,7 @@
 %%fmri session
 %first these are all the session numbers
 
-SUBJECT = 3; %experimental subject number
+SUBJECT = 4; %experimental subject number
 prev = 0; %if today's date (0) or previous date (1)
 scanNow = 1; %if using triggers (1)
 runNum = 1; %what number subject they are today
@@ -76,7 +76,7 @@ ProcessMask(SUBJECT,processNew,prev,scanNum,runNum) %have it so it waits until i
 
 %% NOW RUN FIELD MAPS WHILE NEXT BEHAVIORAL TASKS (RSVP2,FAMILIARIZE3,TOCRITERION3)
 %changed from RSVP2 change back!!
-mot_realtime02(SUBJECT,FAMILIARIZE3,[],0,scanNow) %will continue until TOCRITERION3
+mot_realtime02(SUBJECT,RSVP2,[],0,scanNow) %will continue until TOCRITERION3
 %look for mask and test it
 
 %% LOCALIZER DISPLAY

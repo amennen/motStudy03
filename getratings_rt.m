@@ -10,7 +10,7 @@ projectName = 'motStudy03';
 base_path = [fileparts(which('mot_realtime02.m')) filesep];
 
 % don't put in 22 until have subject
-svec = [2];
+svec = [2 3];
 
 NSUB = length(svec);
 recallSession = [20 24];

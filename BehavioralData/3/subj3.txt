@@ -978,6 +978,35 @@ SESSION 10 ended 12-Jan-2017 18:43:14 for SUBJECT number 3
 
 
 ******************************************************************************
+<<<<<<< HEAD
+
+SESSION 12 initiated 13-Jan-2017 12:38:02 for SUBJECT number 3
+
+session	trial	pair	onset	dur	cue         	associate   
+12	1	18	2004  	2002  	BELT        	pici21.jpg  
+12	2	5	10004 	2001  	MIRROR      	pico17.jpg  
+12	3	15	18005 	2000  	POLE        	pico02.jpg  
+12	4	1	26006 	2001  	MATCH       	pico21.jpg  
+12	5	2	34006 	2001  	APRON       	pici20.jpg  
+12	6	19	42007 	2001  	BROOM       	pico11.jpg  
+12	7	9	50007 	2001  	PLUG        	pico19.jpg  
+12	8	17	58008 	2001  	PAINT       	pico09.jpg  
+12	9	6	66008 	2000  	WIRE        	pici18.jpg  
+12	10	11	74009 	2001  	JAIL        	pico16.jpg  
+12	11	8	82009 	2001  	STAPLE      	pici22.jpg  
+12	12	12	90010 	2001  	PARADE      	pici19.jpg  
+12	13	13	98010 	2001  	GLASS       	pico26.jpg  
+12	14	10	106011	2001  	DRUM        	pici26.jpg  
+12	15	7	113995	2018  	BRUSH       	pico20.jpg  
+12	16	14	122012	2001  	HANDLE      	pici28.jpg  
+12	17	3	130013	1984  	BUBBLE      	pico04.jpg  
+12	18	20	138013	2001  	RATTLE      	pici13.jpg  
+12	19	4	146014	2001  	HOOK        	pici25.jpg  
+12	20	16	153998	2001  	SPONGE      	pici06.jpg  
+
+
+SESSION 12 ended 13-Jan-2017 12:40:53 for SUBJECT number 3
+=======
 trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
 1	1	0		-7.500	  NaN	0.0004		NaN		1		  NaN		
 1	2	0		-7.500	  NaN	0.0003		NaN		1		  NaN		
@@ -1073,6 +1102,7 @@ session	trial	pair	onset	dur	cue         	associate
 
 
 SESSION 17 ended 13-Jan-2017 13:08:14 for SUBJECT number 3
+>>>>>>> 0f3100d750f3b70dff8d8e675a7561a4543f7202
 
 
 
@@ -1080,12 +1110,18 @@ SESSION 17 ended 13-Jan-2017 13:08:14 for SUBJECT number 3
 ******************************************************************************
 
 
+<<<<<<< HEAD
+SESSION 25 ended 13-Jan-2017 14:43:43 for SUBJECT number 3
+=======
 SESSION 18 ended 13-Jan-2017 13:12:55 for SUBJECT number 3
+>>>>>>> 0f3100d750f3b70dff8d8e675a7561a4543f7202
 
 
 
 
 ******************************************************************************
+<<<<<<< HEAD
+=======
 trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
 1	1	0		15.669	  NaN	0.0158		NaN		1		  NaN		
 1	2	0		15.669	  NaN	0.0162		NaN		1		  NaN		
@@ -2086,3 +2122,4 @@ trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
 
 SESSION 24 ended 13-Jan-2017 14:39:06 for SUBJECT number 3
 
+>>>>>>> 0f3100d750f3b70dff8d8e675a7561a4543f7202
