@@ -1,0 +1,5 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	36.2  	37  	CURTAIN   	targ_hard	1.95	1.297	1   	non-target	non-target
+2   	78.2  	38  	PUZZLE    	targ_easy	1.95	1.258	1   	target  	target  
+3   	120.2 	39  	PAGE      	lure_easy	1.95	0.665	1   	target  	target  
+4   	162.2 	40  	PHONE     	lure_hard	1.95	0.906	1   	non-target	non-target

@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	43.7  	13  	NAIL      	omit    	3.951	2.692	0   	generic 	1 detail, 2+ details, full
+2   	83.7  	4   	DENT      	realtime	3.951	1.116	0   	no image	1 detail, 2+ details, full
+3   	123.7 	8   	DOME      	realtime	3.95	2.117	0   	generic 	1 detail, 2+ details, full
+4   	163.7 	12  	BROOM     	omit    	3.95	1.549	1   	full    	1 detail, 2+ details, full
+5   	203.7 	18  	COAL      	omit    	3.951	0.805	1   	full    	1 detail, 2+ details, full
+6   	243.7 	1   	MATCH     	realtime	3.95	1.718	1   	1 detail	1 detail, 2+ details, full
+7   	283.7 	16  	ANCHOR    	omit    	3.952	1.214	1   	full    	1 detail, 2+ details, full
+8   	323.7 	3   	SPONGE    	realtime	3.951	1.71	1   	full    	1 detail, 2+ details, full
+9   	363.7 	5   	CANDLE    	realtime	3.95	1.335	0   	no image	1 detail, 2+ details, full
+10  	403.7 	11  	SHOVEL    	omit    	3.95	3.887	0   	generic 	1 detail, 2+ details, full
+11  	443.7 	17  	GLASS     	omit    	3.95	1.759	1   	2+ details	1 detail, 2+ details, full
+12  	483.7 	10  	CHALK     	realtime	3.95	3.135	1   	1 detail	1 detail, 2+ details, full
+13  	523.7 	19  	TICKET    	omit    	3.951	0.656	1   	full    	1 detail, 2+ details, full
+14  	563.7 	9   	COLLAR    	realtime	3.95	1.209	1   	full    	1 detail, 2+ details, full
+15  	603.7 	7   	BRUSH     	realtime	3.95	2.12	1   	full    	1 detail, 2+ details, full
+16  	643.7 	20  	NICKEL    	omit    	3.951	1.673	1   	1 detail	1 detail, 2+ details, full
+17  	683.7 	2   	PURSE     	realtime	3.95	0.785	1   	full    	1 detail, 2+ details, full
+18  	723.7 	14  	RAKE      	omit    	3.954	0.746	1   	full    	1 detail, 2+ details, full
+19  	763.7 	15  	HANDLE    	omit    	3.951	2.002	1   	full    	1 detail, 2+ details, full
+20  	803.7 	6   	JAIL      	realtime	3.95	1.847	1   	1 detail	1 detail, 2+ details, full
