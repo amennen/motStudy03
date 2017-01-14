@@ -1,0 +1,20 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.7   	24  	APRON     	localizer	3.453	NR  	0   	NR      	2+ details
+2   	24.7  	23  	MARBLE    	localizer	3.452	0.906	1   	generic 	generic 
+3   	36.7  	22  	MAGNET    	localizer	3.45	1.634	0   	full    	1 detail
+4   	52.7  	36  	LENS      	localizer	3.45	1.322	1   	1 detail	1 detail
+5   	64.7  	31  	FRAME     	localizer	3.45	1.426	1   	generic 	generic 
+6   	76.7  	29  	BRACELET  	localizer	3.45	2.498	0   	full    	generic 
+7   	92.7  	21  	FOAM      	localizer	3.45	0.994	1   	1 detail	1 detail
+8   	104.7 	26  	PARADE    	localizer	3.451	1.474	1   	2+ details	2+ details
+9   	116.7 	25  	STAPLE    	localizer	3.451	2.61	1   	generic 	generic 
+10  	128.7 	28  	HOOK      	localizer	3.451	2.346	1   	full    	full    
+11  	140.7 	34  	NOTE      	localizer	3.45	2.219	1   	full    	full    
+12  	152.7 	33  	WALLET    	localizer	3.45	1.907	1   	full    	full    
+13  	164.7 	27  	MOON      	localizer	3.45	1.971	1   	full    	full    
+14  	176.7 	35  	PIPE      	localizer	3.45	2.195	1   	1 detail	1 detail
+15  	188.7 	32  	MIRROR    	localizer	3.45	2.139	1   	full    	full    
+16  	200.7 	30  	RATTLE    	localizer	3.451	1.395	1   	generic 	generic 
+17  	212.7 	24  	APRON (repeat 1)	localizer	3.45	2.075	1   	generic 	generic 
+18  	224.7 	22  	MAGNET (repeat 1)	localizer	3.45	2.811	1   	2+ details	2+ details
+19  	236.7 	29  	BRACELET (repeat 1)	localizer	3.451	2.523	1   	generic 	generic 

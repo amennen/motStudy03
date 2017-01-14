@@ -1,0 +1,11 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	66.1  	7   	BRUSH     	rt-targ 	1.95	1.035	1   	target  	target  
+2   	108.1 	2   	PURSE     	rt-targ 	1.951	1.22	1   	target  	target  
+3   	150.1 	9   	COLLAR    	rt-targ 	1.951	1.228	1   	non-target	non-target
+4   	192.1 	5   	CANDLE    	rt-targ 	1.95	0.948	1   	non-target	non-target
+5   	234.1 	4   	DENT      	rt-targ 	1.95	1.076	1   	target  	target  
+6   	276.1 	10  	CHALK     	rt-targ 	1.951	0.885	1   	non-target	non-target
+7   	318.1 	3   	SPONGE    	rt-targ 	1.952	0.998	1   	non-target	non-target
+8   	360.1 	8   	DOME      	rt-targ 	1.951	1.733	1   	target  	target  
+9   	402.1 	6   	JAIL      	rt-targ 	1.951	0.91	1   	non-target	non-target
+10  	444.1 	1   	MATCH     	rt-targ 	1.951	0.798	1   	non-target	non-target

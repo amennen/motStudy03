@@ -21,7 +21,7 @@ plotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ]; %should be all
 %plot dir?
 updated =1; %for only looking at the results recorded after making differences (minimum dot speed, increase starting speed, average over 2)
 oldonly = 0;
-svec = [2];
+svec = [2 3];
 datevec = {'1-17-17'};
 runvec = [1];
 

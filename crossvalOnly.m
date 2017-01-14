@@ -2,7 +2,7 @@
 %cross-validate only--just for checking how the classifier is doing on
 %subject data after the fact! ahhh
 projectName = 'motStudy03';
-subvec = [1 2];
+subvec = [2 3];
 nsub = length(subvec);
 featureSelect = 1;
 allplotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ];
