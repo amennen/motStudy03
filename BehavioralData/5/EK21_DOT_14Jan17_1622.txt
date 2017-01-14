@@ -1,0 +1,11 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	68    	8   	STAPLE    	rt-targ 	1.952	0.872	0   	target  	non-target
+2   	110   	1   	BRUSH     	rt-targ 	1.951	1.208	1   	non-target	non-target
+3   	152   	7   	BROOM     	rt-targ 	1.95	0.64	1   	non-target	non-target
+4   	194   	4   	CHALK     	rt-targ 	1.95	0.848	1   	target  	target  
+5   	235.9 	5   	PYRAMID   	rt-targ 	1.95	0.825	1   	target  	target  
+6   	277.9 	3   	MAGNET    	rt-targ 	1.95	1.009	1   	non-target	non-target
+7   	319.9 	9   	PIPE      	rt-targ 	1.953	0.945	1   	non-target	non-target
+8   	361.9 	2   	PAINT     	rt-targ 	1.952	0.865	1   	non-target	non-target
+9   	403.9 	10  	ANCHOR    	rt-targ 	1.95	0.834	1   	non-target	non-target
+10  	445.9 	6   	RAKE      	rt-targ 	1.951	1.25	1   	non-target	non-target

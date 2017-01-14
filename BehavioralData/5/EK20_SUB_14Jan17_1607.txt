@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	45.3  	4   	CHALK     	realtime	3.951	2.805	1   	2+ details	1 detail, 2+ details, full
+2   	85.3  	12  	TICKET    	omit    	3.95	3.934	1   	1 detail	1 detail, 2+ details, full
+3   	125.3 	18  	FOAM      	omit    	3.952	1.126	1   	2+ details	1 detail, 2+ details, full
+4   	165.3 	5   	PYRAMID   	realtime	3.951	1.238	1   	2+ details	1 detail, 2+ details, full
+5   	205.3 	20  	PLUG      	omit    	3.95	2.302	1   	2+ details	1 detail, 2+ details, full
+6   	245.3 	1   	BRUSH     	realtime	3.951	0.479	1   	2+ details	1 detail, 2+ details, full
+7   	285.3 	10  	ANCHOR    	realtime	3.95	1.191	1   	2+ details	1 detail, 2+ details, full
+8   	325.3 	14  	NAIL      	omit    	3.95	0.439	1   	full    	1 detail, 2+ details, full
+9   	365.3 	9   	PIPE      	realtime	3.951	0.432	1   	full    	1 detail, 2+ details, full
+10  	405.3 	15  	SPONGE    	omit    	3.95	1.568	1   	2+ details	1 detail, 2+ details, full
+11  	445.3 	2   	PAINT     	realtime	3.953	0.856	1   	full    	1 detail, 2+ details, full
+12  	485.3 	17  	HOOK      	omit    	3.951	1.049	1   	2+ details	1 detail, 2+ details, full
+13  	525.3 	6   	RAKE      	realtime	3.952	0.809	1   	2+ details	1 detail, 2+ details, full
+14  	565.3 	16  	BRACELET  	omit    	3.95	1.905	1   	2+ details	1 detail, 2+ details, full
+15  	605.3 	19  	POLE      	omit    	3.95	0.906	1   	2+ details	1 detail, 2+ details, full
+16  	645.3 	3   	MAGNET    	realtime	3.95	0.738	1   	2+ details	1 detail, 2+ details, full
+17  	685.3 	11  	NICKEL    	omit    	3.954	0.906	1   	2+ details	1 detail, 2+ details, full
+18  	725.3 	7   	BROOM     	realtime	3.95	0.818	1   	2+ details	1 detail, 2+ details, full
+19  	765.3 	8   	STAPLE    	realtime	3.951	0.907	1   	2+ details	1 detail, 2+ details, full
+20  	805.3 	13  	HOSE      	omit    	3.951	0.635	1   	2+ details	1 detail, 2+ details, full

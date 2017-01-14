@@ -9,7 +9,7 @@ allsep = [];
 nstim = 10;
 nTRs = 15;
 nblock = 3;
-svec = [2 3];
+svec = [4];
 
 nsub = length(svec);
 sepbystim = zeros(nstim,nTRs*nblock);

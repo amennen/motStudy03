@@ -1,0 +1,17 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.6   	35  	DRILL     	localizer	3.451	2.122	1   	full    	full    
+2   	20.6  	21  	PADDLE    	localizer	3.451	1.138	1   	generic 	generic 
+3   	32.6  	25  	MATCH     	localizer	3.451	0.922	1   	2+ details	2+ details
+4   	44.6  	30  	COAL      	localizer	3.451	1.026	1   	generic 	generic 
+5   	56.6  	34  	ROPE      	localizer	3.45	1.186	1   	2+ details	2+ details
+6   	68.6  	22  	COLLAR    	localizer	3.45	0.882	1   	full    	full    
+7   	80.6  	33  	BUBBLE    	localizer	3.45	0.946	1   	1 detail	1 detail
+8   	92.6  	32  	TRIPOD    	localizer	3.452	1.77	1   	1 detail	1 detail
+9   	104.6 	31  	JOURNAL   	localizer	3.45	1.178	1   	full    	full    
+10  	116.6 	36  	LENS      	localizer	3.45	1.307	1   	full    	full    
+11  	128.6 	23  	RULER     	localizer	3.454	0.723	1   	2+ details	2+ details
+12  	140.6 	27  	RATTLE    	localizer	3.451	1.099	1   	generic 	generic 
+13  	152.6 	26  	PAGE      	localizer	3.451	0.819	1   	generic 	generic 
+14  	164.6 	24  	EASEL     	localizer	3.45	1.307	1   	full    	full    
+15  	176.6 	28  	APRON     	localizer	3.453	0.943	1   	generic 	generic 
+16  	188.6 	29  	MARBLE    	localizer	3.45	1.675	1   	2+ details	2+ details

@@ -21,15 +21,17 @@ onlyRem = 1; %if should only look at the stimuli that subject answered >1 for re
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ]; %should be all
 %plot dir?
-svec = [3];
+svec = [3 4 5];
 runvec = ones(1,length(svec));
+irun2 = find(svec==5);
+runvec(irun2) = 2;
 nTRsperTrial = 19;
 if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17'};
-RT = [3];
+datevec = { '1-13-17', '1-14-17', '1-14-17'};
+RT = [3 4];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
