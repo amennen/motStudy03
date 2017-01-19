@@ -1,4 +1,5 @@
-function [patterns, t] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,saveNew) %,rtfeedback)
+
+function [patterns, t] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,saveNew,trainedFile) %,rtfeedback)
 % function [patterns] = RealTimeMemoryFileProcess(subjectNum,subjectName,runNum,scanNum,rtData)
 %
 % this function describes the file processing procedure for the realtime
@@ -83,8 +84,9 @@ if anat_mask
 end
 
 
-%load trained model
-fname = findNewestFile(locPatterns_dir,[locPatterns_dir '/loctrainedModel' '*']);
+%load trained model:original way
+%trainedFile = 'loctrainedModel'; %uncomment if doing original way
+fname = findNewestFile(locPatterns_dir,[locPatterns_dir '/' trainedFile '*']);
 load(fname);
 
 %allfn = dir([locPatterns_dir '/loctrainedModel' '*']);
@@ -253,7 +255,9 @@ fprintf('run\tblock\tTR\tloaded\n');
        % if any(patterns.regressor.twoCond(:,iTrial-shiftTR)) %take out so
        % it will test every TR
         if featureSelect
-            goodVox = loc.patterns.sigVox;
+            %not localizer so use
+            goodVox=sigVox; %use this version if you're inputting file!!
+            %goodVox = loc.patterns.sigVox;
             [patterns.predict(iTrial), patterns.activations(1:2,iTrial)] = predict_ridge(patterns.raw_sm_filt_z(iTrial,goodVox),trainedModel);
         else
             [patterns.predict(iTrial), patterns.activations(1:2,iTrial)] = predict_ridge(patterns.raw_sm_filt_z(iTrial,:),trainedModel);

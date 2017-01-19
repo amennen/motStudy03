@@ -19,9 +19,10 @@
 projectName = 'motStudy03';
 onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
 onlyForg = 0;
-plotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ]; %should be all
+plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
 svec = [3 4 5];
+trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
 runvec(irun2) = 2;
@@ -31,7 +32,7 @@ if length(runvec)~=length(svec)
 end
 %datevec = { '1-11-17', '1-13-17'};
 datevec = { '1-13-17', '1-14-17', '1-14-17'};
-RT = [3 4];
+RT = [2 3 4 5];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
@@ -91,7 +92,8 @@ for s = 1:NSUB
         scanNum = recallScan(i);
         SESSION = recallSession(i);
         save =0;
-        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save); %this will give the category sep for every TR but now we have to pull out the TR's we
+        %[patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save,trainedModel); %this will give the category sep for every TR but now we have to pull out the TR's we
+        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save,trainedModel);
         %want and their conditions
         [~,trials,stimOrder] = GetSessionInfoRT(subjectNum,SESSION,behavioral_dir);        
         testTrials = find(any(patterns.regressor.allCond));
@@ -135,12 +137,8 @@ end
 %take data only from RT group
 RT_i = find(ismember(svec,RT));
 nRT = length(RT_i);
-nYC = length(YC_i);
-YC_i = find(ismember(svec,YC));
 RTgroup_RT = RTavg(RT_i,:);
 RTgroup_OM = OMITavg(RT_i,:);
-YCgroup_RT = RTavg(YC_i,:);
-YCgroup_OM = OMITavg(YC_i,:);
 h1 = figure;
 %alldiffmeans = [RTavg;OMITavg];
 %alldiffstd = [std(PrePostRT)/sqrt(size(PrePostRT,1)-1);std(PrePostOMIT)/sqrt(size(PrePostRT,1)-1)];
@@ -162,10 +160,10 @@ set(findall(gcf,'-property','FontSize'),'FontSize',16)
 %line([6 6], [-1 1], 'Color', 'k', 'LineWidth', 3);
 
 xlim([1 nTRsperTrial])
-ylim([-.25 .25])
-%print(h1, sprintf('%sresults_updated0914_aonlyForg.pdf', plotDir), '-dpdf')
+%ylim([-.25 .25])
+print(h1, sprintf('%sresults_3sub_avg.pdf', plotDir), '-dpdf')
 
-
+%%
 h1 = figure;
 %alldiffmeans = [RTavg;OMITavg];
 %alldiffstd = [std(PrePostRT)/sqrt(size(PrePostRT,1)-1);std(PrePostOMIT)/sqrt(size(PrePostRT,1)-1)];
