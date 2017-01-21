@@ -21,7 +21,7 @@ onlyRem = 1; %if should only look at the stimuli that subject answered >1 for re
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
-svec = [3 4 5];
+svec = [3 4 5 6 7];
 trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
@@ -31,8 +31,8 @@ if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17', '1-14-17', '1-14-17'};
-RT = [2 3 4 5];
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17'};
+RT = [3 4 5 6 7];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
@@ -93,7 +93,8 @@ for s = 1:NSUB
         SESSION = recallSession(i);
         save =0;
         %[patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save,trainedModel); %this will give the category sep for every TR but now we have to pull out the TR's we
-        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save,trainedModel);
+        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save);
+	%[patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featu)trainedModel);
         %want and their conditions
         [~,trials,stimOrder] = GetSessionInfoRT(subjectNum,SESSION,behavioral_dir);        
         testTrials = find(any(patterns.regressor.allCond));
@@ -161,7 +162,7 @@ set(findall(gcf,'-property','FontSize'),'FontSize',16)
 
 xlim([1 nTRsperTrial])
 %ylim([-.25 .25])
-print(h1, sprintf('%sresults_3sub_avg.pdf', plotDir), '-dpdf')
+print(h1, sprintf('%sresults120_4sub_avg.pdf', plotDir), '-dpdf')
 
 %%
 h1 = figure;
