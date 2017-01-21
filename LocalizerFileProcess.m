@@ -179,7 +179,7 @@ printlog(dataFile,'beginning model cross-validation...\n');
 
 %parameters
 penalty = 100;
-keepTR = 4; %should change to 8 maybe???? from 4 because we increased MOT
+keepTR = 15; %%changed it on 1/20 for subjects 6 on!
 shiftTR = 2;
 startXVAL = tic;
 
@@ -280,7 +280,7 @@ printlog(dataFile,'beginning model training...\n');
 %parameters
 penalty = 100;
 shiftTR = 2;
-keepTR = 4; %change from 4 to 8?
+keepTR = 15; %changed on 1/20 for subject 6 onwards to train the localizer task on all 15 TR's instead of just the first one
 trainStart = tic;
 
 %first get session information
