@@ -179,7 +179,7 @@ printlog(dataFile,'beginning model cross-validation...\n');
 
 %parameters
 penalty = 100;
-keepTR = 4; %should change to 8 maybe???? from 4 because we increased MOT
+keepTR = 15; %%changed it on 1/20 for subjects 6 on!
 shiftTR = 2;
 startXVAL = tic;
 
