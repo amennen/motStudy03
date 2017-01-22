@@ -1,7 +1,7 @@
 base_path = [fileparts(which('mot_realtime02.m')) filesep];
 cd(base_path);
 
-SUBJECT = 7;
+SUBJECT = 8;
 
 
 NUM_TASK_RUNS = 3;
@@ -42,6 +42,8 @@ mot_realtime02(SUBJECT, SETUP, [], 0, 0);
 
 % this will continue to train test and practice MOT, then move on to
 % MOT_Practice, MOT_PREP
+%%
+mot_realtime02(SUBJECT,MOT_PREP,[],0,0);
 mot_realtime02(SUBJECT, FAMILIARIZE2, [], 0, 0); %continue because want to not go through the break
 
 %% refresh on day 2

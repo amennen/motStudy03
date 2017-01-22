@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	8.1   	20  	CANDLE    	omit    	3.453	1.039	1   	generic 	generic 
+2   	20.1  	6   	GLASS     	realtime	3.455	1.318	1   	2+ details	2+ details
+3   	32.1  	12  	ANCHOR    	omit    	3.453	0.708	1   	full    	full    
+4   	44.1  	1   	HOSE      	realtime	3.455	1.066	1   	2+ details	2+ details
+5   	56.1  	2   	BASKET    	realtime	3.455	0.856	1   	1 detail	1 detail
+6   	68.1  	11  	TRIPOD    	omit    	3.456	1.143	1   	full    	full    
+7   	80.1  	3   	CHALK     	realtime	3.456	2.852	1   	2+ details	2+ details
+8   	92.1  	17  	FRAME     	omit    	3.455	1.667	1   	full    	full    
+9   	104.1 	19  	HOOK      	omit    	3.455	0.761	1   	full    	full    
+10  	116.1 	8   	PHONE     	realtime	3.455	1.159	1   	generic 	generic 
+11  	128.1 	15  	PURSE     	omit    	3.451	0.566	1   	generic 	generic 
+12  	140.1 	5   	WALLET    	realtime	3.455	1.356	1   	generic 	generic 
+13  	152.1 	13  	PADDLE    	omit    	3.455	0.906	1   	1 detail	1 detail
+14  	164.1 	7   	POWDER    	realtime	3.451	1.768	1   	full    	full    
+15  	176.1 	4   	NAIL      	realtime	3.455	0.63	1   	generic 	generic 
+16  	188.1 	14  	COAL      	omit    	3.455	0.637	1   	full    	full    
+17  	200.1 	16  	RATTLE    	omit    	3.455	0.547	1   	1 detail	1 detail
+18  	212.1 	10  	EASEL     	realtime	3.455	1.977	1   	1 detail	1 detail
+19  	224.1 	18  	APRON     	omit    	3.452	0.791	1   	2+ details	2+ details
+20  	236.1 	9   	NOTE      	realtime	3.455	0.662	1   	full    	full    

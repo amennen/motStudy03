@@ -1,0 +1,11 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	69.7  	9   	ANCHOR    	rt-targ 	1.953	1.078	1   	non-target	non-target
+2   	111.7 	4   	TICKET    	rt-targ 	1.952	NR  	0   	NR      	non-target
+3   	153.7 	8   	CHALK     	rt-targ 	1.95	0.958	1   	non-target	non-target
+4   	195.7 	1   	HANDLE    	rt-targ 	1.952	NR  	0   	NR      	target  
+5   	237.7 	7   	MIRROR    	rt-targ 	1.951	0.959	1   	non-target	non-target
+6   	279.7 	10  	POWDER    	rt-targ 	1.95	0.983	0   	non-target	target  
+7   	321.7 	2   	NOTE      	rt-targ 	1.95	0.823	0   	non-target	target  
+8   	363.7 	3   	SHOVEL    	rt-targ 	1.954	1.36	0   	non-target	target  
+9   	405.7 	6   	ROPE      	rt-targ 	1.953	1.192	1   	target  	target  
+10  	447.7 	5   	DRUM      	rt-targ 	1.951	1.345	0   	non-target	target  

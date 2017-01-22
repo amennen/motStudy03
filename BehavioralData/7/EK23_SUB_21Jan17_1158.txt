@@ -1,0 +1,41 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	38.6  	3   	SHOVEL    	rt-targ 	2.079	2.075	0   	generic 	1 detail, 2+ details, full
+2   	44.6  	3   	SHOVEL (repeat 1)	rt-targ 	2.025	NR  	0   	NR      	1 detail, 2+ details, full
+3   	50.6  	3   	SHOVEL (repeat 2)	rt-targ 	2.046	2.045	1   	1 detail	1 detail, 2+ details, full
+4   	56.6  	3   	SHOVEL (repeat 3)	rt-targ 	2.013	2.011	1   	1 detail	1 detail, 2+ details, full
+5   	80.6  	6   	ROPE      	rt-targ 	1.996	1.994	0   	generic 	1 detail, 2+ details, full
+6   	86.6  	6   	ROPE (repeat 1)	rt-targ 	1.992	1.991	0   	generic 	1 detail, 2+ details, full
+7   	92.6  	6   	ROPE (repeat 2)	rt-targ 	1.981	1.98	1   	2+ details	1 detail, 2+ details, full
+8   	98.6  	6   	ROPE (repeat 3)	rt-targ 	1.979	1.977	1   	full    	1 detail, 2+ details, full
+9   	122.6 	5   	DRUM      	rt-targ 	2.033	2.031	0   	generic 	1 detail, 2+ details, full
+10  	128.6 	5   	DRUM (repeat 1)	rt-targ 	1.999	1.997	0   	generic 	1 detail, 2+ details, full
+11  	134.6 	5   	DRUM (repeat 2)	rt-targ 	1.98	1.979	0   	generic 	1 detail, 2+ details, full
+12  	140.6 	5   	DRUM (repeat 3)	rt-targ 	2.03	2.029	0   	generic 	1 detail, 2+ details, full
+13  	164.6 	7   	MIRROR    	rt-targ 	2.026	2.025	1   	full    	1 detail, 2+ details, full
+14  	170.6 	7   	MIRROR (repeat 1)	rt-targ 	1.98	1.979	1   	full    	1 detail, 2+ details, full
+15  	176.6 	7   	MIRROR (repeat 2)	rt-targ 	1.979	1.978	1   	full    	1 detail, 2+ details, full
+16  	182.6 	7   	MIRROR (repeat 3)	rt-targ 	1.981	1.98	1   	full    	1 detail, 2+ details, full
+17  	206.6 	2   	NOTE      	rt-targ 	2.003	2.001	1   	2+ details	1 detail, 2+ details, full
+18  	212.6 	2   	NOTE (repeat 1)	rt-targ 	1.981	1.98	1   	2+ details	1 detail, 2+ details, full
+19  	218.6 	2   	NOTE (repeat 2)	rt-targ 	1.976	1.975	1   	2+ details	1 detail, 2+ details, full
+20  	224.6 	2   	NOTE (repeat 3)	rt-targ 	1.982	1.981	1   	2+ details	1 detail, 2+ details, full
+21  	248.6 	10  	POWDER    	rt-targ 	2.019	2.017	0   	generic 	1 detail, 2+ details, full
+22  	254.6 	10  	POWDER (repeat 1)	rt-targ 	2.048	2.047	0   	generic 	1 detail, 2+ details, full
+23  	260.6 	10  	POWDER (repeat 2)	rt-targ 	2.049	2.047	0   	generic 	1 detail, 2+ details, full
+24  	266.6 	10  	POWDER (repeat 3)	rt-targ 	2.015	2.013	0   	generic 	1 detail, 2+ details, full
+25  	290.6 	4   	TICKET    	rt-targ 	1.996	1.995	1   	full    	1 detail, 2+ details, full
+26  	296.6 	4   	TICKET (repeat 1)	rt-targ 	2.047	2.045	1   	full    	1 detail, 2+ details, full
+27  	302.6 	4   	TICKET (repeat 2)	rt-targ 	2.013	NR  	0   	NR      	1 detail, 2+ details, full
+28  	308.6 	4   	TICKET (repeat 3)	rt-targ 	2.014	2.012	1   	full    	1 detail, 2+ details, full
+29  	332.6 	9   	ANCHOR    	rt-targ 	1.981	1.979	0   	generic 	1 detail, 2+ details, full
+30  	338.6 	9   	ANCHOR (repeat 1)	rt-targ 	2.046	2.045	1   	1 detail	1 detail, 2+ details, full
+31  	344.6 	9   	ANCHOR (repeat 2)	rt-targ 	2.01	NR  	0   	NR      	1 detail, 2+ details, full
+32  	350.6 	9   	ANCHOR (repeat 3)	rt-targ 	2.042	2.041	1   	1 detail	1 detail, 2+ details, full
+33  	374.6 	1   	HANDLE    	rt-targ 	2.026	2.025	1   	1 detail	1 detail, 2+ details, full
+34  	380.6 	1   	HANDLE (repeat 1)	rt-targ 	2.013	2.011	1   	1 detail	1 detail, 2+ details, full
+35  	386.6 	1   	HANDLE (repeat 2)	rt-targ 	2.041	NR  	0   	NR      	1 detail, 2+ details, full
+36  	392.6 	1   	HANDLE (repeat 3)	rt-targ 	2.01	NR  	0   	NR      	1 detail, 2+ details, full
+37  	416.6 	8   	CHALK     	rt-targ 	2.024	NR  	0   	NR      	1 detail, 2+ details, full
+38  	422.6 	8   	CHALK (repeat 1)	rt-targ 	2.012	NR  	0   	NR      	1 detail, 2+ details, full
+39  	428.6 	8   	CHALK (repeat 2)	rt-targ 	2.009	NR  	0   	NR      	1 detail, 2+ details, full
+40  	434.6 	8   	CHALK (repeat 3)	rt-targ 	2.017	2.016	1   	2+ details	1 detail, 2+ details, full

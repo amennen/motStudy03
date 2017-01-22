@@ -85,7 +85,7 @@ end
 
 
 %load trained model:original way
-%trainedFile = 'loctrainedModel'; %uncomment if doing original way
+trainedFile = 'loctrainedModel'; %uncomment if doing original way
 fname = findNewestFile(locPatterns_dir,[locPatterns_dir '/' trainedFile '*']);
 load(fname);
 
@@ -256,8 +256,8 @@ fprintf('run\tblock\tTR\tloaded\n');
        % it will test every TR
         if featureSelect
             %not localizer so use
-            goodVox=sigVox; %use this version if you're inputting file!!
-            %goodVox = loc.patterns.sigVox;
+           % goodVox=sigVox; %use this version if you're inputting file!!
+            goodVox = loc.patterns.sigVox;
             [patterns.predict(iTrial), patterns.activations(1:2,iTrial)] = predict_ridge(patterns.raw_sm_filt_z(iTrial,goodVox),trainedModel);
         else
             [patterns.predict(iTrial), patterns.activations(1:2,iTrial)] = predict_ridge(patterns.raw_sm_filt_z(iTrial,:),trainedModel);
