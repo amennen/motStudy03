@@ -21,7 +21,7 @@ onlyRem = 1; %if should only look at the stimuli that subject answered >1 for re
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
-svec = [3 4 5 6 7];
+svec = [3 4 5 6 7 8];
 trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
@@ -31,8 +31,8 @@ if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17'};
-RT = [3 4 5 6 7];
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17'};
+RT = [3 4 5 6 7 8];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
@@ -129,6 +129,8 @@ for s = 1:NSUB
 %         PrePostRT = RTevidence(forg_hard,:,2) - RTevidence(forg_hard,:,1);
 %         PrePostOMIT = OMITevidence(forg_easy,:,2) - OMITevidence(forg_easy,:,1);
 %     end
+    PostOnlyRT(s,:) = mean(RTevidence(:,:,2),1);
+    PostOnlyOM(s,:) = mean(OMITevidence(:,:,2),1);
     RTavg(s,:) = mean(PrePostRT,1);
     
     OMITavg(s,:) = mean(PrePostOMIT,1);
@@ -138,8 +140,8 @@ end
 %take data only from RT group
 RT_i = find(ismember(svec,RT));
 nRT = length(RT_i);
-RTgroup_RT = RTavg(RT_i,:);
-RTgroup_OM = OMITavg(RT_i,:);
+RTgroup_RT = PostOnlyRT;%RTavg(RT_i,:);
+RTgroup_OM = PostOnlyOM;%OMITavg(RT_i,:);
 h1 = figure;
 %alldiffmeans = [RTavg;OMITavg];
 %alldiffstd = [std(PrePostRT)/sqrt(size(PrePostRT,1)-1);std(PrePostOMIT)/sqrt(size(PrePostRT,1)-1)];
