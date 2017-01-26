@@ -47,8 +47,7 @@ for s = 1:nsub
         end
         
         % get the speed for every trial in that block
-        matlabOpenFile = [behavioral_dir '/' fileSpeed(end).name];
-        d = load(matlabOpenFile);
+
         allSpeed = d.stim.motionSpeed; %matrix of TR's
         speedVector = reshape(allSpeed,1,numel(allSpeed));
         

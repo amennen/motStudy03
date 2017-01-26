@@ -1,0 +1,5 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	36    	37  	NAIL      	lure_easy	1.951	1.212	1   	non-target	non-target
+2   	78    	38  	MIRROR    	lure_hard	1.95	1.021	1   	non-target	non-target
+3   	120   	39  	ISLAND    	targ_hard	1.95	1.333	1   	target  	target  
+4   	162   	40  	PIN       	targ_easy	1.951	0.949	1   	target  	target  

@@ -5,7 +5,8 @@
 %what to name them
 %final path
 folder= '/jukebox/norman/amennen/PythonMot3';
-subjectVec = [3 4 5 6];
+subjectVec = [3 4 5 6 7 8];
+projectName = 'motStudy03';
 for s = 1:length(subjectVec)
     subjectNum = subjectVec(s);
     behavioral_dir = ['/Data1/code/' projectName '/' 'code' '/BehavioralData/' num2str(subjectNum) '/'];

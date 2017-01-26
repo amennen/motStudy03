@@ -2,7 +2,7 @@
 %%fmri session
 %first these are all the session numbers
 
-SUBJECT = 8; %experimental subject number
+SUBJECT = 9; %experimental subject number
 prev = 0; %if today's date (0) or previous date (1)
 scanNow = 1; %if using triggers (1)
 runNum = 1; %what number subject they are today
@@ -124,3 +124,14 @@ RealTimeMemoryFileProcess(SUBJECT,featureSelect,prev,scanNow,scanNum,MOT{3},bloc
 %% RECALL 2
 scanNum = 21;
 mot_realtime02(SUBJECT,RECALL2,[],scanNum,scanNow);
+%% ANALYZE RECALL DATA
+% do for recall 1 and recall 2
+makeFile = 1;
+scanNum1 = 13;
+scanNum2 = 21;
+featureSelect = 1;
+if prev
+   date = '1-22-17';
+end
+RecallFileProcess(SUBJECT,runNum,scanNum1,RECALL1,date,featureSelect,makeFile);
+RecallFileProcess(SUBJECT,runNum,scanNum2,RECALL2,date,featureSelect,makeFile);
