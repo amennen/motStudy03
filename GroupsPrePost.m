@@ -16,23 +16,24 @@
 %variables
 %subjectNum = 3;
 %runNum = 1;
+clear all;
 projectName = 'motStudy03';
 onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
-svec = [3 4 5 6 7 8];
+svec = [3 4 5 6 7 8 9];
 trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
 runvec(irun2) = 2;
-nTRsperTrial = 19;
+nTRsperTrial = 4 + 4; %because 4 in task, then 2 before 2 after
 if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17'};
-RT = [3 4 5 6 7 8];
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17'};
+RT = [3 4 5 6 7 8 9];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
@@ -72,37 +73,34 @@ for s = 1:NSUB
     for i = 1:2
         
         % only take the stimuli that they remember
-%         if i == 1 %if recall one check
-%            r = dir(fullfile(behavioral_dir, ['EK' num2str(recallSession(i)) '_' 'SUB'  '*.mat'])); 
-%            r = load(fullfile(behavioral_dir,r(end).name)); 
-%            trials = table2cell(r.datastruct.trials);
-%            stimID = cell2mat(trials(:,8));
-%            cond = cell2mat(trials(:,9));
-%            rating = cell2mat(trials(:,12));
-%            sub.hard = rating(find(cond==1));
-%            sub.easy = rating(find(cond==2));
-%            
-%             sub.Orderhard = sub.hard(stimOrder.hard);
-%             sub.Ordereasy = sub.easy(stimOrder.easy);
-%         
-%             keep.hard = find(sub.Orderhard>1); %in the order of the stimuli-which indices to keep
-%             keep.easy = find(sub.Ordereasy>1);
-%         end
+        if i == 1 %if recall one check
+           r = dir(fullfile(behavioral_dir, ['EK' num2str(recallSession(i)) '_' 'SUB'  '*.mat'])); 
+           r = load(fullfile(behavioral_dir,r(end).name)); 
+           [expat,trials,stimOrder] = GetSessionInfoRT(subjectNum,recallSession(i),behavioral_dir);
+           trials = table2cell(r.datastruct.trials);
+           stimID = cell2mat(trials(:,8));
+           cond = cell2mat(trials(:,9));
+           rating = cell2mat(trials(:,12));
+           sub.hard = rating(find(cond==1));
+           sub.easy = rating(find(cond==2));
+           
+            sub.Orderhard = sub.hard(stimOrder.hard);
+            sub.Ordereasy = sub.easy(stimOrder.easy);
+        
+            keep.hard = find(sub.Orderhard>4); %in the order of the stimuli-which indices to keep
+            keep.easy = find(sub.Ordereasy>4);
+        end
         
         scanNum = recallScan(i);
         SESSION = recallSession(i);
-        save =0;
-        %[patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save,trainedModel); %this will give the category sep for every TR but now we have to pull out the TR's we
-        [patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featureSelect,save);
-	%[patterns, t ] = RecallFileProcess(subjectNum,runNum,scanNum,SESSION,date,featu)trainedModel);
-        %want and their conditions
-        [~,trials,stimOrder] = GetSessionInfoRT(subjectNum,SESSION,behavioral_dir);        
-        testTrials = find(any(patterns.regressor.allCond));
-        allcond = patterns.regressor.allCond(:,testTrials);
-        categSep = patterns.categSep(:,union(testTrials,testTrials+shiftTR)); %all testTR's plus 2 before
-        %shape by trial
-        %ind = union(testTrials,testTrials+shiftTR);
-        %z = reshape(ind,8,20);
+        rfn = dir(fullfile(save_dir, ['recallpatternsdata_' num2str(SESSION)  '*.mat']));
+        rp = load(fullfile(save_dir,rfn(end).name));
+        rpat = rp.patterns;
+        [expat,trials,stimOrder] = GetSessionInfoRT(subjectNum,SESSION,behavioral_dir);
+        testTrials = find(any(expat.regressor.allCond));
+        allcond = rpat.regressor.allCond(:,testTrials);
+        categSep = rpat.categSep(:,testTrials);
+        categSep = rpat.categSep(:,union(testTrials,testTrials+shiftTR+2)); % go an extra 2 for plotting purposes
         z = reshape(categSep,nTRsperTrial,20); %for 20 trials --make sure this works here!
         byTrial = z';
         RTtrials = byTrial(trials.hard,:);
@@ -117,18 +115,18 @@ for s = 1:NSUB
     end
     
     % now find post - pre difference
-%     if onlyRem 
-%         PrePostRT = RTevidence(keep.hard,:,2) - RTevidence(keep.hard,:,1);
-%         PrePostOMIT = OMITevidence(keep.easy,:,2) - OMITevidence(keep.easy,:,1);
-    %elseif onlyRem == 0 && onlyForg == 0
+    if onlyRem 
+        PrePostRT = RTevidence(keep.hard,:,2) - RTevidence(keep.hard,:,1);
+        PrePostOMIT = OMITevidence(keep.easy,:,2) - OMITevidence(keep.easy,:,1);
+    elseif onlyRem == 0 && onlyForg == 0
         PrePostRT = RTevidence(:,:,2) - RTevidence(:,:,1);
         PrePostOMIT = OMITevidence(:,:,2) - OMITevidence(:,:,1);
-%     elseif onlyForg
-%         forg_hard = setdiff(1:size(RTevidence,1),keep.hard);
-%         forg_easy = setdiff(1:size(RTevidence,1),keep.easy);
-%         PrePostRT = RTevidence(forg_hard,:,2) - RTevidence(forg_hard,:,1);
-%         PrePostOMIT = OMITevidence(forg_easy,:,2) - OMITevidence(forg_easy,:,1);
-%     end
+    elseif onlyForg
+        forg_hard = setdiff(1:size(RTevidence,1),keep.hard);
+        forg_easy = setdiff(1:size(RTevidence,1),keep.easy);
+        PrePostRT = RTevidence(forg_hard,:,2) - RTevidence(forg_hard,:,1);
+        PrePostOMIT = OMITevidence(forg_easy,:,2) - OMITevidence(forg_easy,:,1);
+    end
     PostOnlyRT(s,:) = mean(RTevidence(:,:,2),1);
     PostOnlyOM(s,:) = mean(OMITevidence(:,:,2),1);
     RTavg(s,:) = mean(PrePostRT,1);
@@ -140,8 +138,8 @@ end
 %take data only from RT group
 RT_i = find(ismember(svec,RT));
 nRT = length(RT_i);
-RTgroup_RT = PostOnlyRT;%RTavg(RT_i,:);
-RTgroup_OM = PostOnlyOM;%OMITavg(RT_i,:);
+RTgroup_RT = RTavg(RT_i,:);
+RTgroup_OM = OMITavg(RT_i,:);
 h1 = figure;
 %alldiffmeans = [RTavg;OMITavg];
 %alldiffstd = [std(PrePostRT)/sqrt(size(PrePostRT,1)-1);std(PrePostOMIT)/sqrt(size(PrePostRT,1)-1)];
@@ -164,7 +162,7 @@ set(findall(gcf,'-property','FontSize'),'FontSize',16)
 
 xlim([1 nTRsperTrial])
 %ylim([-.25 .25])
-print(h1, sprintf('%sresults120_4sub_avg.pdf', plotDir), '-dpdf')
+print(h1, sprintf('%sresults125_6sub_avg_onlyrem5.pdf', plotDir), '-dpdf')
 
 %%
 h1 = figure;

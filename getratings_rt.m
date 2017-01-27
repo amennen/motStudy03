@@ -5,20 +5,20 @@
 
 %look at the recognition memory at the end and listen to wav files! (use
 %recogdata.m to look at the recognition memory)
-clear all;
+%clear all;
 projectName = 'motStudy03';
 base_path = [fileparts(which('mot_realtime02.m')) filesep];
 
 % don't put in 22 until have subject
 svec = [3 4 5 6 7 8];
 
-NSUB = length(svec);
+nsub = length(svec);
 recallSession = [20 24];
 nstim = 10;
-allplotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ];
+allplotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ];
 
 
-for s = 1:NSUB
+for s = 1:nsub
     behavioral_dir = [base_path 'BehavioralData/' num2str(svec(s)) '/'];
     for i = 1:length(recallSession)
         r = dir(fullfile(behavioral_dir, ['EK' num2str(recallSession(i)) '_' 'SUB'  '*.mat'])); 
@@ -48,7 +48,9 @@ for s = 1:NSUB
         %eAvg(s,i) = nanmean(rating(easy));
         
     end
-    
+    all_easy(:,s) = easy_ordered(1,:)';
+    all_hard(:,s) = hard_ordered(1,:)';
+    diff_stim_hard(:,s) = hard_ordered(2,:)' - hard_ordered(1,:)';
     diff_easy(s) = nanmean(easy_ordered(2,:) - easy_ordered(1,:));
     diff_hard(s) = nanmean(hard_ordered(2,:) - hard_ordered(1,:));
     %clear easy_ordered hard_ordered
@@ -59,10 +61,13 @@ for s = 1:NSUB
     stimID = cell2mat(trials(:,8));
     %goodTrials = find(ismember(stimID,goodStim));
     cond = cell2mat(trials(:,9));
+    [~, horder] = sort(stimID(find(cond==1)));
     acc = cell2mat(trials(:,11));
     rt = cell2mat(trials(:,13));
     easy = find(cond==2);
     hard = find(cond==1);
+    hardacc_ordered(:,s) = acc(hard(horder));
+    hardrt_ordered(:,s) = rt(hard(horder));
     easy_score(s) = nanmean(acc(easy));
     hard_score(s) = nanmean(acc(hard));
     easy_rt(s) = nanmedian(rt(easy));
