@@ -140,7 +140,7 @@ patterns.realtimeVar = nan(1,numel(roiInds));
 patterns.predict = nan(1,patterns.nTRs);
 patterns.activations = nan(numel(patterns.regressor.twoCond(:,1)),patterns.nTRs);
 normalization_const = zeros(1,numel(roiInds));
-if SESSION == 19
+if SESSION == 20 %whatever recall 1 is
     patterns.block = ones(1,patterns.nTRs);
 else
     patterns.block = 2*ones(1,patterns.nTRs);
@@ -270,8 +270,8 @@ fprintf('run\tblock\tTR\tloaded\n');
        %save(fullfile(classOutputDir, ['vol_' num2str(thisTR)]), 'classOutput');
         
     % print trial results
-    fprintf(dataFile,'%d\t%d\t%d\t%d\n',runNum,patterns.block(iTrial),thisTR,patterns.fileAvail(iTrial));
-    fprintf('%d\t%d\t%d\t%d\n',runNum,patterns.block(iTrial),thisTR,patterns.fileAvail(iTrial));
+    fprintf(dataFile,'%d\t%d\t%d\t%d\n',runNum,patterns.block(iTrial),iTrial,patterns.fileAvail(iTrial));
+    fprintf('%d\t%d\t%d\t%d\n',runNum,patterns.block(iTrial),iTrial,patterns.fileAvail(iTrial));
     end
     if saveNew
         save([save_dir 'recallpatternsdata_' num2str(SESSION) '_' datestr(now,30)],'patterns', 't');
