@@ -144,7 +144,7 @@ documents_path = WORKING_DIR;
 %     documents_path = ['/Data1/code/motStudy01/'];
 % end
 data_dir = fullfile(documents_path, 'BehavioralData');
-dicom_dir = fullfile('/Data1/code/motStudy02/', 'data', SUBJ_NAME); %where all the dicom information is FOR THAT SUBJECT
+dicom_dir = fullfile('/Data1/code/motStudy03/', 'data', SUBJ_NAME); %where all the dicom information is FOR THAT SUBJECT
 if SESSION >= MOT{1}
     runNum = SESSION - MOT{1} + 1;
     classOutputDir = fullfile(dicom_dir,['motRun' num2str(runNum)], 'classOutput/');
@@ -447,7 +447,7 @@ switch SESSION
         stim.cueDuration = 2*SPEED;    % cue word alone for 0ms
         stim.picDuration = 4*SPEED;    % cue with associate for 4000ms
         stim.isiDuration = 2*SPEED;
-        stim.textRow = WINDOWSIZE.pixels(2) / 5; %changed from 5, then 3
+        stim.textRow = WINDOWSIZE.pixels(2)* (1/5); %changed from 5, then 3
         stim.picRow = WINDOWSIZE.pixels(2) *5/9;
         NUMRUNS = 1;
         PROGRESS = INDEXFINGER;
@@ -1369,7 +1369,7 @@ switch SESSION
         OptimalForget = 0.1;
         maxIncrement = 1.25;
         Kp = 5;
-        Ki = .001;
+        Ki = .01;
         Kd = .5;
         config.initFeedback = OptimalForget; %make it so there's change in speed for the first 4 TR's
         config.initFunction = PID(config.initFeedback,Kp,Ki,Kd,OptimalForget,maxIncrement);
@@ -1403,7 +1403,7 @@ switch SESSION
         end
         instruct_continue = ['\n\n-- Press ' PROGRESS_TEXT ' to continue once you understand these instructions --'];
         stim.instruct1 = [stim.header '\n\nWe will now do a "multi-tasking" twist: we would like you to ' ...
-            'try visualizing while also keeping track of moving dots.\n\nDot-tracking works as follows: first, one dot ' ...
+            'try visualizing named scenes while also keeping track of moving dots. One word will cue an image to visualize in the center of the screen, with five dots surrounding it. \n\nDot-tracking works as follows: first, one dot ' ...
             'will appear in red (target) and others in green (non-targets). After two seconds, all dots will turn ' ...
             'green and and move around the screen. Your job is to track the target dot until a "question" dot turns white. ' ...
             'While tracking dots, it is VITAL that you keep your eyes at the center fixation dot for the entire '...
@@ -1411,17 +1411,16 @@ switch SESSION
             'can then take your eyes off the center and indicate whether that dot was originally a target (PINKY) or not (THUMB). ' ...
             instruct_continue];
         stim.instruct2 = ['While all this happens, we want you to "multi-task" by visualizing the scene ' ...
-            'named by the word in the middle. Every few seconds, the central dot will turn red: when it does '...
-            'you should indicate your CURRENT visualization detail using the usual keys (THUMB,INDEX,MIDDLE,RING,PINKY). It''s possible that the clarity of your ' ...
+            'named by the word in the middle. Every few seconds, the smaller central dot inside the word will turn red: when it does '...
+            'you should indicate your CURRENT visualization detail using one of your fingers (THUMB,INDEX,MIDDLE,RING,PINKY). It''s possible that the clarity of your ' ...
             'mental image will change throughout the trial and/or be fuzzier than if you were not tracking dots. As your rating should reflect your CURRENT ' ...
-            'rather than best possibel image, this would be reflected in your responses. \n\nRemember that mental visualizing is only your second priority: if you lose track ' ...
+            'rather than best possible image, this would be reflected in your responses. \n\nRemember that mental visualizing is only your second priority: if you lose track ' ...
             'of the dots for even a second, you will get the trial wrong, and we will have to throw out the trial; ' ...
-            'and we need as many trials as possible. Getting the target dot correct is your most important task (but make sure '...
-            'this is not at the expense of moving your eyes away from the center fixation dot; that would be cheating)! ' ...
-            'You should "squeeze in" visualizing when it''s possible. \n\n---- Press ' PROGRESS_TEXT ' once you understand these instructions \nthen press it again when you are done viewing the rating scale ---'];
+            'and we need as many trials as possible. Getting the target dot correct is your most important task.' ...
+            'You should "squeeze in" visualizing when it''s possible. \n\n---- Press ' PROGRESS_TEXT ' once you understand these instructions \nthen PRESS IT AGAIN when you are done viewing the rating scale ---'];
         stim.instruct_summary = [stim.header '\n\nTo summarize this task: you will keep track of target dots moving around the screen while keeping your ' ...
             'eyes fixed on the central dot. The dot-tracking task is your top priority, but you should also try to visualize ' ...
-            'the named scene, keeping your eyes fixed on the central blinking dot. The speed of the dots may change in '...
+            'the named scene, and rate your mental picture whenever the center dot turns red (with the same keys THUMB-PINKY). \n\nThe speed of the dots may change in '...
             'different trials and also within a trial. Just try to do your best and keep doing the task no matter the dot speed. '...
             'At the end of the trial, when a dot ' ...
             'turns white, you will first move your eyes to the white dot, then press PINKY (if it''s a target) or THUMB (if it''s ' ...
@@ -1433,13 +1432,14 @@ switch SESSION
             'because the word is not the name of a scene, there is nothing for you to visualize.\n\nWe will now review the ' ...
             'instructions for the task (with which you are already familiar).' instruct_continue];
         stim.fMRI_instruct = ['MULTI-TASKING-- fMRI, Stage 1 \n\nDot tracking today will involve two changes from yesterday. ' ...
-            'Firstly, dots in half of trials will be moving slow, while dots in the other half will be moving faster. \n' ...
+            'Firstly, dots in half of trials will be moving faster, while dots in the other half will be moving slower. Additionally, the dots that are not the target '...
+            'may become dimmer to help you track the target.\n' ...
             'Secondly, some of the trials will involve familiar words that are not scene names. On these trials, ' ...
             'because the word is not the name of a scene, there is nothing for you to visualize.\n\nWe will now review the ' ...
             'instructions for the task (with which you are already familiar).' instruct_continue];
         stim.RT_instruct = ['MULTI-TASKING-- fMRI, Stage 2 \n\n You will now do the same dot tracking task as earlier. However, '...
             'now every word will have been paired with a scene. Additionally, the dot speed may change within '...
-            'a trial. Just try your best to keep tracking the target dot while visualizing the scene as best as you can! You will complete '...
+            'a trial or the dots that are not the target may become dimmer to help you track the target. Just try your best to keep tracking the target dot while visualizing the scene as best as you can! You will complete '...
             'three runs of this task.' instruct_continue];
         % stimulus data fields
         stim.triggerCounter = 1;
@@ -1558,7 +1558,7 @@ switch SESSION
                             stim.speed(i) = finalSpeed; %will have to load last speed and find the speed here
                             % repulsor_force(i) = repulsor_force_small * finalSpeed/0.5;
                         case {2,4} %for either of the easy cases
-                            stim.speed(i) = 0.5;%5;%finalSpeed*.5; %again load last speed found here, change to accept max speed-see what first person has for this to decide
+                            stim.speed(i) = -7.5;%5;%finalSpeed*.5; %again load last speed found here, change to accept max speed-see what first person has for this to decide
                             %repulsor_force(i) = repulsor_force_small;
                     end
                     if stim.cond(i) > 2
@@ -1779,7 +1779,7 @@ switch SESSION
             % initialize KbQueue
             [embedded_keys, valid_keycode, embedded_cresp] = keyCheck(embedded_keys,embedded_cresp);
             KbQueueCreate(DEVICE,valid_keycode);
-            KbQueueStart;
+            KbQueueStart(DEVICE);
             % initialize dots
             [dots phantom_dots] = initialize_dots(num_dots,stim.num_targets,stim.square_dims,stim.dot_diameter);
             
@@ -1836,6 +1836,7 @@ switch SESSION
             fileTR = 1;
             waitForPulse = false;
             printlog(LOG_NAME,'trial\tTR\tprompt active\tspeed\tds\tflip error\tfound file\tFileTR\tCategSep\tLastFile\n');
+            check = [];
             while abs(GetSecs - timing.plannedOnsets.probe(n)) > 0.050;%SLACK*2 %so this is just constatnly running, stops when it's within a flip
                
                 stim.frame_counter(stim.trial) = stim.frame_counter(stim.trial) + 1;
@@ -1889,21 +1890,39 @@ switch SESSION
                     nextTRTime = timing.plannedOnsets.motion(nextTRPos,stim.trial);
                     if abs(GetSecs - nextTRTime) <= 0.050
                         %look for speed update here
-                      
+                        
                         TRcounter = TRcounter + 1; %update TR count (initialized at 0): so it's the TR that we're currently ON
                         waitForPulse = true;
                         if ismember(TRcounter,promptTRs)
                             prompt_active = 1;
-                            KbQueueFlush;
+                            KbQueueFlush(DEVICE);
                             prompt_counter = prompt_counter + 1;
                             train.onset(prompt_counter) = GetSecs;
                             check(prompt_counter) = 1;
-                        elseif ismember(TRcounter-1,promptTRs)
+                        elseif ismember(TRcounter-1,promptTRs) && check(prompt_counter)
+                             [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
+                            multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
+                        
+                            if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
+                            if isnan(train.resp{prompt_counter}),
+                                train.resp_str{prompt_counter} = nan;
+                            else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
+                            end
+                            subjectiveEK = easyKeys(subjectiveEK, ...
+                                'stim', stim.stim{stim.trial}, ...
+                                'onset', train.onset(prompt_counter), ...
+                                'cond', stim.cond(stim.trial), ...
+                                'nesting', [SESSION stim.trial prompt_counter], ...
+                                'cresp', embedded_cresp, ...
+                                'simulated_key', train.resp_str{prompt_counter}, ...
+                                'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
+                            check(prompt_counter) = false;
+                            fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
                             prompt_active = false;
                         end
                         if realtime %only change speeds with MOT
                             if TRcounter > 4 && ~isnan(rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n))) %we look starting in 4, but we update starting at TR 5 AND make sure that it's not nan--if it is don't change speed
-                                current_speed = current_speed + rtData.rtTDecodingFunction(allMotionTRs(TRcounter-2,n)); % apply in THIS TR what was from 2 TR's ago (indexed by what file it is) so file 3 will be applied at TR5!
+                                current_speed = current_speed + rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n)); % apply in THIS TR what was from 2 TR's ago (indexed by what file it is) so file 3 will be applied at TR5!
                                 stim.changeSpeed(TRcounter,n) = rtData.rtDecodingFunction(allMotionTRs(TRcounter-2,n)); %speed changed ON that TR
                             else
                                 stim.changeSpeed(TRcounter,n) = 0;
@@ -1950,38 +1969,7 @@ switch SESSION
                     printlog(LOG_NAME,'%d\t%d\t%d\t\t%5.3f\t%5.3f\t%5.4f\t\t%i\t\t%d\t\t%5.3f\t\t%s\n',n,TRcounter,prompt_active,current_speed,stim.changeSpeed(TRcounter,n),timing.actualOnsets.motion(TRcounter,stim.trial) - timing.plannedOnsets.motion(TRcounter,stim.trial),rtData.classOutputFileLoad(allMotionTRs(TRcounter,n)),fileTR,rtData.rtDecoding(fileTR),rtData.newestFile{allMotionTRs(TRcounter,n)});
                     printTR(TRcounter) = 0;
                 end
-               
-                % act on a visualization prompt
-                if prompt_active 
-                    % peek to see if any keys are pressed right now (for CPU reasons, do this only every third frame)
-                    if ~mod(stim.frame_counter(stim.trial),3) && check(prompt_counter) 
-                        [train.acc(prompt_counter), train.resp{prompt_counter}, ~, train.rt(prompt_counter), ~, train.resp_str{prompt_counter}] = ...
-                            multiChoice(queueCheck, embedded_keys, embedded_scale, embedded_cresp, GetSecs, DEVICE, [],sum(keys.map(3:5,:)),subj_map);
 
-                        % if we have a response or the window is over, stop listening
-                        elapsed = (GetSecs-train.onset(prompt_counter));
-                        
-                        if check(prompt_counter) && (elapsed > vis_promptDur) || ~isnan(train.resp{prompt_counter})
-                            %prompt_active = false;
-                            if isempty(train.resp{prompt_counter}), train.resp{prompt_counter} = nan; end % timeout
-                            if isnan(train.resp{prompt_counter}),
-                                train.resp_str{prompt_counter} = nan;
-                            else train.resp_str{prompt_counter} = embedded_keys{train.resp{prompt_counter}};
-                            end
-                            subjectiveEK = easyKeys(subjectiveEK, ...
-                                'stim', stim.stim{stim.trial}, ...
-                                'onset', train.onset(prompt_counter), ...
-                                'cond', stim.cond(stim.trial), ...
-                                'nesting', [SESSION stim.trial prompt_counter], ...
-                                'cresp', embedded_cresp, ...
-                                'simulated_key', train.resp_str{prompt_counter}, ...
-                                'cresp_map', sum(keys.map(3:5,:)), 'valid_map', subj_map);
-                            check(prompt_counter) = false;
-                            %fprintf('The response for prompt %i was %i\n', prompt_counter, train.resp{prompt_counter})
-                        end
-                    end
-                end
-                
                 
             end  %20 s trial ends here THEN probe
             
@@ -2363,29 +2351,6 @@ switch SESSION
         
     case SCAN_PREP
         % instructions
-%         displayText(mainWindow,['Welcome to your fMRI scanning session!\n\nOnce you''re all the way inside the scanner and can read this text, please reach up to your eyes and ' ...
-%             'fine-tune the position of your mirror. You want to set it so you can see as much of the screen as comfortably as possible. This will be your last chance to adjust ' ...
-%             'your mirror, so be sure to set it just right.\n\nOnce you''ve adjusted the mirror to your satisfaction, please press the index finger button to test your button pad.'] ...
-%             ,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(kbTrig_keycode,DEVICE);
-%         displayText(mainWindow,'Great. I detected that button press, which means at least one button works. Now let''s try the rest of them. Please press the middle finger button.' ...
-%             ,minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(3,:),DEVICE);
-%         displayText(mainWindow,'And now the ring finger button...',minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(4,:),DEVICE);
-%         displayText(mainWindow,'And now the pinky finger button...',minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(5,:),DEVICE);
-%         displayText(mainWindow,'And now the thumb button...',minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(keys.code(1,:),DEVICE);
-%         displayText(mainWindow,['Good news! It looks like the button pad is working just fine.\n\nJust a reminder that we can hear your voice when the scanner is at rest, so ' ...
-%             'just speak up to ask or tell us something. During a scan, we will abort right away if you use the squeeze ball, but please do so only if there''s something urgent ' ...
-%             'we need to address immediately.\n\n-- please press the index finger button to continue --'],minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(kbTrig_keycode,DEVICE);
-%         displayText(mainWindow,['During the scan today, it is crucial that you keep your head still. Even a tiny head movement, e.g., caused by stretching your legs, will blur ' ...
-%             'your brain scan. This is for the same reason that moving objects appear blurry in a photograph.\n\nAs it can be uncomfortable to stay still for a long time, please ' ...
-%             'go ahead and take the opportunity to stretch or scratch whenever the scanner is silent. Just try your best to keep your head in the same place when you do so.\n\n' ...
-%             '-- please press the index finger button to continue --'],minimumDisplay,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
-%         waitForKeyboard(kbTrig_keycode,DEVICE);
         displayText(mainWindow,['Great job! Now, we''re now going to have a short functional run before you complete various tasks. Please work through these and we''ll get in ' ...
              'touch with you when you finish.\n\n-- please press the index finger button to continue --'],INSTANT,'center',COLORS.MAINFONTCOLOR,WRAPCHARS);
         waitForKeyboard(kbTrig_keycode,DEVICE);

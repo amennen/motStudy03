@@ -830,3 +830,67 @@ SESSION 2 initiated 12-Jan-2017 16:54:51 for SUBJECT number 100
 session	trial	pair	onset	dur	cue         	associate   
 2	1	1	2017  	2002  	PIN         	pici0200.jpg 
 2	2	5	10024 	1981  	PEBBLE      	pici0400.jpg 
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		14.350	  NaN	0.0191		NaN		1		  NaN		
+1	2	0		14.350	  NaN	0.0132		NaN		1		  NaN		
+1	3	1		14.350	  NaN	0.0157		NaN		1		  NaN		
+1	4	0		14.350	  NaN	0.0515		NaN		1		  NaN		
+1	5	0		14.350	  NaN	0.0019		NaN		1		  NaN		
+1	6	1		14.350	  NaN	0.0042		NaN		1		  NaN		
+1	7	0		14.350	  NaN	0.0272		NaN		1		  NaN		
+1	8	0		14.350	  NaN	0.0076		NaN		1		  NaN		
+1	9	1		14.350	  NaN	0.0086		NaN		1		  NaN		
+1	10	0		14.350	  NaN	0.0104		NaN		1		  NaN		
+1	11	0		14.350	  NaN	0.0121		NaN		1		  NaN		
+1	12	1		14.350	  NaN	0.0133		NaN		1		  NaN		
+1	13	0		14.350	  NaN	0.0171		NaN		1		  NaN		
+1	14	0		14.350	  NaN	0.0008		NaN		1		  NaN		
+1	15	0		14.350	  NaN	0.0031		NaN		1		  NaN		
+
+SESSION 7 initiated 25-Jan-2017 14:19:09 for SUBJECT number 100
+
+session	trial	pair	onset	dur	cue         	associate   
+7	1	9	2018  	2003  	PYRAMID     	pico08.jpg  
+7	2	18	10008 	2002  	ROPE        	pici06.jpg  
+7	3	6	18008 	2001  	TRIPOD      	pici12.jpg  
+7	4	20	26022 	2002  	MARBLE      	pici30.jpg  
+7	5	15	34013 	2001  	GLASS       	pico13.jpg  
+7	6	2	42019 	2002  	TICKET      	pici23.jpg  
+7	7	12	50009 	2001  	JAIL        	pici24.jpg  
+7	8	10	58016 	2002  	HOOK        	pici01.jpg  
+7	9	5	66023 	1984  	DUST        	pico18.jpg  
+7	10	11	74012 	2003  	DOME        	pico20.jpg  
+7	11	16	82020 	2001  	WIRE        	pici09.jpg  
+7	12	8	90010 	2002  	MAGNET      	pici16.jpg  
+7	13	3	98017 	1995  	NOTE        	pico23.jpg  
+7	14	13	106000	2002  	BASKET      	pico06.jpg  
+7	15	17	114006	2004  	WALLET      	pico03.jpg  
+7	16	1	122013	1986  	MATCH       	pico17.jpg  
+7	17	19	130010	2002  	RATTLE      	pico19.jpg  
+7	18	4	138017	2002  	PARADE      	pici07.jpg  
+7	19	14	146008	1997  	BRACELET    	pici02.jpg  
+7	20	7	154013	2003  	MIRROR      	pico01.jpg  
+
+
+SESSION 7 ended 25-Jan-2017 14:21:56 for SUBJECT number 100
+
+
+
+
+******************************************************************************
+
+SESSION 7 initiated 26-Jan-2017 11:35:31 for SUBJECT number 100
+
+session	trial	pair	onset	dur	cue         	associate   
+7	1	3	2003  	2002  	PYRAMID     	pico25.jpg  
+7	2	19	10009 	2002  	BASKET      	pico05.jpg  
+7	3	11	17999 	2019  	BELT        	pico03.jpg  
+7	4	5	26006 	2002  	WALLET      	pico02.jpg  
+7	5	8	34013 	2002  	SPONGE      	pici10.jpg  
+7	6	13	42003 	2002  	DUST        	pico11.jpg  
+7	7	14	50010 	2002  	TRIPOD      	pici03.jpg  
+7	8	10	58000 	2019  	CANDLE      	pici27.jpg  
+7	9	18	66007 	2001  	DENT        	pici21.jpg  
+7	10	9	74014 	2002  	DOME        	pico19.jpg  
+7	11	4	82004 	2002  	BUBBLE      	pici05.jpg  
+7	12	15	90011 	2002  	ROPE        	pico01.jpg  
