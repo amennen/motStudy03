@@ -978,3 +978,1115 @@ SESSION 10 ended 27-Jan-2017 13:19:29 for SUBJECT number 11
 
 
 ******************************************************************************
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		-7.500	  NaN	-0.0056		NaN		1		  NaN		
+1	2	0		-7.500	  NaN	0.0111		NaN		1		  NaN		
+1	3	1		-7.500	  NaN	0.0110		NaN		1		  NaN		
+1	4	0		-7.500	  NaN	0.0948		NaN		1		  NaN		
+1	5	0		-7.500	  NaN	0.0110		NaN		1		  NaN		
+1	6	1		-7.500	  NaN	0.0110		NaN		1		  NaN		
+1	7	0		-7.500	  NaN	0.0281		NaN		1		  NaN		
+1	8	0		-7.500	  NaN	0.0110		NaN		1		  NaN		
+1	9	1		-7.500	  NaN	0.0110		NaN		1		  NaN		
+1	10	0		-7.500	  NaN	0.0447		NaN		1		  NaN		
+1	11	0		-7.500	  NaN	0.0109		NaN		1		  NaN		
+1	12	1		-7.500	  NaN	0.0109		NaN		1		  NaN		
+1	13	0		-7.500	  NaN	0.0281		NaN		1		  NaN		
+1	14	0		-7.500	  NaN	0.0109		NaN		1		  NaN		
+1	15	0		-7.500	  NaN	0.0109		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		-7.500	  NaN	-0.0059		NaN		1		  NaN		
+2	2	0		-7.500	  NaN	0.0107		NaN		1		  NaN		
+2	3	1		-7.500	  NaN	0.0107		NaN		1		  NaN		
+2	4	0		-7.500	  NaN	0.0278		NaN		1		  NaN		
+2	5	0		-7.500	  NaN	0.0107		NaN		1		  NaN		
+2	6	1		-7.500	  NaN	0.0106		NaN		1		  NaN		
+2	7	0		-7.500	  NaN	0.0111		NaN		1		  NaN		
+2	8	0		-7.500	  NaN	0.0106		NaN		1		  NaN		
+2	9	1		-7.500	  NaN	0.0106		NaN		1		  NaN		
+2	10	0		-7.500	  NaN	0.0111		NaN		1		  NaN		
+2	11	0		-7.500	  NaN	0.0106		NaN		1		  NaN		
+2	12	1		-7.500	  NaN	0.0106		NaN		1		  NaN		
+2	13	0		-7.500	  NaN	0.0277		NaN		1		  NaN		
+2	14	0		-7.500	  NaN	0.0106		NaN		1		  NaN		
+2	15	0		-7.500	  NaN	0.0106		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		18.093	  NaN	-0.0063		NaN		1		  NaN		
+3	2	0		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	3	1		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	4	0		18.093	  NaN	0.0274		NaN		1		  NaN		
+3	5	0		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	6	1		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	7	0		18.093	  NaN	0.0107		NaN		1		  NaN		
+3	8	0		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	9	1		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	10	0		18.093	  NaN	0.0274		NaN		1		  NaN		
+3	11	0		18.093	  NaN	0.0103		NaN		1		  NaN		
+3	12	1		18.093	  NaN	0.0102		NaN		1		  NaN		
+3	13	0		18.093	  NaN	0.0271		NaN		1		  NaN		
+3	14	0		18.093	  NaN	0.0101		NaN		1		  NaN		
+3	15	0		18.093	  NaN	0.0102		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		18.093	  NaN	-0.0066		NaN		1		  NaN		
+4	2	0		18.093	  NaN	0.0100		NaN		1		  NaN		
+4	3	1		18.093	  NaN	0.0100		NaN		1		  NaN		
+4	4	0		18.093	  NaN	0.0271		NaN		1		  NaN		
+4	5	0		18.093	  NaN	0.0100		NaN		1		  NaN		
+4	6	1		18.093	  NaN	0.0099		NaN		1		  NaN		
+4	7	0		18.093	  NaN	0.0104		NaN		1		  NaN		
+4	8	0		18.093	  NaN	0.0099		NaN		1		  NaN		
+4	9	1		18.093	  NaN	0.0099		NaN		1		  NaN		
+4	10	0		18.093	  NaN	0.0103		NaN		1		  NaN		
+4	11	0		18.093	  NaN	0.0099		NaN		1		  NaN		
+4	12	1		18.093	  NaN	0.0098		NaN		1		  NaN		
+4	13	0		18.093	  NaN	0.0103		NaN		1		  NaN		
+4	14	0		18.093	  NaN	0.0098		NaN		1		  NaN		
+4	15	0		18.093	  NaN	0.0098		NaN		1		  NaN		
+
+
+SESSION 15 ended 28-Jan-2017 16:51:07 for SUBJECT number 11
+
+
+
+SESSION 16 ended 28-Jan-2017 16:55:53 for SUBJECT number 11
+
+
+
+
+******************************************************************************
+
+SESSION 17 initiated 28-Jan-2017 16:55:58 for SUBJECT number 11
+
+session	trial	pair	onset	dur	cue         	associate   
+17	1	22	1996  	2002  	POWDER      	pici06.jpg  
+17	2	24	9996  	2003  	ROPE        	pici10.jpg  
+17	3	36	17996 	2001  	MIRROR      	pici04.jpg  
+17	4	28	25996 	2001  	COLLAR      	pici15.jpg  
+17	5	29	33996 	2001  	JOURNAL     	pico26.jpg  
+17	6	30	41996 	2001  	NICKEL      	pici19.jpg  
+17	7	35	49996 	2001  	CHALK       	pico19.jpg  
+17	8	26	57996 	2001  	APRON       	pici12.jpg  
+17	9	23	65996 	2001  	BROOM       	pico11.jpg  
+17	10	27	73995 	2001  	PADDLE      	pico01.jpg  
+17	11	31	81995 	2001  	SHOVEL      	pico05.jpg  
+17	12	33	89995 	2001  	MOON        	pico28.jpg  
+17	13	34	97995 	2001  	DOME        	pici08.jpg  
+17	14	25	105995	2001  	PIPE        	pico22.jpg  
+17	15	32	113995	2001  	PARADE      	pici07.jpg  
+17	16	21	121995	2001  	BASKET      	pico17.jpg  
+
+
+SESSION 17 ended 28-Jan-2017 16:58:37 for SUBJECT number 11
+
+
+
+
+******************************************************************************
+
+
+SESSION 18 ended 28-Jan-2017 17:02:48 for SUBJECT number 11
+
+
+
+
+******************************************************************************
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		18.093	  NaN	0.0218		NaN		1		  NaN		
+1	2	0		18.093	  NaN	0.0222		NaN		1		  NaN		
+1	3	1		18.093	  NaN	0.0055		NaN		1		  NaN		
+1	4	0		18.093	  NaN	0.0717		NaN		1		  NaN		
+1	5	0		18.093	  NaN	0.0054		NaN		1		  NaN		
+1	6	1		18.093	  NaN	0.0054		NaN		1		  NaN		
+1	7	0		18.093	  NaN	0.0054		NaN		1		  NaN		
+1	8	0		18.093	  NaN	0.0052		NaN		1		  NaN		
+1	9	1		18.093	  NaN	0.0055		NaN		1		  NaN		
+1	10	0		18.093	  NaN	0.0386		NaN		1		  NaN		
+1	11	0		18.093	  NaN	0.0051		NaN		1		  NaN		
+1	12	1		18.093	  NaN	0.0051		NaN		1		  NaN		
+1	13	0		18.093	  NaN	0.0218		NaN		1		  NaN		
+1	14	0		18.093	  NaN	0.0051		NaN		1		  NaN		
+1	15	0		18.093	  NaN	0.0051		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		18.093	  NaN	0.0050		NaN		1		  NaN		
+2	2	0		18.093	  NaN	0.0049		NaN		1		  NaN		
+2	3	1		18.093	  NaN	0.0049		NaN		1		  NaN		
+2	4	0		18.093	  NaN	0.0382		NaN		1		  NaN		
+2	5	0		18.093	  NaN	0.0049		NaN		1		  NaN		
+2	6	1		18.093	  NaN	0.0049		NaN		1		  NaN		
+2	7	0		18.093	  NaN	0.0218		NaN		1		  NaN		
+2	8	0		18.093	  NaN	0.0051		NaN		1		  NaN		
+2	9	1		18.093	  NaN	0.0051		NaN		1		  NaN		
+2	10	0		18.093	  NaN	0.0050		NaN		1		  NaN		
+2	11	0		18.093	  NaN	0.0049		NaN		1		  NaN		
+2	12	1		18.093	  NaN	0.0050		NaN		1		  NaN		
+2	13	0		18.093	  NaN	0.0215		NaN		1		  NaN		
+2	14	0		18.093	  NaN	0.0050		NaN		1		  NaN		
+2	15	0		18.093	  NaN	0.0049		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		-7.500	  NaN	0.0048		NaN		1		  NaN		
+3	2	0		-7.500	  NaN	0.0048		NaN		1		  NaN		
+3	3	1		-7.500	  NaN	0.0047		NaN		1		  NaN		
+3	4	0		-7.500	  NaN	0.0213		NaN		1		  NaN		
+3	5	0		-7.500	  NaN	0.0047		NaN		1		  NaN		
+3	6	1		-7.500	  NaN	0.0047		NaN		1		  NaN		
+3	7	0		-7.500	  NaN	0.0047		NaN		1		  NaN		
+3	8	0		-7.500	  NaN	0.0047		NaN		1		  NaN		
+3	9	1		-7.500	  NaN	0.0047		NaN		1		  NaN		
+3	10	0		-7.500	  NaN	0.0046		NaN		1		  NaN		
+3	11	0		-7.500	  NaN	0.0046		NaN		1		  NaN		
+3	12	1		-7.500	  NaN	0.0046		NaN		1		  NaN		
+3	13	0		-7.500	  NaN	0.0046		NaN		1		  NaN		
+3	14	0		-7.500	  NaN	0.0045		NaN		1		  NaN		
+3	15	0		-7.500	  NaN	0.0045		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		-7.500	  NaN	0.0043		NaN		1		  NaN		
+4	2	0		-7.500	  NaN	0.0044		NaN		1		  NaN		
+4	3	1		-7.500	  NaN	0.0043		NaN		1		  NaN		
+4	4	0		-7.500	  NaN	0.0209		NaN		1		  NaN		
+4	5	0		-7.500	  NaN	0.0210		NaN		1		  NaN		
+4	6	1		-7.500	  NaN	0.0210		NaN		1		  NaN		
+4	7	0		-7.500	  NaN	0.0210		NaN		1		  NaN		
+4	8	0		-7.500	  NaN	0.0046		NaN		1		  NaN		
+4	9	1		-7.500	  NaN	0.0046		NaN		1		  NaN		
+4	10	0		-7.500	  NaN	0.0375		NaN		1		  NaN		
+4	11	0		-7.500	  NaN	0.0042		NaN		1		  NaN		
+4	12	1		-7.500	  NaN	0.0209		NaN		1		  NaN		
+4	13	0		-7.500	  NaN	0.0208		NaN		1		  NaN		
+4	14	0		-7.500	  NaN	0.0041		NaN		1		  NaN		
+4	15	0		-7.500	  NaN	0.0040		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+5	1	0		-7.500	  NaN	0.0040		NaN		1		  NaN		
+5	2	0		-7.500	  NaN	0.0035		NaN		1		  NaN		
+5	3	1		-7.500	  NaN	0.0206		NaN		1		  NaN		
+5	4	0		-7.500	  NaN	0.0212		NaN		1		  NaN		
+5	5	0		-7.500	  NaN	0.0040		NaN		1		  NaN		
+5	6	1		-7.500	  NaN	0.0043		NaN		1		  NaN		
+5	7	0		-7.500	  NaN	0.0206		NaN		1		  NaN		
+5	8	0		-7.500	  NaN	0.0206		NaN		1		  NaN		
+5	9	1		-7.500	  NaN	0.0205		NaN		1		  NaN		
+5	10	0		-7.500	  NaN	0.0372		NaN		1		  NaN		
+5	11	0		-7.500	  NaN	0.0205		NaN		1		  NaN		
+5	12	1		-7.500	  NaN	0.0205		NaN		1		  NaN		
+5	13	0		-7.500	  NaN	0.0204		NaN		1		  NaN		
+5	14	0		-7.500	  NaN	0.0205		NaN		1		  NaN		
+5	15	0		-7.500	  NaN	0.0204		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+6	1	0		18.093	  NaN	0.0036		NaN		1		  NaN		
+6	2	0		18.093	  NaN	0.0036		NaN		1		  NaN		
+6	3	1		18.093	  NaN	0.0042		NaN		1		  NaN		
+6	4	0		18.093	  NaN	0.0035		NaN		1		  NaN		
+6	5	0		18.093	  NaN	0.0035		NaN		1		  NaN		
+6	6	1		18.093	  NaN	0.0035		NaN		1		  NaN		
+6	7	0		18.093	  NaN	0.0041		NaN		1		  NaN		
+6	8	0		18.093	  NaN	0.0035		NaN		1		  NaN		
+6	9	1		18.093	  NaN	0.0035		NaN		1		  NaN		
+6	10	0		18.093	  NaN	0.0034		NaN		1		  NaN		
+6	11	0		18.093	  NaN	0.0034		NaN		1		  NaN		
+6	12	1		18.093	  NaN	0.0034		NaN		1		  NaN		
+6	13	0		18.093	  NaN	0.0201		NaN		1		  NaN		
+6	14	0		18.093	  NaN	0.0034		NaN		1		  NaN		
+6	15	0		18.093	  NaN	0.0033		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+7	1	0		18.093	  NaN	0.0034		NaN		1		  NaN		
+7	2	0		18.093	  NaN	0.0036		NaN		1		  NaN		
+7	3	1		18.093	  NaN	0.0197		NaN		1		  NaN		
+7	4	0		18.093	  NaN	0.0366		NaN		1		  NaN		
+7	5	0		18.093	  NaN	0.0032		NaN		1		  NaN		
+7	6	1		18.093	  NaN	0.0035		NaN		1		  NaN		
+7	7	0		18.093	  NaN	0.0197		NaN		1		  NaN		
+7	8	0		18.093	  NaN	0.0034		NaN		1		  NaN		
+7	9	1		18.093	  NaN	0.0198		NaN		1		  NaN		
+7	10	0		18.093	  NaN	0.0364		NaN		1		  NaN		
+7	11	0		18.093	  NaN	0.0198		NaN		1		  NaN		
+7	12	1		18.093	  NaN	0.0034		NaN		1		  NaN		
+7	13	0		18.093	  NaN	0.0364		NaN		1		  NaN		
+7	14	0		18.093	  NaN	0.0197		NaN		1		  NaN		
+7	15	0		18.093	  NaN	0.0196		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+8	1	0		-7.500	  NaN	0.0032		NaN		1		  NaN		
+8	2	0		-7.500	  NaN	0.0029		NaN		1		  NaN		
+8	3	1		-7.500	  NaN	0.0195		NaN		1		  NaN		
+8	4	0		-7.500	  NaN	0.0194		NaN		1		  NaN		
+8	5	0		-7.500	  NaN	0.0034		NaN		1		  NaN		
+8	6	1		-7.500	  NaN	0.0191		NaN		1		  NaN		
+8	7	0		-7.500	  NaN	0.0361		NaN		1		  NaN		
+8	8	0		-7.500	  NaN	0.0190		NaN		1		  NaN		
+8	9	1		-7.500	  NaN	0.0194		NaN		1		  NaN		
+8	10	0		-7.500	  NaN	0.0361		NaN		1		  NaN		
+8	11	0		-7.500	  NaN	0.0194		NaN		1		  NaN		
+8	12	1		-7.500	  NaN	0.0190		NaN		1		  NaN		
+8	13	0		-7.500	  NaN	0.0360		NaN		1		  NaN		
+8	14	0		-7.500	  NaN	0.0193		NaN		1		  NaN		
+8	15	0		-7.500	  NaN	0.0188		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+9	1	0		18.093	  NaN	0.0032		NaN		1		  NaN		
+9	2	0		18.093	  NaN	0.0031		NaN		1		  NaN		
+9	3	1		18.093	  NaN	0.0031		NaN		1		  NaN		
+9	4	0		18.093	  NaN	0.0028		NaN		1		  NaN		
+9	5	0		18.093	  NaN	0.0031		NaN		1		  NaN		
+9	6	1		18.093	  NaN	0.0031		NaN		1		  NaN		
+9	7	0		18.093	  NaN	0.0190		NaN		1		  NaN		
+9	8	0		18.093	  NaN	0.0030		NaN		1		  NaN		
+9	9	1		18.093	  NaN	0.0027		NaN		1		  NaN		
+9	10	0		18.093	  NaN	0.0190		NaN		1		  NaN		
+9	11	0		18.093	  NaN	0.0030		NaN		1		  NaN		
+9	12	1		18.093	  NaN	0.0186		NaN		1		  NaN		
+9	13	0		18.093	  NaN	0.0190		NaN		1		  NaN		
+9	14	0		18.093	  NaN	0.0185		NaN		1		  NaN		
+9	15	0		18.093	  NaN	0.0189		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+10	1	0		-7.500	  NaN	0.0187		NaN		1		  NaN		
+10	2	0		-7.500	  NaN	0.0028		NaN		1		  NaN		
+10	3	1		-7.500	  NaN	0.0016		NaN		1		  NaN		
+10	4	0		-7.500	  NaN	0.0354		NaN		1		  NaN		
+10	5	0		-7.500	  NaN	0.0186		NaN		1		  NaN		
+10	6	1		-7.500	  NaN	0.0183		NaN		1		  NaN		
+10	7	0		-7.500	  NaN	0.0188		NaN		1		  NaN		
+10	8	0		-7.500	  NaN	0.0186		NaN		1		  NaN		
+10	9	1		-7.500	  NaN	0.0186		NaN		1		  NaN		
+10	10	0		-7.500	  NaN	0.0353		NaN		1		  NaN		
+10	11	0		-7.500	  NaN	0.0186		NaN		1		  NaN		
+10	12	1		-7.500	  NaN	0.0186		NaN		1		  NaN		
+10	13	0		-7.500	  NaN	0.0353		NaN		1		  NaN		
+10	14	0		-7.500	  NaN	0.0185		NaN		1		  NaN		
+10	15	0		-7.500	  NaN	0.0181		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+11	1	0		-7.500	  NaN	0.0180		NaN		1		  NaN		
+11	2	0		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	3	1		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	4	0		-7.500	  NaN	0.0516		NaN		1		  NaN		
+11	5	0		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	6	1		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	7	0		-7.500	  NaN	0.0349		NaN		1		  NaN		
+11	8	0		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	9	1		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	10	0		-7.500	  NaN	0.0183		NaN		1		  NaN		
+11	11	0		-7.500	  NaN	0.0182		NaN		1		  NaN		
+11	12	1		-7.500	  NaN	0.0182		NaN		1		  NaN		
+11	13	0		-7.500	  NaN	0.0348		NaN		1		  NaN		
+11	14	0		-7.500	  NaN	0.0182		NaN		1		  NaN		
+11	15	0		-7.500	  NaN	0.0182		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+12	1	0		18.093	  NaN	0.0180		NaN		1		  NaN		
+12	2	0		18.093	  NaN	0.0180		NaN		1		  NaN		
+12	3	1		18.093	  NaN	0.0180		NaN		1		  NaN		
+12	4	0		18.093	  NaN	0.0180		NaN		1		  NaN		
+12	5	0		18.093	  NaN	0.0179		NaN		1		  NaN		
+12	6	1		18.093	  NaN	0.0179		NaN		1		  NaN		
+12	7	0		18.093	  NaN	0.0512		NaN		1		  NaN		
+12	8	0		18.093	  NaN	0.0179		NaN		1		  NaN		
+12	9	1		18.093	  NaN	0.0180		NaN		1		  NaN		
+12	10	0		18.093	  NaN	0.0179		NaN		1		  NaN		
+12	11	0		18.093	  NaN	0.0179		NaN		1		  NaN		
+12	12	1		18.093	  NaN	0.0179		NaN		1		  NaN		
+12	13	0		18.093	  NaN	0.0178		NaN		1		  NaN		
+12	14	0		18.093	  NaN	0.0178		NaN		1		  NaN		
+12	15	0		18.093	  NaN	0.0179		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+13	1	0		-7.500	  NaN	0.0177		NaN		1		  NaN		
+13	2	0		-7.500	  NaN	0.0177		NaN		1		  NaN		
+13	3	1		-7.500	  NaN	0.0177		NaN		1		  NaN		
+13	4	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	5	0		-7.500	  NaN	0.0172		NaN		1		  NaN		
+13	6	1		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	7	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	8	0		-7.500	  NaN	0.0175		NaN		1		  NaN		
+13	9	1		-7.500	  NaN	0.0175		NaN		1		  NaN		
+13	10	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	11	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	12	1		-7.500	  NaN	0.0177		NaN		1		  NaN		
+13	13	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	14	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+13	15	0		-7.500	  NaN	0.0176		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+14	1	0		-7.500	  NaN	0.0169		NaN		1		  NaN		
+14	2	0		-7.500	  NaN	0.0174		NaN		1		  NaN		
+14	3	1		-7.500	  NaN	0.0174		NaN		1		  NaN		
+14	4	0		-7.500	  NaN	0.0173		NaN		1		  NaN		
+14	5	0		-7.500	  NaN	0.0173		NaN		1		  NaN		
+14	6	1		-7.500	  NaN	0.0173		NaN		1		  NaN		
+14	7	0		-7.500	  NaN	0.0173		NaN		1		  NaN		
+14	8	0		-7.500	  NaN	0.0173		NaN		1		  NaN		
+14	9	1		-7.500	  NaN	0.0172		NaN		1		  NaN		
+14	10	0		-7.500	  NaN	0.0172		NaN		1		  NaN		
+14	11	0		-7.500	  NaN	0.0171		NaN		1		  NaN		
+14	12	1		-7.500	  NaN	0.0171		NaN		1		  NaN		
+14	13	0		-7.500	  NaN	0.0505		NaN		1		  NaN		
+14	14	0		-7.500	  NaN	0.0172		NaN		1		  NaN		
+14	15	0		-7.500	  NaN	0.0172		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+15	1	0		18.093	  NaN	0.0169		NaN		1		  NaN		
+15	2	0		18.093	  NaN	0.0167		NaN		1		  NaN		
+15	3	1		18.093	  NaN	0.0167		NaN		1		  NaN		
+15	4	0		18.093	  NaN	0.0502		NaN		1		  NaN		
+15	5	0		18.093	  NaN	0.0169		NaN		1		  NaN		
+15	6	1		18.093	  NaN	0.0169		NaN		1		  NaN		
+15	7	0		18.093	  NaN	0.0335		NaN		1		  NaN		
+15	8	0		18.093	  NaN	0.0168		NaN		1		  NaN		
+15	9	1		18.093	  NaN	0.0168		NaN		1		  NaN		
+15	10	0		18.093	  NaN	0.0334		NaN		1		  NaN		
+15	11	0		18.093	  NaN	0.0167		NaN		1		  NaN		
+15	12	1		18.093	  NaN	0.0167		NaN		1		  NaN		
+15	13	0		18.093	  NaN	0.0500		NaN		1		  NaN		
+15	14	0		18.093	  NaN	0.0167		NaN		1		  NaN		
+15	15	0		18.093	  NaN	0.0167		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+16	1	0		18.093	  NaN	0.0161		NaN		1		  NaN		
+16	2	0		18.093	  NaN	0.0163		NaN		1		  NaN		
+16	3	1		18.093	  NaN	0.0165		NaN		1		  NaN		
+16	4	0		18.093	  NaN	0.0331		NaN		1		  NaN		
+16	5	0		18.093	  NaN	0.0165		NaN		1		  NaN		
+16	6	1		18.093	  NaN	0.0165		NaN		1		  NaN		
+16	7	0		18.093	  NaN	0.0331		NaN		1		  NaN		
+16	8	0		18.093	  NaN	0.0164		NaN		1		  NaN		
+16	9	1		18.093	  NaN	0.0164		NaN		1		  NaN		
+16	10	0		18.093	  NaN	0.0163		NaN		1		  NaN		
+16	11	0		18.093	  NaN	0.0164		NaN		1		  NaN		
+16	12	1		18.093	  NaN	0.0159		NaN		1		  NaN		
+16	13	0		18.093	  NaN	0.0330		NaN		1		  NaN		
+16	14	0		18.093	  NaN	0.0162		NaN		1		  NaN		
+16	15	0		18.093	  NaN	0.0163		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+17	1	0		18.093	  NaN	0.0161		NaN		1		  NaN		
+17	2	0		18.093	  NaN	0.0159		NaN		1		  NaN		
+17	3	1		18.093	  NaN	0.0159		NaN		1		  NaN		
+17	4	0		18.093	  NaN	0.0327		NaN		1		  NaN		
+17	5	0		18.093	  NaN	0.0159		NaN		1		  NaN		
+17	6	1		18.093	  NaN	0.0158		NaN		1		  NaN		
+17	7	0		18.093	  NaN	0.0325		NaN		1		  NaN		
+17	8	0		18.093	  NaN	0.0158		NaN		1		  NaN		
+17	9	1		18.093	  NaN	0.0159		NaN		1		  NaN		
+17	10	0		18.093	  NaN	0.0326		NaN		1		  NaN		
+17	11	0		18.093	  NaN	0.0159		NaN		1		  NaN		
+17	12	1		18.093	  NaN	0.0159		NaN		1		  NaN		
+17	13	0		18.093	  NaN	0.0492		NaN		1		  NaN		
+17	14	0		18.093	  NaN	0.0158		NaN		1		  NaN		
+17	15	0		18.093	  NaN	0.0158		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+18	1	0		18.093	  NaN	0.0156		NaN		1		  NaN		
+18	2	0		18.093	  NaN	0.0155		NaN		1		  NaN		
+18	3	1		18.093	  NaN	0.0154		NaN		1		  NaN		
+18	4	0		18.093	  NaN	0.0490		NaN		1		  NaN		
+18	5	0		18.093	  NaN	0.0156		NaN		1		  NaN		
+18	6	1		18.093	  NaN	0.0156		NaN		1		  NaN		
+18	7	0		18.093	  NaN	0.0322		NaN		1		  NaN		
+18	8	0		18.093	  NaN	0.0155		NaN		1		  NaN		
+18	9	1		18.093	  NaN	0.0155		NaN		1		  NaN		
+18	10	0		18.093	  NaN	0.0156		NaN		1		  NaN		
+18	11	0		18.093	  NaN	0.0154		NaN		1		  NaN		
+18	12	1		18.093	  NaN	0.0154		NaN		1		  NaN		
+18	13	0		18.093	  NaN	0.0321		NaN		1		  NaN		
+18	14	0		18.093	  NaN	0.0154		NaN		1		  NaN		
+18	15	0		18.093	  NaN	0.0155		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+19	1	0		-7.500	  NaN	0.0153		NaN		1		  NaN		
+19	2	0		-7.500	  NaN	0.0150		NaN		1		  NaN		
+19	3	1		-7.500	  NaN	0.0150		NaN		1		  NaN		
+19	4	0		-7.500	  NaN	0.0650		NaN		1		  NaN		
+19	5	0		-7.500	  NaN	0.0150		NaN		1		  NaN		
+19	6	1		-7.500	  NaN	0.0149		NaN		1		  NaN		
+19	7	0		-7.500	  NaN	0.0649		NaN		1		  NaN		
+19	8	0		-7.500	  NaN	0.0149		NaN		1		  NaN		
+19	9	1		-7.500	  NaN	0.0149		NaN		1		  NaN		
+19	10	0		-7.500	  NaN	0.0482		NaN		1		  NaN		
+19	11	0		-7.500	  NaN	0.0148		NaN		1		  NaN		
+19	12	1		-7.500	  NaN	0.0148		NaN		1		  NaN		
+19	13	0		-7.500	  NaN	0.0648		NaN		1		  NaN		
+19	14	0		-7.500	  NaN	0.0148		NaN		1		  NaN		
+19	15	0		-7.500	  NaN	0.0150		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+20	1	0		-7.500	  NaN	0.0149		NaN		1		  NaN		
+20	2	0		-7.500	  NaN	0.0146		NaN		1		  NaN		
+20	3	1		-7.500	  NaN	0.0149		NaN		1		  NaN		
+20	4	0		-7.500	  NaN	0.0479		NaN		1		  NaN		
+20	5	0		-7.500	  NaN	0.0147		NaN		1		  NaN		
+20	6	1		-7.500	  NaN	0.0148		NaN		1		  NaN		
+20	7	0		-7.500	  NaN	0.0480		NaN		1		  NaN		
+20	8	0		-7.500	  NaN	0.0146		NaN		1		  NaN		
+20	9	1		-7.500	  NaN	0.0147		NaN		1		  NaN		
+20	10	0		-7.500	  NaN	0.0480		NaN		1		  NaN		
+20	11	0		-7.500	  NaN	0.0146		NaN		1		  NaN		
+20	12	1		-7.500	  NaN	0.0146		NaN		1		  NaN		
+20	13	0		-7.500	  NaN	0.0479		NaN		1		  NaN		
+20	14	0		-7.500	  NaN	0.0145		NaN		1		  NaN		
+20	15	0		-7.500	  NaN	0.0145		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+21	1	0		18.093	  NaN	0.0143		NaN		1		  NaN		
+21	2	0		18.093	  NaN	0.0142		NaN		1		  NaN		
+21	3	1		18.093	  NaN	0.0141		NaN		1		  NaN		
+21	4	0		18.093	  NaN	0.0808		NaN		1		  NaN		
+21	5	0		18.093	  NaN	0.0141		NaN		1		  NaN		
+21	6	1		18.093	  NaN	0.0141		NaN		1		  NaN		
+21	7	0		18.093	  NaN	0.0309		NaN		1		  NaN		
+21	8	0		18.093	  NaN	0.0142		NaN		1		  NaN		
+21	9	1		18.093	  NaN	0.0142		NaN		1		  NaN		
+21	10	0		18.093	  NaN	0.0475		NaN		1		  NaN		
+21	11	0		18.093	  NaN	0.0141		NaN		1		  NaN		
+21	12	1		18.093	  NaN	0.0142		NaN		1		  NaN		
+21	13	0		18.093	  NaN	0.0474		NaN		1		  NaN		
+21	14	0		18.093	  NaN	0.0141		NaN		1		  NaN		
+21	15	0		18.093	  NaN	0.0142		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+22	1	0		18.093	  NaN	0.0140		NaN		1		  NaN		
+22	2	0		18.093	  NaN	0.0137		NaN		1		  NaN		
+22	3	1		18.093	  NaN	0.0137		NaN		1		  NaN		
+22	4	0		18.093	  NaN	0.0308		NaN		1		  NaN		
+22	5	0		18.093	  NaN	0.0137		NaN		1		  NaN		
+22	6	1		18.093	  NaN	0.0136		NaN		1		  NaN		
+22	7	0		18.093	  NaN	0.0474		NaN		1		  NaN		
+22	8	0		18.093	  NaN	0.0136		NaN		1		  NaN		
+22	9	1		18.093	  NaN	0.0136		NaN		1		  NaN		
+22	10	0		18.093	  NaN	0.0304		NaN		1		  NaN		
+22	11	0		18.093	  NaN	0.0138		NaN		1		  NaN		
+22	12	1		18.093	  NaN	0.0137		NaN		1		  NaN		
+22	13	0		18.093	  NaN	0.0472		NaN		1		  NaN		
+22	14	0		18.093	  NaN	0.0132		NaN		1		  NaN		
+22	15	0		18.093	  NaN	0.0137		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+23	1	0		-7.500	  NaN	0.0136		NaN		1		  NaN		
+23	2	0		-7.500	  NaN	0.0135		NaN		1		  NaN		
+23	3	1		-7.500	  NaN	0.0134		NaN		1		  NaN		
+23	4	0		-7.500	  NaN	0.0466		NaN		1		  NaN		
+23	5	0		-7.500	  NaN	0.0132		NaN		1		  NaN		
+23	6	1		-7.500	  NaN	0.0132		NaN		1		  NaN		
+23	7	0		-7.500	  NaN	0.0465		NaN		1		  NaN		
+23	8	0		-7.500	  NaN	0.0132		NaN		1		  NaN		
+23	9	1		-7.500	  NaN	0.0131		NaN		1		  NaN		
+23	10	0		-7.500	  NaN	0.0632		NaN		1		  NaN		
+23	11	0		-7.500	  NaN	0.0133		NaN		1		  NaN		
+23	12	1		-7.500	  NaN	0.0133		NaN		1		  NaN		
+23	13	0		-7.500	  NaN	0.0631		NaN		1		  NaN		
+23	14	0		-7.500	  NaN	0.0133		NaN		1		  NaN		
+23	15	0		-7.500	  NaN	0.0132		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+24	1	0		-7.500	  NaN	0.0130		NaN		1		  NaN		
+24	2	0		-7.500	  NaN	0.0126		NaN		1		  NaN		
+24	3	1		-7.500	  NaN	0.0130		NaN		1		  NaN		
+24	4	0		-7.500	  NaN	0.0629		NaN		1		  NaN		
+24	5	0		-7.500	  NaN	0.0129		NaN		1		  NaN		
+24	6	1		-7.500	  NaN	0.0130		NaN		1		  NaN		
+24	7	0		-7.500	  NaN	0.0463		NaN		1		  NaN		
+24	8	0		-7.500	  NaN	0.0129		NaN		1		  NaN		
+24	9	1		-7.500	  NaN	0.0129		NaN		1		  NaN		
+24	10	0		-7.500	  NaN	0.0628		NaN		1		  NaN		
+24	11	0		-7.500	  NaN	0.0129		NaN		1		  NaN		
+24	12	1		-7.500	  NaN	0.0128		NaN		1		  NaN		
+24	13	0		-7.500	  NaN	0.0460		NaN		1		  NaN		
+24	14	0		-7.500	  NaN	0.0128		NaN		1		  NaN		
+24	15	0		-7.500	  NaN	0.0128		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+25	1	0		18.093	  NaN	0.0126		NaN		1		  NaN		
+25	2	0		18.093	  NaN	0.0127		NaN		1		  NaN		
+25	3	1		18.093	  NaN	0.0126		NaN		1		  NaN		
+25	4	0		18.093	  NaN	0.0792		NaN		1		  NaN		
+25	5	0		18.093	  NaN	0.0126		NaN		1		  NaN		
+25	6	1		18.093	  NaN	0.0125		NaN		1		  NaN		
+25	7	0		18.093	  NaN	0.0458		NaN		1		  NaN		
+25	8	0		18.093	  NaN	0.0125		NaN		1		  NaN		
+25	9	1		18.093	  NaN	0.0124		NaN		1		  NaN		
+25	10	0		18.093	  NaN	0.0624		NaN		1		  NaN		
+25	11	0		18.093	  NaN	0.0124		NaN		1		  NaN		
+25	12	1		18.093	  NaN	0.0124		NaN		1		  NaN		
+25	13	0		18.093	  NaN	0.0123		NaN		1		  NaN		
+25	14	0		18.093	  NaN	0.0123		NaN		1		  NaN		
+25	15	0		18.093	  NaN	0.0123		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+26	1	0		18.093	  NaN	0.0121		NaN		1		  NaN		
+26	2	0		18.093	  NaN	0.0122		NaN		1		  NaN		
+26	3	1		18.093	  NaN	0.0117		NaN		1		  NaN		
+26	4	0		18.093	  NaN	0.0124		NaN		1		  NaN		
+26	5	0		18.093	  NaN	0.0121		NaN		1		  NaN		
+26	6	1		18.093	  NaN	0.0120		NaN		1		  NaN		
+26	7	0		18.093	  NaN	0.0287		NaN		1		  NaN		
+26	8	0		18.093	  NaN	0.0118		NaN		1		  NaN		
+26	9	1		18.093	  NaN	0.0118		NaN		1		  NaN		
+26	10	0		18.093	  NaN	0.0618		NaN		1		  NaN		
+26	11	0		18.093	  NaN	0.0118		NaN		1		  NaN		
+26	12	1		18.093	  NaN	0.0117		NaN		1		  NaN		
+26	13	0		18.093	  NaN	0.0617		NaN		1		  NaN		
+26	14	0		18.093	  NaN	0.0117		NaN		1		  NaN		
+26	15	0		18.093	  NaN	0.0117		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+27	1	0		-7.500	  NaN	0.0117		NaN		1		  NaN		
+27	2	0		-7.500	  NaN	0.0115		NaN		1		  NaN		
+27	3	1		-7.500	  NaN	0.0115		NaN		1		  NaN		
+27	4	0		-7.500	  NaN	0.0617		NaN		1		  NaN		
+27	5	0		-7.500	  NaN	0.0116		NaN		1		  NaN		
+27	6	1		-7.500	  NaN	0.0116		NaN		1		  NaN		
+27	7	0		-7.500	  NaN	0.0116		NaN		1		  NaN		
+27	8	0		-7.500	  NaN	0.0114		NaN		1		  NaN		
+27	9	1		-7.500	  NaN	0.0113		NaN		1		  NaN		
+27	10	0		-7.500	  NaN	0.0280		NaN		1		  NaN		
+27	11	0		-7.500	  NaN	0.0113		NaN		1		  NaN		
+27	12	1		-7.500	  NaN	0.0113		NaN		1		  NaN		
+27	13	0		-7.500	  NaN	0.0448		NaN		1		  NaN		
+27	14	0		-7.500	  NaN	0.0114		NaN		1		  NaN		
+27	15	0		-7.500	  NaN	0.0115		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+28	1	0		-7.500	  NaN	0.0112		NaN		1		  NaN		
+28	2	0		-7.500	  NaN	0.0110		NaN		1		  NaN		
+28	3	1		-7.500	  NaN	0.0113		NaN		1		  NaN		
+28	4	0		-7.500	  NaN	0.0779		NaN		1		  NaN		
+28	5	0		-7.500	  NaN	0.0113		NaN		1		  NaN		
+28	6	1		-7.500	  NaN	0.0112		NaN		1		  NaN		
+28	7	0		-7.500	  NaN	0.0115		NaN		1		  NaN		
+28	8	0		-7.500	  NaN	0.0109		NaN		1		  NaN		
+28	9	1		-7.500	  NaN	0.0109		NaN		1		  NaN		
+28	10	0		-7.500	  NaN	0.0609		NaN		1		  NaN		
+28	11	0		-7.500	  NaN	0.0109		NaN		1		  NaN		
+28	12	1		-7.500	  NaN	0.0110		NaN		1		  NaN		
+28	13	0		-7.500	  NaN	0.0610		NaN		1		  NaN		
+28	14	0		-7.500	  NaN	0.0110		NaN		1		  NaN		
+28	15	0		-7.500	  NaN	0.0110		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+29	1	0		18.093	  NaN	0.0108		NaN		1		  NaN		
+29	2	0		18.093	  NaN	0.0106		NaN		1		  NaN		
+29	3	1		18.093	  NaN	0.0107		NaN		1		  NaN		
+29	4	0		18.093	  NaN	0.0607		NaN		1		  NaN		
+29	5	0		18.093	  NaN	0.0107		NaN		1		  NaN		
+29	6	1		18.093	  NaN	0.0107		NaN		1		  NaN		
+29	7	0		18.093	  NaN	0.0440		NaN		1		  NaN		
+29	8	0		18.093	  NaN	0.0107		NaN		1		  NaN		
+29	9	1		18.093	  NaN	0.0106		NaN		1		  NaN		
+29	10	0		18.093	  NaN	0.0439		NaN		1		  NaN		
+29	11	0		18.093	  NaN	0.0106		NaN		1		  NaN		
+29	12	1		18.093	  NaN	0.0106		NaN		1		  NaN		
+29	13	0		18.093	  NaN	0.0439		NaN		1		  NaN		
+29	14	0		18.093	  NaN	0.0106		NaN		1		  NaN		
+29	15	0		18.093	  NaN	0.0105		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+30	1	0		-7.500	  NaN	0.0104		NaN		1		  NaN		
+30	2	0		-7.500	  NaN	0.0101		NaN		1		  NaN		
+30	3	1		-7.500	  NaN	0.0101		NaN		1		  NaN		
+30	4	0		-7.500	  NaN	0.0437		NaN		1		  NaN		
+30	5	0		-7.500	  NaN	0.0103		NaN		1		  NaN		
+30	6	1		-7.500	  NaN	0.0102		NaN		1		  NaN		
+30	7	0		-7.500	  NaN	0.0436		NaN		1		  NaN		
+30	8	0		-7.500	  NaN	0.0102		NaN		1		  NaN		
+30	9	1		-7.500	  NaN	0.0102		NaN		1		  NaN		
+30	10	0		-7.500	  NaN	0.0602		NaN		1		  NaN		
+30	11	0		-7.500	  NaN	0.0101		NaN		1		  NaN		
+30	12	1		-7.500	  NaN	0.0099		NaN		1		  NaN		
+30	13	0		-7.500	  NaN	0.0266		NaN		1		  NaN		
+30	14	0		-7.500	  NaN	0.0099		NaN		1		  NaN		
+30	15	0		-7.500	  NaN	0.0099		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+31	1	0		-7.500	  NaN	0.0099		NaN		1		  NaN		
+31	2	0		-7.500	  NaN	0.0098		NaN		1		  NaN		
+31	3	1		-7.500	  NaN	0.0098		NaN		1		  NaN		
+31	4	0		-7.500	  NaN	0.0763		NaN		1		  NaN		
+31	5	0		-7.500	  NaN	0.0096		NaN		1		  NaN		
+31	6	1		-7.500	  NaN	0.0096		NaN		1		  NaN		
+31	7	0		-7.500	  NaN	0.0431		NaN		1		  NaN		
+31	8	0		-7.500	  NaN	0.0098		NaN		1		  NaN		
+31	9	1		-7.500	  NaN	0.0097		NaN		1		  NaN		
+31	10	0		-7.500	  NaN	0.0431		NaN		1		  NaN		
+31	11	0		-7.500	  NaN	0.0097		NaN		1		  NaN		
+31	12	1		-7.500	  NaN	0.0097		NaN		1		  NaN		
+31	13	0		-7.500	  NaN	0.0430		NaN		1		  NaN		
+31	14	0		-7.500	  NaN	0.0097		NaN		1		  NaN		
+31	15	0		-7.500	  NaN	0.0092		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+32	1	0		18.093	  NaN	0.0094		NaN		1		  NaN		
+32	2	0		18.093	  NaN	0.0094		NaN		1		  NaN		
+32	3	1		18.093	  NaN	0.0090		NaN		1		  NaN		
+32	4	0		18.093	  NaN	0.0592		NaN		1		  NaN		
+32	5	0		18.093	  NaN	0.0095		NaN		1		  NaN		
+32	6	1		18.093	  NaN	0.0090		NaN		1		  NaN		
+32	7	0		18.093	  NaN	0.0423		NaN		1		  NaN		
+32	8	0		18.093	  NaN	0.0093		NaN		1		  NaN		
+32	9	1		18.093	  NaN	0.0093		NaN		1		  NaN		
+32	10	0		18.093	  NaN	0.0259		NaN		1		  NaN		
+32	11	0		18.093	  NaN	0.0092		NaN		1		  NaN		
+32	12	1		18.093	  NaN	0.0092		NaN		1		  NaN		
+32	13	0		18.093	  NaN	0.0757		NaN		1		  NaN		
+32	14	0		18.093	  NaN	0.0092		NaN		1		  NaN		
+32	15	0		18.093	  NaN	0.0092		NaN		1		  NaN		
+
+
+SESSION 20 ended 28-Jan-2017 17:46:19 for SUBJECT number 11
+
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		2.000	0.000	0.0306		NaN		1		  NaN		
+1	2	0		2.000	0.000	0.0142		NaN		1		  NaN		
+1	3	1		2.000	0.000	0.0142		NaN		1		  NaN		
+1	4	0		2.000	0.000	0.0643		1		15		-0.026		vol_15.mat
+1	5	0		1.306	-0.694	0.0140		1		16		-0.022		vol_16.mat
+1	6	1		0.696	-0.610	0.0140		1		17		-0.020		vol_17.mat
+1	7	0		0.094	-0.601	0.0309		1		18		0.154		vol_18.mat
+1	8	0		0.450	0.356	0.0142		1		19		0.030		vol_19.mat
+1	9	1		0.038	-0.412	0.0142		1		20		-0.100		vol_20.mat
+1	10	0		-1.034	-1.071	0.0473		1		21		-0.056		vol_21.mat
+1	11	0		-1.799	-0.765	0.0141		1		22		-0.181		vol_22.mat
+1	12	1		-3.049	-1.250	0.0141		1		23		0.045		vol_23.mat
+1	13	0		-3.223	-0.174	0.0308		1		24		0.335		vol_24.mat
+1	14	0		-1.973	1.250	0.0141		1		25		0.187		vol_24.mat
+1	15	0		-1.622	0.352	0.0141		1		26		0.220		vol_26.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		2.000	0.000	0.0139		NaN		1		  NaN		
+2	2	0		2.000	0.000	0.0137		NaN		1		  NaN		
+2	3	1		2.000	0.000	0.0138		NaN		1		  NaN		
+2	4	0		2.000	0.000	0.0305		1		36		0.111		vol_36.mat
+2	5	0		2.058	0.058	0.0138		1		37		-0.191		vol_37.mat
+2	6	1		0.808	-1.250	0.0140		1		38		-0.312		vol_38.mat
+2	7	0		-0.442	-1.250	0.0305		1		39		-0.232		vol_39.mat
+2	8	0		-1.692	-1.250	0.0138		1		40		0.406		vol_40.mat
+2	9	1		-0.442	1.250	0.0138		1		41		0.374		vol_41.mat
+2	10	0		0.808	1.250	0.0471		1		42		-0.186		vol_42.mat
+2	11	0		-0.442	-1.250	0.0138		1		43		0.172		vol_43.mat
+2	12	1		0.089	0.531	0.0137		1		44		0.167		vol_44.mat
+2	13	0		0.417	0.328	0.0302		1		45		0.074		vol_45.mat
+2	14	0		0.235	-0.182	0.0137		1		46		0.371		vol_45.mat
+2	15	0		1.485	1.250	0.0137		1		47		0.297		vol_47.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		2.000	0.000	0.0136		NaN		1		  NaN		
+3	2	0		2.000	0.000	0.0133		NaN		1		  NaN		
+3	3	1		2.000	0.000	0.0135		NaN		1		  NaN		
+3	4	0		2.000	0.000	0.0135		1		57		0.129		vol_57.mat
+3	5	0		2.158	0.158	0.0131		1		58		0.095		vol_58.mat
+3	6	1		2.119	-0.039	0.0133		1		59		-0.068		vol_59.mat
+3	7	0		1.198	-0.921	0.0466		1		60		-0.151		vol_60.mat
+3	8	0		-0.052	-1.250	0.0134		1		61		-0.338		vol_61.mat
+3	9	1		-1.302	-1.250	0.0134		1		62		-0.336		vol_62.mat
+3	10	0		-2.552	-1.250	0.0301		1		63		-0.459		vol_63.mat
+3	11	0		-3.802	-1.250	0.0134		1		64		-0.119		vol_63.mat
+3	12	1		-4.748	-0.946	0.0133		1		65		-0.033		vol_65.mat
+3	13	0		-5.392	-0.644	0.0466		1		66		-0.212		vol_66.mat
+3	14	0		-6.642	-1.250	0.0133		1		67		-0.728		vol_67.mat
+3	15	0		-7.892	-1.250	0.0129		1		68		-0.607		vol_68.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		2.000	0.000	0.0130		NaN		1		  NaN		
+4	2	0		2.000	0.000	0.0130		NaN		1		  NaN		
+4	3	1		2.000	0.000	0.0129		NaN		1		  NaN		
+4	4	0		2.000	0.000	0.0296		1		78		-0.687		vol_78.mat
+4	5	0		0.750	-1.250	0.0131		1		79		-0.380		vol_79.mat
+4	6	1		-0.500	-1.250	0.0131		1		80		-0.103		vol_80.mat
+4	7	0		-1.385	-0.885	0.0130		1		81		-0.136		vol_81.mat
+4	8	0		-2.593	-1.208	0.0130		1		82		-0.281		vol_82.mat
+4	9	1		-3.843	-1.250	0.0131		1		83		-0.291		vol_83.mat
+4	10	0		-5.093	-1.250	0.0297		1		84		-0.209		vol_84.mat
+4	11	0		-6.343	-1.250	0.0130		1		85		-0.028		vol_85.mat
+4	12	1		-6.915	-0.572	0.0130		1		86		-0.329		vol_86.mat
+4	13	0		-8.165	-1.250	0.0461		1		87		-0.653		vol_87.mat
+4	14	0		-9.415	-1.250	0.0129		1		88		-0.695		vol_88.mat
+4	15	0		-10.665	-1.250	0.0129		1		89		-0.450		vol_89.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+5	1	0		2.000	0.000	0.0127		NaN		1		  NaN		
+5	2	0		2.000	0.000	0.0126		NaN		1		  NaN		
+5	3	1		2.000	0.000	0.0128		NaN		1		  NaN		
+5	4	0		2.000	0.000	0.0461		1		99		0.183		vol_99.mat
+5	5	0		2.457	0.457	0.0127		1		100		-0.109		vol_100.mat
+5	6	1		1.264	-1.193	0.0127		1		101		0.179		vol_101.mat
+5	7	0		1.802	0.538	0.0460		1		102		0.102		vol_102.mat
+5	8	0		1.775	-0.027	0.0125		1		103		0.070		vol_103.mat
+5	9	1		1.606	-0.168	0.0127		1		104		-0.430		vol_104.mat
+5	10	0		0.356	-1.250	0.0291		1		105		-0.338		vol_105.mat
+5	11	0		-0.894	-1.250	0.0126		1		106		-0.368		vol_106.mat
+5	12	1		-2.144	-1.250	0.0126		1		107		-0.328		vol_107.mat
+5	13	0		-3.394	-1.250	0.0122		1		108		-0.011		vol_107.mat
+5	14	0		-3.810	-0.416	0.0126		1		109		-0.236		vol_109.mat
+5	15	0		-5.060	-1.250	0.0125		1		110		-0.139		vol_110.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+6	1	0		2.000	0.000	0.0125		NaN		1		  NaN		
+6	2	0		2.000	0.000	0.0124		NaN		1		  NaN		
+6	3	1		2.000	0.000	0.0124		NaN		1		  NaN		
+6	4	0		2.000	0.000	0.0290		1		120		0.625		vol_120.mat
+6	5	0		3.250	1.250	0.0124		1		121		0.146		vol_121.mat
+6	6	1		3.243	-0.007	0.0124		1		122		-0.041		vol_122.mat
+6	7	0		2.448	-0.795	0.0119		1		123		0.268		vol_123.mat
+6	8	0		3.446	0.999	0.0123		1		124		-0.656		vol_124.mat
+6	9	1		2.196	-1.250	0.0123		1		125		-0.466		vol_124.mat
+6	10	0		0.946	-1.250	0.0290		1		126		0.156		vol_126.mat
+6	11	0		1.529	0.582	0.0122		1		127		0.246		vol_127.mat
+6	12	1		2.294	0.765	0.0122		1		128		0.563		vol_128.mat
+6	13	0		3.544	1.250	0.0290		1		129		0.803		vol_129.mat
+6	14	0		4.794	1.250	0.0122		1		130		0.476		vol_130.mat
+6	15	0		6.044	1.250	0.0121		1		131		0.113		vol_131.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+7	1	0		2.000	0.000	0.0120		NaN		1		  NaN		
+7	2	0		2.000	0.000	0.0118		NaN		1		  NaN		
+7	3	1		2.000	0.000	0.0120		NaN		1		  NaN		
+7	4	0		2.000	0.000	0.0285		1		141		0.152		vol_141.mat
+7	5	0		2.287	0.287	0.0120		1		142		-0.275		vol_142.mat
+7	6	1		1.037	-1.250	0.0122		1		143		-0.118		vol_143.mat
+7	7	0		0.020	-1.017	0.0285		1		144		-0.144		vol_144.mat
+7	8	0		-1.220	-1.240	0.0119		1		145		0.235		vol_145.mat
+7	9	1		-0.363	0.857	0.0119		1		146		0.055		vol_146.mat
+7	10	0		-0.685	-0.322	0.0115		1		147		-0.356		vol_147.mat
+7	11	0		-1.935	-1.250	0.0119		1		148		-0.807		vol_148.mat
+7	12	1		-3.185	-1.250	0.0119		1		149		-0.594		vol_149.mat
+7	13	0		-4.435	-1.250	0.0118		1		150		-0.744		vol_150.mat
+7	14	0		-5.685	-1.250	0.0118		1		151		-0.431		vol_151.mat
+7	15	0		-6.935	-1.250	0.0118		1		152		-0.107		vol_151.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+8	1	0		2.000	0.000	0.0117		NaN		1		  NaN		
+8	2	0		2.000	0.000	0.0116		NaN		1		  NaN		
+8	3	1		2.000	0.000	0.0114		NaN		1		  NaN		
+8	4	0		2.000	0.000	0.0282		1		162		-0.091		vol_162.mat
+8	5	0		0.948	-1.052	0.0116		1		163		-0.033		vol_163.mat
+8	6	1		0.308	-0.639	0.0116		1		164		0.234		vol_164.mat
+8	7	0		1.111	0.802	0.0122		1		165		-0.000		vol_165.mat
+8	8	0		0.489	-0.621	0.0115		1		166		-0.196		vol_166.mat
+8	9	1		-0.761	-1.250	0.0115		1		167		-0.207		vol_167.mat
+8	10	0		-2.011	-1.250	0.0116		1		168		-0.296		vol_168.mat
+8	11	0		-3.261	-1.250	0.0115		1		169		-0.255		vol_169.mat
+8	12	1		-4.511	-1.250	0.0115		1		170		-0.173		vol_170.mat
+8	13	0		-5.761	-1.250	0.0114		1		171		-0.039		vol_171.mat
+8	14	0		-6.409	-0.648	0.0112		1		172		0.335		vol_171.mat
+8	15	0		-5.159	1.250	0.0114		1		173		0.122		vol_173.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+9	1	0		2.000	0.000	0.0119		NaN		1		  NaN		
+9	2	0		2.000	0.000	0.0112		NaN		1		  NaN		
+9	3	1		2.000	0.000	0.0112		NaN		1		  NaN		
+9	4	0		2.000	0.000	0.0279		1		183		0.139		vol_183.mat
+9	5	0		2.213	0.213	0.0112		1		184		-0.155		vol_184.mat
+9	6	1		0.963	-1.250	0.0111		1		185		0.033		vol_185.mat
+9	7	0		0.718	-0.245	0.0443		1		186		0.169		vol_186.mat
+9	8	0		1.130	0.412	0.0109		1		187		0.399		vol_187.mat
+9	9	1		2.380	1.250	0.0109		1		188		0.585		vol_188.mat
+9	10	0		3.630	1.250	0.0277		1		189		0.511		vol_189.mat
+9	11	0		4.880	1.250	0.0118		1		190		0.654		vol_190.mat
+9	12	1		6.130	1.250	0.0110		1		191		0.791		vol_191.mat
+9	13	0		7.380	1.250	0.0444		1		192		0.489		vol_191.mat
+9	14	0		8.630	1.250	0.0116		1		193		-0.129		vol_193.mat
+9	15	0		7.380	-1.250	0.0110		1		194		-0.362		vol_194.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+10	1	0		2.000	0.000	0.0108		NaN		1		  NaN		
+10	2	0		2.000	0.000	0.0108		NaN		1		  NaN		
+10	3	1		2.000	0.000	0.0275		NaN		1		  NaN		
+10	4	0		2.000	0.000	0.0440		1		204		-0.057		vol_204.mat
+10	5	0		1.135	-0.865	0.0104		1		205		-0.097		vol_205.mat
+10	6	1		0.130	-1.005	0.0269		1		206		0.071		vol_206.mat
+10	7	0		0.066	-0.064	0.0274		1		207		-0.067		vol_207.mat
+10	8	0		-0.841	-0.907	0.0108		1		208		-0.027		vol_208.mat
+10	9	1		-1.460	-0.619	0.0114		1		209		0.003		vol_209.mat
+10	10	0		-1.937	-0.477	0.0106		1		210		-0.141		vol_210.mat
+10	11	0		-3.187	-1.250	0.0107		1		211		0.274		vol_211.mat
+10	12	1		-2.118	1.068	0.0107		1		212		0.075		vol_212.mat
+10	13	0		-2.352	-0.233	0.0102		1		213		0.294		vol_212.mat
+10	14	0		-1.279	1.073	0.0106		1		214		-0.134		vol_214.mat
+10	15	0		-2.529	-1.250	0.0106		1		215		-0.507		vol_214.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		-10.665	0.000	0.0478		NaN		1		  NaN		
+1	2	0		-10.665	0.000	0.0311		NaN		1		  NaN		
+1	3	1		-10.665	0.000	0.0149		NaN		1		  NaN		
+1	4	0		-10.665	0.000	0.0817		1		15		-0.002		vol_15.mat
+1	5	0		-11.226	-0.562	0.0147		1		16		0.023		vol_16.mat
+1	6	1		-11.601	-0.375	0.0144		1		17		0.080		vol_17.mat
+1	7	0		-11.674	-0.073	0.0647		1		18		0.192		vol_18.mat
+1	8	0		-11.157	0.517	0.0310		1		19		0.196		vol_19.mat
+1	9	1		-10.678	0.479	0.0147		1		20		0.209		vol_20.mat
+1	10	0		-10.126	0.552	0.0481		1		21		0.057		vol_20.mat
+1	11	0		-10.416	-0.290	0.0144		1		22		0.034		vol_22.mat
+1	12	1		-10.759	-0.343	0.0144		1		23		0.130		vol_23.mat
+1	13	0		-10.562	0.197	0.0310		1		24		0.075		vol_24.mat
+1	14	0		-10.713	-0.151	0.0143		1		25		0.187		vol_25.mat
+1	15	0		-10.221	0.492	0.0309		1		26		-0.030		vol_26.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		6.044	0.000	0.0145		NaN		1		  NaN		
+2	2	0		6.044	0.000	0.0141		NaN		1		  NaN		
+2	3	1		6.044	0.000	0.0145		NaN		1		  NaN		
+2	4	0		6.044	0.000	0.0146		1		36		-0.426		vol_36.mat
+2	5	0		4.794	-1.250	0.0141		1		37		-0.356		vol_37.mat
+2	6	1		3.544	-1.250	0.0145		1		38		-0.535		vol_38.mat
+2	7	0		2.294	-1.250	0.0307		1		39		-0.496		vol_39.mat
+2	8	0		1.044	-1.250	0.0144		1		40		-0.319		vol_40.mat
+2	9	1		-0.206	-1.250	0.0144		1		41		-0.045		vol_41.mat
+2	10	0		-0.821	-0.615	0.0143		1		42		0.314		vol_42.mat
+2	11	0		0.406	1.228	0.0143		1		43		-0.071		vol_43.mat
+2	12	1		-0.666	-1.073	0.0143		1		44		-0.164		vol_44.mat
+2	13	0		-1.916	-1.250	0.0143		1		45		0.061		vol_45.mat
+2	14	0		-2.024	-0.108	0.0305		1		46		-0.002		vol_46.mat
+2	15	0		-2.593	-0.569	0.0305		1		47		0.041		vol_47.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		-7.892	0.000	0.0141		NaN		1		  NaN		
+3	2	0		-7.892	0.000	0.0137		NaN		1		  NaN		
+3	3	1		-7.892	0.000	0.0137		NaN		1		  NaN		
+3	4	0		-7.892	0.000	0.0141		1		57		0.227		vol_56.mat
+3	5	0		-7.194	0.697	0.0137		1		58		-0.320		vol_58.mat
+3	6	1		-8.444	-1.250	0.0303		1		59		0.113		vol_59.mat
+3	7	0		-8.168	0.276	0.0140		1		60		0.595		vol_60.mat
+3	8	0		-6.918	1.250	0.0303		1		61		0.313		vol_61.mat
+3	9	1		-5.994	0.925	0.0303		1		62		0.206		vol_62.mat
+3	10	0		-5.513	0.481	0.0306		1		63		0.239		vol_63.mat
+3	11	0		-4.796	0.717	0.0303		1		64		0.202		vol_64.mat
+3	12	1		-4.296	0.501	0.0139		1		65		0.292		vol_65.mat
+3	13	0		-3.282	1.013	0.0473		1		66		-0.006		vol_66.mat
+3	14	0		-3.954	-0.671	0.0137		1		67		-0.321		vol_67.mat
+3	15	0		-5.204	-1.250	0.0134		1		68		-0.596		vol_68.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		1.485	0.000	0.0138		NaN		1		  NaN		
+4	2	0		1.485	0.000	0.0133		NaN		1		  NaN		
+4	3	1		1.485	0.000	0.0299		NaN		1		  NaN		
+4	4	0		1.485	0.000	0.0137		1		78		-0.101		vol_78.mat
+4	5	0		0.379	-1.106	0.0299		1		79		0.047		vol_79.mat
+4	6	1		0.188	-0.191	0.0133		1		80		0.035		vol_80.mat
+4	7	0		-0.143	-0.331	0.0632		1		81		-0.197		vol_81.mat
+4	8	0		-1.393	-1.250	0.0137		1		82		-0.064		vol_82.mat
+4	9	1		-2.153	-0.761	0.0136		1		83		-0.192		vol_83.mat
+4	10	0		-3.403	-1.250	0.0136		1		84		-0.348		vol_84.mat
+4	11	0		-4.653	-1.250	0.0298		1		85		-0.587		vol_85.mat
+4	12	1		-5.903	-1.250	0.0135		1		86		-0.800		vol_86.mat
+4	13	0		-7.153	-1.250	0.0136		1		87		-0.297		vol_87.mat
+4	14	0		-8.403	-1.250	0.0134		1		88		-0.353		vol_88.mat
+4	15	0		-9.653	-1.250	0.0297		1		89		-0.325		vol_89.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+5	1	0		7.380	0.000	0.0136		NaN		1		  NaN		
+5	2	0		7.380	0.000	0.0130		NaN		1		  NaN		
+5	3	1		7.380	0.000	0.0129		NaN		1		  NaN		
+5	4	0		7.380	0.000	0.0301		1		99		-0.218		vol_99.mat
+5	5	0		6.130	-1.250	0.0129		1		100		0.082		vol_100.mat
+5	6	1		6.186	0.057	0.0129		1		101		0.185		vol_101.mat
+5	7	0		6.664	0.477	0.0299		1		102		-0.130		vol_102.mat
+5	8	0		5.414	-1.250	0.0133		1		103		-0.200		vol_103.mat
+5	9	1		4.164	-1.250	0.0133		1		104		0.023		vol_104.mat
+5	10	0		3.886	-0.278	0.0299		1		105		-0.048		vol_105.mat
+5	11	0		3.104	-0.782	0.0134		1		106		-0.080		vol_106.mat
+5	12	1		2.177	-0.927	0.0129		1		107		0.119		vol_107.mat
+5	13	0		2.364	0.186	0.0298		1		108		0.377		vol_108.mat
+5	14	0		3.614	1.250	0.0132		1		109		0.124		vol_109.mat
+5	15	0		3.602	-0.012	0.0133		1		110		0.178		vol_110.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+6	1	0		-2.529	0.000	0.0132		NaN		1		  NaN		
+6	2	0		-2.529	0.000	0.0126		NaN		1		  NaN		
+6	3	1		-2.529	0.000	0.0125		NaN		1		  NaN		
+6	4	0		-2.529	0.000	0.0295		1		120		0.061		vol_120.mat
+6	5	0		-2.742	-0.213	0.0129		1		121		-0.029		vol_121.mat
+6	6	1		-3.434	-0.692	0.0129		1		122		0.459		vol_122.mat
+6	7	0		-2.184	1.250	0.0132		1		123		0.467		vol_122.mat
+6	8	0		-0.934	1.250	0.0126		1		124		0.445		vol_124.mat
+6	9	1		0.316	1.250	0.0129		1		125		0.330		vol_125.mat
+6	10	0		1.417	1.101	0.0130		1		126		0.422		vol_126.mat
+6	11	0		2.667	1.250	0.0130		1		127		0.311		vol_127.mat
+6	12	1		3.682	1.015	0.0125		1		128		0.119		vol_128.mat
+6	13	0		3.697	0.015	0.0128		1		129		0.123		vol_129.mat
+6	14	0		3.830	0.133	0.0128		1		130		-0.143		vol_130.mat
+6	15	0		2.580	-1.250	0.0127		1		131		-0.309		vol_131.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+7	1	0		-1.622	0.000	0.0126		NaN		1		  NaN		
+7	2	0		-1.622	0.000	0.0122		NaN		1		  NaN		
+7	3	1		-1.622	0.000	0.0122		NaN		1		  NaN		
+7	4	0		-1.622	0.000	0.0459		1		141		0.415		vol_141.mat
+7	5	0		-0.372	1.250	0.0125		1		142		0.247		vol_142.mat
+7	6	1		0.281	0.652	0.0124		1		143		0.311		vol_143.mat
+7	7	0		1.370	1.089	0.0290		1		144		0.472		vol_144.mat
+7	8	0		2.620	1.250	0.0125		1		145		0.520		vol_145.mat
+7	9	1		3.870	1.250	0.0126		1		146		0.327		vol_146.mat
+7	10	0		4.923	1.053	0.0291		1		147		0.271		vol_147.mat
+7	11	0		5.763	0.841	0.0125		1		148		0.400		vol_148.mat
+7	12	1		7.013	1.250	0.0124		1		149		0.504		vol_149.mat
+7	13	0		8.263	1.250	0.0291		1		150		0.573		vol_150.mat
+7	14	0		9.513	1.250	0.0124		1		151		0.331		vol_151.mat
+7	15	0		10.578	1.065	0.0124		1		152		-0.063		vol_152.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+8	1	0		-5.060	0.000	0.0124		NaN		1		  NaN		
+8	2	0		-5.060	0.000	0.0122		NaN		1		  NaN		
+8	3	1		-5.060	0.000	0.0122		NaN		1		  NaN		
+8	4	0		-5.060	0.000	0.0289		1		162		0.326		vol_162.mat
+8	5	0		-3.813	1.246	0.0122		1		163		0.153		vol_163.mat
+8	6	1		-3.632	0.181	0.0122		1		164		-0.381		vol_164.mat
+8	7	0		-4.882	-1.250	0.0125		1		165		-0.245		vol_165.mat
+8	8	0		-6.132	-1.250	0.0121		1		166		0.121		vol_166.mat
+8	9	1		-5.851	0.281	0.0121		1		167		0.300		vol_167.mat
+8	10	0		-4.768	1.083	0.0288		1		168		0.217		vol_168.mat
+8	11	0		-4.226	0.542	0.0121		1		169		0.531		vol_169.mat
+8	12	1		-2.976	1.250	0.0121		1		170		-0.111		vol_170.mat
+8	13	0		-4.226	-1.250	0.0287		1		171		-0.246		vol_171.mat
+8	14	0		-5.476	-1.250	0.0119		1		172		-0.321		vol_172.mat
+8	15	0		-6.726	-1.250	0.0120		1		173		0.098		vol_172.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+9	1	0		-6.935	0.000	0.0118		NaN		1		  NaN		
+9	2	0		-6.935	0.000	0.0281		NaN		1		  NaN		
+9	3	1		-6.935	0.000	0.0119		NaN		1		  NaN		
+9	4	0		-6.935	0.000	0.0118		1		183		0.283		vol_183.mat
+9	5	0		-5.925	1.009	0.0114		1		184		0.114		vol_184.mat
+9	6	1		-5.937	-0.012	0.0118		1		185		-0.054		vol_185.mat
+9	7	0		-6.791	-0.853	0.0284		1		186		0.265		vol_186.mat
+9	8	0		-5.806	0.985	0.0118		1		187		0.258		vol_187.mat
+9	9	1		-5.019	0.787	0.0119		1		188		0.245		vol_188.mat
+9	10	0		-4.295	0.724	0.0117		1		189		0.154		vol_189.mat
+9	11	0		-4.067	0.228	0.0117		1		190		0.326		vol_190.mat
+9	12	1		-2.845	1.222	0.0117		1		191		0.295		vol_191.mat
+9	13	0		-1.875	0.969	0.0283		1		192		0.229		vol_192.mat
+9	14	0		-1.252	0.623	0.0117		1		193		0.259		vol_193.mat
+9	15	0		-0.433	0.819	0.0116		1		194		0.220		vol_194.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+10	1	0		-5.159	0.000	0.0116		NaN		1		  NaN		
+10	2	0		-5.159	0.000	0.0115		NaN		1		  NaN		
+10	3	1		-5.159	0.000	0.0110		NaN		1		  NaN		
+10	4	0		-5.159	0.000	0.0281		1		204		-0.131		vol_204.mat
+10	5	0		-6.409	-1.250	0.0114		1		205		0.068		vol_205.mat
+10	6	1		-6.469	-0.060	0.0114		1		206		-0.330		vol_206.mat
+10	7	0		-7.719	-1.250	0.0281		1		207		-0.324		vol_207.mat
+10	8	0		-8.969	-1.250	0.0115		1		208		0.052		vol_208.mat
+10	9	1		-9.030	-0.061	0.0113		1		209		0.292		vol_209.mat
+10	10	0		-7.962	1.068	0.0112		1		210		0.082		vol_210.mat
+10	11	0		-8.164	-0.202	0.0113		1		211		-0.125		vol_211.mat
+10	12	1		-9.403	-1.239	0.0110		1		212		-0.342		vol_212.mat
+10	13	0		-10.653	-1.250	0.0279		1		213		0.212		vol_213.mat
+10	14	0		-9.834	0.819	0.0114		1		214		0.554		vol_214.mat
+10	15	0		-8.584	1.250	0.0113		1		215		0.133		vol_215.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		-0.433	0.000	0.0223		NaN		1		  NaN		
+1	2	0		-0.433	0.000	0.0059		NaN		1		  NaN		
+1	3	1		-0.433	0.000	0.0060		NaN		1		  NaN		
+1	4	0		-0.433	0.000	0.0560		1		15		-0.046		vol_15.mat
+1	5	0		-1.236	-0.803	0.0060		1		16		-0.009		vol_16.mat
+1	6	1		-1.763	-0.527	0.0057		1		17		0.063		vol_17.mat
+1	7	0		-1.915	-0.152	0.0225		1		18		0.031		vol_18.mat
+1	8	0		-2.279	-0.364	0.0059		1		19		-0.042		vol_19.mat
+1	9	1		-3.026	-0.747	0.0059		1		20		-0.021		vol_20.mat
+1	10	0		-3.625	-0.599	0.0059		1		21		0.105		vol_21.mat
+1	11	0		-3.541	0.085	0.0059		1		22		-0.060		vol_22.mat
+1	12	1		-4.431	-0.890	0.0059		1		23		-0.216		vol_23.mat
+1	13	0		-5.681	-1.250	0.0058		1		24		-0.137		vol_24.mat
+1	14	0		-6.839	-1.158	0.0059		1		25		-0.266		vol_25.mat
+1	15	0		-8.089	-1.250	0.0053		1		26		-0.354		vol_26.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		-10.221	0.000	0.0056		NaN		1		  NaN		
+2	2	0		-10.221	0.000	0.0056		NaN		1		  NaN		
+2	3	1		-10.221	0.000	0.0056		NaN		1		  NaN		
+2	4	0		-10.221	0.000	0.0056		1		36		-0.211		vol_36.mat
+2	5	0		-11.471	-1.250	0.0056		1		37		-0.076		vol_37.mat
+2	6	1		-12.284	-0.814	0.0055		1		38		0.426		vol_38.mat
+2	7	0		-11.034	1.250	0.0055		1		39		0.367		vol_39.mat
+2	8	0		-9.784	1.250	0.0056		1		40		0.059		vol_40.mat
+2	9	1		-10.142	-0.358	0.0050		1		41		-0.024		vol_41.mat
+2	10	0		-10.804	-0.662	0.0054		1		42		-0.058		vol_42.mat
+2	11	0		-11.608	-0.804	0.0055		1		43		-0.212		vol_43.mat
+2	12	1		-12.858	-1.250	0.0055		1		44		-0.082		vol_44.mat
+2	13	0		-13.708	-0.849	0.0054		1		45		0.219		vol_45.mat
+2	14	0		-12.966	0.742	0.0054		1		46		0.165		vol_46.mat
+2	15	0		-12.671	0.295	0.0052		1		47		-0.064		vol_47.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		3.602	0.000	0.0052		NaN		1		  NaN		
+3	2	0		3.602	0.000	0.0052		NaN		1		  NaN		
+3	3	1		3.602	0.000	0.0052		NaN		1		  NaN		
+3	4	0		3.602	0.000	0.0055		1		57		-0.239		vol_57.mat
+3	5	0		2.352	-1.250	0.0052		1		58		-0.193		vol_58.mat
+3	6	1		1.102	-1.250	0.0052		1		59		-0.285		vol_59.mat
+3	7	0		-0.148	-1.250	0.0052		1		60		-0.359		vol_60.mat
+3	8	0		-1.398	-1.250	0.0051		1		61		-0.375		vol_61.mat
+3	9	1		-2.648	-1.250	0.0051		1		62		-0.173		vol_62.mat
+3	10	0		-3.898	-1.250	0.0051		1		63		-0.291		vol_63.mat
+3	11	0		-5.148	-1.250	0.0051		1		64		-0.022		vol_64.mat
+3	12	1		-5.647	-0.499	0.0051		1		65		-0.132		vol_65.mat
+3	13	0		-6.890	-1.243	0.0051		1		66		-0.108		vol_66.mat
+3	14	0		-7.948	-1.058	0.0051		1		67		-0.170		vol_67.mat
+3	15	0		-9.198	-1.250	0.0049		1		68		0.035		vol_68.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		-6.726	0.000	0.0049		NaN		1		  NaN		
+4	2	0		-6.726	0.000	0.0048		NaN		1		  NaN		
+4	3	1		-6.726	0.000	0.0049		NaN		1		  NaN		
+4	4	0		-6.726	0.000	0.0051		1		78		-0.360		vol_78.mat
+4	5	0		-7.976	-1.250	0.0048		1		79		-0.514		vol_79.mat
+4	6	1		-9.226	-1.250	0.0049		1		80		-0.092		vol_80.mat
+4	7	0		-9.983	-0.757	0.0048		1		81		-0.625		vol_81.mat
+4	8	0		-11.233	-1.250	0.0048		1		82		-0.432		vol_82.mat
+4	9	1		-12.483	-1.250	0.0048		1		83		-0.291		vol_83.mat
+4	10	0		-13.733	-1.250	0.0047		1		84		-0.454		vol_84.mat
+4	11	0		-14.983	-1.250	0.0047		1		85		-0.332		vol_85.mat
+4	12	1		-16.233	-1.250	0.0047		1		86		-0.258		vol_86.mat
+4	13	0		-17.483	-1.250	0.0213		1		87		-0.388		vol_87.mat
+4	14	0		-18.733	-1.250	0.0046		1		88		-0.484		vol_88.mat
+4	15	0		-19.983	-1.250	0.0047		1		89		-0.280		vol_89.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+5	1	0		-9.653	0.000	0.0045		NaN		1		  NaN		
+5	2	0		-9.653	0.000	0.0045		NaN		1		  NaN		
+5	3	1		-9.653	0.000	0.0045		NaN		1		  NaN		
+5	4	0		-9.653	0.000	0.0209		1		99		0.204		vol_99.mat
+5	5	0		-9.079	0.575	0.0043		1		100		0.859		vol_99.mat
+5	6	1		-7.829	1.250	0.0044		1		101		0.230		vol_101.mat
+5	7	0		-7.484	0.345	0.0044		1		102		0.358		vol_102.mat
+5	8	0		-6.234	1.250	0.0044		1		103		0.373		vol_103.mat
+5	9	1		-4.984	1.250	0.0044		1		104		0.528		vol_104.mat
+5	10	0		-3.734	1.250	0.0046		1		105		0.766		vol_104.mat
+5	11	0		-2.484	1.250	0.0044		1		106		0.348		vol_106.mat
+5	12	1		-1.426	1.057	0.0043		1		107		-0.048		vol_107.mat
+5	13	0		-2.335	-0.909	0.0043		1		108		0.509		vol_108.mat
+5	14	0		-1.085	1.250	0.0042		1		109		0.624		vol_109.mat
+5	15	0		0.165	1.250	0.0043		1		110		0.087		vol_110.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+6	1	0		2.580	0.000	0.0208		NaN		1		  NaN		
+6	2	0		2.580	0.000	0.0041		NaN		1		  NaN		
+6	3	1		2.580	0.000	0.0040		NaN		1		  NaN		
+6	4	0		2.580	0.000	0.0040		1		120		-0.257		vol_120.mat
+6	5	0		1.330	-1.250	0.0041		1		121		-0.223		vol_121.mat
+6	6	1		0.080	-1.250	0.0038		1		122		0.137		vol_122.mat
+6	7	0		0.441	0.360	0.0036		1		123		-0.211		vol_123.mat
+6	8	0		-0.809	-1.250	0.0038		1		124		-0.409		vol_124.mat
+6	9	1		-2.059	-1.250	0.0040		1		125		-0.368		vol_125.mat
+6	10	0		-3.309	-1.250	0.0204		1		126		-0.303		vol_126.mat
+6	11	0		-4.559	-1.250	0.0040		1		127		-0.236		vol_127.mat
+6	12	1		-5.809	-1.250	0.0039		1		128		-0.155		vol_128.mat
+6	13	0		-7.059	-1.250	0.0039		1		129		-0.063		vol_129.mat
+6	14	0		-7.859	-0.799	0.0038		1		130		-0.090		vol_130.mat
+6	15	0		-8.854	-0.995	0.0038		1		131		-0.033		vol_131.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+7	1	0		-8.584	0.000	0.0037		NaN		1		  NaN		
+7	2	0		-8.584	0.000	0.0037		NaN		1		  NaN		
+7	3	1		-8.584	0.000	0.0037		NaN		1		  NaN		
+7	4	0		-8.584	0.000	0.0037		1		141		0.060		vol_141.mat
+7	5	0		-8.806	-0.222	0.0037		1		142		0.100		vol_141.mat
+7	6	1		-8.784	0.022	0.0034		1		143		0.157		vol_143.mat
+7	7	0		-8.469	0.315	0.0202		1		144		0.488		vol_144.mat
+7	8	0		-7.219	1.250	0.0035		1		145		0.542		vol_145.mat
+7	9	1		-5.969	1.250	0.0036		1		146		0.459		vol_146.mat
+7	10	0		-4.719	1.250	0.0203		1		147		0.518		vol_147.mat
+7	11	0		-3.469	1.250	0.0036		1		148		0.196		vol_148.mat
+7	12	1		-3.131	0.338	0.0035		1		149		-0.204		vol_149.mat
+7	13	0		-4.381	-1.250	0.0202		1		150		-0.255		vol_150.mat
+7	14	0		-5.631	-1.250	0.0030		1		151		-0.451		vol_151.mat
+7	15	0		-6.881	-1.250	0.0035		1		152		-0.070		vol_152.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+8	1	0		-5.204	0.000	0.0033		NaN		1		  NaN		
+8	2	0		-5.204	0.000	0.0032		NaN		1		  NaN		
+8	3	1		-5.204	0.000	0.0032		NaN		1		  NaN		
+8	4	0		-5.204	0.000	0.0033		1		162		-0.210		vol_162.mat
+8	5	0		-6.454	-1.250	0.0032		1		163		-0.381		vol_163.mat
+8	6	1		-7.704	-1.250	0.0033		1		164		0.405		vol_164.mat
+8	7	0		-6.454	1.250	0.0204		1		165		0.457		vol_165.mat
+8	8	0		-5.204	1.250	0.0032		1		166		0.020		vol_166.mat
+8	9	1		-5.821	-0.618	0.0035		1		167		0.476		vol_167.mat
+8	10	0		-4.571	1.250	0.0035		1		168		0.647		vol_168.mat
+8	11	0		-3.321	1.250	0.0031		1		169		0.207		vol_169.mat
+8	12	1		-2.994	0.327	0.0034		1		170		-0.101		vol_170.mat
+8	13	0		-4.147	-1.153	0.0031		1		171		0.026		vol_171.mat
+8	14	0		-4.446	-0.299	0.0031		1		172		0.349		vol_172.mat
+8	15	0		-3.196	1.250	0.0034		1		173		0.001		vol_173.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+9	1	0		10.578	0.000	0.0029		NaN		1		  NaN		
+9	2	0		10.578	0.000	0.0032		NaN		1		  NaN		
+9	3	1		10.578	0.000	0.0029		NaN		1		  NaN		
+9	4	0		10.578	0.000	0.0028		1		183		-0.470		vol_183.mat
+9	5	0		9.328	-1.250	0.0028		1		184		-0.057		vol_184.mat
+9	6	1		8.745	-0.583	0.0031		1		185		0.069		vol_185.mat
+9	7	0		8.649	-0.097	0.0195		1		186		0.085		vol_186.mat
+9	8	0		8.575	-0.073	0.0030		1		187		-0.083		vol_187.mat
+9	9	1		7.568	-1.007	0.0190		1		188		-0.399		vol_188.mat
+9	10	0		6.318	-1.250	0.0190		1		189		-0.285		vol_189.mat
+9	11	0		5.068	-1.250	0.0034		1		190		-0.015		vol_190.mat
+9	12	1		4.612	-0.456	0.0033		1		191		-0.133		vol_191.mat
+9	13	0		3.371	-1.241	0.0194		1		192		0.142		vol_192.mat
+9	14	0		3.701	0.330	0.0029		1		193		0.307		vol_193.mat
+9	15	0		4.803	1.102	0.0027		1		194		0.349		vol_194.mat
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+10	1	0		-2.593	0.000	0.0028		NaN		1		  NaN		
+10	2	0		-2.593	0.000	0.0025		NaN		1		  NaN		
+10	3	1		-2.593	0.000	0.0024		NaN		1		  NaN		
+10	4	0		-2.593	0.000	0.0028		1		204		0.054		vol_204.mat
+10	5	0		-2.848	-0.255	0.0027		1		205		0.199		vol_204.mat
+10	6	1		-2.279	0.569	0.0030		1		206		0.701		vol_206.mat
+10	7	0		-1.029	1.250	0.0191		1		207		0.662		vol_207.mat
+10	8	0		0.221	1.250	0.0190		1		208		0.924		vol_208.mat
+10	9	1		1.471	1.250	0.0027		1		209		0.515		vol_209.mat
+10	10	0		2.721	1.250	0.0190		1		210		-0.156		vol_210.mat
+10	11	0		1.471	-1.250	0.0030		1		211		-0.311		vol_211.mat
+10	12	1		0.221	-1.250	0.0029		1		212		0.037		vol_212.mat
+10	13	0		0.100	-0.121	0.0190		1		213		0.085		vol_213.mat
+10	14	0		0.068	-0.032	0.0029		1		214		0.238		vol_214.mat
+10	15	0		0.850	0.782	0.0025		1		215		0.540		vol_214.mat
+
+
+SESSION 24 ended 28-Jan-2017 18:29:29 for SUBJECT number 11
+

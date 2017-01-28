@@ -5,7 +5,8 @@
 %what to name them
 %final path
 folder= '/jukebox/norman/amennen/PythonMot3';
-subjectVec = [3 4 5 6 7 8];
+subjectVec = [3 4 5 6 7 8 9];
+%subjectVec = 9; %just put in the newest subject if you've already done for a lot
 projectName = 'motStudy03';
 for s = 1:length(subjectVec)
     subjectNum = subjectVec(s);

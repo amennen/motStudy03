@@ -10,7 +10,7 @@ projectName = 'motStudy03';
 base_path = [fileparts(which('mot_realtime02.m')) filesep];
 
 % don't put in 22 until have subject
-svec = [3 4 5 6 7 8];
+svec = [3 4 5 6 7 8 9];
 
 nsub = length(svec);
 recallSession = [20 24];
@@ -80,8 +80,8 @@ end
 e_ALL = nanmean(diff_easy);
 h_ALL = nanmean(diff_hard);
 
-ee_ALL = nanstd(diff_easy)/sqrt(NSUB-1);
-eh_ALL = nanstd(diff_hard)/sqrt(NSUB-1);
+ee_ALL = nanstd(diff_easy)/sqrt(nsub-1);
+eh_ALL = nanstd(diff_hard)/sqrt(nsub-1);
 
 eALLD = [eh_ALL; ee_ALL];
 ALLD = [h_ALL; e_ALL];
@@ -101,8 +101,8 @@ set(findall(fig,'-property','FontSize'),'FontSize',20)
 e_ALL = nanmean(easy_score);
 h_ALL = nanmean(hard_score);
 
-ee_ALL = nanstd(easy_score)/sqrt(NSUB-1);
-eh_ALL = nanstd(hard_score)/sqrt(NSUB-1);
+ee_ALL = nanstd(easy_score)/sqrt(nsub-1);
+eh_ALL = nanstd(hard_score)/sqrt(nsub-1);
 
 eALLD = [eh_ALL; ee_ALL];
 ALLD = [h_ALL; e_ALL];
@@ -120,8 +120,8 @@ set(findall(fig,'-property','FontSize'),'FontSize',20)
 e_ALL = nanmedian(easy_rt);
 h_ALL = nanmedian(hard_rt);
 
-ee_ALL = nanstd(easy_rt)/sqrt(NSUB-1);
-eh_ALL = nanstd(hard_rt)/sqrt(NSUB-1);
+ee_ALL = nanstd(easy_rt)/sqrt(nsub-1);
+eh_ALL = nanstd(hard_rt)/sqrt(nsub-1);
 
 eALLD = [eh_ALL; ee_ALL];
 ALLD = [h_ALL; e_ALL];
