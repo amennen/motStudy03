@@ -1,0 +1,111 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	21.8  	1   	PHONE     	lure    	0.527	NR  	1   	NR      	NR      
+2   	22.3  	2   	DOME      	lure    	0.576	NR  	1   	NR      	NR      
+3   	23    	1   	PHONE (repeat 1)	lure    	0.3 	NR  	1   	NR      	NR      
+4   	23.3  	3   	GLASS     	lure    	0.41	NR  	1   	NR      	NR      
+5   	23.8  	1   	PHONE (repeat 2)	lure    	0.502	NR  	1   	NR      	NR      
+6   	24.4  	2   	DOME (repeat 1)	lure    	0.458	NR  	1   	NR      	NR      
+7   	24.9  	4   	PAGE      	lure    	0.368	NR  	1   	NR      	NR      
+8   	25.3  	3   	GLASS (repeat 1)	lure    	0.647	NR  	1   	NR      	NR      
+9   	26    	2   	DOME (repeat 2)	lure    	0.389	NR  	1   	NR      	NR      
+10  	26.5  	5   	NAIL      	lure    	0.432	NR  	1   	NR      	NR      
+11  	27    	4   	PAGE (repeat 1)	lure    	0.437	NR  	1   	NR      	NR      
+12  	27.5  	3   	GLASS (repeat 2)	lure    	0.63	NR  	1   	NR      	NR      
+13  	28.2  	6   	PAINT     	lure    	0.267	NR  	1   	NR      	NR      
+14  	28.5  	7   	MARBLE    	lure    	0.699	NR  	1   	NR      	NR      
+15  	29.3  	5   	NAIL (repeat 1)	lure    	0.451	NR  	1   	NR      	NR      
+16  	29.8  	4   	PAGE (repeat 2)	lure    	0.47	NR  	1   	NR      	NR      
+17  	30.3  	6   	PAINT (repeat 1)	lure    	0.451	NR  	1   	NR      	NR      
+18  	30.9  	2   	DOME (repeat 3)	lure    	0.372	NR  	1   	NR      	NR      
+19  	31.3  	6   	PAINT (repeat 2)	lure    	0.451	NR  	1   	NR      	NR      
+20  	31.8  	4   	PAGE (repeat 3)	lure    	0.525	NR  	1   	NR      	NR      
+21  	32.4  	3   	GLASS (repeat 3)	lure    	0.451	NR  	1   	NR      	NR      
+22  	32.9  	2   	DOME (repeat 4)	lure    	0.473	NR  	1   	NR      	NR      
+23  	33.4  	1   	PHONE (repeat 3)	lure    	0.451	NR  	1   	NR      	NR      
+24  	33.9  	4   	PAGE (repeat 4)	lure    	0.63	NR  	1   	NR      	NR      
+25  	34.6  	7   	MARBLE (repeat 1)	lure    	0.451	NR  	1   	NR      	NR      
+26  	35.1  	1   	PHONE (repeat 4)	lure    	0.615	NR  	1   	NR      	NR      
+27  	35.8  	7   	MARBLE (repeat 2)	lure    	0.451	NR  	1   	NR      	NR      
+28  	36.3  	5   	NAIL (repeat 2)	lure    	0.395	NR  	1   	NR      	NR      
+29  	36.8  	2   	DOME (repeat 5)	lure    	0.451	NR  	1   	NR      	NR      
+30  	37.3  	8   	GRAPEFRUIT	fruit   	0.956	0.423	1   	target  	target  
+31  	38.3  	5   	NAIL (repeat 3)	lure    	0.637	NR  	1   	NR      	NR      
+32  	39    	4   	PAGE (repeat 5)	lure    	0.321	NR  	1   	NR      	NR      
+33  	39.4  	6   	PAINT (repeat 3)	lure    	0.41	NR  	1   	NR      	NR      
+34  	39.9  	2   	DOME (repeat 6)	lure    	0.382	NR  	1   	NR      	NR      
+35  	40.3  	1   	PHONE (repeat 5)	lure    	0.35	NR  	1   	NR      	NR      
+36  	40.7  	4   	PAGE (repeat 6)	lure    	0.681	NR  	1   	NR      	NR      
+37  	41.5  	2   	DOME (repeat 7)	lure    	0.564	NR  	1   	NR      	NR      
+38  	42.1  	4   	PAGE (repeat 7)	lure    	0.376	NR  	1   	NR      	NR      
+39  	42.6  	2   	DOME (repeat 8)	lure    	0.369	NR  	1   	NR      	NR      
+40  	43    	5   	NAIL (repeat 4)	lure    	0.522	NR  	1   	NR      	NR      
+41  	43.6  	7   	MARBLE (repeat 3)	lure    	0.623	NR  	1   	NR      	NR      
+42  	44.3  	6   	PAINT (repeat 4)	lure    	0.519	NR  	1   	NR      	NR      
+43  	44.8  	2   	DOME (repeat 9)	lure    	0.662	NR  	1   	NR      	NR      
+44  	45.6  	5   	NAIL (repeat 5)	lure    	0.581	NR  	1   	NR      	NR      
+45  	46.2  	1   	PHONE (repeat 6)	lure    	0.656	NR  	1   	NR      	NR      
+46  	47    	5   	NAIL (repeat 6)	lure    	0.684	NR  	1   	NR      	NR      
+47  	47.7  	6   	PAINT (repeat 5)	lure    	0.341	NR  	1   	NR      	NR      
+48  	48.1  	1   	PHONE (repeat 7)	lure    	0.452	NR  	1   	NR      	NR      
+49  	48.6  	5   	NAIL (repeat 7)	lure    	0.299	NR  	1   	NR      	NR      
+50  	48.9  	7   	MARBLE (repeat 4)	lure    	0.36	NR  	1   	NR      	NR      
+51  	49.4  	4   	PAGE (repeat 8)	lure    	0.451	NR  	1   	NR      	NR      
+52  	49.9  	2   	DOME (repeat 10)	lure    	0.349	NR  	1   	NR      	NR      
+53  	50.3  	1   	PHONE (repeat 8)	lure    	0.451	NR  	1   	NR      	NR      
+54  	50.8  	7   	MARBLE (repeat 5)	lure    	0.365	NR  	1   	NR      	NR      
+55  	51.2  	4   	PAGE (repeat 9)	lure    	0.451	NR  	1   	NR      	NR      
+56  	51.7  	3   	GLASS (repeat 4)	lure    	0.474	NR  	1   	NR      	NR      
+57  	52.3  	7   	MARBLE (repeat 6)	lure    	0.451	NR  	1   	NR      	NR      
+58  	52.8  	5   	NAIL (repeat 8)	lure    	0.698	NR  	1   	NR      	NR      
+59  	53.5  	1   	PHONE (repeat 9)	lure    	0.451	NR  	1   	NR      	NR      
+60  	54    	7   	MARBLE (repeat 7)	lure    	0.639	NR  	1   	NR      	NR      
+61  	54.7  	5   	NAIL (repeat 9)	lure    	0.451	NR  	1   	NR      	NR      
+62  	55.2  	9   	CRANBERRY 	fruit   	0.955	0.46	1   	target  	target  
+63  	56.3  	7   	MARBLE (repeat 8)	lure    	0.344	NR  	1   	NR      	NR      
+64  	56.7  	5   	NAIL (repeat 10)	lure    	0.603	NR  	1   	NR      	NR      
+65  	57.3  	1   	PHONE (repeat 10)	lure    	0.401	NR  	1   	NR      	NR      
+66  	57.8  	4   	PAGE (repeat 10)	lure    	0.307	NR  	1   	NR      	NR      
+67  	58.2  	6   	PAINT (repeat 6)	lure    	0.486	NR  	1   	NR      	NR      
+68  	58.8  	1   	PHONE (repeat 11)	lure    	0.308	NR  	1   	NR      	NR      
+69  	59.1  	3   	GLASS (repeat 5)	lure    	0.699	NR  	1   	NR      	NR      
+70  	59.9  	5   	NAIL (repeat 11)	lure    	0.677	NR  	1   	NR      	NR      
+71  	60.6  	2   	DOME (repeat 11)	lure    	0.334	NR  	1   	NR      	NR      
+72  	61    	6   	PAINT (repeat 7)	lure    	0.525	NR  	1   	NR      	NR      
+73  	61.6  	4   	PAGE (repeat 11)	lure    	0.505	NR  	1   	NR      	NR      
+74  	62.2  	2   	DOME (repeat 12)	lure    	0.527	NR  	1   	NR      	NR      
+75  	62.8  	4   	PAGE (repeat 12)	lure    	0.489	NR  	1   	NR      	NR      
+76  	63.4  	3   	GLASS (repeat 6)	lure    	0.303	NR  	1   	NR      	NR      
+77  	63.7  	7   	MARBLE (repeat 9)	lure    	0.474	NR  	1   	NR      	NR      
+78  	64.3  	5   	NAIL (repeat 12)	lure    	0.664	NR  	1   	NR      	NR      
+79  	65    	4   	PAGE (repeat 13)	lure    	0.289	NR  	1   	NR      	NR      
+80  	65.3  	2   	DOME (repeat 13)	lure    	0.402	NR  	1   	NR      	NR      
+81  	65.8  	7   	MARBLE (repeat 10)	lure    	0.365	NR  	1   	NR      	NR      
+82  	66.2  	4   	PAGE (repeat 14)	lure    	0.399	NR  	1   	NR      	NR      
+83  	66.7  	6   	PAINT (repeat 8)	lure    	0.451	NR  	1   	NR      	NR      
+84  	67.2  	5   	NAIL (repeat 13)	lure    	0.463	NR  	1   	NR      	NR      
+85  	67.7  	3   	GLASS (repeat 7)	lure    	0.451	NR  	1   	NR      	NR      
+86  	68.2  	10  	PEACH     	fruit   	0.956	0.595	1   	target  	target  
+87  	69.2  	2   	DOME (repeat 14)	lure    	0.61	NR  	1   	NR      	NR      
+88  	69.9  	3   	GLASS (repeat 8)	lure    	0.476	NR  	1   	NR      	NR      
+89  	70.4  	4   	PAGE (repeat 15)	lure    	0.587	NR  	1   	NR      	NR      
+90  	71.1  	7   	MARBLE (repeat 11)	lure    	0.252	NR  	1   	NR      	NR      
+91  	71.4  	4   	PAGE (repeat 16)	lure    	0.382	NR  	1   	NR      	NR      
+92  	71.9  	5   	NAIL (repeat 14)	lure    	0.515	NR  	1   	NR      	NR      
+93  	72.5  	4   	PAGE (repeat 17)	lure    	0.342	NR  	1   	NR      	NR      
+94  	72.9  	6   	PAINT (repeat 9)	lure    	0.367	NR  	1   	NR      	NR      
+95  	73.3  	4   	PAGE (repeat 18)	lure    	0.69	NR  	1   	NR      	NR      
+96  	74    	1   	PHONE (repeat 12)	lure    	0.397	NR  	1   	NR      	NR      
+97  	74.5  	2   	DOME (repeat 15)	lure    	0.643	NR  	1   	NR      	NR      
+98  	75.2  	5   	NAIL (repeat 15)	lure    	0.447	NR  	1   	NR      	NR      
+99  	75.7  	7   	MARBLE (repeat 12)	lure    	0.366	NR  	1   	NR      	NR      
+100 	76.1  	5   	NAIL (repeat 16)	lure    	0.669	NR  	1   	NR      	NR      
+101 	76.9  	6   	PAINT (repeat 10)	lure    	0.395	NR  	1   	NR      	NR      
+102 	77.3  	1   	PHONE (repeat 13)	lure    	0.319	NR  	1   	NR      	NR      
+103 	77.7  	5   	NAIL (repeat 17)	lure    	0.558	NR  	1   	NR      	NR      
+104 	78.3  	7   	MARBLE (repeat 13)	lure    	0.455	NR  	1   	NR      	NR      
+105 	78.9  	5   	NAIL (repeat 18)	lure    	0.487	NR  	1   	NR      	NR      
+106 	79.4  	6   	PAINT (repeat 11)	lure    	0.271	NR  	1   	NR      	NR      
+107 	79.7  	7   	MARBLE (repeat 14)	lure    	0.351	NR  	1   	NR      	NR      
+108 	80.2  	4   	PAGE (repeat 19)	lure    	0.451	NR  	1   	NR      	NR      
+109 	80.7  	6   	PAINT (repeat 12)	lure    	0.528	NR  	1   	NR      	NR      
+110 	81.3  	4   	PAGE (repeat 20)	lure    	0.451	NR  	1   	NR      	NR      
