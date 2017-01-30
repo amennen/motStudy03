@@ -978,3 +978,43 @@ SESSION 10 ended 27-Jan-2017 13:19:29 for SUBJECT number 11
 
 
 ******************************************************************************
+
+SESSION 12 initiated 28-Jan-2017 16:20:27 for SUBJECT number 11
+
+session	trial	pair	onset	dur	cue         	associate   
+12	1	5	2003  	2002  	ANCHOR      	pico21.jpg  
+12	2	17	10004 	2001  	HOOK        	pico27.jpg  
+12	3	3	18004 	2001  	RATTLE      	pico16.jpg  
+12	4	16	26005 	2001  	TRIPOD      	pici30.jpg  
+12	5	4	34005 	2001  	WALLET      	pici14.jpg  
+12	6	13	42006 	2001  	RAKE        	pico24.jpg  
+12	7	10	50006 	2001  	HOSE        	pici17.jpg  
+12	8	14	58007 	2001  	JAIL        	pici13.jpg  
+12	9	11	66008 	2000  	DRUM        	pico14.jpg  
+12	10	6	74008 	2001  	DUST        	pici03.jpg  
+12	11	7	82009 	2001  	PLUG        	pico04.jpg  
+12	12	18	90009 	2001  	NAIL        	pici16.jpg  
+12	13	9	98010 	2001  	NOTE        	pico07.jpg  
+12	14	20	106010	2001  	GLASS       	pici21.jpg  
+12	15	12	114011	2001  	LENS        	pici11.jpg  
+12	16	1	122011	2001  	MAGNET      	pico09.jpg  
+12	17	8	129995	2017  	DRILL       	pici27.jpg  
+12	18	15	138013	2001  	STAPLE      	pico02.jpg  
+12	19	2	146013	2001  	SHIRT       	pici22.jpg  
+12	20	19	153997	2001  	FRAME       	pico12.jpg  
+
+
+SESSION 12 ended 28-Jan-2017 16:26:05 for SUBJECT number 11
+
+
+
+
+******************************************************************************
+
+
+SESSION 25 ended 28-Jan-2017 18:34:03 for SUBJECT number 11
+
+
+
+
+******************************************************************************
