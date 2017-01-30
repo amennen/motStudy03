@@ -18,11 +18,12 @@
 %runNum = 1;
 clear all;
 projectName = 'motStudy03';
-onlyRem = 0; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
+onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
+rating_thresh = 5;
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
-svec = [3 4 5 6 7 8 9 11];
+svec = [3 4 5 6 7 8 9 11 12];
 trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
@@ -32,8 +33,8 @@ if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17', '1-28-17'};
-RT = [3 4 5 6 7 8 9 11];
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17', '1-28-17', '1-30-17'};
+RT = [3 4 5 6 7 8 9 11 12];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
@@ -87,8 +88,8 @@ for s = 1:NSUB
             sub.Orderhard = sub.hard(stimOrder.hard);
             sub.Ordereasy = sub.easy(stimOrder.easy);
         
-            keep.hard = find(sub.Orderhard>4); %in the order of the stimuli-which indices to keep
-            keep.easy = find(sub.Ordereasy>4);
+            keep.hard = find(sub.Orderhard>=rating_thresh); %in the order of the stimuli-which indices to keep
+            keep.easy = find(sub.Ordereasy>=rating_thresh);
         end
         
         scanNum = recallScan(i);
@@ -161,8 +162,9 @@ set(findall(gcf,'-property','FontSize'),'FontSize',16)
 %line([6 6], [-1 1], 'Color', 'k', 'LineWidth', 3);
 
 xlim([1 nTRsperTrial])
+ylim([-.2 .2])
 %ylim([-.25 .25])
-print(h1, sprintf('%sresults125_6sub_avg_onlyrem5.pdf', plotDir), '-dpdf')
+%print(h1, sprintf('%sresults125_6sub_avg_onlyrem5.pdf', plotDir), '-dpdf')
 
 %%
 h1 = figure;
