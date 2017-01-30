@@ -19,7 +19,7 @@ allplotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ];
 
 nblock = 3;
 shiftTR = 2;
-svec = [3:9];
+svec = [3:9 11];
 nsub = length(svec);
 for s = 1:nsub
     allsep = [];
@@ -106,7 +106,8 @@ end
 %% now plot the whole thing
 h = figure;
 for s = 1:nsub
-scatter(avgsepbystim(:,s),avgPrePostRT(:,s), 'LineWidth', 2.5);
+%scatter(avgsepbystim(:,s),avgPrePostRT(:,s),  'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
+scatter(avgsepbystim(:,s),avgPrePostRT(:,s),  'LineWidth', 2);
 hold on;
 end
 xlim([-0.25 0.25])
@@ -125,7 +126,7 @@ print(h, sprintf('%savgsepPrePost.pdf', allplotDir), '-dpdf')
 
 h = figure;
 for s = 1:nsub
-    scatter(avgsepbystim(:,s),avgPostRT(:,s),'LineWidth', 2.5);
+    scatter(avgsepbystim(:,s),avgPostRT(:,s), 'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
     hold on;
 end
 xlim([-0.25 0.25])
@@ -144,7 +145,7 @@ print(h, sprintf('%savgsepPost.pdf', allplotDir), '-dpdf')
 %% see if relationship with number of TR's
 h = figure;
 for s = 1:nsub
-scatter(nlow(:,s),avgPrePostRT(:,s), 'LineWidth', 2.5);
+scatter(nlow(:,s),avgPrePostRT(:,s), 'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
 hold on;
 end
 xlim([0 30])
@@ -162,7 +163,7 @@ print(h, sprintf('%savgsepnLow.pdf', allplotDir), '-dpdf')
 
 h = figure;
 for s = 1:nsub
-scatter(nmed(:,s),avgPrePostRT(:,s), 'LineWidth', 2.5);
+scatter(nmed(:,s),avgPrePostRT(:,s),'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
 hold on;
 end
 xlim([0 30])
@@ -180,7 +181,7 @@ print(h, sprintf('%savgsepnMed.pdf', allplotDir), '-dpdf')
 
 h = figure;
 for s = 1:nsub
-scatter(nhigh(:,s),avgPrePostRT(:,s), 'LineWidth', 2.5);
+scatter(nhigh(:,s),avgPrePostRT(:,s), 'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
 hold on;
 end
 xlim([0 30])
@@ -200,7 +201,7 @@ print(h, sprintf('%savgsepnHigh.pdf', allplotDir), '-dpdf')
 %%
 h = figure;
 for s = 1:nsub
-scatter(avgsepbystim(:,s),diff_stim_hard(:,s), 'LineWidth', 2.5);
+scatter(avgsepbystim(:,s),diff_stim_hard(:,s), 'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
 hold on;
 end
 xlim([-.2 .2])
@@ -218,7 +219,7 @@ print(h, sprintf('%savgsepRating.pdf', allplotDir), '-dpdf')
 
 h = figure;
 for s = 1:nsub
-scatter(avgsepbystim(:,s),hardacc_ordered(:,s), 'LineWidth', 2.5);
+scatter(avgsepbystim(:,s),hardacc_ordered(:,s), 'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
 hold on;
 end
 xlim([-.2 .2])
@@ -236,7 +237,7 @@ print(h, sprintf('%savgsepAcc.pdf', allplotDir), '-dpdf')
 
 h = figure;
 for s = 1:nsub
-scatter(avgsepbystim(:,s),hardrt_ordered(:,s), 'LineWidth', 2.5);
+scatter(avgsepbystim(:,s),hardrt_ordered(:,s), 'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
 hold on;
 end
 xlim([-.2 .2])

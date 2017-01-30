@@ -1,0 +1,11 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	67.2  	10  	COAL      	rt-targ 	1.95	0.601	1   	target  	target  
+2   	109.2 	3   	PADDLE    	rt-targ 	1.95	0.569	1   	target  	target  
+3   	151.2 	6   	PLUG      	rt-targ 	1.953	0.706	1   	non-target	non-target
+4   	193.2 	4   	APRON     	rt-targ 	1.95	0.634	1   	non-target	non-target
+5   	235.2 	2   	CANDLE    	rt-targ 	1.95	0.722	1   	non-target	non-target
+6   	277.2 	7   	DUST      	rt-targ 	1.95	0.81	1   	target  	target  
+7   	319.2 	5   	COLLAR    	rt-targ 	1.95	0.739	1   	non-target	non-target
+8   	361.2 	8   	NOTE      	rt-targ 	1.951	0.515	1   	target  	target  
+9   	403.2 	9   	HANDLE    	rt-targ 	1.95	0.707	0   	non-target	target  
+10  	445.2 	1   	ANCHOR    	rt-targ 	1.95	0.563	1   	target  	target  
