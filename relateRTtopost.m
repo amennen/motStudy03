@@ -19,7 +19,7 @@ allplotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ];
 
 nblock = 3;
 shiftTR = 2;
-svec = [3:8];
+svec = [3:9];
 nsub = length(svec);
 for s = 1:nsub
     allsep = [];

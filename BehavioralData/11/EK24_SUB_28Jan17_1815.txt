@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	50.6  	18  	NAIL      	omit    	3.951	0.996	1   	2+ details	1 detail, 2+ details, full
+2   	90.6  	10  	HOSE      	realtime	3.95	0.653	1   	2+ details	1 detail, 2+ details, full
+3   	130.6 	8   	DRILL     	realtime	3.95	2.244	1   	2+ details	1 detail, 2+ details, full
+4   	170.6 	14  	JAIL      	omit    	3.95	1.229	1   	2+ details	1 detail, 2+ details, full
+5   	210.6 	20  	GLASS     	omit    	3.953	1.357	1   	2+ details	1 detail, 2+ details, full
+6   	250.6 	1   	MAGNET    	realtime	3.95	0.829	1   	2+ details	1 detail, 2+ details, full
+7   	290.6 	19  	FRAME     	omit    	3.951	1.902	1   	1 detail	1 detail, 2+ details, full
+8   	330.6 	7   	PLUG      	realtime	3.951	0.846	1   	2+ details	1 detail, 2+ details, full
+9   	370.6 	11  	DRUM      	omit    	3.953	1.03	1   	2+ details	1 detail, 2+ details, full
+10  	410.6 	5   	ANCHOR    	realtime	3.951	1.454	1   	2+ details	1 detail, 2+ details, full
+11  	450.6 	4   	WALLET    	realtime	3.95	0.887	1   	2+ details	1 detail, 2+ details, full
+12  	490.6 	12  	LENS      	omit    	3.95	0.967	1   	2+ details	1 detail, 2+ details, full
+13  	530.6 	13  	RAKE      	omit    	3.951	0.607	1   	2+ details	1 detail, 2+ details, full
+14  	570.6 	9   	NOTE      	realtime	3.95	0.944	1   	2+ details	1 detail, 2+ details, full
+15  	610.6 	2   	SHIRT     	realtime	3.951	0.664	1   	2+ details	1 detail, 2+ details, full
+16  	650.6 	15  	STAPLE    	omit    	3.951	0.496	1   	1 detail	1 detail, 2+ details, full
+17  	690.6 	3   	RATTLE    	realtime	3.954	0.937	1   	2+ details	1 detail, 2+ details, full
+18  	730.6 	17  	HOOK      	omit    	3.951	3.161	1   	1 detail	1 detail, 2+ details, full
+19  	770.6 	6   	DUST      	realtime	3.95	1.089	1   	1 detail	1 detail, 2+ details, full
+20  	810.6 	16  	TRIPOD    	omit    	3.95	1.282	1   	2+ details	1 detail, 2+ details, full

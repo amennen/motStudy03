@@ -18,11 +18,11 @@
 %runNum = 1;
 clear all;
 projectName = 'motStudy03';
-onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
+onlyRem = 0; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
 onlyForg = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
-svec = [3 4 5 6 7 8 9];
+svec = [3 4 5 6 7 8 9 11];
 trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
@@ -32,8 +32,8 @@ if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17'};
-RT = [3 4 5 6 7 8 9];
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17', '1-28-17'};
+RT = [3 4 5 6 7 8 9 11];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);

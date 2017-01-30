@@ -1,0 +1,11 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	67.5  	7   	PLUG      	rt-targ 	1.951	0.634	1   	target  	target  
+2   	109.5 	5   	ANCHOR    	rt-targ 	1.95	1.226	1   	target  	target  
+3   	151.5 	8   	DRILL     	rt-targ 	1.95	1.018	1   	non-target	non-target
+4   	193.5 	9   	NOTE      	rt-targ 	1.951	0.979	1   	non-target	non-target
+5   	235.5 	10  	HOSE      	rt-targ 	1.95	0.771	1   	target  	target  
+6   	277.5 	2   	SHIRT     	rt-targ 	1.95	0.923	1   	non-target	non-target
+7   	319.5 	3   	RATTLE    	rt-targ 	1.95	0.699	1   	non-target	non-target
+8   	361.5 	1   	MAGNET    	rt-targ 	1.95	1.276	1   	target  	target  
+9   	403.5 	4   	WALLET    	rt-targ 	1.95	0.756	1   	target  	target  
+10  	445.5 	6   	DUST      	rt-targ 	1.95	0.692	1   	non-target	non-target
