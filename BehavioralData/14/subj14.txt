@@ -1,0 +1,980 @@
+
+SESSION 2 initiated 31-Jan-2017 17:31:22 for SUBJECT number 14
+
+session	trial	pair	onset	dur	cue         	associate   
+2	1	8	2015  	2002  	RAINBOW     	pici0100.jpg 
+2	2	2	10005 	2002  	PUZZLE      	pici0200.jpg 
+2	3	5	18011 	2002  	CURTAIN     	pico0200.jpg 
+2	4	7	26018 	1985  	ISLAND      	pici0300.jpg 
+2	5	4	34008 	2002  	HAMMER      	pici0400.jpg 
+2	6	1	42015 	1985  	BELL        	pico0100.jpg 
+2	7	6	50005 	2002  	PIN         	pico0400.jpg 
+2	8	3	58012 	2002  	PEBBLE      	pico0300.jpg 
+
+
+SESSION 2 ended 31-Jan-2017 17:32:58 for SUBJECT number 14
+
+
+
+
+******************************************************************************
+
+
+SESSION 3 ended 31-Jan-2017 17:35:52 for SUBJECT number 14
+
+
+
+
+******************************************************************************
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		15.000	  NaN	0.0107		NaN		1		  NaN		
+1	2	0		15.000	  NaN	0.0120		NaN		1		  NaN		
+1	3	1		15.000	  NaN	0.0139		NaN		1		  NaN		
+1	4	0		15.000	  NaN	0.0293		NaN		1		  NaN		
+1	5	0		15.000	  NaN	-0.0018		NaN		1		  NaN		
+1	6	1		15.000	  NaN	0.0024		NaN		1		  NaN		
+1	7	0		15.000	  NaN	0.0014		NaN		1		  NaN		
+1	8	0		15.000	  NaN	0.0036		NaN		1		  NaN		
+1	9	1		15.000	  NaN	0.0072		NaN		1		  NaN		
+1	10	0		15.000	  NaN	0.0092		NaN		1		  NaN		
+1	11	0		15.000	  NaN	0.0110		NaN		1		  NaN		
+1	12	1		15.000	  NaN	0.0101		NaN		1		  NaN		
+1	13	0		15.000	  NaN	-0.0037		NaN		1		  NaN		
+1	14	0		15.000	  NaN	0.0157		NaN		1		  NaN		
+1	15	0		15.000	  NaN	-0.0008		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		15.000	  NaN	0.0092		NaN		1		  NaN		
+2	2	0		15.000	  NaN	0.0109		NaN		1		  NaN		
+2	3	1		15.000	  NaN	0.0104		NaN		1		  NaN		
+2	4	0		15.000	  NaN	0.0345		NaN		1		  NaN		
+2	5	0		15.000	  NaN	0.0159		NaN		1		  NaN		
+2	6	1		15.000	  NaN	-0.0009		NaN		1		  NaN		
+2	7	0		15.000	  NaN	0.0024		NaN		1		  NaN		
+2	8	0		15.000	  NaN	0.0043		NaN		1		  NaN		
+2	9	1		15.000	  NaN	0.0061		NaN		1		  NaN		
+2	10	0		15.000	  NaN	0.0071		NaN		1		  NaN		
+2	11	0		15.000	  NaN	0.0095		NaN		1		  NaN		
+2	12	1		15.000	  NaN	0.0115		NaN		1		  NaN		
+2	13	0		15.000	  NaN	0.0115		NaN		1		  NaN		
+2	14	0		15.000	  NaN	0.0126		NaN		1		  NaN		
+2	15	0		15.000	  NaN	0.0163		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		15.000	  NaN	0.0178		NaN		1		  NaN		
+3	2	0		15.000	  NaN	0.0002		NaN		1		  NaN		
+3	3	1		15.000	  NaN	0.0045		NaN		1		  NaN		
+3	4	0		15.000	  NaN	0.0422		NaN		1		  NaN		
+3	5	0		15.000	  NaN	0.0053		NaN		1		  NaN		
+3	6	1		15.000	  NaN	0.0075		NaN		1		  NaN		
+3	7	0		15.000	  NaN	0.0285		NaN		1		  NaN		
+3	8	0		15.000	  NaN	0.0127		NaN		1		  NaN		
+3	9	1		15.000	  NaN	0.0144		NaN		1		  NaN		
+3	10	0		15.000	  NaN	-0.0043		NaN		1		  NaN		
+3	11	0		15.000	  NaN	0.0011		NaN		1		  NaN		
+3	12	1		15.000	  NaN	0.0027		NaN		1		  NaN		
+3	13	0		15.000	  NaN	0.0039		NaN		1		  NaN		
+3	14	0		15.000	  NaN	0.0063		NaN		1		  NaN		
+3	15	0		15.000	  NaN	0.0082		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		15.000	  NaN	0.0036		NaN		1		  NaN		
+4	2	0		15.000	  NaN	0.0050		NaN		1		  NaN		
+4	3	1		15.000	  NaN	0.0067		NaN		1		  NaN		
+4	4	0		15.000	  NaN	0.0300		NaN		1		  NaN		
+4	5	0		15.000	  NaN	0.0103		NaN		1		  NaN		
+4	6	1		15.000	  NaN	0.0095		NaN		1		  NaN		
+4	7	0		15.000	  NaN	0.0311		NaN		1		  NaN		
+4	8	0		15.000	  NaN	0.0154		NaN		1		  NaN		
+4	9	1		15.000	  NaN	-0.0014		NaN		1		  NaN		
+4	10	0		15.000	  NaN	0.0196		NaN		1		  NaN		
+4	11	0		15.000	  NaN	0.0006		NaN		1		  NaN		
+4	12	1		15.000	  NaN	0.0031		NaN		1		  NaN		
+4	13	0		15.000	  NaN	0.0250		NaN		1		  NaN		
+4	14	0		15.000	  NaN	0.0087		NaN		1		  NaN		
+4	15	0		15.000	  NaN	0.0104		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+5	1	0		15.000	  NaN	0.0059		NaN		1		  NaN		
+5	2	0		15.000	  NaN	0.0075		NaN		1		  NaN		
+5	3	1		15.000	  NaN	0.0092		NaN		1		  NaN		
+5	4	0		15.000	  NaN	0.0256		NaN		1		  NaN		
+5	5	0		15.000	  NaN	0.0124		NaN		1		  NaN		
+5	6	1		15.000	  NaN	0.0142		NaN		1		  NaN		
+5	7	0		15.000	  NaN	0.0156		NaN		1		  NaN		
+5	8	0		15.000	  NaN	0.0154		NaN		1		  NaN		
+5	9	1		15.000	  NaN	0.0009		NaN		1		  NaN		
+5	10	0		15.000	  NaN	0.0226		NaN		1		  NaN		
+5	11	0		15.000	  NaN	0.0060		NaN		1		  NaN		
+5	12	1		15.000	  NaN	0.0077		NaN		1		  NaN		
+5	13	0		15.000	  NaN	0.0271		NaN		1		  NaN		
+5	14	0		15.000	  NaN	0.0110		NaN		1		  NaN		
+5	15	0		15.000	  NaN	0.0105		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+6	1	0		15.000	  NaN	0.0083		NaN		1		  NaN		
+6	2	0		15.000	  NaN	0.0075		NaN		1		  NaN		
+6	3	1		15.000	  NaN	0.0113		NaN		1		  NaN		
+6	4	0		15.000	  NaN	0.0331		NaN		1		  NaN		
+6	5	0		15.000	  NaN	0.0150		NaN		1		  NaN		
+6	6	1		15.000	  NaN	0.0164		NaN		1		  NaN		
+6	7	0		15.000	  NaN	0.0198		NaN		1		  NaN		
+6	8	0		15.000	  NaN	0.0034		NaN		1		  NaN		
+6	9	1		15.000	  NaN	0.0050		NaN		1		  NaN		
+6	10	0		15.000	  NaN	0.0251		NaN		1		  NaN		
+6	11	0		15.000	  NaN	0.0085		NaN		1		  NaN		
+6	12	1		15.000	  NaN	0.0102		NaN		1		  NaN		
+6	13	0		15.000	  NaN	0.0305		NaN		1		  NaN		
+6	14	0		15.000	  NaN	-0.0033		NaN		1		  NaN		
+6	15	0		15.000	  NaN	0.0153		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+7	1	0		15.000	  NaN	0.0107		NaN		1		  NaN		
+7	2	0		15.000	  NaN	0.0120		NaN		1		  NaN		
+7	3	1		15.000	  NaN	0.0137		NaN		1		  NaN		
+7	4	0		15.000	  NaN	0.0367		NaN		1		  NaN		
+7	5	0		15.000	  NaN	0.0172		NaN		1		  NaN		
+7	6	1		15.000	  NaN	0.0023		NaN		1		  NaN		
+7	7	0		15.000	  NaN	0.0063		NaN		1		  NaN		
+7	8	0		15.000	  NaN	0.0032		NaN		1		  NaN		
+7	9	1		15.000	  NaN	0.0076		NaN		1		  NaN		
+7	10	0		15.000	  NaN	0.0234		NaN		1		  NaN		
+7	11	0		15.000	  NaN	0.0109		NaN		1		  NaN		
+7	12	1		15.000	  NaN	0.0124		NaN		1		  NaN		
+7	13	0		15.000	  NaN	0.0335		NaN		1		  NaN		
+7	14	0		15.000	  NaN	0.0158		NaN		1		  NaN		
+7	15	0		15.000	  NaN	0.0006		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+8	1	0		15.000	  NaN	0.0128		NaN		1		  NaN		
+8	2	0		15.000	  NaN	0.0144		NaN		1		  NaN		
+8	3	1		15.000	  NaN	0.0139		NaN		1		  NaN		
+8	4	0		15.000	  NaN	0.0017		NaN		1		  NaN		
+8	5	0		15.000	  NaN	0.0027		NaN		1		  NaN		
+8	6	1		15.000	  NaN	0.0046		NaN		1		  NaN		
+8	7	0		15.000	  NaN	0.0209		NaN		1		  NaN		
+8	8	0		15.000	  NaN	0.0079		NaN		1		  NaN		
+8	9	1		15.000	  NaN	0.0098		NaN		1		  NaN		
+8	10	0		15.000	  NaN	0.0259		NaN		1		  NaN		
+8	11	0		15.000	  NaN	0.0112		NaN		1		  NaN		
+8	12	1		15.000	  NaN	0.0148		NaN		1		  NaN		
+8	13	0		15.000	  NaN	0.0377		NaN		1		  NaN		
+8	14	0		15.000	  NaN	0.0012		NaN		1		  NaN		
+8	15	0		15.000	  NaN	0.0031		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+1	1	0		14.350	  NaN	0.0042		NaN		1		  NaN		
+1	2	0		14.350	  NaN	0.0059		NaN		1		  NaN		
+1	3	1		14.350	  NaN	0.0057		NaN		1		  NaN		
+1	4	0		14.350	  NaN	0.0070		NaN		1		  NaN		
+1	5	0		14.350	  NaN	0.0108		NaN		1		  NaN		
+1	6	1		14.350	  NaN	0.0109		NaN		1		  NaN		
+1	7	0		14.350	  NaN	0.0310		NaN		1		  NaN		
+1	8	0		14.350	  NaN	0.0163		NaN		1		  NaN		
+1	9	1		14.350	  NaN	0.0150		NaN		1		  NaN		
+1	10	0		14.350	  NaN	0.0006		NaN		1		  NaN		
+1	11	0		14.350	  NaN	0.0046		NaN		1		  NaN		
+1	12	1		14.350	  NaN	0.0064		NaN		1		  NaN		
+1	13	0		14.350	  NaN	0.0080		NaN		1		  NaN		
+1	14	0		14.350	  NaN	0.0096		NaN		1		  NaN		
+1	15	0		14.350	  NaN	0.0090		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+2	1	0		15.805	  NaN	0.0065		NaN		1		  NaN		
+2	2	0		15.805	  NaN	0.0081		NaN		1		  NaN		
+2	3	1		15.805	  NaN	0.0098		NaN		1		  NaN		
+2	4	0		15.805	  NaN	0.0261		NaN		1		  NaN		
+2	5	0		15.805	  NaN	0.0301		NaN		1		  NaN		
+2	6	1		15.805	  NaN	-0.0015		NaN		1		  NaN		
+2	7	0		15.805	  NaN	-0.0027		NaN		1		  NaN		
+2	8	0		15.805	  NaN	0.0016		NaN		1		  NaN		
+2	9	1		15.805	  NaN	0.0012		NaN		1		  NaN		
+2	10	0		15.805	  NaN	0.0050		NaN		1		  NaN		
+2	11	0		15.805	  NaN	0.0066		NaN		1		  NaN		
+2	12	1		15.805	  NaN	0.0063		NaN		1		  NaN		
+2	13	0		15.805	  NaN	0.0112		NaN		1		  NaN		
+2	14	0		15.805	  NaN	0.0120		NaN		1		  NaN		
+2	15	0		15.805	  NaN	0.0138		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+3	1	0		12.824	  NaN	0.0093		NaN		1		  NaN		
+3	2	0		12.824	  NaN	0.0082		NaN		1		  NaN		
+3	3	1		12.824	  NaN	0.0101		NaN		1		  NaN		
+3	4	0		12.824	  NaN	0.0340		NaN		1		  NaN		
+3	5	0		12.824	  NaN	0.0152		NaN		1		  NaN		
+3	6	1		12.824	  NaN	0.0151		NaN		1		  NaN		
+3	7	0		12.824	  NaN	0.0039		NaN		1		  NaN		
+3	8	0		12.824	  NaN	0.0038		NaN		1		  NaN		
+3	9	1		12.824	  NaN	0.0058		NaN		1		  NaN		
+3	10	0		12.824	  NaN	0.0055		NaN		1		  NaN		
+3	11	0		12.824	  NaN	0.0090		NaN		1		  NaN		
+3	12	1		12.824	  NaN	0.0109		NaN		1		  NaN		
+3	13	0		12.824	  NaN	0.0301		NaN		1		  NaN		
+3	14	0		12.824	  NaN	0.0127		NaN		1		  NaN		
+3	15	0		12.824	  NaN	0.0161		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+4	1	0		13.931	  NaN	0.0115		NaN		1		  NaN		
+4	2	0		13.931	  NaN	0.0131		NaN		1		  NaN		
+4	3	1		13.931	  NaN	0.0149		NaN		1		  NaN		
+4	4	0		13.931	  NaN	0.0311		NaN		1		  NaN		
+4	5	0		13.931	  NaN	0.0182		NaN		1		  NaN		
+4	6	1		13.931	  NaN	0.0033		NaN		1		  NaN		
+4	7	0		13.931	  NaN	0.0061		NaN		1		  NaN		
+4	8	0		13.931	  NaN	0.0064		NaN		1		  NaN		
+4	9	1		13.931	  NaN	0.0084		NaN		1		  NaN		
+4	10	0		13.931	  NaN	0.0136		NaN		1		  NaN		
+4	11	0		13.931	  NaN	0.0097		NaN		1		  NaN		
+4	12	1		13.931	  NaN	0.0111		NaN		1		  NaN		
+4	13	0		13.931	  NaN	0.0300		NaN		1		  NaN		
+4	14	0		13.931	  NaN	0.0166		NaN		1		  NaN		
+4	15	0		13.931	  NaN	0.0161		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+5	1	0		14.549	  NaN	0.0138		NaN		1		  NaN		
+5	2	0		14.549	  NaN	0.0134		NaN		1		  NaN		
+5	3	1		14.549	  NaN	0.0006		NaN		1		  NaN		
+5	4	0		14.549	  NaN	0.0046		NaN		1		  NaN		
+5	5	0		14.549	  NaN	0.0039		NaN		1		  NaN		
+5	6	1		14.549	  NaN	0.0057		NaN		1		  NaN		
+5	7	0		14.549	  NaN	0.0215		NaN		1		  NaN		
+5	8	0		14.549	  NaN	0.0056		NaN		1		  NaN		
+5	9	1		14.549	  NaN	0.0083		NaN		1		  NaN		
+5	10	0		14.549	  NaN	0.0315		NaN		1		  NaN		
+5	11	0		14.549	  NaN	0.0139		NaN		1		  NaN		
+5	12	1		14.549	  NaN	0.0159		NaN		1		  NaN		
+5	13	0		14.549	  NaN	0.0317		NaN		1		  NaN		
+5	14	0		14.549	  NaN	0.0025		NaN		1		  NaN		
+5	15	0		14.549	  NaN	0.0040		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+6	1	0		14.549	  NaN	0.0118		NaN		1		  NaN		
+6	2	0		14.549	  NaN	0.0133		NaN		1		  NaN		
+6	3	1		14.549	  NaN	-0.0016		NaN		1		  NaN		
+6	4	0		14.549	  NaN	0.0149		NaN		1		  NaN		
+6	5	0		14.549	  NaN	0.0017		NaN		1		  NaN		
+6	6	1		14.549	  NaN	0.0034		NaN		1		  NaN		
+6	7	0		14.549	  NaN	0.0242		NaN		1		  NaN		
+6	8	0		14.549	  NaN	0.0068		NaN		1		  NaN		
+6	9	1		14.549	  NaN	0.0082		NaN		1		  NaN		
+6	10	0		14.549	  NaN	0.0246		NaN		1		  NaN		
+6	11	0		14.549	  NaN	0.0120		NaN		1		  NaN		
+6	12	1		14.549	  NaN	0.0135		NaN		1		  NaN		
+6	13	0		14.549	  NaN	0.0185		NaN		1		  NaN		
+6	14	0		14.549	  NaN	-0.0021		NaN		1		  NaN		
+6	15	0		14.549	  NaN	0.0022		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+7	1	0		14.880	  NaN	0.0139		NaN		1		  NaN		
+7	2	0		14.880	  NaN	-0.0032		NaN		1		  NaN		
+7	3	1		14.880	  NaN	0.0007		NaN		1		  NaN		
+7	4	0		14.880	  NaN	0.0202		NaN		1		  NaN		
+7	5	0		14.880	  NaN	0.0018		NaN		1		  NaN		
+7	6	1		14.880	  NaN	0.0055		NaN		1		  NaN		
+7	7	0		14.880	  NaN	0.0252		NaN		1		  NaN		
+7	8	0		14.880	  NaN	0.0093		NaN		1		  NaN		
+7	9	1		14.880	  NaN	0.0110		NaN		1		  NaN		
+7	10	0		14.880	  NaN	0.0267		NaN		1		  NaN		
+7	11	0		14.880	  NaN	-0.0047		NaN		1		  NaN		
+7	12	1		14.880	  NaN	-0.0009		NaN		1		  NaN		
+7	13	0		14.880	  NaN	0.0223		NaN		1		  NaN		
+7	14	0		14.880	  NaN	0.0027		NaN		1		  NaN		
+7	15	0		14.880	  NaN	0.0044		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+8	1	0		15.154	  NaN	0.0165		NaN		1		  NaN		
+8	2	0		15.154	  NaN	0.0014		NaN		1		  NaN		
+8	3	1		15.154	  NaN	0.0029		NaN		1		  NaN		
+8	4	0		15.154	  NaN	0.0237		NaN		1		  NaN		
+8	5	0		15.154	  NaN	0.0064		NaN		1		  NaN		
+8	6	1		15.154	  NaN	0.0081		NaN		1		  NaN		
+8	7	0		15.154	  NaN	0.0304		NaN		1		  NaN		
+8	8	0		15.154	  NaN	0.0094		NaN		1		  NaN		
+8	9	1		15.154	  NaN	0.0112		NaN		1		  NaN		
+8	10	0		15.154	  NaN	0.0348		NaN		1		  NaN		
+8	11	0		15.154	  NaN	-0.0023		NaN		1		  NaN		
+8	12	1		15.154	  NaN	0.0017		NaN		1		  NaN		
+8	13	0		15.154	  NaN	0.0229		NaN		1		  NaN		
+8	14	0		15.154	  NaN	0.0050		NaN		1		  NaN		
+8	15	0		15.154	  NaN	0.0069		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+9	1	0		15.154	  NaN	0.0190		NaN		1		  NaN		
+9	2	0		15.154	  NaN	0.0016		NaN		1		  NaN		
+9	3	1		15.154	  NaN	0.0052		NaN		1		  NaN		
+9	4	0		15.154	  NaN	0.0276		NaN		1		  NaN		
+9	5	0		15.154	  NaN	0.0087		NaN		1		  NaN		
+9	6	1		15.154	  NaN	0.0103		NaN		1		  NaN		
+9	7	0		15.154	  NaN	0.0100		NaN		1		  NaN		
+9	8	0		15.154	  NaN	0.0116		NaN		1		  NaN		
+9	9	1		15.154	  NaN	-0.0009		NaN		1		  NaN		
+9	10	0		15.154	  NaN	0.0220		NaN		1		  NaN		
+9	11	0		15.154	  NaN	0.0024		NaN		1		  NaN		
+9	12	1		15.154	  NaN	0.0038		NaN		1		  NaN		
+9	13	0		15.154	  NaN	0.0034		NaN		1		  NaN		
+9	14	0		15.154	  NaN	0.0076		NaN		1		  NaN		
+9	15	0		15.154	  NaN	0.0090		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+10	1	0		15.154	  NaN	0.0042		NaN		1		  NaN		
+10	2	0		15.154	  NaN	0.0060		NaN		1		  NaN		
+10	3	1		15.154	  NaN	0.0076		NaN		1		  NaN		
+10	4	0		15.154	  NaN	0.0238		NaN		1		  NaN		
+10	5	0		15.154	  NaN	0.0109		NaN		1		  NaN		
+10	6	1		15.154	  NaN	0.0127		NaN		1		  NaN		
+10	7	0		15.154	  NaN	0.0180		NaN		1		  NaN		
+10	8	0		15.154	  NaN	-0.0028		NaN		1		  NaN		
+10	9	1		15.154	  NaN	0.0014		NaN		1		  NaN		
+10	10	0		15.154	  NaN	0.0247		NaN		1		  NaN		
+10	11	0		15.154	  NaN	0.0021		NaN		1		  NaN		
+10	12	1		15.154	  NaN	0.0043		NaN		1		  NaN		
+10	13	0		15.154	  NaN	0.0297		NaN		1		  NaN		
+10	14	0		15.154	  NaN	0.0100		NaN		1		  NaN		
+10	15	0		15.154	  NaN	0.0116		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+11	1	0		15.382	  NaN	0.0177		NaN		1		  NaN		
+11	2	0		15.382	  NaN	0.0009		NaN		1		  NaN		
+11	3	1		15.382	  NaN	0.0042		NaN		1		  NaN		
+11	4	0		15.382	  NaN	0.0276		NaN		1		  NaN		
+11	5	0		15.382	  NaN	0.0077		NaN		1		  NaN		
+11	6	1		15.382	  NaN	0.0093		NaN		1		  NaN		
+11	7	0		15.382	  NaN	0.0308		NaN		1		  NaN		
+11	8	0		15.382	  NaN	0.0127		NaN		1		  NaN		
+11	9	1		15.382	  NaN	0.0147		NaN		1		  NaN		
+11	10	0		15.382	  NaN	0.0376		NaN		1		  NaN		
+11	11	0		15.382	  NaN	0.0182		NaN		1		  NaN		
+11	12	1		15.382	  NaN	0.0031		NaN		1		  NaN		
+11	13	0		15.382	  NaN	0.0189		NaN		1		  NaN		
+11	14	0		15.382	  NaN	0.0064		NaN		1		  NaN		
+11	15	0		15.382	  NaN	0.0080		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+12	1	0		15.574	  NaN	0.0032		NaN		1		  NaN		
+12	2	0		15.574	  NaN	0.0026		NaN		1		  NaN		
+12	3	1		15.574	  NaN	0.0051		NaN		1		  NaN		
+12	4	0		15.574	  NaN	0.0418		NaN		1		  NaN		
+12	5	0		15.574	  NaN	0.0083		NaN		1		  NaN		
+12	6	1		15.574	  NaN	0.0120		NaN		1		  NaN		
+12	7	0		15.574	  NaN	0.0341		NaN		1		  NaN		
+12	8	0		15.574	  NaN	0.0154		NaN		1		  NaN		
+12	9	1		15.574	  NaN	0.0148		NaN		1		  NaN		
+12	10	0		15.574	  NaN	0.0393		NaN		1		  NaN		
+12	11	0		15.574	  NaN	0.0205		NaN		1		  NaN		
+12	12	1		15.574	  NaN	0.0055		NaN		1		  NaN		
+12	13	0		15.574	  NaN	0.0278		NaN		1		  NaN		
+12	14	0		15.574	  NaN	0.0087		NaN		1		  NaN		
+12	15	0		15.574	  NaN	0.0106		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+13	1	0		15.787	  NaN	0.0061		NaN		1		  NaN		
+13	2	0		15.787	  NaN	0.0076		NaN		1		  NaN		
+13	3	1		15.787	  NaN	0.0062		NaN		1		  NaN		
+13	4	0		15.787	  NaN	0.0250		NaN		1		  NaN		
+13	5	0		15.787	  NaN	0.0101		NaN		1		  NaN		
+13	6	1		15.787	  NaN	0.0140		NaN		1		  NaN		
+13	7	0		15.787	  NaN	0.0350		NaN		1		  NaN		
+13	8	0		15.787	  NaN	0.0175		NaN		1		  NaN		
+13	9	1		15.787	  NaN	0.0026		NaN		1		  NaN		
+13	10	0		15.787	  NaN	0.0233		NaN		1		  NaN		
+13	11	0		15.787	  NaN	0.0038		NaN		1		  NaN		
+13	12	1		15.787	  NaN	0.0060		NaN		1		  NaN		
+13	13	0		15.787	  NaN	0.0287		NaN		1		  NaN		
+13	14	0		15.787	  NaN	0.0109		NaN		1		  NaN		
+13	15	0		15.787	  NaN	0.0128		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+14	1	0		16.603	  NaN	0.0085		NaN		1		  NaN		
+14	2	0		16.603	  NaN	0.0096		NaN		1		  NaN		
+14	3	1		16.603	  NaN	0.0113		NaN		1		  NaN		
+14	4	0		16.603	  NaN	0.0477		NaN		1		  NaN		
+14	5	0		16.603	  NaN	0.0149		NaN		1		  NaN		
+14	6	1		16.603	  NaN	0.0165		NaN		1		  NaN		
+14	7	0		16.603	  NaN	0.0019		NaN		1		  NaN		
+14	8	0		16.603	  NaN	0.0002		NaN		1		  NaN		
+14	9	1		16.603	  NaN	0.0049		NaN		1		  NaN		
+14	10	0		16.603	  NaN	0.0268		NaN		1		  NaN		
+14	11	0		16.603	  NaN	0.0084		NaN		1		  NaN		
+14	12	1		16.603	  NaN	0.0102		NaN		1		  NaN		
+14	13	0		16.603	  NaN	0.0258		NaN		1		  NaN		
+14	14	0		16.603	  NaN	0.0132		NaN		1		  NaN		
+14	15	0		16.603	  NaN	0.0129		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+15	1	0		17.660	  NaN	0.0106		NaN		1		  NaN		
+15	2	0		17.660	  NaN	0.0099		NaN		1		  NaN		
+15	3	1		17.660	  NaN	0.0114		NaN		1		  NaN		
+15	4	0		17.660	  NaN	0.0328		NaN		1		  NaN		
+15	5	0		17.660	  NaN	0.0151		NaN		1		  NaN		
+15	6	1		17.660	  NaN	0.0005		NaN		1		  NaN		
+15	7	0		17.660	  NaN	0.0020		NaN		1		  NaN		
+15	8	0		17.660	  NaN	0.0221		NaN		1		  NaN		
+15	9	1		17.660	  NaN	0.0074		NaN		1		  NaN		
+15	10	0		17.660	  NaN	0.0265		NaN		1		  NaN		
+15	11	0		17.660	  NaN	0.0106		NaN		1		  NaN		
+15	12	1		17.660	  NaN	0.0124		NaN		1		  NaN		
+15	13	0		17.660	  NaN	0.0296		NaN		1		  NaN		
+15	14	0		17.660	  NaN	0.0158		NaN		1		  NaN		
+15	15	0		17.660	  NaN	0.0175		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+16	1	0		18.599	  NaN	0.0077		NaN		1		  NaN		
+16	2	0		18.599	  NaN	0.0075		NaN		1		  NaN		
+16	3	1		18.599	  NaN	0.0110		NaN		1		  NaN		
+16	4	0		18.599	  NaN	0.0275		NaN		1		  NaN		
+16	5	0		18.599	  NaN	0.0141		NaN		1		  NaN		
+16	6	1		18.599	  NaN	0.0141		NaN		1		  NaN		
+16	7	0		18.599	  NaN	-0.0002		NaN		1		  NaN		
+16	8	0		18.599	  NaN	0.0025		NaN		1		  NaN		
+16	9	1		18.599	  NaN	0.0042		NaN		1		  NaN		
+16	10	0		18.599	  NaN	0.0044		NaN		1		  NaN		
+16	11	0		18.599	  NaN	0.0055		NaN		1		  NaN		
+16	12	1		18.599	  NaN	0.0079		NaN		1		  NaN		
+16	13	0		18.599	  NaN	0.0270		NaN		1		  NaN		
+16	14	0		18.599	  NaN	0.0130		NaN		1		  NaN		
+16	15	0		18.599	  NaN	0.0146		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+17	1	0		19.430	  NaN	0.0099		NaN		1		  NaN		
+17	2	0		19.430	  NaN	0.0114		NaN		1		  NaN		
+17	3	1		19.430	  NaN	0.0131		NaN		1		  NaN		
+17	4	0		19.430	  NaN	0.0314		NaN		1		  NaN		
+17	5	0		19.430	  NaN	0.0168		NaN		1		  NaN		
+17	6	1		19.430	  NaN	0.0161		NaN		1		  NaN		
+17	7	0		19.430	  NaN	0.0019		NaN		1		  NaN		
+17	8	0		19.430	  NaN	0.0217		NaN		1		  NaN		
+17	9	1		19.430	  NaN	0.0049		NaN		1		  NaN		
+17	10	0		19.430	  NaN	0.0399		NaN		1		  NaN		
+17	11	0		19.430	  NaN	0.0082		NaN		1		  NaN		
+17	12	1		19.430	  NaN	0.0118		NaN		1		  NaN		
+17	13	0		19.430	  NaN	0.0291		NaN		1		  NaN		
+17	14	0		19.430	  NaN	0.0155		NaN		1		  NaN		
+17	15	0		19.430	  NaN	0.0171		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+18	1	0		20.178	  NaN	0.0123		NaN		1		  NaN		
+18	2	0		20.178	  NaN	0.0138		NaN		1		  NaN		
+18	3	1		20.178	  NaN	0.0134		NaN		1		  NaN		
+18	4	0		20.178	  NaN	0.0488		NaN		1		  NaN		
+18	5	0		20.178	  NaN	0.0024		NaN		1		  NaN		
+18	6	1		20.178	  NaN	0.0038		NaN		1		  NaN		
+18	7	0		20.178	  NaN	0.0230		NaN		1		  NaN		
+18	8	0		20.178	  NaN	0.0075		NaN		1		  NaN		
+18	9	1		20.178	  NaN	0.0074		NaN		1		  NaN		
+18	10	0		20.178	  NaN	0.0261		NaN		1		  NaN		
+18	11	0		20.178	  NaN	0.0127		NaN		1		  NaN		
+18	12	1		20.178	  NaN	0.0122		NaN		1		  NaN		
+18	13	0		20.178	  NaN	0.0495		NaN		1		  NaN		
+18	14	0		20.178	  NaN	0.0176		NaN		1		  NaN		
+18	15	0		20.178	  NaN	0.0025		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+19	1	0		18.747	  NaN	-0.0021		NaN		1		  NaN		
+19	2	0		18.747	  NaN	0.0165		NaN		1		  NaN		
+19	3	1		18.747	  NaN	0.0181		NaN		1		  NaN		
+19	4	0		18.747	  NaN	0.0197		NaN		1		  NaN		
+19	5	0		18.747	  NaN	0.0047		NaN		1		  NaN		
+19	6	1		18.747	  NaN	0.0039		NaN		1		  NaN		
+19	7	0		18.747	  NaN	0.0416		NaN		1		  NaN		
+19	8	0		18.747	  NaN	0.0099		NaN		1		  NaN		
+19	9	1		18.747	  NaN	0.0117		NaN		1		  NaN		
+19	10	0		18.747	  NaN	0.0466		NaN		1		  NaN		
+19	11	0		18.747	  NaN	0.0148		NaN		1		  NaN		
+19	12	1		18.747	  NaN	-0.0002		NaN		1		  NaN		
+19	13	0		18.747	  NaN	0.0188		NaN		1		  NaN		
+19	14	0		18.747	  NaN	0.0034		NaN		1		  NaN		
+19	15	0		18.747	  NaN	0.0030		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+20	1	0		19.189	  NaN	0.0003		NaN		1		  NaN		
+20	2	0		19.189	  NaN	0.0021		NaN		1		  NaN		
+20	3	1		19.189	  NaN	0.0036		NaN		1		  NaN		
+20	4	0		19.189	  NaN	0.0049		NaN		1		  NaN		
+20	5	0		19.189	  NaN	0.0047		NaN		1		  NaN		
+20	6	1		19.189	  NaN	0.0065		NaN		1		  NaN		
+20	7	0		19.189	  NaN	0.0439		NaN		1		  NaN		
+20	8	0		19.189	  NaN	0.0120		NaN		1		  NaN		
+20	9	1		19.189	  NaN	0.0140		NaN		1		  NaN		
+20	10	0		19.189	  NaN	0.0469		NaN		1		  NaN		
+20	11	0		19.189	  NaN	0.0009		NaN		1		  NaN		
+20	12	1		19.189	  NaN	0.0023		NaN		1		  NaN		
+20	13	0		19.189	  NaN	0.0200		NaN		1		  NaN		
+20	14	0		19.189	  NaN	0.0058		NaN		1		  NaN		
+20	15	0		19.189	  NaN	0.0053		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+21	1	0		18.055	  NaN	-0.0005		NaN		1		  NaN		
+21	2	0		18.055	  NaN	0.0156		NaN		1		  NaN		
+21	3	1		18.055	  NaN	0.0003		NaN		1		  NaN		
+21	4	0		18.055	  NaN	0.0383		NaN		1		  NaN		
+21	5	0		18.055	  NaN	0.0042		NaN		1		  NaN		
+21	6	1		18.055	  NaN	0.0079		NaN		1		  NaN		
+21	7	0		18.055	  NaN	0.0435		NaN		1		  NaN		
+21	8	0		18.055	  NaN	0.0112		NaN		1		  NaN		
+21	9	1		18.055	  NaN	0.0131		NaN		1		  NaN		
+21	10	0		18.055	  NaN	0.0489		NaN		1		  NaN		
+21	11	0		18.055	  NaN	0.0147		NaN		1		  NaN		
+21	12	1		18.055	  NaN	0.0182		NaN		1		  NaN		
+21	13	0		18.055	  NaN	0.0341		NaN		1		  NaN		
+21	14	0		18.055	  NaN	0.0031		NaN		1		  NaN		
+21	15	0		18.055	  NaN	0.0042		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+22	1	0		16.252	  NaN	0.0020		NaN		1		  NaN		
+22	2	0		16.252	  NaN	0.0034		NaN		1		  NaN		
+22	3	1		16.252	  NaN	0.0051		NaN		1		  NaN		
+22	4	0		16.252	  NaN	0.0410		NaN		1		  NaN		
+22	5	0		16.252	  NaN	0.0085		NaN		1		  NaN		
+22	6	1		16.252	  NaN	0.0080		NaN		1		  NaN		
+22	7	0		16.252	  NaN	0.0463		NaN		1		  NaN		
+22	8	0		16.252	  NaN	0.0140		NaN		1		  NaN		
+22	9	1		16.252	  NaN	0.0155		NaN		1		  NaN		
+22	10	0		16.252	  NaN	0.0179		NaN		1		  NaN		
+22	11	0		16.252	  NaN	0.0023		NaN		1		  NaN		
+22	12	1		16.252	  NaN	0.0014		NaN		1		  NaN		
+22	13	0		16.252	  NaN	0.0420		NaN		1		  NaN		
+22	14	0		16.252	  NaN	0.0073		NaN		1		  NaN		
+22	15	0		16.252	  NaN	0.0089		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+23	1	0		16.869	  NaN	0.0041		NaN		1		  NaN		
+23	2	0		16.869	  NaN	0.0060		NaN		1		  NaN		
+23	3	1		16.869	  NaN	0.0052		NaN		1		  NaN		
+23	4	0		16.869	  NaN	0.0435		NaN		1		  NaN		
+23	5	0		16.869	  NaN	0.0109		NaN		1		  NaN		
+23	6	1		16.869	  NaN	0.0125		NaN		1		  NaN		
+23	7	0		16.869	  NaN	0.0484		NaN		1		  NaN		
+23	8	0		16.869	  NaN	0.0160		NaN		1		  NaN		
+23	9	1		16.869	  NaN	0.0176		NaN		1		  NaN		
+23	10	0		16.869	  NaN	0.0395		NaN		1		  NaN		
+23	11	0		16.869	  NaN	0.0027		NaN		1		  NaN		
+23	12	1		16.869	  NaN	0.0063		NaN		1		  NaN		
+23	13	0		16.869	  NaN	0.0390		NaN		1		  NaN		
+23	14	0		16.869	  NaN	0.0077		NaN		1		  NaN		
+23	15	0		16.869	  NaN	0.0113		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+24	1	0		17.260	  NaN	0.0065		NaN		1		  NaN		
+24	2	0		17.260	  NaN	0.0083		NaN		1		  NaN		
+24	3	1		17.260	  NaN	0.0100		NaN		1		  NaN		
+24	4	0		17.260	  NaN	0.0463		NaN		1		  NaN		
+24	5	0		17.260	  NaN	0.0132		NaN		1		  NaN		
+24	6	1		17.260	  NaN	-0.0016		NaN		1		  NaN		
+24	7	0		17.260	  NaN	0.0142		NaN		1		  NaN		
+24	8	0		17.260	  NaN	0.0016		NaN		1		  NaN		
+24	9	1		17.260	  NaN	0.0017		NaN		1		  NaN		
+24	10	0		17.260	  NaN	0.0397		NaN		1		  NaN		
+24	11	0		17.260	  NaN	0.0069		NaN		1		  NaN		
+24	12	1		17.260	  NaN	0.0086		NaN		1		  NaN		
+24	13	0		17.260	  NaN	0.0448		NaN		1		  NaN		
+24	14	0		17.260	  NaN	0.0118		NaN		1		  NaN		
+24	15	0		17.260	  NaN	0.0136		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+25	1	0		17.548	  NaN	0.0090		NaN		1		  NaN		
+25	2	0		17.548	  NaN	0.0083		NaN		1		  NaN		
+25	3	1		17.548	  NaN	0.0122		NaN		1		  NaN		
+25	4	0		17.548	  NaN	0.0451		NaN		1		  NaN		
+25	5	0		17.548	  NaN	0.0156		NaN		1		  NaN		
+25	6	1		17.548	  NaN	0.0007		NaN		1		  NaN		
+25	7	0		17.548	  NaN	0.0540		NaN		1		  NaN		
+25	8	0		17.548	  NaN	0.0039		NaN		1		  NaN		
+25	9	1		17.548	  NaN	0.0058		NaN		1		  NaN		
+25	10	0		17.548	  NaN	0.0386		NaN		1		  NaN		
+25	11	0		17.548	  NaN	0.0092		NaN		1		  NaN		
+25	12	1		17.548	  NaN	0.0108		NaN		1		  NaN		
+25	13	0		17.548	  NaN	0.0483		NaN		1		  NaN		
+25	14	0		17.548	  NaN	0.0142		NaN		1		  NaN		
+25	15	0		17.548	  NaN	0.0159		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+26	1	0		16.827	  NaN	0.0051		NaN		1		  NaN		
+26	2	0		16.827	  NaN	0.0069		NaN		1		  NaN		
+26	3	1		16.827	  NaN	0.0086		NaN		1		  NaN		
+26	4	0		16.827	  NaN	0.0483		NaN		1		  NaN		
+26	5	0		16.827	  NaN	0.0100		NaN		1		  NaN		
+26	6	1		16.827	  NaN	0.0136		NaN		1		  NaN		
+26	7	0		16.827	  NaN	0.0537		NaN		1		  NaN		
+26	8	0		16.827	  NaN	0.0171		NaN		1		  NaN		
+26	9	1		16.827	  NaN	0.0021		NaN		1		  NaN		
+26	10	0		16.827	  NaN	0.0217		NaN		1		  NaN		
+26	11	0		16.827	  NaN	0.0055		NaN		1		  NaN		
+26	12	1		16.827	  NaN	0.0072		NaN		1		  NaN		
+26	13	0		16.827	  NaN	0.0402		NaN		1		  NaN		
+26	14	0		16.827	  NaN	0.0103		NaN		1		  NaN		
+26	15	0		16.827	  NaN	0.0123		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+27	1	0		16.827	  NaN	0.0074		NaN		1		  NaN		
+27	2	0		16.827	  NaN	0.0068		NaN		1		  NaN		
+27	3	1		16.827	  NaN	0.0086		NaN		1		  NaN		
+27	4	0		16.827	  NaN	0.0483		NaN		1		  NaN		
+27	5	0		16.827	  NaN	0.0141		NaN		1		  NaN		
+27	6	1		16.827	  NaN	0.0157		NaN		1		  NaN		
+27	7	0		16.827	  NaN	0.0201		NaN		1		  NaN		
+27	8	0		16.827	  NaN	0.0025		NaN		1		  NaN		
+27	9	1		16.827	  NaN	0.0022		NaN		1		  NaN		
+27	10	0		16.827	  NaN	0.0378		NaN		1		  NaN		
+27	11	0		16.827	  NaN	0.0056		NaN		1		  NaN		
+27	12	1		16.827	  NaN	0.0071		NaN		1		  NaN		
+27	13	0		16.827	  NaN	0.0423		NaN		1		  NaN		
+27	14	0		16.827	  NaN	0.0105		NaN		1		  NaN		
+27	15	0		16.827	  NaN	0.0145		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+28	1	0		17.042	  NaN	0.0098		NaN		1		  NaN		
+28	2	0		17.042	  NaN	0.0114		NaN		1		  NaN		
+28	3	1		17.042	  NaN	0.0110		NaN		1		  NaN		
+28	4	0		17.042	  NaN	0.0517		NaN		1		  NaN		
+28	5	0		17.042	  NaN	0.0164		NaN		1		  NaN		
+28	6	1		17.042	  NaN	0.0013		NaN		1		  NaN		
+28	7	0		17.042	  NaN	0.0179		NaN		1		  NaN		
+28	8	0		17.042	  NaN	0.0048		NaN		1		  NaN		
+28	9	1		17.042	  NaN	0.0068		NaN		1		  NaN		
+28	10	0		17.042	  NaN	0.0446		NaN		1		  NaN		
+28	11	0		17.042	  NaN	0.0082		NaN		1		  NaN		
+28	12	1		17.042	  NaN	0.0117		NaN		1		  NaN		
+28	13	0		17.042	  NaN	0.0506		NaN		1		  NaN		
+28	14	0		17.042	  NaN	0.0134		NaN		1		  NaN		
+28	15	0		17.042	  NaN	0.0147		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+29	1	0		17.172	  NaN	0.0121		NaN		1		  NaN		
+29	2	0		17.172	  NaN	0.0137		NaN		1		  NaN		
+29	3	1		17.172	  NaN	0.0154		NaN		1		  NaN		
+29	4	0		17.172	  NaN	0.0484		NaN		1		  NaN		
+29	5	0		17.172	  NaN	0.0023		NaN		1		  NaN		
+29	6	1		17.172	  NaN	0.0041		NaN		1		  NaN		
+29	7	0		17.172	  NaN	0.0534		NaN		1		  NaN		
+29	8	0		17.172	  NaN	0.0072		NaN		1		  NaN		
+29	9	1		17.172	  NaN	0.0066		NaN		1		  NaN		
+29	10	0		17.172	  NaN	0.0424		NaN		1		  NaN		
+29	11	0		17.172	  NaN	0.0107		NaN		1		  NaN		
+29	12	1		17.172	  NaN	0.0120		NaN		1		  NaN		
+29	13	0		17.172	  NaN	0.0516		NaN		1		  NaN		
+29	14	0		17.172	  NaN	0.0175		NaN		1		  NaN		
+29	15	0		17.172	  NaN	0.0003		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+30	1	0		16.823	  NaN	0.0147		NaN		1		  NaN		
+30	2	0		16.823	  NaN	0.0144		NaN		1		  NaN		
+30	3	1		16.823	  NaN	0.0181		NaN		1		  NaN		
+30	4	0		16.823	  NaN	0.0247		NaN		1		  NaN		
+30	5	0		16.823	  NaN	0.0213		NaN		1		  NaN		
+30	6	1		16.823	  NaN	0.0060		NaN		1		  NaN		
+30	7	0		16.823	  NaN	0.0440		NaN		1		  NaN		
+30	8	0		16.823	  NaN	0.0098		NaN		1		  NaN		
+30	9	1		16.823	  NaN	0.0114		NaN		1		  NaN		
+30	10	0		16.823	  NaN	0.0511		NaN		1		  NaN		
+30	11	0		16.823	  NaN	0.0147		NaN		1		  NaN		
+30	12	1		16.823	  NaN	0.0165		NaN		1		  NaN		
+30	13	0		16.823	  NaN	0.0232		NaN		1		  NaN		
+30	14	0		16.823	  NaN	0.0010		NaN		1		  NaN		
+30	15	0		16.823	  NaN	0.0026		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+31	1	0		16.940	  NaN	0.0147		NaN		1		  NaN		
+31	2	0		16.940	  NaN	-0.0004		NaN		1		  NaN		
+31	3	1		16.940	  NaN	0.0015		NaN		1		  NaN		
+31	4	0		16.940	  NaN	0.0175		NaN		1		  NaN		
+31	5	0		16.940	  NaN	0.0048		NaN		1		  NaN		
+31	6	1		16.940	  NaN	0.0065		NaN		1		  NaN		
+31	7	0		16.940	  NaN	0.0298		NaN		1		  NaN		
+31	8	0		16.940	  NaN	0.0098		NaN		1		  NaN		
+31	9	1		16.940	  NaN	0.0114		NaN		1		  NaN		
+31	10	0		16.940	  NaN	0.0331		NaN		1		  NaN		
+31	11	0		16.940	  NaN	0.0128		NaN		1		  NaN		
+31	12	1		16.940	  NaN	0.0144		NaN		1		  NaN		
+31	13	0		16.940	  NaN	0.0391		NaN		1		  NaN		
+31	14	0		16.940	  NaN	0.0032		NaN		1		  NaN		
+31	15	0		16.940	  NaN	0.0021		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+32	1	0		17.009	  NaN	0.0174		NaN		1		  NaN		
+32	2	0		17.009	  NaN	0.0022		NaN		1		  NaN		
+32	3	1		17.009	  NaN	0.0015		NaN		1		  NaN		
+32	4	0		17.009	  NaN	0.0253		NaN		1		  NaN		
+32	5	0		17.009	  NaN	0.0053		NaN		1		  NaN		
+32	6	1		17.009	  NaN	0.0089		NaN		1		  NaN		
+32	7	0		17.009	  NaN	0.0581		NaN		1		  NaN		
+32	8	0		17.009	  NaN	0.0120		NaN		1		  NaN		
+32	9	1		17.009	  NaN	0.0141		NaN		1		  NaN		
+32	10	0		17.009	  NaN	0.0362		NaN		1		  NaN		
+32	11	0		17.009	  NaN	-0.0011		NaN		1		  NaN		
+32	12	1		17.009	  NaN	0.0003		NaN		1		  NaN		
+32	13	0		17.009	  NaN	0.0356		NaN		1		  NaN		
+32	14	0		17.009	  NaN	0.0057		NaN		1		  NaN		
+32	15	0		17.009	  NaN	0.0075		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+33	1	0		17.058	  NaN	0.0030		NaN		1		  NaN		
+33	2	0		17.058	  NaN	0.0044		NaN		1		  NaN		
+33	3	1		17.058	  NaN	0.0060		NaN		1		  NaN		
+33	4	0		17.058	  NaN	0.0292		NaN		1		  NaN		
+33	5	0		17.058	  NaN	0.0096		NaN		1		  NaN		
+33	6	1		17.058	  NaN	0.0110		NaN		1		  NaN		
+33	7	0		17.058	  NaN	0.0322		NaN		1		  NaN		
+33	8	0		17.058	  NaN	0.0126		NaN		1		  NaN		
+33	9	1		17.058	  NaN	-0.0004		NaN		1		  NaN		
+33	10	0		17.058	  NaN	0.0399		NaN		1		  NaN		
+33	11	0		17.058	  NaN	0.0031		NaN		1		  NaN		
+33	12	1		17.058	  NaN	0.0047		NaN		1		  NaN		
+33	13	0		17.058	  NaN	0.0258		NaN		1		  NaN		
+33	14	0		17.058	  NaN	0.0080		NaN		1		  NaN		
+33	15	0		17.058	  NaN	0.0098		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+34	1	0		17.104	  NaN	0.0052		NaN		1		  NaN		
+34	2	0		17.104	  NaN	0.0066		NaN		1		  NaN		
+34	3	1		17.104	  NaN	0.0070		NaN		1		  NaN		
+34	4	0		17.104	  NaN	0.0246		NaN		1		  NaN		
+34	5	0		17.104	  NaN	0.0118		NaN		1		  NaN		
+34	6	1		17.104	  NaN	0.0112		NaN		1		  NaN		
+34	7	0		17.104	  NaN	0.0350		NaN		1		  NaN		
+34	8	0		17.104	  NaN	0.0004		NaN		1		  NaN		
+34	9	1		17.104	  NaN	0.0020		NaN		1		  NaN		
+34	10	0		17.104	  NaN	0.0237		NaN		1		  NaN		
+34	11	0		17.104	  NaN	0.0055		NaN		1		  NaN		
+34	12	1		17.104	  NaN	0.0073		NaN		1		  NaN		
+34	13	0		17.104	  NaN	0.0282		NaN		1		  NaN		
+34	14	0		17.104	  NaN	0.0106		NaN		1		  NaN		
+34	15	0		17.104	  NaN	0.0123		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+35	1	0		17.141	  NaN	0.0075		NaN		1		  NaN		
+35	2	0		17.141	  NaN	0.0091		NaN		1		  NaN		
+35	3	1		17.141	  NaN	0.0110		NaN		1		  NaN		
+35	4	0		17.141	  NaN	0.0275		NaN		1		  NaN		
+35	5	0		17.141	  NaN	0.0143		NaN		1		  NaN		
+35	6	1		17.141	  NaN	-0.0006		NaN		1		  NaN		
+35	7	0		17.141	  NaN	0.0375		NaN		1		  NaN		
+35	8	0		17.141	  NaN	0.0029		NaN		1		  NaN		
+35	9	1		17.141	  NaN	0.0043		NaN		1		  NaN		
+35	10	0		17.141	  NaN	0.0264		NaN		1		  NaN		
+35	11	0		17.141	  NaN	0.0078		NaN		1		  NaN		
+35	12	1		17.141	  NaN	0.0095		NaN		1		  NaN		
+35	13	0		17.141	  NaN	0.0314		NaN		1		  NaN		
+35	14	0		17.141	  NaN	0.0128		NaN		1		  NaN		
+35	15	0		17.141	  NaN	0.0144		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+36	1	0		17.005	  NaN	0.0087		NaN		1		  NaN		
+36	2	0		17.005	  NaN	0.0101		NaN		1		  NaN		
+36	3	1		17.005	  NaN	0.0096		NaN		1		  NaN		
+36	4	0		17.005	  NaN	0.0353		NaN		1		  NaN		
+36	5	0		17.005	  NaN	0.0152		NaN		1		  NaN		
+36	6	1		17.005	  NaN	0.0169		NaN		1		  NaN		
+36	7	0		17.005	  NaN	0.0232		NaN		1		  NaN		
+36	8	0		17.005	  NaN	0.0036		NaN		1		  NaN		
+36	9	1		17.005	  NaN	0.0055		NaN		1		  NaN		
+36	10	0		17.005	  NaN	0.0264		NaN		1		  NaN		
+36	11	0		17.005	  NaN	0.0072		NaN		1		  NaN		
+36	12	1		17.005	  NaN	0.0107		NaN		1		  NaN		
+36	13	0		17.005	  NaN	0.0457		NaN		1		  NaN		
+36	14	0		17.005	  NaN	0.0139		NaN		1		  NaN		
+36	15	0		17.005	  NaN	0.0139		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+37	1	0		17.035	  NaN	0.0109		NaN		1		  NaN		
+37	2	0		17.035	  NaN	0.0107		NaN		1		  NaN		
+37	3	1		17.035	  NaN	0.0143		NaN		1		  NaN		
+37	4	0		17.035	  NaN	0.0352		NaN		1		  NaN		
+37	5	0		17.035	  NaN	-0.0017		NaN		1		  NaN		
+37	6	1		17.035	  NaN	0.0028		NaN		1		  NaN		
+37	7	0		17.035	  NaN	0.0379		NaN		1		  NaN		
+37	8	0		17.035	  NaN	0.0063		NaN		1		  NaN		
+37	9	1		17.035	  NaN	0.0056		NaN		1		  NaN		
+37	10	0		17.035	  NaN	0.0232		NaN		1		  NaN		
+37	11	0		17.035	  NaN	0.0114		NaN		1		  NaN		
+37	12	1		17.035	  NaN	0.0129		NaN		1		  NaN		
+37	13	0		17.035	  NaN	0.0292		NaN		1		  NaN		
+37	14	0		17.035	  NaN	-0.0003		NaN		1		  NaN		
+37	15	0		17.035	  NaN	0.0149		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+38	1	0		16.910	  NaN	0.0136		NaN		1		  NaN		
+38	2	0		16.910	  NaN	0.0130		NaN		1		  NaN		
+38	3	1		16.910	  NaN	-0.0001		NaN		1		  NaN		
+38	4	0		16.910	  NaN	0.0190		NaN		1		  NaN		
+38	5	0		16.910	  NaN	0.0036		NaN		1		  NaN		
+38	6	1		16.910	  NaN	0.0027		NaN		1		  NaN		
+38	7	0		16.910	  NaN	0.0262		NaN		1		  NaN		
+38	8	0		16.910	  NaN	0.0086		NaN		1		  NaN		
+38	9	1		16.910	  NaN	0.0102		NaN		1		  NaN		
+38	10	0		16.910	  NaN	0.0319		NaN		1		  NaN		
+38	11	0		16.910	  NaN	0.0135		NaN		1		  NaN		
+38	12	1		16.910	  NaN	0.0152		NaN		1		  NaN		
+38	13	0		16.910	  NaN	0.0343		NaN		1		  NaN		
+38	14	0		16.910	  NaN	0.0023		NaN		1		  NaN		
+38	15	0		16.910	  NaN	0.0036		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+39	1	0		16.653	  NaN	0.0158		NaN		1		  NaN		
+39	2	0		16.653	  NaN	-0.0014		NaN		1		  NaN		
+39	3	1		16.653	  NaN	0.0022		NaN		1		  NaN		
+39	4	0		16.653	  NaN	0.0191		NaN		1		  NaN		
+39	5	0		16.653	  NaN	0.0056		NaN		1		  NaN		
+39	6	1		16.653	  NaN	0.0052		NaN		1		  NaN		
+39	7	0		16.653	  NaN	0.0257		NaN		1		  NaN		
+39	8	0		16.653	  NaN	0.0108		NaN		1		  NaN		
+39	9	1		16.653	  NaN	0.0125		NaN		1		  NaN		
+39	10	0		16.653	  NaN	0.0457		NaN		1		  NaN		
+39	11	0		16.653	  NaN	0.0134		NaN		1		  NaN		
+39	12	1		16.653	  NaN	0.0155		NaN		1		  NaN		
+39	13	0		16.653	  NaN	0.0359		NaN		1		  NaN		
+39	14	0		16.653	  NaN	0.0045		NaN		1		  NaN		
+39	15	0		16.653	  NaN	0.0062		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+40	1	0		16.778	  NaN	0.0184		NaN		1		  NaN		
+40	2	0		16.778	  NaN	0.0014		NaN		1		  NaN		
+40	3	1		16.778	  NaN	0.0047		NaN		1		  NaN		
+40	4	0		16.778	  NaN	0.0380		NaN		1		  NaN		
+40	5	0		16.778	  NaN	0.0082		NaN		1		  NaN		
+40	6	1		16.778	  NaN	0.0099		NaN		1		  NaN		
+40	7	0		16.778	  NaN	0.0273		NaN		1		  NaN		
+40	8	0		16.778	  NaN	0.0131		NaN		1		  NaN		
+40	9	1		16.778	  NaN	0.0148		NaN		1		  NaN		
+40	10	0		16.778	  NaN	0.0670		NaN		1		  NaN		
+40	11	0		16.778	  NaN	0.0328		NaN		1		  NaN		
+40	12	1		16.778	  NaN	0.0035		NaN		1		  NaN		
+40	13	0		16.778	  NaN	0.0221		NaN		1		  NaN		
+40	14	0		16.778	  NaN	0.0066		NaN		1		  NaN		
+40	15	0		16.778	  NaN	0.0070		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+41	1	0		16.834	  NaN	0.0063		NaN		1		  NaN		
+41	2	0		16.834	  NaN	0.0077		NaN		1		  NaN		
+41	3	1		16.834	  NaN	0.0069		NaN		1		  NaN		
+41	4	0		16.834	  NaN	0.0779		NaN		1		  NaN		
+41	5	0		16.834	  NaN	0.0131		NaN		1		  NaN		
+41	6	1		16.834	  NaN	0.0148		NaN		1		  NaN		
+41	7	0		16.834	  NaN	0.0663		NaN		1		  NaN		
+41	8	0		16.834	  NaN	0.0157		NaN		1		  NaN		
+41	9	1		16.834	  NaN	0.0033		NaN		1		  NaN		
+41	10	0		16.834	  NaN	0.0380		NaN		1		  NaN		
+41	11	0		16.834	  NaN	0.0064		NaN		1		  NaN		
+41	12	1		16.834	  NaN	0.0058		NaN		1		  NaN		
+41	13	0		16.834	  NaN	0.0433		NaN		1		  NaN		
+41	14	0		16.834	  NaN	0.0115		NaN		1		  NaN		
+41	15	0		16.834	  NaN	0.0134		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+42	1	0		16.867	  NaN	0.0086		NaN		1		  NaN		
+42	2	0		16.867	  NaN	0.0080		NaN		1		  NaN		
+42	3	1		16.867	  NaN	0.0098		NaN		1		  NaN		
+42	4	0		16.867	  NaN	0.0457		NaN		1		  NaN		
+42	5	0		16.867	  NaN	0.0154		NaN		1		  NaN		
+42	6	1		16.867	  NaN	0.0147		NaN		1		  NaN		
+42	7	0		16.867	  NaN	0.0354		NaN		1		  NaN		
+42	8	0		16.867	  NaN	0.0036		NaN		1		  NaN		
+42	9	1		16.867	  NaN	0.0020		NaN		1		  NaN		
+42	10	0		16.867	  NaN	0.0595		NaN		1		  NaN		
+42	11	0		16.867	  NaN	0.0087		NaN		1		  NaN		
+42	12	1		16.867	  NaN	0.0081		NaN		1		  NaN		
+42	13	0		16.867	  NaN	0.0788		NaN		1		  NaN		
+42	14	0		16.867	  NaN	0.0141		NaN		1		  NaN		
+42	15	0		16.867	  NaN	0.0156		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+43	1	0		16.764	  NaN	0.0109		NaN		1		  NaN		
+43	2	0		16.764	  NaN	0.0128		NaN		1		  NaN		
+43	3	1		16.764	  NaN	0.0143		NaN		1		  NaN		
+43	4	0		16.764	  NaN	0.0681		NaN		1		  NaN		
+43	5	0		16.764	  NaN	0.0010		NaN		1		  NaN		
+43	6	1		16.764	  NaN	0.0027		NaN		1		  NaN		
+43	7	0		16.764	  NaN	0.0379		NaN		1		  NaN		
+43	8	0		16.764	  NaN	0.0063		NaN		1		  NaN		
+43	9	1		16.764	  NaN	0.0080		NaN		1		  NaN		
+43	10	0		16.764	  NaN	0.0430		NaN		1		  NaN		
+43	11	0		16.764	  NaN	0.0261		NaN		1		  NaN		
+43	12	1		16.764	  NaN	0.0127		NaN		1		  NaN		
+43	13	0		16.764	  NaN	0.0644		NaN		1		  NaN		
+43	14	0		16.764	  NaN	0.0163		NaN		1		  NaN		
+43	15	0		16.764	  NaN	0.0181		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+44	1	0		16.811	  NaN	0.0132		NaN		1		  NaN		
+44	2	0		16.811	  NaN	0.0148		NaN		1		  NaN		
+44	3	1		16.811	  NaN	0.0164		NaN		1		  NaN		
+44	4	0		16.811	  NaN	0.0664		NaN		1		  NaN		
+44	5	0		16.811	  NaN	0.0001		NaN		1		  NaN		
+44	6	1		16.811	  NaN	0.0027		NaN		1		  NaN		
+44	7	0		16.811	  NaN	0.0400		NaN		1		  NaN		
+44	8	0		16.811	  NaN	0.0068		NaN		1		  NaN		
+44	9	1		16.811	  NaN	0.0102		NaN		1		  NaN		
+44	10	0		16.811	  NaN	0.0786		NaN		1		  NaN		
+44	11	0		16.811	  NaN	0.0135		NaN		1		  NaN		
+44	12	1		16.811	  NaN	0.0125		NaN		1		  NaN		
+44	13	0		16.811	  NaN	0.0337		NaN		1		  NaN		
+44	14	0		16.811	  NaN	0.0020		NaN		1		  NaN		
+44	15	0		16.811	  NaN	0.0038		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+45	1	0		16.835	  NaN	0.0157		NaN		1		  NaN		
+45	2	0		16.835	  NaN	0.0172		NaN		1		  NaN		
+45	3	1		16.835	  NaN	0.0020		NaN		1		  NaN		
+45	4	0		16.835	  NaN	0.0374		NaN		1		  NaN		
+45	5	0		16.835	  NaN	0.0057		NaN		1		  NaN		
+45	6	1		16.835	  NaN	0.0071		NaN		1		  NaN		
+45	7	0		16.835	  NaN	0.0424		NaN		1		  NaN		
+45	8	0		16.835	  NaN	0.0109		NaN		1		  NaN		
+45	9	1		16.835	  NaN	0.0122		NaN		1		  NaN		
+45	10	0		16.835	  NaN	0.0642		NaN		1		  NaN		
+45	11	0		16.835	  NaN	0.0138		NaN		1		  NaN		
+45	12	1		16.835	  NaN	0.0153		NaN		1		  NaN		
+45	13	0		16.835	  NaN	0.0167		NaN		1		  NaN		
+45	14	0		16.835	  NaN	0.0044		NaN		1		  NaN		
+45	15	0		16.835	  NaN	0.0043		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+46	1	0		16.852	  NaN	0.0131		NaN		1		  NaN		
+46	2	0		16.852	  NaN	0.0144		NaN		1		  NaN		
+46	3	1		16.852	  NaN	-0.0022		NaN		1		  NaN		
+46	4	0		16.852	  NaN	0.0349		NaN		1		  NaN		
+46	5	0		16.852	  NaN	0.0013		NaN		1		  NaN		
+46	6	1		16.852	  NaN	0.0047		NaN		1		  NaN		
+46	7	0		16.852	  NaN	0.0403		NaN		1		  NaN		
+46	8	0		16.852	  NaN	0.0082		NaN		1		  NaN		
+46	9	1		16.852	  NaN	0.0098		NaN		1		  NaN		
+46	10	0		16.852	  NaN	0.0461		NaN		1		  NaN		
+46	11	0		16.852	  NaN	0.0109		NaN		1		  NaN		
+46	12	1		16.852	  NaN	0.0150		NaN		1		  NaN		
+46	13	0		16.852	  NaN	0.0840		NaN		1		  NaN		
+46	14	0		16.852	  NaN	0.0330		NaN		1		  NaN		
+46	15	0		16.852	  NaN	0.0033		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+47	1	0		16.803	  NaN	0.0155		NaN		1		  NaN		
+47	2	0		16.803	  NaN	0.0002		NaN		1		  NaN		
+47	3	1		16.803	  NaN	0.0018		NaN		1		  NaN		
+47	4	0		16.803	  NaN	0.0378		NaN		1		  NaN		
+47	5	0		16.803	  NaN	0.0035		NaN		1		  NaN		
+47	6	1		16.803	  NaN	0.0047		NaN		1		  NaN		
+47	7	0		16.803	  NaN	0.0431		NaN		1		  NaN		
+47	8	0		16.803	  NaN	0.0102		NaN		1		  NaN		
+47	9	1		16.803	  NaN	0.0121		NaN		1		  NaN		
+47	10	0		16.803	  NaN	0.0485		NaN		1		  NaN		
+47	11	0		16.803	  NaN	0.0157		NaN		1		  NaN		
+47	12	1		16.803	  NaN	0.0007		NaN		1		  NaN		
+47	13	0		16.803	  NaN	0.0359		NaN		1		  NaN		
+47	14	0		16.803	  NaN	0.0037		NaN		1		  NaN		
+47	15	0		16.803	  NaN	0.0056		NaN		1		  NaN		
+trial	TR	prompt active	speed	ds	flip error	found file	FileTR	CategSep	LastFile
+48	1	0		16.803	  NaN	0.0176		NaN		1		  NaN		
+48	2	0		16.803	  NaN	0.0008		NaN		1		  NaN		
+48	3	1		16.803	  NaN	0.0042		NaN		1		  NaN		
+48	4	0		16.803	  NaN	0.0411		NaN		1		  NaN		
+48	5	0		16.803	  NaN	0.0077		NaN		1		  NaN		
+48	6	1		16.803	  NaN	0.0093		NaN		1		  NaN		
+48	7	0		16.803	  NaN	0.0461		NaN		1		  NaN		
+48	8	0		16.803	  NaN	0.0128		NaN		1		  NaN		
+48	9	1		16.803	  NaN	0.0144		NaN		1		  NaN		
+48	10	0		16.803	  NaN	0.0538		NaN		1		  NaN		
+48	11	0		16.803	  NaN	0.0011		NaN		1		  NaN		
+48	12	1		16.803	  NaN	0.0028		NaN		1		  NaN		
+48	13	0		16.803	  NaN	0.0365		NaN		1		  NaN		
+48	14	0		16.803	  NaN	0.0063		NaN		1		  NaN		
+48	15	0		16.803	  NaN	0.0081		NaN		1		  NaN		
+
+SESSION 7 initiated 31-Jan-2017 18:25:04 for SUBJECT number 14
+
+session	trial	pair	onset	dur	cue         	associate   
+7	1	16	2003  	2002  	COAL        	pici12.jpg  
+7	2	9	10009 	2002  	RATTLE      	pico02.jpg  
+7	3	4	18000 	2019  	MOON        	pici27.jpg  
+7	4	19	26006 	2002  	STAPLE      	pico25.jpg  
+7	5	6	34013 	2002  	PARADE      	pici25.jpg  
+7	6	12	42003 	2002  	CHALK       	pici09.jpg  
+7	7	5	50010 	2002  	SPONGE      	pico19.jpg  
+7	8	15	58017 	1986  	BRACELET    	pico07.jpg  
+7	9	18	66007 	2002  	PYRAMID     	pici04.jpg  
+7	10	3	74014 	2002  	ROPE        	pico17.jpg  
+7	11	7	82004 	2002  	RULER       	pico21.jpg  
+7	12	13	90011 	2002  	HOSE        	pico24.jpg  
+7	13	1	98017 	1985  	HANDLE      	pico26.jpg  
+7	14	11	106007	2002  	PHONE       	pico10.jpg  
+7	15	20	114014	2002  	JOURNAL     	pici15.jpg  
+7	16	10	122005	2002  	POWDER      	pici01.jpg  
+7	17	14	130011	2002  	NOTE        	pici02.jpg  
+7	18	2	138018	1985  	JAIL        	pici28.jpg  
+7	19	17	146008	2002  	RAKE        	pico12.jpg  
+7	20	8	154015	2002  	PURSE       	pici03.jpg  
+
+
+SESSION 7 ended 31-Jan-2017 18:28:46 for SUBJECT number 14
+
+
+
+
+******************************************************************************
+
+
+SESSION 8 ended 31-Jan-2017 18:34:43 for SUBJECT number 14
+
+
+
+
+******************************************************************************
+
+
+SESSION 9 ended 31-Jan-2017 18:38:57 for SUBJECT number 14
+
+
+
+
+******************************************************************************
+
+
+SESSION 10 ended 31-Jan-2017 18:40:19 for SUBJECT number 14
+
+
+
+
+******************************************************************************
