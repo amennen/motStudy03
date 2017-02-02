@@ -64,6 +64,7 @@ for i=1:NUM_TASK_RUNS
 end
 RECALL2 = MOT{end} + 1; % post-scan rsvp memory test
 ASSOCIATES = RECALL2 + 1; %25
+RATESIMILAR = ASSOCIATES + 1; %so would be 26
 %ANATOMICAL_PREP = ASSOCIATES + 1;
 % name strings
 SESSIONSTRINGS{SETUP} = 'GENERATE PAIRINGS'; % set up rsvp study learn associates
@@ -95,6 +96,7 @@ SESSIONSTRINGS{RECALL_PRACTICE} = 'DELIBERATE RECALL PRACTICE'; % get used to ta
 SESSIONSTRINGS{RECALL1} = 'RECALL1'; % baseline recollection, used to train recollection classifier
 SESSIONSTRINGS{RECALL2} = 'RECALL2'; % post-test recollection, used to measure effectiveness of manipulation
 SESSIONSTRINGS{ASSOCIATES} = 'ASSOCIATES TASK'; % face-scene classification
+SESSIONSTRINGS{RATESIMILAR} = 'RATE IMAGE SIMILARITY';
 %SESSIONSTRINGS{ANATOMICAL_PREP} = 'ANATOMICAL PREP'; %prepping for first scan
 % SETUP: prepare experiment
 if ~exist('SUBJECT','var'), SUBJECT = -1; end
