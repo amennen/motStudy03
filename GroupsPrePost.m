@@ -21,6 +21,7 @@ projectName = 'motStudy03';
 onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
 rating_thresh = 5;
 onlyForg = 0;
+post = 1;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
 svec = [3 4 5 6 7 8 9 11 12];
@@ -90,6 +91,8 @@ for s = 1:NSUB
         
             keep.hard = find(sub.Orderhard>=rating_thresh); %in the order of the stimuli-which indices to keep
             keep.easy = find(sub.Ordereasy>=rating_thresh);
+            num_kh(s) = length(keep.hard);
+            num_ke(s) = length(keep.easy);
         end
         
         scanNum = recallScan(i);
@@ -116,22 +119,26 @@ for s = 1:NSUB
     end
     
     % now find post - pre difference
+    
     if onlyRem 
         PrePostRT = RTevidence(keep.hard,:,2) - RTevidence(keep.hard,:,1);
         PrePostOMIT = OMITevidence(keep.easy,:,2) - OMITevidence(keep.easy,:,1);
+        PostOnlyRT1 = RTevidence(keep.hard,:,2);
+        PostOnlyOM1 = OMITevidence(keep.easy,:,2);
     elseif onlyRem == 0 && onlyForg == 0
         PrePostRT = RTevidence(:,:,2) - RTevidence(:,:,1);
         PrePostOMIT = OMITevidence(:,:,2) - OMITevidence(:,:,1);
+        PostOnlyRT1 = RTevidence(:,:,2);
+        PostOnlyOM1 = OMITevidence(:,:,2)
     elseif onlyForg
         forg_hard = setdiff(1:size(RTevidence,1),keep.hard);
         forg_easy = setdiff(1:size(RTevidence,1),keep.easy);
         PrePostRT = RTevidence(forg_hard,:,2) - RTevidence(forg_hard,:,1);
         PrePostOMIT = OMITevidence(forg_easy,:,2) - OMITevidence(forg_easy,:,1);
     end
-    PostOnlyRT(s,:) = mean(RTevidence(:,:,2),1);
-    PostOnlyOM(s,:) = mean(OMITevidence(:,:,2),1);
+    PostOnlyRT(s,:) = mean(PostOnlyRT1,1);
+    PostOnlyOM(s,:) = mean(PostOnlyOM1,1);
     RTavg(s,:) = mean(PrePostRT,1);
-    
     OMITavg(s,:) = mean(PrePostOMIT,1);
     
     
@@ -139,8 +146,15 @@ end
 %take data only from RT group
 RT_i = find(ismember(svec,RT));
 nRT = length(RT_i);
-RTgroup_RT = RTavg(RT_i,:);
-RTgroup_OM = OMITavg(RT_i,:);
+if post
+    RTgroup_RT = PostOnlyRT;
+    RTgroup_OM = PostOnlyOM;
+else
+    RTgroup_RT = RTavg(RT_i,:);
+    RTgroup_OM = OMITavg(RT_i,:);
+end
+
+% calculate number of kept trials too!
 h1 = figure;
 %alldiffmeans = [RTavg;OMITavg];
 %alldiffstd = [std(PrePostRT)/sqrt(size(PrePostRT,1)-1);std(PrePostOMIT)/sqrt(size(PrePostRT,1)-1)];
@@ -152,7 +166,13 @@ alldiffmeans = [allRT;allOMIT];
 alldiffstd = [eRT;eOMIT];
 mseb(1:nTRsperTrial,alldiffmeans, alldiffstd)
 legend('Realtime', 'Omit')
+if onlyRem
+    avg_kh = mean(num_kh);
+    avg_ke = mean(num_ke);
+    title
+else
 title(sprintf('Post - Pre MOT Classifier Difference, RT n = %i',nRT))
+end
 set(gca, 'XTick', [1:nTRsperTrial])
 %set(gca,'XTickLabel',['-2'; '-1'; ' 0'; ' 1'; ' 2'; ' 3'; ' 4'; ' 5'; '6'; '7'; '8'; '9'; ']);
 ylabel('Target - Lure Evidence')
