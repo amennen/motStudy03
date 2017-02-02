@@ -1,0 +1,21 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	46.4  	12  	POLE      	omit    	3.951	2.249	0   	generic 	1 detail, 2+ details, full
+2   	86.4  	9   	EASEL     	realtime	3.95	1.609	1   	2+ details	1 detail, 2+ details, full
+3   	126.4 	15  	BASKET    	omit    	3.952	0.698	1   	2+ details	1 detail, 2+ details, full
+4   	166.4 	7   	STAPLE    	realtime	3.953	1.29	1   	2+ details	1 detail, 2+ details, full
+5   	206.4 	20  	SHIRT     	omit    	3.95	0.955	1   	2+ details	1 detail, 2+ details, full
+6   	246.4 	8   	PADDLE    	realtime	3.95	1.29	1   	2+ details	1 detail, 2+ details, full
+7   	286.4 	5   	DRUM      	realtime	3.95	0.746	1   	2+ details	1 detail, 2+ details, full
+8   	326.4 	11  	BUBBLE    	omit    	3.95	1.459	1   	2+ details	1 detail, 2+ details, full
+9   	366.4 	6   	RATTLE    	realtime	3.95	1.155	1   	2+ details	1 detail, 2+ details, full
+10  	406.4 	14  	FRAME     	omit    	3.951	1.011	1   	2+ details	1 detail, 2+ details, full
+11  	446.4 	3   	PIPE      	realtime	3.95	0.748	1   	2+ details	1 detail, 2+ details, full
+12  	486.4 	19  	PAGE      	omit    	3.95	1.373	1   	1 detail	1 detail, 2+ details, full
+13  	526.4 	17  	WIRE      	omit    	3.95	0.573	1   	2+ details	1 detail, 2+ details, full
+14  	566.4 	2   	DUST      	realtime	3.95	0.621	1   	2+ details	1 detail, 2+ details, full
+15  	606.4 	16  	SHOVEL    	omit    	3.951	1.117	1   	2+ details	1 detail, 2+ details, full
+16  	646.4 	1   	BROOM     	realtime	3.95	1.165	1   	2+ details	1 detail, 2+ details, full
+17  	686.4 	13  	CHALK     	omit    	3.951	0.574	1   	2+ details	1 detail, 2+ details, full
+18  	726.4 	4   	DENT      	realtime	3.95	0.91	1   	2+ details	1 detail, 2+ details, full
+19  	766.4 	18  	BRUSH     	omit    	3.95	1.71	1   	1 detail	1 detail, 2+ details, full
+20  	806.4 	10  	PAINT     	realtime	3.951	0.847	1   	2+ details	1 detail, 2+ details, full

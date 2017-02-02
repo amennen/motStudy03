@@ -19,7 +19,7 @@ allplotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ];
 
 nblock = 3;
 shiftTR = 2;
-svec = [3:9 11];
+svec = [3:9 11 12];
 nsub = length(svec);
 for s = 1:nsub
     allsep = [];
@@ -97,17 +97,30 @@ for s = 1:nsub
         OMITevidence(:,:,i) = OMITtrials;
     end
     PrePostRT = RTevidence(:,:,2) - RTevidence(:,:,1);
+    avgPreRT(:,s) = mean(RTevidence(:,:,1),2);
     PrePostOMIT = OMITevidence(:,:,2) - OMITevidence(:,:,1);
     avgPrePostOM(:,s) = mean(PrePostOMIT,2);
     %average PrePostRT over all 4 TR's
     avgPrePostRT(:,s) = mean(PrePostRT,2);
     avgPostRT(:,s) = mean(RTevidence(:,:,2),2);
 end
+%%
+%now save data and send to jukebox
+folder= '/jukebox/norman/amennen/PythonMot3';
+fn = 'plottInfo.mat';
+save(fn,'avgsepbystim','PrePostRT','avgPrePostOM', 'avgPrePostRT','avgPostRT', 'diff_stim_hard','all_hard','all_easy','avgPreRT')
+for s = 1:length(subjectVec)
+    unix(['scp ' fn ' amennen@apps.pni.princeton.edu:' folder '/'])
+end
+
 %% now plot the whole thing
 h = figure;
 for s = 1:nsub
 %scatter(avgsepbystim(:,s),avgPrePostRT(:,s),  'jitter','on', 'jitterAmount',0.005,'LineWidth', 2);
-scatter(avgsepbystim(:,s),avgPrePostRT(:,s),  'LineWidth', 2);
+p = scatter(avgsepbystim(:,s),avgPrePostRT(:,s),50, 'fill');
+alpha(p,0.1)
+p = patch(avgsepbystim(:,s),avgPrePostRT(:,s), 'c');
+set(p, 'EdgeColor', none)
 hold on;
 end
 xlim([-0.25 0.25])

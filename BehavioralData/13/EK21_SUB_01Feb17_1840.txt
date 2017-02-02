@@ -1,0 +1,41 @@
+trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
+1   	51    	2   	DUST      	rt-targ 	2.106	2.102	0   	generic 	1 detail, 2+ details, full
+2   	57    	2   	DUST (repeat 1)	rt-targ 	2.05	2.049	0   	generic 	1 detail, 2+ details, full
+3   	63.1  	2   	DUST (repeat 2)	rt-targ 	1.998	1.996	1   	1 detail	1 detail, 2+ details, full
+4   	69.1  	2   	DUST (repeat 3)	rt-targ 	2.014	2.012	1   	2+ details	1 detail, 2+ details, full
+5   	93    	10  	PAINT     	rt-targ 	2.054	2.052	0   	generic 	1 detail, 2+ details, full
+6   	99.1  	10  	PAINT (repeat 1)	rt-targ 	2.015	2.014	1   	1 detail	1 detail, 2+ details, full
+7   	105.1 	10  	PAINT (repeat 2)	rt-targ 	1.977	1.976	1   	1 detail	1 detail, 2+ details, full
+8   	111.1 	10  	PAINT (repeat 3)	rt-targ 	1.992	1.991	1   	1 detail	1 detail, 2+ details, full
+9   	135.1 	8   	PADDLE    	rt-targ 	2.018	2.016	0   	generic 	1 detail, 2+ details, full
+10  	141.1 	8   	PADDLE (repeat 1)	rt-targ 	1.977	1.976	1   	1 detail	1 detail, 2+ details, full
+11  	147.1 	8   	PADDLE (repeat 2)	rt-targ 	1.983	1.982	1   	1 detail	1 detail, 2+ details, full
+12  	153.1 	8   	PADDLE (repeat 3)	rt-targ 	1.98	1.979	1   	2+ details	1 detail, 2+ details, full
+13  	177.1 	3   	PIPE      	rt-targ 	2.008	2.007	0   	generic 	1 detail, 2+ details, full
+14  	183   	3   	PIPE (repeat 1)	rt-targ 	2.045	2.043	0   	generic 	1 detail, 2+ details, full
+15  	189.1 	3   	PIPE (repeat 2)	rt-targ 	1.978	1.977	1   	1 detail	1 detail, 2+ details, full
+16  	195   	3   	PIPE (repeat 3)	rt-targ 	2.048	2.047	1   	2+ details	1 detail, 2+ details, full
+17  	219.1 	1   	BROOM     	rt-targ 	2.017	2.015	0   	generic 	1 detail, 2+ details, full
+18  	225.1 	1   	BROOM (repeat 1)	rt-targ 	1.992	NR  	0   	NR      	1 detail, 2+ details, full
+19  	231   	1   	BROOM (repeat 2)	rt-targ 	2.025	2.024	1   	1 detail	1 detail, 2+ details, full
+20  	237.1 	1   	BROOM (repeat 3)	rt-targ 	1.98	1.979	1   	2+ details	1 detail, 2+ details, full
+21  	261.1 	7   	STAPLE    	rt-targ 	1.978	1.977	1   	1 detail	1 detail, 2+ details, full
+22  	267   	7   	STAPLE (repeat 1)	rt-targ 	2.015	2.013	1   	2+ details	1 detail, 2+ details, full
+23  	273   	7   	STAPLE (repeat 2)	rt-targ 	2.015	2.014	1   	2+ details	1 detail, 2+ details, full
+24  	279.1 	7   	STAPLE (repeat 3)	rt-targ 	2.013	2.012	1   	2+ details	1 detail, 2+ details, full
+25  	303   	6   	RATTLE    	rt-targ 	2.047	2.046	1   	1 detail	1 detail, 2+ details, full
+26  	309.1 	6   	RATTLE (repeat 1)	rt-targ 	2.015	2.013	1   	2+ details	1 detail, 2+ details, full
+27  	315   	6   	RATTLE (repeat 2)	rt-targ 	2.05	2.048	1   	2+ details	1 detail, 2+ details, full
+28  	321   	6   	RATTLE (repeat 3)	rt-targ 	2.03	2.029	1   	2+ details	1 detail, 2+ details, full
+29  	345   	4   	DENT      	rt-targ 	2.055	2.053	1   	1 detail	1 detail, 2+ details, full
+30  	351.1 	4   	DENT (repeat 1)	rt-targ 	1.991	1.99	1   	1 detail	1 detail, 2+ details, full
+31  	357.1 	4   	DENT (repeat 2)	rt-targ 	1.992	1.991	1   	2+ details	1 detail, 2+ details, full
+32  	363   	4   	DENT (repeat 3)	rt-targ 	2.048	2.047	1   	2+ details	1 detail, 2+ details, full
+33  	387   	9   	EASEL     	rt-targ 	2.007	2.007	0   	generic 	1 detail, 2+ details, full
+34  	393.1 	9   	EASEL (repeat 1)	rt-targ 	1.982	1.98	1   	1 detail	1 detail, 2+ details, full
+35  	399   	9   	EASEL (repeat 2)	rt-targ 	2.016	2.014	1   	2+ details	1 detail, 2+ details, full
+36  	405   	9   	EASEL (repeat 3)	rt-targ 	2.045	2.044	1   	2+ details	1 detail, 2+ details, full
+37  	429.1 	5   	DRUM      	rt-targ 	1.992	1.991	0   	generic 	1 detail, 2+ details, full
+38  	435   	5   	DRUM (repeat 1)	rt-targ 	2.012	2.011	1   	1 detail	1 detail, 2+ details, full
+39  	441   	5   	DRUM (repeat 2)	rt-targ 	2.032	2.031	1   	2+ details	1 detail, 2+ details, full
+40  	447   	5   	DRUM (repeat 3)	rt-targ 	2.019	2.017	1   	2+ details	1 detail, 2+ details, full
