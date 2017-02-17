@@ -3,7 +3,7 @@
 %first these are all the session numbers
 
 SUBJECT = 13; %experimental subject number
-prev = 0; %if today's date (0) or previous date (1)
+prev = 1; %if today's date (0) or previous date (1)
 scanNow = 1; %if using triggers (1)
 runNum = 1; %what number subject they are today
 
@@ -131,7 +131,24 @@ scanNum1 = 13;
 scanNum2 = 21;
 featureSelect = 1;
 if prev
-   date = '1-22-17';
+   date = '2-1-17';
 end
 RecallFileProcess(SUBJECT,runNum,scanNum1,RECALL1,date,featureSelect,makeFile);
 RecallFileProcess(SUBJECT,runNum,scanNum2,RECALL2,date,featureSelect,makeFile);
+%% ANALYZE RECALL DATA FOR ANOTHER MASK
+
+scanNum1 = 13;
+scanNum2 = 21;
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17', '1-28-17', '1-30-17', '2-1-17'};
+svec = [3 4 5 6 7 8 9 11 12 13];
+runvec = ones(1,length(svec));
+irun2 = find(svec==5);
+runvec(irun2) = 2;
+nsub = length(svec);
+for s = 1:nsub
+    SUBJECT = svec(s);
+    date = datevec{s};
+    runNum = runvec(s);
+    AnatRecallFileProcess(SUBJECT,runNum,scanNum1,RECALL1,date);
+    AnatRecallFileProcess(SUBJECT,runNum,scanNum2,RECALL2,date);
+end

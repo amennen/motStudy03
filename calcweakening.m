@@ -6,8 +6,9 @@
 % need: speed (from behavioral file)
 % category separation (can also pull from behavioral file)
 close all;
-clear all;
-projectName = 'motStudy02';
+clear all;thisDir = '/Data1/code/motStudy03/code/';
+cd(thisDir)
+projectName = 'motStudy03';
 allspeeds = [];
 allsep = [];
 nstim = 10;
@@ -15,43 +16,25 @@ nTRs = 15;
 sepTRs = 17;
 FBTRs = 11;
 nblock = 3;
-%if both zero, then look at all subjects for differences
-% updated =0; %for only looking at the results recorded after making differences (minimum dot speed, increase starting speed, average over 2)
-% oldonly = 0;
-% 
-% nold = 4;
-% svec = [3:5 7:13];
-% nnew = length(svec) - nold;
-% 
-% if updated
-%     svec = svec(end-nnew +1:end);
-% elseif oldonly
-%     svec = svec(1:nold);
-% end
-
-svec = [8 12 14 15 16 18 20  22 26 27 28 30 31 32];
-RT = [8 12 14 15 18 22  31]%take out 22 to make even by group];
-YC = [16 20 26 27 28 30  32];
-iRT = find(ismember(svec,RT));
-iYC = find(ismember(svec,YC));
+svec = [3:9 11 12 13];
 
 nsub = length(svec);
 sepbystim = zeros(nstim,nTRs*3);
 speedbystim = zeros(nstim,nTRs*3);
-allplotDir = ['/Data1/code/' projectName '/' 'Plots' '/' ];
-
+allplotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ];
+iRT = 1:nsub;
 for s = 1:nsub
     subjectNum = svec(s);
     for iblock = 1:nblock
         blockNum = iblock;
-        SESSION = 19 + blockNum;
+        SESSION = 20 + blockNum;
         %blockNum = SESSION - 20 + 1;
         
         %behavioral_dir = ['/Data1/code/' projectName '/' 'code' '/BehavioralData/' num2str(subjectNum) '/'];
-        behavioral_dir = [fileparts(which('mot_realtime01.m')) '/BehavioralData/' num2str(subjectNum) '/'];
+        behavioral_dir = [fileparts(which('mot_realtime02.m')) '/BehavioralData/' num2str(subjectNum) '/'];
         save_dir = ['/Data1/code/' projectName '/data/' num2str(subjectNum) '/']; %this is where she sets the save directory!
         runHeader = fullfile(save_dir,[ 'motRun' num2str(blockNum) '/']);
-        fileSpeed = dir(fullfile(behavioral_dir, ['mot_realtime01_' num2str(subjectNum) '_' num2str(SESSION)  '*.mat']));
+        fileSpeed = dir(fullfile(behavioral_dir, ['mot_realtime02_' num2str(subjectNum) '_' num2str(SESSION)  '*.mat']));
         names = {fileSpeed.name};
         dates = [fileSpeed.datenum];
         [~,newest] = max(dates);
@@ -102,17 +85,7 @@ for s = 1:nsub
     end
     meandiff = mean(meandiffbyblock);
     FBmeandiff = mean(FBmeandiffbyblock);
-    if s < 8 %average over 3 TR's
-        vec2avg = [0.1*ones(10,2) sepbystim];
-        for i = 1:size(sepbystim,2)
-            smoothedsep(:,i) = mean(vec2avg(:,i:i+2),2);
-        end
-    else %average over 2 TR's
-        vec2avg = [0.1*ones(10,1) sepbystim];
-        for i = 1:size(sepbystim,2)
-            smoothedsep(:,i) = mean(vec2avg(:,i:i+1),2);
-        end
-    end
+  
     postime = [];
     negtime = [];
     zerotime = [];

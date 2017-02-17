@@ -19,12 +19,12 @@
 clear all;
 projectName = 'motStudy03';
 onlyRem = 1; %if should only look at the stimuli that subject answered >1 for remembering in recall 1
-rating_thresh = 5;
+rating_thresh = 4;
 onlyForg = 0;
-post = 1;
+post = 0;
 plotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ]; %should be all
 %plot dir?
-svec = [3 4 5 6 7 8 9 11 12];
+svec = [3 4 5 6 7 8 9 11 12 13];
 trainedModel = 'averageModel';
 runvec = ones(1,length(svec));
 irun2 = find(svec==5);
@@ -34,8 +34,8 @@ if length(runvec)~=length(svec)
     error('Enter in the runs AND date numbers!!')
 end
 %datevec = { '1-11-17', '1-13-17'};
-datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17', '1-28-17', '1-30-17'};
-RT = [3 4 5 6 7 8 9 11 12];
+datevec = { '1-13-17', '1-14-17', '1-14-17', '1-20-17', '1-21-17', '1-22-17', '1-26-17', '1-28-17', '1-30-17', '2-1-17'};
+RT = [3 4 5 6 7 8 9 11 12 13];
 YC= [];
 RTonly = 1;
 NSUB = length(svec);
@@ -129,7 +129,7 @@ for s = 1:NSUB
         PrePostRT = RTevidence(:,:,2) - RTevidence(:,:,1);
         PrePostOMIT = OMITevidence(:,:,2) - OMITevidence(:,:,1);
         PostOnlyRT1 = RTevidence(:,:,2);
-        PostOnlyOM1 = OMITevidence(:,:,2)
+        PostOnlyOM1 = OMITevidence(:,:,2);
     elseif onlyForg
         forg_hard = setdiff(1:size(RTevidence,1),keep.hard);
         forg_easy = setdiff(1:size(RTevidence,1),keep.easy);
@@ -166,12 +166,15 @@ alldiffmeans = [allRT;allOMIT];
 alldiffstd = [eRT;eOMIT];
 mseb(1:nTRsperTrial,alldiffmeans, alldiffstd)
 legend('Realtime', 'Omit')
+ylim([-.5 .3])
 if onlyRem
-    avg_kh = mean(num_kh);
-    avg_ke = mean(num_ke);
-    title
+    avg_kh = mean(num_kh)/10;
+    avg_ke = mean(num_ke)/10;
+    text(4,-0.3, sprintf('Average kept rt = %.2f',avg_kh));
+    text(4,-0.35, sprintf('Average kept omit = %.2f',avg_ke));
+    title(sprintf('Post MOT Classifier; n = %i; boundary = %i',nRT,rating_thresh))
 else
-title(sprintf('Post - Pre MOT Classifier Difference, RT n = %i',nRT))
+title(sprintf('Post MOT Classifier; n = %i',nRT))
 end
 set(gca, 'XTick', [1:nTRsperTrial])
 %set(gca,'XTickLabel',['-2'; '-1'; ' 0'; ' 1'; ' 2'; ' 3'; ' 4'; ' 5'; '6'; '7'; '8'; '9'; ']);
@@ -182,9 +185,8 @@ set(findall(gcf,'-property','FontSize'),'FontSize',16)
 %line([6 6], [-1 1], 'Color', 'k', 'LineWidth', 3);
 
 xlim([1 nTRsperTrial])
-ylim([-.2 .2])
 %ylim([-.25 .25])
-%print(h1, sprintf('%sresults125_6sub_avg_onlyrem5.pdf', plotDir), '-dpdf')
+print(h1, sprintf('%sresults21_9sub_post_boundary5.pdf', plotDir), '-dpdf')
 
 %%
 h1 = figure;

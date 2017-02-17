@@ -19,7 +19,7 @@ allplotDir = ['/Data1/code/' projectName '/' 'Plots2' '/' ];
 
 nblock = 3;
 shiftTR = 2;
-svec = [3:9 11 12];
+svec = [3:9 11 12 13];
 nsub = length(svec);
 for s = 1:nsub
     allsep = [];
@@ -108,10 +108,9 @@ end
 %now save data and send to jukebox
 folder= '/jukebox/norman/amennen/PythonMot3';
 fn = 'plottInfo.mat';
-save(fn,'avgsepbystim','PrePostRT','avgPrePostOM', 'avgPrePostRT','avgPostRT', 'diff_stim_hard','all_hard','all_easy','avgPreRT')
-for s = 1:length(subjectVec)
-    unix(['scp ' fn ' amennen@apps.pni.princeton.edu:' folder '/'])
-end
+save(fn,'avgsepbystim','PrePostRT','avgPrePostOM', 'avgPrePostRT','avgPostRT', 'diff_stim_hard','all_hard','all_easy','avgPreRT', 'hardacc_ordered', 'hardrt_ordered')
+unix(['scp ' fn ' amennen@apps.pni.princeton.edu:' folder '/'])
+
 
 %% now plot the whole thing
 h = figure;

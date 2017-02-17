@@ -10,7 +10,7 @@ projectName = 'motStudy03';
 base_path = [fileparts(which('mot_realtime02.m')) filesep];
 
 % don't put in 22 until have subject
-svec = [3 4 5 6 7 8 9 11 12];
+svec = [3 4 5 6 7 8 9 11 12 13];
 
 nsub = length(svec);
 recallSession = [20 24];
@@ -55,8 +55,13 @@ for s = 1:nsub
     diff_hard(s) = nanmean(hard_ordered(2,:) - hard_ordered(1,:));
     %clear easy_ordered hard_ordered
     %[allRem] = findRememberedStim(svec(s));
-    r = dir(fullfile(behavioral_dir, ['_' 'RECOG'  '*.mat']));
-    r = load(fullfile(behavioral_dir,r(end).name));
+    if svec(s) >=13 %use diff filename
+        r = dir(fullfile(behavioral_dir, ['EK25_' 'RECOG'  '*.mat']));
+        r = load(fullfile(behavioral_dir,r(end).name));
+    else
+        r = dir(fullfile(behavioral_dir, ['_' 'RECOG'  '*.mat']));
+        r = load(fullfile(behavioral_dir,r(end).name));
+    end
     trials = table2cell(r.datastruct.trials);
     stimID = cell2mat(trials(:,8));
     %goodTrials = find(ismember(stimID,goodStim));
