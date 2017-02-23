@@ -21,7 +21,7 @@ speedH = 1;
 speedL = speedH * -1; %now change code for loop
 avgRange = 12; %divided by 2 is the number of TR's
 
-svec = [8 12 14 15 18 22 31];%take out 22 to make even by group];
+subjectVec = [8 12 14 15 16 18 20 22 26 27 28 30 31 32]; %now made it so for all subjects and can separate them into RT/YC afterwards in python 2/17
 
 nsub = length(svec);
 sepbystimA = zeros(nstim,nTRs*3,nsub);
