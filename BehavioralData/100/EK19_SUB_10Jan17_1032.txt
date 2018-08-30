@@ -1,6 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	11.8  	37  	CHALK     	lure_easy	2.084	NR  	0   	NR      	1 detail, 2+ details, full
-2   	17.8  	37  	CHALK (repeat 1)	lure_easy	2.012	NR  	0   	NR      	1 detail, 2+ details, full
-3   	23.8  	37  	CHALK (repeat 2)	lure_easy	2.008	NR  	0   	NR      	1 detail, 2+ details, full
-4   	29.8  	37  	CHALK (repeat 3)	lure_easy	2.007	NR  	0   	NR      	1 detail, 2+ details, full
-5   	53.8  	33  	PAINT     	targ_hard	1.995	NR  	0   	NR      	1 detail, 2+ details, full

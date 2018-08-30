@@ -1,5 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	35.9  	37  	CURTAIN   	targ_easy	1.951	1.004	1   	non-target	non-target
-2   	77.9  	38  	WIRE      	lure_hard	1.951	1.652	1   	target  	target  
-3   	119.9 	39  	CANDLE    	lure_easy	1.95	0.916	1   	target  	target  
-4   	161.9 	40  	HAMMER    	targ_hard	1.951	1.109	0   	non-target	target  

@@ -1,4 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	13.1  	37  	PEBBLE    	5       	3.954	2.711	0   	generic 	1 detail, 2+ details, full
-2   	53.1  	38  	BELL      	5       	3.95	2.392	0   	generic 	1 detail, 2+ details, full
-3   	93.1  	39  	PUZZLE    	5       	3.951	1.16	0   	no image	1 detail, 2+ details, full

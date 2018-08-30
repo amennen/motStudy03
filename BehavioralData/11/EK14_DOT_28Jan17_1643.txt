@@ -1,5 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	36.1  	37  	ISLAND    	targ_easy	1.951	0.998	1   	target  	target  
-2   	78.1  	38  	PHONE     	lure_easy	1.951	0.67	1   	target  	target  
-3   	120.1 	39  	BUBBLE    	lure_hard	1.95	1.087	1   	non-target	non-target
-4   	162.1 	40  	PIN       	targ_hard	1.95	0.783	1   	non-target	non-target

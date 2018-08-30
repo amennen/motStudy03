@@ -1,2 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	37.8  	37  	CHALK     	lure_easy	1.952	NR  	0   	NR      	target  

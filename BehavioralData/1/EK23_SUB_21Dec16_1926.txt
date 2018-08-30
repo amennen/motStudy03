@@ -1,2 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	39.9  	5   	WIRE      	rt-targ 	2.044	2.041	1   	full    	1 detail, 2+ details, full

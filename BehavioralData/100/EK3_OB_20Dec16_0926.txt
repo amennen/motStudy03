@@ -1,2 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	9.9   	37  	BELL      	stair   	3.452	NR  	0   	NR      	2+ details

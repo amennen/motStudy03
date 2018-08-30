@@ -1,5 +1,0 @@
-trial	ons(s)	stim_id	stim      	cond    	dur 	rt  	acc 	resp    	cresp   
-1   	36    	37  	PUZZLE    	targ_hard	1.951	0.985	1   	non-target	non-target
-2   	78    	38  	PARADE    	lure_hard	1.951	0.945	1   	target  	target  
-3   	120   	39  	ISLAND    	targ_easy	1.95	0.921	1   	target  	target  
-4   	162   	40  	MARBLE    	lure_easy	1.95	1.425	0   	target  	non-target
